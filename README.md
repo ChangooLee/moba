@@ -1,164 +1,749 @@
-MOBA (Make Ocean Blue Again) 프로젝트 웹사이트 README
-프로젝트 설명 🌊
-MOBA(Make Ocean Blue Again)는 해양을 다시 깨끗하고 푸르게 만들기 위한 환경 보호 프로젝트로서, 해당 프로젝트를 홍보하고 정보를 제공하는 반응형 다국어 정적 웹사이트입니다. 이 웹사이트의 메인 페이지에는 MOBA 프로젝트의 소개와 목표를 강조하여 방문자에게 프로젝트의 취지와 중요성을 전달합니다. 전체적인 디자인은 깔끔하고 신뢰감을 주는 스타일을 유지하며, 불필요한 장식을 배제하고 주요 메시지와 콘텐츠에 집중합니다
-padi.com
-. 콘텐츠는 사업 계획, 멤버십 안내, 활동 일정 등의 정보를 담은 정적 페이지 위주로 구성되고, 일부 페이지에서 프로젝트 관련 통계나 성과를 간단한 그래프로 시각화하여 제공하지만 전체적으로는 텍스트 중심의 설명 구조입니다. 이 웹사이트는 다양한 기기에서 접근할 수 있도록 반응형 디자인으로 구현되며, 한국어, 영어, 중국어, 일본어 4개 국어를 지원하여 글로벌 사용자도 편리하게 이용할 수 있습니다. 또한 PADI AWARE 마케팅 툴킷의 색상 및 디자인 가이드라인을 부분적으로 참고하여, 해양 환경 보호 프로젝트에 어울리는 신뢰성과 통일감을 갖춘 디자인을 구현합니다.
-기술 스택 ⚙️
-React: UI 구성 요소를 만들고 단일 페이지 애플리케이션 형태로 인터랙티브한 사용자 인터페이스를 구축합니다. React를 통해 컴포넌트를 재사용하고 상태 관리를 효율적으로 수행합니다.
-Vite: 번들러 겸 개발 서버로 사용됩니다. Vite는 매우 빠른 HMR(Hot Module Replacement)을 지원하여 개발 생산성을 높여주고, 빌드 시에는 경량화된 번들을 생성해줍니다.
-Tailwind CSS: 유틸리티-퍼스트 디자인의 CSS 프레임워크로, 미리 정의된 CSS 클래스만으로 손쉽게 스타일링이 가능합니다
-velog.io
-. HTML 클래스 속성에 Tailwind의 유틸리티 클래스를 조합함으로써 별도 CSS 파일 작성 없이도 신속하고 일관된 UI 구현이 가능합니다
-velog.io
-. 이를 통해 반응형 디자인을 포함한 모던한 스타일을 빠르게 적용할 수 있습니다.
-i18next (react-i18next): React 애플리케이션에서 **국제화(i18n)**를 구현하기 위한 대표적 라이브러리입니다. i18next를 통해 문자열을 각 언어별로 관리하고, react-i18next 바인딩을 활용해 손쉽게 다국어 지원을 적용합니다
-jforj.tistory.com
-. 각 언어별 번역 문구를 JSON 등의 파일로 정의하여 애플리케이션에 내장함으로써, 별도 API 호출 없이도 다국어로 콘텐츠를 제공할 수 있습니다
-jforj.tistory.com
-.
-Docker: 배포 및 실행 환경에 컨테이너 기술을 도입합니다. Docker를 이용해 애플리케이션을 컨테이너화하면 개발 환경과 프로덕션 환경을 일치시켜 일관된 실행 환경을 보장할 수 있고, “내 컴퓨터에서는 잘 되는데…”와 같은 문제를 예방하며 CI/CD 파이프라인을 단순화합니다
-docker.com
-. Docker 이미지를 통해 어디서나 동일한 환경으로 웹사이트를 실행할 수 있습니다.
-기타: 빌드 도구 및 개발 환경으로 Node.js와 npm을 사용합니다. 정적 사이트이므로 백엔드 서버 없이 동작하며, 그래프 등 시각화가 필요한 경우 Chart.js와 같은 경량 라이브러리나 SVG를 활용할 수 있습니다 (필요 최소한으로만 사용).
-폴더 구조 제안 🗂
-프로젝트는 다음과 같이 폴더를 구성하여 개발 편의성과 확장성을 확보합니다:
+# MOBA (Make Ocean Blue Again) 🌊
+
+> 해양 환경 보호를 위한 반응형 다국어 웹사이트
+
+## 📖 프로젝트 개요
+
+MOBA는 해양을 다시 깨끗하고 푸르게 만들기 위한 환경 보호 프로젝트의 공식 웹사이트입니다.
+
+### 주요 특징
+- 🌐 **다국어 지원**: 한국어, 영어, 중국어, 일본어
+- 📱 **반응형 디자인**: 모바일, 태블릿, 데스크톱 최적화
+- ⚡ **빠른 로딩**: Vite + React 기반의 최적화된 정적 사이트
+- 🐳 **컨테이너화**: Docker를 통한 일관된 배포 환경
+- 🎨 **브랜드 일관성**: PADI AWARE 디자인 가이드라인 적용
+## 🛠 기술 스택
+
+| 기술 | 버전 | 용도 |
+|------|------|------|
+| **React** | ^18.0.0 | UI 컴포넌트 및 상태 관리 |
+| **Vite** | ^5.0.0 | 번들러 및 개발 서버 (HMR 지원) |
+| **Tailwind CSS** | ^3.0.0 | 유틸리티-퍼스트 CSS 프레임워크 |
+| **i18next** | ^23.0.0 | 국제화(i18n) 라이브러리 |
+| **react-i18next** | ^13.0.0 | React용 i18next 바인딩 |
+| **Docker** | ^24.0.0 | 컨테이너화 및 배포 |
+| **Node.js** | ^18.0.0 | 개발 환경 및 빌드 도구 |
+
+### 추가 라이브러리 (선택사항)
+- **Chart.js**: 데이터 시각화 (통계, 그래프)
+- **React Router**: 클라이언트 사이드 라우팅
+- **Framer Motion**: 애니메이션 효과
+## 📁 프로젝트 구조
+
+```
 moba-project/
-├── src/                      # 소스 코드 폴더
+├── src/
 │   ├── components/           # 재사용 가능한 React 컴포넌트
-│   ├── pages/                # 각 페이지(라우트) 구성 컴포넌트
-│   ├── locales/              # 다국어 번역 파일 폴더 (예: ko/, en/, zh/, ja/)
-│   │   ├── ko/translation.json    # 한국어 번역 JSON 예시
-│   │   ├── en/translation.json    # 영어 번역 JSON 예시
-│   │   └── ...                    
-│   ├── assets/               # 이미지, 아이콘 등의 정적 자산
-│   ├── styles/               # 글로벌 스타일 (Tailwind CSS import 등)
-│   └── App.jsx               # React 루트 컴포넌트
-├── public/                   # 정적 파일(파비콘 등) 정적 제공 폴더
-├── Dockerfile                # Docker 빌드 구성 파일
-├── package.json              # npm 의존성 및 스크립트 정의
+│   │   ├── common/          # 공통 컴포넌트 (Header, Footer, Button 등)
+│   │   ├── ui/              # UI 컴포넌트 (Card, Modal, Form 등)
+│   │   └── layout/          # 레이아웃 컴포넌트 (Layout, Container 등)
+│   ├── pages/               # 페이지 컴포넌트
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Plan.jsx
+│   │   ├── Membership.jsx
+│   │   ├── Schedule.jsx
+│   │   └── Contact.jsx
+│   ├── locales/             # 다국어 번역 파일
+│   │   ├── ko/
+│   │   │   ├── common.json
+│   │   │   ├── pages.json
+│   │   │   └── index.js
+│   │   ├── en/
+│   │   ├── zh/
+│   │   └── ja/
+│   ├── assets/              # 정적 자산
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── fonts/
+│   ├── styles/              # 글로벌 스타일
+│   │   ├── globals.css
+│   │   └── tailwind.css
+│   ├── hooks/               # 커스텀 훅
+│   ├── utils/               # 유틸리티 함수
+│   ├── i18n.js              # i18n 설정
+│   ├── App.jsx              # 루트 컴포넌트
+│   └── main.jsx             # 진입점
+├── public/                  # 정적 파일
+│   ├── favicon.ico
+│   ├── logo.png
+│   └── manifest.json
+├── .env.example             # 환경변수 예시
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
 └── README.md
-위 구조에서, 특히 src/locales/ 아래에 언어별 폴더를 두고 해당 폴더 안에 translation.json 등의 번역 파일을 배치합니다
-dev.to
-. 각 JSON 파일에는 해당 언어로 번역된 키-값 쌍의 문자열들이 들어있으며, 예를 들어 en/translation.json에는 "welcome": "Welcome to MOBA!", ko/translation.json에는 "welcome": "MOBA에 오신 것을 환영합니다!"와 같은 형식으로 내용을 작성합니다. 이러한 폴더 구조를 통해 새로운 언어를 추가하거나 기존 번역을 수정하기 쉬우며, i18n 설정 시 폴더 경로별로 리소스를 자동으로 로드할 수 있습니다. 이밖에 components/ 폴더에는 네비게이션 바, 푸터, 카드 UI 등 여러 페이지에서 공통으로 사용하는 컴포넌트를 넣고, pages/ 폴더에는 홈, 사업계획, 멤버십, 일정 등의 주요 페이지 컴포넌트를 두어 라우팅과 구조를 관리합니다. 정적 자산(assets/)과 전역 스타일(styles/)을 분리하여 유지보수성을 높이고, public/ 폴더는 로고나 favicon처럼 빌드 과정 없이 제공될 파일들을 보관합니다.
-메뉴 구성 예시 📑
-MOBA 웹사이트는 방문자가 원하는 정보를 쉽게 찾을 수 있도록 명확한 대메뉴/소메뉴 구조를 갖춥니다. 예시로 다음과 같은 메뉴 구조를 고려할 수 있습니다:
-소개 (About)
-프로젝트 개요 및 목표
-팀 소개 / 인사말
-사업계획 (Plan)
-추진 배경 및 필요성
-단계별 수행 계획 / 세부 전략
-멤버십 (Membership)
-멤버십 안내 (가입 방법, 자격)
-회원 혜택 및 활동 참여 방법
-일정 (Schedule)
-주요 행사 일정
-프로젝트 타임라인 / 이정표
-문의 (Contact)
-연락처 및 문의 방법
-후원/협력 제안 안내
-상기의 대메뉴는 상단 내비게이션 바에 배치되고, 각 항목에 마우스를 올리면 관련된 소메뉴 드롭다운이 나타나도록 설계합니다 (모바일에서는 햄버거 메뉴 내에 계층적으로 표시). 예를 들어 사용자가 “사업계획” 메뉴를 클릭하면 사업 계획 전반을 소개하는 페이지로 이동하며, 해당 페이지 내 또는 드롭다운을 통해 세부 추진 계획 문서를 열람할 수 있습니다. 이러한 메뉴 구조는 프로젝트의 주요 정보 (사업 계획, 멤버십, 일정 등)를 한눈에 파악할 수 있게 하여 정보 접근성을 높이고, 사용자가 원하는 내용을 빠르게 찾을 수 있도록 돕습니다. 각 메뉴명과 콘텐츠는 국제화 지원에 따라 4개 언어로 제공되어, 사용자가 선택한 언어에 맞게 표시됩니다.
-다국어(i18n) 지원 설정 방식 🌐
-본 사이트는 한국어(KO), 영어(EN), 중국어(ZH), 일본어(JA) 4개 언어를 지원하므로, 국제화(i18n) 프레임워크로 i18next와 React용 바인딩 라이브러리 react-i18next를 사용합니다
-jforj.tistory.com
-. 국제화 구현은 다음과 같은 방식으로 이루어집니다:
-언어별 리소스 구성: src/locales/ 폴더 아래에 언어 코드별 디렉토리를 만들고 (ko, en, zh, ja), 각 디렉토리 내에 다수의 JSON 파일로 번역 문자열을 관리합니다. 예를 들어 ko/translation.json, en/translation.json 파일에 각각 한국어와 영어 번역 키-값 쌍을 정의합니다
-jforj.tistory.com
-. 이 때 모든 페이지에서 공통으로 사용하는 용어(예: 프로젝트 이름, 메뉴명)는 하나의 JSON 파일에, 페이지별 고유 내용은 별도 JSON 파일로 분리할 수도 있습니다. 그런 다음 각 언어 폴더마다 index.ts (또는 .js)를 두어 해당 폴더의 모든 JSON을 불러와 하나의 객체로 합칩니다. 이러한 구조로 번역 리소스를 관리하면 필요한 언어의 텍스트를 손쉽게 추가/수정할 수 있고, 번역 키를 통해 코드에서 텍스트를 참조할 수 있어 유지보수가 용이합니다.
-i18n 초기화 설정: 프로젝트가 로드될 때 i18next를 초기화하여 사용 가능한 언어들과 기본 언어를 지정합니다. 예를 들어 src/i18n.ts 파일에서 다음과 같이 설정할 수 있습니다
-jforj.tistory.com
-:
-i18n.use(initReactI18next).init({
+```
+
+### 폴더별 설명
+
+- **`components/`**: 재사용 가능한 React 컴포넌트를 기능별로 분류
+- **`pages/`**: 각 라우트에 해당하는 페이지 컴포넌트
+- **`locales/`**: 언어별 번역 파일 (JSON 형식)
+- **`assets/`**: 이미지, 아이콘, 폰트 등 정적 자산
+- **`hooks/`**: 커스텀 React 훅 (useLanguage, useTheme 등)
+- **`utils/`**: 공통 유틸리티 함수
+## 🧭 네비게이션 구조
+
+### 메인 메뉴
+```
+├── 홈 (Home)                    # /
+├── 소개 (About)                 # /about
+│   ├── 프로젝트 개요
+│   └── 팀 소개
+├── 사업계획 (Plan)              # /plan
+│   ├── 추진 배경
+│   └── 단계별 계획
+├── 멤버십 (Membership)          # /membership
+│   ├── 가입 안내
+│   └── 회원 혜택
+├── 일정 (Schedule)              # /schedule
+│   ├── 주요 행사
+│   └── 프로젝트 타임라인
+└── 문의 (Contact)               # /contact
+    ├── 연락처
+    └── 후원/협력 제안
+```
+
+### 라우팅 설정 예시
+```javascript
+// src/App.jsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/plan" element={<Plan />} />
+        <Route path="/membership" element={<Membership />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+```
+## 🌐 다국어 지원 (i18n)
+
+### 지원 언어
+- 🇰🇷 한국어 (ko)
+- 🇺🇸 영어 (en) 
+- 🇨🇳 중국어 (zh)
+- 🇯🇵 일본어 (ja)
+
+### 설정 방법
+
+#### 1. i18n 초기화
+```javascript
+// src/i18n.js
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+// 번역 리소스 import
+import ko from './locales/ko';
+import en from './locales/en';
+import zh from './locales/zh';
+import ja from './locales/ja';
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
   resources: {
-    ko: { translation: translationKo },
-    en: { translation: translationEn },
-    zh: { translation: translationZh },
-    ja: { translation: translationJa }
+      ko: { translation: ko },
+      en: { translation: en },
+      zh: { translation: zh },
+      ja: { translation: ja }
+    },
+    lng: 'ko',                    // 기본 언어
+    fallbackLng: 'en',            // 폴백 언어
+    debug: process.env.NODE_ENV === 'development',
+    interpolation: {
+      escapeValue: false
+    }
+  });
+
+export default i18n;
+```
+
+#### 2. 번역 파일 구조
+```json
+// src/locales/ko/common.json
+{
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "plan": "사업계획",
+    "membership": "멤버십",
+    "schedule": "일정",
+    "contact": "문의"
   },
-  lng: 'ko',               // 기본 언어를 한국어로 설정
-  fallbackLng: 'en',       // 지원하지 않는 문자열의 경우 영어로 폴백
-  debug: false,
-  interpolation: { escapeValue: false }
-});
-위 설정에서 resources 객체로 각 언어별 번역 리소스를 등록하고, lng를 통해 기본 표시 언어를 지정합니다 (예시에서는 한국어를 기본값으로). fallbackLng는 해당 언어에 번역이 없을 경우 대신 사용할 언어를 의미하며, 여기서는 영어를 폴백으로 지정하였지만 필요에 따라 한국어로 변경할 수도 있습니다. escapeValue: false는 리액트에서는 XSS 보호가 기본 적용되므로 별도의 이스케이프를 하지 않도록 하는 설정입니다.
-추가로 i18next-browser-languagedetector 등을 사용하면 사용자의 브라우저 설정이나 접속 국가에 따라 초기 언어를 자동 결정할 수 있습니다. 혹은 사이트 UI에 언어 선택 토글(예: 국기 아이콘 또는 드롭다운)을 제공하여 사용자가 수동으로 언어를 전환할 수 있게 합니다. 이렇게 설정된 i18n은 index.tsx (또는 main.jsx)에서 불러와 애플리케이션에 적용합니다 (import './i18n';). 그리고 각 React 컴포넌트에서는 useTranslation 훅을 이용해 번역 문자열을 가져와 표시합니다. 예를 들어, const { t } = useTranslation(); ... <h1>{t('welcome')}</h1> 형태로 작성하면 현재 선택된 언어에 맞는 환영 메시지가 화면에 표시됩니다.
-다국어 콘텐츠 작성: 콘텐츠를 작성할 때 하드코딩된 문자열을 사용하지 않고 모두 번역 키로 관리합니다. 예를 들어 버튼 라벨, 메뉴명, 본문 텍스트 등을 소스 코드에 직접 쓰는 대신 t('membership.joinButton')과 같은 키를 참조하여, 각 언어별 JSON에 해당 키에 대한 번역을 등록하는 방식입니다. 이를 통해 새 언어를 지원할 때 코드 수정 없이 번역 파일만 추가하면 되고, 기존 언어의 표현을 수정할 때도 각 JSON 파일만 업데이트하면 되는 유연성을 얻습니다. 또한 날짜나 통화 표기, 숫자 포맷 등 지역화(Localization)가 필요한 부분은 i18next의 옵션이나 별도 유틸 함수를 활용해 처리합니다 (예: 날짜 포맷은 Intl.DateTimeFormat API 활용).
-요약하면, 국제화 지원은 i18next 설정을 통해 4개 언어의 리소스를 로드하고, React 컴포넌트에서 필요시 번역 문자열을 불러오는 형태로 구현됩니다. 이를 통해 사용자에게 언어 선택의 자유를 제공하고, MOBA의 글로벌 참여를 독려합니다.
-디자인 가이드 (색상 & 폰트) 🎨
-본 프로젝트의 디자인은 PADI AWARE Toolkit의 브랜드 가이드를 참고하여, MOBA의 해양 환경 보호 이미지를 효과적으로 전달하는 동시에 일관된 비주얼 아이덴티티를 구축합니다. 구체적인 디자인 방향은 다음과 같습니다:
-브랜드 색상 팔레트: PADI에서 권장하는 브랜드 컬러를 기반으로 사이트 색상을 구성합니다. 기본 배경은 **화이트(#FFFFFF)**로 하여 깨끗하고 깔끔한 느낌을 주고, 주요 강조 색상으로 **PADI 블루(#0070D3)**를 사용해 신뢰성과 청량감을 표현합니다
-padi.com
-. 필요한 경우 보조 강조색으로 **PADI 레드(#F23D4E)**를 일부 요소에 활용하여 시선을 끄는 포인트를 만들고 (예: 중요 알림, 버튼 등), 텍스트는 높은 가독성을 위해 주로 블랙(#000000) 또는 진한 색상을 사용합니다
-padi.com
-. 이러한 색상 체계를 통해 일관된 브랜드 이미지를 전달하면서도, 시각적 대비를 줘서 핵심 정보가 잘 돋보이도록 합니다. (※ 배경이 어두운 섹션에서는 텍스트를 흰색으로 반전시키는 등 충분한 대비를 확보)
-폰트 선택: 웹폰트로 Noto Sans 계열을 사용합니다. Noto Sans는 다국어 지원에 최적화된 폰트로, 한글을 포함해 영어, 중문, 일본어 등 다양한 언어에서 가독성이 뛰어나고統一된 스타일을 제공합니다
-padi.com
-. PADI 브랜드 지침에서도 Noto Sans 사용을 권장하고 있으며, 너무 두껍거나 장식적인 서체 사용은 지양합니다
-padi.com
-. 본 프로젝트에서는 가급적 일반 체중(Regular) 또는 강조가 필요한 경우 Semi-Bold 정도까지만 사용하여 깔끔한 인상을 유지하고, 본문 텍스트 색상은 검정 혹은 짙은 회색을 사용해 가독성을 높입니다. 타이틀이나 헤더에는 약간 두꺼운 폰트를 사용하되 과도한 볼드체는 피하고 절제된 디자인을 따릅니다
-padi.com
-.
-레이아웃 및 스타일: 미니멀리즘 디자인 원칙을 준수하여 불필요한 그래픽 요소나 화려한 장식은 최대한 배제합니다. "Less is more"라는 지침에 따라, 내용 전달에 도움이 되지 않는 테두리, 그림자, 클립아트 등을 남용하지 않고 여백을 충분히 두어 깨끗한 레이아웃을 유지합니다
-padi.com
-. 시각적인 이미지는 무분별하게 사용하지 않고, 프로젝트의 메시지를 강화하는 사진이나 아이콘을 선별적으로 활용합니다 (예: 깨끗한 바다 이미지, 해양 생물 아이콘 등). 전체적인 톤앤매너는 PADI AWARE의 브랜드 가치처럼 진정성 있고 희망적이며 포용적인 분위기를 추구하며, 환경 친화적인 이미지를 강조합니다
-padi.com
-. 이는 MOBA 프로젝트의 "바다를 다시 푸르게" 만들자는 사명과도 일맥상통하므로, 방문자가 사이트를 보았을 때 깨끗한 바다와 지속가능성에 대한 긍정적인 인상을 받을 수 있도록 디자인합니다.
-반응형/접근성: 디자인 요소들은 CSS 미디어쿼리와 Tailwind CSS의 반응형 유틸리티 클래스를 통해 다양한 화면 크기에 유동적으로 대응합니다. 데스크톱에서는 넉넉한 레이아웃과 이미지를 활용하고, 모바일에서는 요소를 세로로 쌓는 등 가독성을 높이는 방식으로 재배치합니다. 폰트 크기 역시 반응형 단위를 사용하여 작은 화면에서도 읽기 쉽도록 조정합니다. 또한 웹 접근성을 고려하여 충분한 색상 대비, 대체 텍스트 제공, 키보드 내비게이션 가능 등을 염두에 두고 구현합니다 (예: 메뉴는 Tab으로 포커스 이동 가능, 이미지에는 alt 속성 명시 등).
-이러한 디자인 가이드라인을 바탕으로, MOBA 웹사이트는 통일된 브랜드 아이덴티티를 유지하면서도 사용자에게 쾌적하고 신뢰감 있는 경험을 제공할 것입니다.
-Docker 및 npm 실행 방법 🐳
-개발자나 운영자가 로컬에서 프로젝트를 실행하거나 배포 환경에서 컨테이너로 구동할 수 있도록 npm 스크립트와 Docker를 활용한 방법을 제공합니다.
-로컬 개발 환경 설정 (npm)
-필요 소프트웨어: Node.js (권장 LTS 버전)와 npm이 설치되어 있어야 합니다. 또한 개발 단계에서 Tailwind CSS IntelliSense 등을 활용하려면 VSCode 확장 등을 설치하면 편리합니다.
-프로젝트 클론 및 의존성 설치: Git 저장소에서 코드를 클론하고 프로젝트 디렉토리로 이동한 후, 다음 명령을 실행하여 의존 패키지를 설치합니다:
+  "buttons": {
+    "join": "가입하기",
+    "learnMore": "더 알아보기",
+    "contact": "문의하기"
+  }
+}
+```
+
+#### 3. 컴포넌트에서 사용
+```javascript
+// src/components/Header.jsx
+import { useTranslation } from 'react-i18next';
+
+const Header = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  return (
+    <nav>
+      <h1>{t('nav.home')}</h1>
+      <button onClick={() => changeLanguage('ko')}>한국어</button>
+      <button onClick={() => changeLanguage('en')}>English</button>
+    </nav>
+  );
+};
+```
+
+### 언어 전환 컴포넌트
+```javascript
+// src/components/LanguageSelector.jsx
+import { useTranslation } from 'react-i18next';
+
+const languages = [
+  { code: 'ko', name: '한국어', flag: '🇰🇷' },
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'zh', name: '中文', flag: '🇨🇳' },
+  { code: 'ja', name: '日本語', flag: '🇯🇵' }
+];
+
+const LanguageSelector = () => {
+  const { i18n } = useTranslation();
+
+  return (
+    <select 
+      value={i18n.language} 
+      onChange={(e) => i18n.changeLanguage(e.target.value)}
+    >
+      {languages.map(lang => (
+        <option key={lang.code} value={lang.code}>
+          {lang.flag} {lang.name}
+        </option>
+      ))}
+    </select>
+  );
+};
+```
+## 🎨 디자인 가이드
+
+### 색상 팔레트
+```css
+/* PADI AWARE 브랜드 컬러 기반 */
+:root {
+  /* Primary Colors */
+  --padi-blue: #0070D3;        /* 메인 브랜드 컬러 */
+  --padi-red: #F23D4E;         /* 강조 컬러 (CTA 버튼 등) */
+  --white: #FFFFFF;            /* 배경색 */
+  
+  /* Neutral Colors */
+  --gray-50: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --gray-400: #9CA3AF;
+  --gray-500: #6B7280;
+  --gray-600: #4B5563;
+  --gray-700: #374151;
+  --gray-800: #1F2937;
+  --gray-900: #111827;
+  
+  /* Semantic Colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
+}
+```
+
+### 타이포그래피
+```css
+/* Noto Sans 폰트 패밀리 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* 폰트 크기 */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+  
+  /* 폰트 두께 */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+```
+
+### Tailwind CSS 커스터마이징
+```javascript
+// tailwind.config.js
+module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        'padi-blue': '#0070D3',
+        'padi-red': '#F23D4E',
+      },
+      fontFamily: {
+        sans: ['Noto Sans', 'sans-serif'],
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+      }
+    },
+  },
+  plugins: [],
+}
+```
+
+### 컴포넌트 스타일 예시
+```javascript
+// src/components/Button.jsx
+const Button = ({ variant = 'primary', size = 'md', children, ...props }) => {
+  const baseClasses = 'font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2';
+  
+  const variants = {
+    primary: 'bg-padi-blue text-white hover:bg-blue-700 focus:ring-blue-500',
+    secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500',
+    danger: 'bg-padi-red text-white hover:bg-red-700 focus:ring-red-500',
+  };
+  
+  const sizes = {
+    sm: 'px-3 py-1.5 text-sm',
+    md: 'px-4 py-2 text-base',
+    lg: 'px-6 py-3 text-lg',
+  };
+  
+  return (
+    <button
+      className={`${baseClasses} ${variants[variant]} ${sizes[size]}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
+```
+
+### 반응형 디자인 브레이크포인트
+```css
+/* Tailwind CSS 기본 브레이크포인트 */
+sm: 640px   /* 모바일 가로 */
+md: 768px   /* 태블릿 */
+lg: 1024px  /* 데스크톱 */
+xl: 1280px  /* 대형 데스크톱 */
+2xl: 1536px /* 초대형 화면 */
+```
+
+### 접근성 가이드라인
+- **색상 대비**: WCAG AA 기준 (4.5:1 이상)
+- **키보드 네비게이션**: Tab, Enter, Space 키 지원
+- **스크린 리더**: 적절한 ARIA 라벨 및 시맨틱 HTML 사용
+- **포커스 표시**: 명확한 포커스 인디케이터 제공
+## 🚀 시작하기
+
+### 사전 요구사항
+- **Node.js**: 18.0.0 이상 (LTS 버전 권장)
+- **npm**: 9.0.0 이상
+- **Docker**: 24.0.0 이상 (선택사항)
+
+### 로컬 개발 환경 설정
+
+#### 1. 프로젝트 클론 및 설치
+```bash
+# 저장소 클론
+git clone https://github.com/your-org/moba.git
+cd moba
+
+# 의존성 설치
 npm install
-개발 서버 실행: 개발 모드로 애플리케이션을 실행하려면 다음 명령을 사용합니다:
+```
+
+#### 2. 환경 변수 설정
+```bash
+# .env.example을 .env로 복사
+cp .env.example .env
+
+# 필요한 환경 변수 설정
+VITE_APP_TITLE=MOBA
+VITE_APP_DESCRIPTION=Make Ocean Blue Again
+```
+
+#### 3. 개발 서버 실행
+```bash
+# 개발 서버 시작 (HMR 지원)
 npm run dev
-Vite 개발 서버가 실행되며, 터미널에 표시된 로컬 주소 (기본적으로 http://localhost:5173 등)로 브라우저에서 접속하면 됩니다. 이 개발 서버는 HMR(Hot Module Reloading)을 지원하므로, 소스 코드를 수정하면 브라우저가 자동으로 갱신되어 변경 사항을 바로 확인할 수 있습니다.
-환경 설정: 개발 환경에 특화된 설정이 필요한 경우 프로젝트 루트에 .env.development 파일을 두고 필요한 변수를 정의할 수 있습니다. (예: API_BASE_URL 등. 단, 본 프로젝트는 순수 정적 콘텐츠로 API 연동이 없다면 큰 환경변수 없이도 동작합니다.) 중요한 것은, Vite 기반 React 프로젝트에서는 환경변수 이름에 VITE_ 접두사가 붙어야 애플리케이션 코드에서 접근 가능하다는 점입니다. 기본 제공되는 .env.example 파일을 참고하여 자신만의 .env 파일을 설정할 수 있습니다.
-Lint/Format 및 기타 스크립트: 코드 품질 유지를 위해 ESLint 검사나 Prettier 포맷터가 설정되어 있다면, npm run lint 또는 npm run format 등의 스크립트도 제공합니다. 커밋 전에 자동으로 코드 스타일을 정리하고 일관성을 유지하도록 합니다.
-프로덕션 빌드 & 정적 파일 제공
-빌드: 운영 환경용으로 최적화된 정적 파일을 생성하려면 아래 명령을 실행합니다:
-npm run build
-빌드 성공 후 dist/ 디렉토리가 생기고, HTML/CSS/JS 최적화 번들이 이 경로에 생성됩니다.
-정적 파일 미리보기: 빌드 출력물을 로컬에서 확인하려면, Vite에서 제공하는 미리보기 서버를 사용할 수 있습니다:
-npm run preview
-이 명령을 실행하면 빌드된 정적 파일을 간이 웹서버로 서비스하여, 실제 운영 환경과 유사한 방식으로 결과물을 테스트할 수 있습니다 (기본 http://localhost:4173 주소).
-Docker를 통한 컨테이너 실행
-이 프로젝트는 Docker 이미지를 만들어 컨테이너로 실행할 수 있습니다. Docker를 사용하면 로컬 환경에 Node나 각종 툴을 설치하지 않아도 되고, 배포 시에도 웹서버 설정이 포함된 표준화된 환경으로 제공할 수 있는 장점이 있습니다
-docker.com
-. React 같은 프론트엔드 앱을 도커라이징하는 방법은 비교적 간단하며, NGINX와 같은 경량 웹서버 이미지를 활용하는 것이 일반적입니다
-reddit.com
-. 아래는 Docker를 사용하는 방법입니다:
-Docker 이미지 빌드: 우선 Docker가 설치되어 있고 데몬이 실행 중인지 확인합니다. 그런 다음 프로젝트 루트 경로에서 Docker 이미지를 빌드합니다:
+
+# 브라우저에서 http://localhost:5173 접속
+```
+
+### 사용 가능한 스크립트
+
+| 명령어 | 설명 |
+|--------|------|
+| `npm run dev` | 개발 서버 실행 (HMR) |
+| `npm run build` | 프로덕션 빌드 |
+| `npm run preview` | 빌드 결과 미리보기 |
+| `npm run lint` | ESLint 검사 |
+| `npm run lint:fix` | ESLint 자동 수정 |
+| `npm run format` | Prettier 포맷팅 |
+| `npm run type-check` | TypeScript 타입 검사 |
+
+### Docker를 사용한 실행
+
+#### 1. Docker 이미지 빌드
+```bash
+# 프로덕션 이미지 빌드
 docker build -t moba-web .
-이 명령은 현재 디렉토리의 Dockerfile을 참고하여 moba-web이라는 이름의 이미지를 생성합니다. Dockerfile에서는 멀티스테이지 빌드를 사용하여, 1단계에서는 Node 환경에서 npm install과 npm run build를 수행해 정적 파일 번들을 만들고, 2단계에서는 NGINX 등의 웹서버 이미지에 1단계 결과물(dist/)을 복사해 넣는 방식을 취합니다. 이를 통해 최종 이미지에는 실제 서비스에 필요한 정적 파일들과 웹서버만 포함되므로 용량을 최소화하고 보안성을 높입니다.
-컨테이너 실행: 빌드가 완료되면 다음 명령으로 컨테이너를 실행합니다:
-docker run -d -p 8080:80 --name moba-web-container moba-web
-위 명령은 moba-web 이미지를 기반으로 컨테이너를 생성 및 백그라운드 실행하고, 호스트의 포트 8080을 컨테이너 내부의 포트 80에 매핑합니다. 컨테이너 내부의 NGINX 웹서버가 정적 파일을 서비스하므로, 이제 브라우저에서 http://localhost:8080 으로 접속하면 MOBA 웹사이트를 볼 수 있습니다. 필요에 따라 -p 80:80으로 호스트 80포트를 직접 사용할 수도 있고, Docker Compose 등을 이용해 설정을 관리할 수도 있습니다.
-환경변수 및 설정: 정적 사이트이므로 런타임에 필요한 환경변수는 거의 없겠지만, 만약 Google Analytics ID나 일부 설정값을 주입해야 하는 경우 Docker 빌드 시 ARG로 값을 넣거나, 빌드 전에 .env.production에 값을 설정해둘 수 있습니다. 일반적인 상황에서는 Docker 컨테이너 실행만으로 별도 설정 없이 바로 서비스가 가능합니다.
-기타 Docker 관리: docker ps로 실행 중인 컨테이너 확인, docker logs moba-web-container로 로그 확인, docker stop moba-web-container으로 중지, docker rm moba-web-container으로 컨테이너 제거 등을 할 수 있습니다. 이미지를 새로 빌드할 때 기존 컨테이너는 삭제하고 진행하며, 이미지에 버전 태그를 붙여 (moba-web:v1 등) 관리하면 편리합니다.
-참고: Docker를 활용하면 개발 환경부터 배포 환경까지 동일한 환경으로 애플리케이션을 실행할 수 있어, CI/CD에서 일관된 배포 파이프라인을 구축할 수 있습니다
-docker.com
-. 또한 NGINX를 사용해 정적 파일을 서빙하므로 성능이 우수하고, 필요한 경우 NGINX 설정을 통해 gzip 압축이나 캐싱 정책도 적용할 수 있습니다. React 앱의 Docker화에 관한 일반적인 팁으로, 프로덕션 빌드 결과물을 NGINX의 정적 디렉토리에 넣는 방식이 권장되며
-reddit.com
-, 본 프로젝트도 동일한 방법을 사용합니다.
-기여 가이드 및 로컬 개발 팁 🤝
-이 프로젝트는 오픈 소스 커뮤니티와 협력하여 발전해나가길 기대하며, 원활한 협업을 위해 아래와 같은 기여 가이드와 개발 팁을 제공합니다:
-프로젝트 설정 및 브랜치 전략: 저장소를 포크(Fork)하여 사용자의 로컬 환경에 클론한 뒤 작업을 시작하세요. 새로운 기능이나 수정 작업마다 별도의 브랜치를 생성하는 것을 권장합니다 (예: feature/add-membership-section 등). 작업이 완료되면 Pull Request를 통해 변경 사항을 제출하고, 프로젝트 관리자의 코드를 리뷰를 거쳐 병합됩니다. 이때 커밋 메시지는 명확하고 간결하게 작성하며, 가능하다면 영어로 작성해주세요 (예: Add membership benefits section to About page).
-코드 스타일 & 품질: 일관된 코드 스타일 유지를 위해 프로젝트에는 ESLint 규칙과 Prettier 포맷터가 적용되어 있습니다. PR을 보내기 전에 npm run lint를 실행해 모든 린트 오류를 수정하고, 코드 포맷도 자동 정렬해주세요. 코드 리뷰에서는 가독성, 성능, 접근성 등을 중점적으로 다룹니다. 특히 JSX 코드 내에 하드코딩된 문자열이 없는지 (국제화 누락 여부), Tailwind CSS 클래스명이 적절하게 사용되었는지 등을 확인하게 됩니다.
-문서 및 주석: 중요한 함수나 컴포넌트에는 JSDoc 주석이나 설명을 달아 다른 기여자가 이해하기 쉽도록 합니다. 새로운 기능을 추가한 경우 README 또는 위키에 사용법이나 스크린샷을 업데이트해주시면 좋습니다. 문서화의 일부로, 만약 백엔드 API를 사용하는 부분이 생긴다면 해당 API 명세도 README에 간략히 기술해주세요.
-로컬 개발 팁:
-애플리케이션을 실행한 후 언어 변경 기능을 테스트하여 4개 언어별로 레이아웃이나 문구에 이상이 없는지 확인하세요. 번역이 누락되었거나 길이가 달라 레이아웃이 깨지는 부분이 없는지 점검이 필요합니다.
-반응형 UI 점검: Chrome 개발자 도구 등의 디바이스 모드를 활용하여 모바일, 태블릿, 데스크톱 사이즈에서 UI가 적절히 배치되는지 수시로 확인합니다. 특히 메뉴의 경우 모바일에서는 햄버거 메뉴로 동작하는지, 그래프나 이미지가 작은 화면에서도 스크롤 없이 잘 보이는지 등을 중점 점검합니다.
-성능 최적화: Vite 기반으로 빌드된 사이트는 기본적으로 빠르지만, 정적 자산의 크기를 줄이기 위해 이미지를 필요한 최소 해상도로 제공하고, Tailwind CSS의 Purge 기능으로 사용하지 않는 CSS를 제거합니다. 빌드 산출물(dist/ 폴더)의 용량을 확인하고 불필요한 라이브러리가 포함되지 않도록 주기적으로 점검합니다.
-기여 시 유의사항:
-새로운 페이지를 추가하거나 메뉴를 변경하는 커밋을 할 경우, 라우터 설정과 각 언어별 번역 키를 동시에 업데이트해야 합니다
-goddaehee.tistory.com
-. 예를 들어 Schedule 페이지를 추가했다면 App.jsx 또는 라우팅 설정에 해당 경로를 추가하는 것과 함께, locales/ko/translation.json 등 모든 지원 언어의 번역 파일에 해당 페이지 제목 및 내용을 등록해야 합니다.
-새로운 환경변수를 도입하는 경우 (예: GA_TRACKING_ID), 프로젝트의 .env.example 파일에도 그 키를 추가하여 다른 기여자들이 따라 설정할 수 있도록 안내합니다
-goddaehee.tistory.com
-. 또한 Vite 특성상 환경변수 키에 VITE_를 붙이는 것을 잊지 마세요.
-의존성 추가가 필요한 경우 package.json과 package-lock.json(또는 pnpm-lock.yaml 등)을 함께 커밋하고, 가능하면 해당 라이브러리의 목적과 버전을 PR 본문에 설명해주세요.
-Issue 활용: 버그 제보나 기능 제안은 GitHub Issues에 등록해주시기 바랍니다. 이슈를 통해 문제를 먼저 공유하고 합의된 해결책을 구현하면 더욱 효율적으로 협업할 수 있습니다. 특히 다국어 번역 개선 제안이나 디자인 개선 아이디어도 환영합니다.
-테스트: 현재까지는 간단한 정적 사이트라 별도의 테스트 프레임워크(Jest 등)를 사용하고 있지 않지만, 콘텐츠 변화가 프로젝트에 미치는 영향을 쉽게 확인할 수 있도록 Storybook 또는 Cypress 도입을 검토 중입니다. 기여자가 테스트를 추가해주고자 한다면 폴더 구조 및 컨벤션을 논의하여 진행할 수 있습니다.
-이상의 가이드라인을 준수하면서 기여해 주신다면 프로젝트 유지보수와 발전에 큰 도움이 될 것입니다. MOBA 프로젝트에 관심을 가지고 참여해주시는 모든 분들께 감사드리며, 깨끗한 바다를 만들기 위한 여정에 함께 힘을 모아주시길 기대합니다! 🌐🚀
+
+# 개발 이미지 빌드 (선택사항)
+docker build -f Dockerfile.dev -t moba-web:dev .
+```
+
+#### 2. 컨테이너 실행
+```bash
+# 프로덕션 모드 실행
+docker run -d -p 8080:80 --name moba-web moba-web
+
+# 개발 모드 실행 (볼륨 마운트)
+docker run -d -p 5173:5173 -v $(pwd):/app --name moba-web-dev moba-web:dev
+```
+
+#### 3. Docker Compose 사용
+```yaml
+# docker-compose.yml
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+```
+
+```bash
+# Docker Compose로 실행
+docker-compose up -d
+
+# 로그 확인
+docker-compose logs -f web
+```
+
+### Dockerfile 예시
+```dockerfile
+# 멀티스테이지 빌드
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+
+COPY . .
+RUN npm run build
+
+# 프로덕션 이미지
+FROM nginx:alpine
+
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+### 배포 가이드
+
+#### 1. 정적 호스팅 (Vercel, Netlify)
+```bash
+# 빌드
+npm run build
+
+# dist/ 폴더를 호스팅 서비스에 업로드
+```
+
+#### 2. Docker 배포
+```bash
+# 이미지 태그 지정
+docker tag moba-web:latest your-registry/moba-web:v1.0.0
+
+# 레지스트리에 푸시
+docker push your-registry/moba-web:v1.0.0
+
+# 서버에서 실행
+docker pull your-registry/moba-web:v1.0.0
+docker run -d -p 80:80 your-registry/moba-web:v1.0.0
+```
+## 🤝 기여 가이드
+
+### 개발 워크플로우
+
+#### 1. 저장소 포크 및 클론
+```bash
+# 1. GitHub에서 저장소 포크
+# 2. 로컬에 클론
+git clone https://github.com/your-username/moba.git
+cd moba
+
+# 3. 원본 저장소를 upstream으로 추가
+git remote add upstream https://github.com/original-org/moba.git
+```
+
+#### 2. 브랜치 전략
+```bash
+# 메인 브랜치에서 최신 상태로 업데이트
+git checkout main
+git pull upstream main
+
+# 새로운 기능 브랜치 생성
+git checkout -b feature/add-membership-section
+git checkout -b fix/header-responsive-issue
+git checkout -b docs/update-readme
+```
+
+#### 3. 커밋 컨벤션
+```bash
+# 커밋 메시지 형식
+<type>(<scope>): <description>
+
+# 예시
+feat(membership): add membership benefits section
+fix(header): resolve mobile navigation issue
+docs(readme): update installation instructions
+style(button): improve button hover effects
+refactor(i18n): optimize translation loading
+test(components): add unit tests for Button component
+```
+
+### 코드 품질 관리
+
+#### 1. 린팅 및 포맷팅
+```bash
+# 코드 스타일 검사
+npm run lint
+
+# 자동 수정
+npm run lint:fix
+
+# 코드 포맷팅
+npm run format
+
+# 타입 검사 (TypeScript 사용 시)
+npm run type-check
+```
+
+#### 2. ESLint 설정 예시
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: [
+    'eslint:recommended',
+    '@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended'
+  ],
+  rules: {
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'prefer-const': 'error'
+  }
+};
+```
+
+#### 3. Prettier 설정
+```javascript
+// .prettierrc
+{
+  "semi": true,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false
+}
+```
+
+### 개발 팁
+
+#### 1. 다국어 테스트
+```bash
+# 모든 언어로 번역 테스트
+npm run dev
+
+# 브라우저에서 언어 전환 테스트
+# - 한국어 → 영어 → 중국어 → 일본어
+# - 각 언어별 레이아웃 깨짐 확인
+# - 번역 누락 확인
+```
+
+#### 2. 반응형 디자인 테스트
+```bash
+# Chrome DevTools 디바이스 모드에서 테스트
+# - 모바일: 375px, 414px
+# - 태블릿: 768px, 1024px  
+# - 데스크톱: 1280px, 1920px
+```
+
+#### 3. 성능 최적화 체크리스트
+- [ ] 이미지 최적화 (WebP 형식 사용)
+- [ ] 번들 크기 확인 (`npm run build` 후 dist/ 폴더 크기)
+- [ ] 불필요한 라이브러리 제거
+- [ ] Tailwind CSS Purge 설정 확인
+- [ ] Lighthouse 점수 확인
+
+### Pull Request 가이드라인
+
+#### 1. PR 템플릿
+```markdown
+## 변경 사항
+- [ ] 새로운 기능 추가
+- [ ] 버그 수정
+- [ ] 문서 업데이트
+- [ ] 스타일 변경
+- [ ] 리팩토링
+
+## 설명
+변경 사항에 대한 자세한 설명을 작성해주세요.
+
+## 테스트
+- [ ] 로컬에서 테스트 완료
+- [ ] 모든 언어에서 테스트 완료
+- [ ] 반응형 디자인 테스트 완료
+
+## 스크린샷 (UI 변경 시)
+변경 전/후 스크린샷을 첨부해주세요.
+```
+
+#### 2. 리뷰 체크리스트
+- [ ] 코드 스타일 일관성
+- [ ] 하드코딩된 문자열 없음 (i18n 적용)
+- [ ] 접근성 고려사항
+- [ ] 성능 영향 최소화
+- [ ] 문서 업데이트 필요성
+
+### 이슈 관리
+
+#### 1. 버그 리포트
+```markdown
+## 버그 설명
+간단명료한 버그 설명
+
+## 재현 단계
+1. 
+2. 
+3. 
+
+## 예상 결과
+어떤 결과를 기대했는지
+
+## 실제 결과
+실제로 발생한 결과
+
+## 환경 정보
+- OS: 
+- 브라우저: 
+- Node.js 버전: 
+```
+
+#### 2. 기능 제안
+```markdown
+## 기능 설명
+제안하는 기능에 대한 설명
+
+## 사용 사례
+이 기능이 왜 필요한지
+
+## 구현 방안
+구현 방법에 대한 아이디어
+
+## 대안
+다른 해결 방법이 있다면
+```
+
+### 테스트 가이드
+
+#### 1. 수동 테스트 체크리스트
+- [ ] 모든 페이지 정상 로드
+- [ ] 네비게이션 동작 확인
+- [ ] 언어 전환 기능 확인
+- [ ] 반응형 디자인 확인
+- [ ] 접근성 테스트 (키보드 네비게이션)
+- [ ] 성능 테스트 (Lighthouse)
+
+#### 2. 자동화 테스트 (선택사항)
+```bash
+# E2E 테스트 (Cypress)
+npm run test:e2e
+
+# 단위 테스트 (Jest)
+npm run test
+
+# 시각적 회귀 테스트 (Storybook)
+npm run storybook
+```
+
+### 문서화
+
+#### 1. 코드 주석
+```javascript
+/**
+ * 다국어 지원 버튼 컴포넌트
+ * @param {Object} props - 컴포넌트 props
+ * @param {string} props.variant - 버튼 스타일 ('primary' | 'secondary' | 'danger')
+ * @param {string} props.size - 버튼 크기 ('sm' | 'md' | 'lg')
+ * @param {Function} props.onClick - 클릭 이벤트 핸들러
+ * @param {React.ReactNode} props.children - 버튼 내용
+ */
+const Button = ({ variant = 'primary', size = 'md', onClick, children }) => {
+  // 컴포넌트 구현
+};
+```
+
+#### 2. README 업데이트
+- 새로운 기능 추가 시 사용법 문서화
+- API 변경 시 예시 코드 업데이트
+- 설치/실행 방법 변경 시 가이드 업데이트
+
+---
+
+## 📞 문의 및 지원
+
+- **이슈 리포트**: [GitHub Issues](https://github.com/your-org/moba/issues)
+- **기능 제안**: [GitHub Discussions](https://github.com/your-org/moba/discussions)
+- **문서**: [프로젝트 위키](https://github.com/your-org/moba/wiki)
+
+---
+
+**MOBA 프로젝트에 기여해주셔서 감사합니다! 🌊 함께 깨끗한 바다를 만들어가요! 🚀**

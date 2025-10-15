@@ -1,0 +1,67 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "plan": "Plan",
+        "membership": "Membership",
+        "schedule": "Schedule",
+        "contact": "Contact"
+    },
+    "buttons": {
+        "join": "Join Now",
+        "learnMore": "Learn More",
+        "contact": "Contact Us",
+        "donate": "Donate",
+        "volunteer": "Volunteer",
+        "readMore": "Read More",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "close": "Close",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "Successfully completed",
+        "warning": "Warning",
+        "info": "Information",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "all": "All",
+        "none": "None",
+        "yes": "Yes",
+        "no": "No",
+        "ok": "OK",
+        "continue": "Continue",
+        "finish": "Finish",
+        "ariaLabels": {
+            "menuToggle": "Open menu",
+            "languageSelect": "Select language"
+        },
+        "languages": {
+            "korean": "한국어",
+            "english": "English",
+            "chinese": "中文",
+            "japanese": "日本語"
+        }
+    },
+    "footer": {
+        "description": "Environmental protection project to make the ocean clean and blue again",
+        "quickLinks": "Quick Links",
+        "contactInfo": "Contact Information",
+        "followUs": "Follow Us",
+        "newsletter": "Newsletter Subscription",
+        "newsletterDescription": "Get the latest news and event information",
+        "newsletterPlaceholder": "Email address",
+        "newsletterButton": "Subscribe",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "copyright": "© 2024 MOBA. All rights reserved."
+    }
+}

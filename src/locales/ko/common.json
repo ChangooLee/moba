@@ -1,0 +1,67 @@
+{
+    "nav": {
+        "home": "홈",
+        "about": "소개",
+        "plan": "사업계획",
+        "membership": "멤버십",
+        "schedule": "일정",
+        "contact": "문의"
+    },
+    "buttons": {
+        "join": "가입하기",
+        "learnMore": "더 알아보기",
+        "contact": "문의하기",
+        "donate": "후원하기",
+        "volunteer": "자원봉사",
+        "readMore": "자세히 보기",
+        "back": "뒤로가기",
+        "next": "다음",
+        "previous": "이전",
+        "close": "닫기",
+        "submit": "제출",
+        "cancel": "취소",
+        "save": "저장",
+        "edit": "수정",
+        "delete": "삭제"
+    },
+    "common": {
+        "loading": "로딩 중...",
+        "error": "오류가 발생했습니다",
+        "success": "성공적으로 완료되었습니다",
+        "warning": "경고",
+        "info": "정보",
+        "search": "검색",
+        "filter": "필터",
+        "sort": "정렬",
+        "all": "전체",
+        "none": "없음",
+        "yes": "예",
+        "no": "아니오",
+        "ok": "확인",
+        "continue": "계속",
+        "finish": "완료",
+        "ariaLabels": {
+            "menuToggle": "메뉴 열기",
+            "languageSelect": "언어 선택"
+        },
+        "languages": {
+            "korean": "한국어",
+            "english": "English",
+            "chinese": "中文",
+            "japanese": "日本語"
+        }
+    },
+    "footer": {
+        "description": "해양을 다시 깨끗하고 푸르게 만들기 위한 환경 보호 프로젝트",
+        "quickLinks": "빠른 링크",
+        "contactInfo": "연락처 정보",
+        "followUs": "팔로우하기",
+        "newsletter": "뉴스레터 구독",
+        "newsletterDescription": "최신 소식과 이벤트 정보를 받아보세요",
+        "newsletterPlaceholder": "이메일 주소",
+        "newsletterButton": "구독",
+        "privacy": "개인정보처리방침",
+        "terms": "이용약관",
+        "copyright": "© 2024 MOBA. All rights reserved."
+    }
+}

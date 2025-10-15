@@ -1,0 +1,424 @@
+{
+    "home": {
+        "title": "海を再び青く",
+        "subtitle": "Make Ocean Blue Again",
+        "description": "海洋保護のためのグローバルプロジェクトに参加してください。一緒に清潔な海を作りましょう。",
+        "hero": {
+            "title": "海の未来は私たちの手にあります",
+            "subtitle": "MOBAと一緒に海洋環境を保護し、持続可能な未来を作りましょう",
+            "cta": "今すぐ参加"
+        },
+        "stats": {
+            "title": "私たちの成果",
+            "members": "アクティブメンバー",
+            "projects": "進行中プロジェクト",
+            "countries": "参加国",
+            "impact": "環境への影響"
+        },
+        "features": {
+            "title": "MOBAの主要活動",
+            "subtitle": "海洋保護のための様々なプログラムと活動を提供しています",
+            "conservation": {
+                "title": "海洋保護",
+                "description": "海洋生態系を保護するための研究と保護活動"
+            },
+            "education": {
+                "title": "環境教育",
+                "description": "海洋環境の重要性についての教育プログラム"
+            },
+            "community": {
+                "title": "コミュニティ",
+                "description": "世界中の環境保護活動家とのネットワーキング"
+            },
+            "action": {
+                "title": "アクション",
+                "description": "実際の海洋清掃と保護活動への参加"
+            }
+        }
+    },
+    "about": {
+        "title": "MOBAについて",
+        "description": "MOBAは、海を再び清潔で青くするために世界中の人々と協力する環境保護プロジェクトです。",
+        "mission": {
+            "title": "私たちのミッション",
+            "description": "海を再び清潔で青くし、持続可能な未来を作ることです。"
+        },
+        "vision": {
+            "title": "私たちのビジョン",
+            "description": "すべての人が海洋環境の重要性を認識し、その保護に参加する世界です。"
+        },
+        "values": {
+            "title": "コアバリュー",
+            "sustainability": "持続可能性",
+            "collaboration": "協力",
+            "innovation": "革新",
+            "transparency": "透明性"
+        },
+        "team": {
+            "title": "私たちのチーム",
+            "subtitle": "海洋保護に献身する専門家たち",
+            "members": {
+                "kimBada": {
+                    "name": "キム・バダ",
+                    "position": "海洋生物学者",
+                    "description": "海洋生態系研究と保護の専門家"
+                },
+                "parkGreen": {
+                    "name": "パク・グリーン",
+                    "position": "環境活動家",
+                    "description": "環境保護とコミュニティ構築に情熱を注ぐ"
+                },
+                "leeBlue": {
+                    "name": "イ・ブルー",
+                    "position": "海洋技術者",
+                    "description": "海洋技術とイノベーションの専門家"
+                },
+                "choiOcean": {
+                    "name": "チェ・オーシャン",
+                    "position": "海洋デザイナー",
+                    "description": "海洋環境意識に焦点を当てたクリエイティブデザイナー"
+                }
+            }
+        },
+        "cta": {
+            "title": "MOBAに参加しましょう",
+            "description": "海洋環境保護にご興味がおありでしたら、今すぐご参加ください。"
+        }
+    },
+    "plan": {
+        "title": "事業計画",
+        "overview": {
+            "title": "プロジェクト概要",
+            "description": "MOBAの段階的な事業計画と戦略をご紹介します。",
+            "detailedDescription": "MOBAプロジェクトは、体系的な4段階アプローチを通じて海洋環境保護の目標を達成します。各段階は前の段階の成果を基に構築され、持続可能な海洋保護エコシステムを作ることが私たちの最終目標です。"
+        },
+        "phases": {
+            "title": "段階別計画",
+            "phase1": {
+                "title": "第1段階：意識向上",
+                "description": "海洋環境の重要性についての意識向上と教育"
+            },
+            "phase2": {
+                "title": "第2段階：コミュニティ構築",
+                "description": "世界中の環境保護活動家コミュニティの構築"
+            },
+            "phase3": {
+                "title": "第3段階：行動",
+                "description": "実際の海洋清掃と保護活動の実行"
+            },
+            "phase4": {
+                "title": "第4段階：拡張",
+                "description": "プロジェクトの拡張と持続可能な発展"
+            }
+        },
+        "expectedResults": {
+            "title": "期待される成果",
+            "subtitle": "各段階で達成できる具体的なパフォーマンス指標。",
+            "community": {
+                "title": "コミュニティ構築",
+                "description": "2025年までに世界中で50,000人のアクティブメンバーを確保"
+            },
+            "cleanup": {
+                "title": "海洋清掃",
+                "description": "100トン以上の海洋廃棄物を収集・リサイクル"
+            },
+            "education": {
+                "title": "教育拡大",
+                "description": "1,000以上の教育機関とのパートナーシップ構築"
+            }
+        }
+    },
+    "membership": {
+        "title": "メンバーシップ",
+        "description": "MOBAメンバーになって海洋保護に参加してください",
+        "benefits": {
+            "title": "メンバー特典",
+            "education": "専用教育資料へのアクセス",
+            "events": "メンバー限定イベントへの参加",
+            "network": "グローバルネットワーキング機会",
+            "resources": "プロジェクトリソースサポート"
+        },
+        "plans": {
+            "basic": {
+                "title": "ベーシックメンバー",
+                "price": "無料",
+                "features": [
+                    "ニュースレター購読",
+                    "基本教育資料",
+                    "コミュニティ参加"
+                ]
+            },
+            "premium": {
+                "title": "プレミアムメンバー",
+                "price": "月額$9.99",
+                "features": [
+                    "すべてのベーシック特典",
+                    "高度な教育資料",
+                    "メンバー限定イベント",
+                    "プロジェクトリソースサポート"
+                ]
+            },
+            "corporate": {
+                "title": "コーポレートメンバー",
+                "price": "お問い合わせ",
+                "features": [
+                    "すべてのプレミアム特典",
+                    "カスタム企業プログラム",
+                    "ブランディング機会",
+                    "専任サポート"
+                ]
+            }
+        }
+    },
+    "schedule": {
+        "title": "スケジュール",
+        "description": "MOBAの主要なイベントとプロジェクトタイムラインをご確認ください",
+        "upcoming": {
+            "title": "今後のイベント",
+            "subtitle": "MOBAの主要なイベントと活動スケジュールをご確認ください"
+        },
+        "events": {
+            "globalCampaign": {
+                "title": "グローバル海洋清掃キャンペーン",
+                "date": "2024年3月15日",
+                "time": "午前10:00 - 午後6:00",
+                "location": "全世界",
+                "description": "海洋ゴミの清掃と海洋汚染への意識向上を目的としたグローバルキャンペーン"
+            },
+            "workshop": {
+                "title": "海洋保護ワークショップ",
+                "date": "2024年4月20日",
+                "time": "午後2:00 - 午後5:00",
+                "location": "韓国ソウル",
+                "description": "海洋保護技術とベストプラクティスに関する教育ワークショップ"
+            },
+            "conference": {
+                "title": "国際海洋保護会議",
+                "date": "2024年5月10-12日",
+                "time": "午前9:00 - 午後6:00",
+                "location": "日本東京",
+                "description": "海洋保護のための専門家と活動家を集めた国際会議"
+            },
+            "seminar": {
+                "title": "持続可能な海洋管理セミナー",
+                "date": "2024年6月5日",
+                "time": "午後1:00 - 午後4:00",
+                "location": "オンライン",
+                "description": "持続可能な海洋管理と政策開発に関するオンラインセミナー"
+            }
+        },
+        "timeline": {
+            "title": "プロジェクトタイムライン",
+            "subtitle": "MOBAプロジェクトの主要なマイルストーンと成果"
+        },
+        "milestones": {
+            "launch": {
+                "title": "プロジェクト開始",
+                "description": "MOBAプロジェクトの正式開始と初期チーム編成",
+                "activities": [
+                    "プロジェクトチーム編成",
+                    "初期資金確保",
+                    "ウェブサイトとプラットフォーム開発"
+                ]
+            },
+            "expansion": {
+                "title": "グローバル展開",
+                "description": "プロジェクト活動を複数の国と地域に拡大",
+                "activities": [
+                    "国際パートナーシップ確立",
+                    "地域支部開設",
+                    "多言語プラットフォーム開始"
+                ]
+            },
+            "community": {
+                "title": "コミュニティ構築",
+                "description": "強力なグローバル環境活動家コミュニティの構築",
+                "activities": [
+                    "メンバー募集キャンペーン",
+                    "コミュニティイベント開催",
+                    "ソーシャルメディア存在感拡大"
+                ]
+            },
+            "impact": {
+                "title": "測定可能な影響",
+                "description": "集合的行動を通じた重要な環境影響の達成",
+                "activities": [
+                    "海洋清掃活動完了",
+                    "教育プログラム提供",
+                    "政策提言提出"
+                ]
+            }
+        },
+        "status": {
+            "completed": "完了",
+            "inProgress": "進行中",
+            "upcoming": "予定",
+            "planned": "計画中",
+            "scheduled": "スケジュール済み"
+        },
+        "achievements": {
+            "title": "主要な成果"
+        },
+        "cta": {
+            "title": "イベントに参加しませんか？",
+            "description": "MOBAメンバーになると、すべてのイベントに優先的に参加できます。",
+            "membershipButton": "メンバーシップ登録",
+            "notificationButton": "イベント通知を受け取る"
+        }
+    },
+    "membership": {
+        "title": "メンバーシップ",
+        "description": "MOBAに参加して海洋保護に参加しましょう",
+        "benefits": {
+            "title": "メンバー特典",
+            "subtitle": "MOBAメンバーとして、様々な特典をお楽しみいただけます。",
+            "education": {
+                "title": "教育資料へのアクセス",
+                "description": "専門家が作成した海洋環境教育資料への無制限アクセス"
+            },
+            "events": {
+                "title": "メンバー限定イベント",
+                "description": "メンバー限定ワークショップ、セミナー、ネットワーキングイベントへの参加"
+            },
+            "network": {
+                "title": "グローバルネットワーキング機会",
+                "description": "世界中の環境保護活動家とのネットワーキング機会"
+            },
+            "resources": {
+                "title": "プロジェクトリソースサポート",
+                "description": "プロジェクト実行のための資金とリソースサポート"
+            }
+        },
+        "plans": {
+            "title": "メンバーシッププラン",
+            "subtitle": "あなたに合ったメンバーシップを選択してください。",
+            "basic": {
+                "title": "ベーシックメンバー",
+                "price": "無料",
+                "description": "MOBAコミュニティに参加して基本特典を享受",
+                "buttonText": "無料登録",
+                "features": [
+                    "ニュースレター購読",
+                    "基本教育資料",
+                    "コミュニティ参加"
+                ]
+            },
+            "premium": {
+                "title": "プレミアムメンバー",
+                "price": "月額$9.99",
+                "description": "すべての基本特典に加えて追加のプレミアム特典",
+                "buttonText": "プレミアム登録",
+                "features": [
+                    "すべての基本特典",
+                    "高度な教育資料",
+                    "メンバー限定イベント",
+                    "プロジェクトリソースサポート"
+                ]
+            },
+            "corporate": {
+                "title": "コーポレートメンバー",
+                "price": "お問い合わせ",
+                "description": "企業向けカスタマイズプログラムとブランディング機会",
+                "buttonText": "お問い合わせ",
+                "features": [
+                    "すべてのプレミアム特典",
+                    "カスタムコーポレートプログラム",
+                    "ブランディング機会",
+                    "専任サポート"
+                ]
+            }
+        },
+        "testimonials": {
+            "title": "メンバーテストモニアル",
+            "subtitle": "MOBAメンバーの生の声をお聞きください",
+            "members": {
+                "kimBada": {
+                    "name": "キム・バダ",
+                    "role": "海洋生物学者",
+                    "content": "MOBAメンバーシップを通じて、世界中の同僚とコミュニケーションを取り、より大きなインパクトを作ることができました。"
+                },
+                "parkGreen": {
+                    "name": "パク・グリーン",
+                    "role": "環境活動家",
+                    "content": "教育資料とネットワーキング機会は本当に役に立ちます。強くお勧めします！"
+                },
+                "leeBlue": {
+                    "name": "イ・ブルー",
+                    "role": "海洋技術者",
+                    "content": "プレミアムメンバーシップのプロジェクトサポートのおかげで、アイデアを現実にすることができました。"
+                }
+            }
+        },
+        "cta": {
+            "title": "MOBAメンバーになりましょう",
+            "subtitle": "MOBAに参加して海洋保護に参加し、世界中の同僚と一緒により良い未来を作りましょう。"
+        }
+    },
+    "contact": {
+        "title": "お問い合わせ",
+        "description": "MOBAについてご質問がある場合や参加をご希望の場合は、いつでもお気軽にお問い合わせください",
+        "form": {
+            "title": "メッセージをお送りください",
+            "name": "お名前",
+            "email": "メールアドレス",
+            "subject": "件名",
+            "message": "メッセージ",
+            "send": "メッセージを送信",
+            "successMessage": "メッセージが正常に送信されました！"
+        },
+        "contactMethods": {
+            "email": {
+                "title": "メールアドレス",
+                "value": "contact@moba.org",
+                "description": "一般的なお問い合わせと情報リクエスト"
+            },
+            "phone": {
+                "title": "電話",
+                "value": "+82-2-1234-5678",
+                "description": "月曜日から金曜日、午前9時 - 午後6時"
+            },
+            "address": {
+                "title": "住所",
+                "value": "韓国ソウル海洋街123",
+                "description": "MOBA本社（訪問前にご連絡ください）"
+            },
+            "kakao": {
+                "title": "KakaoTalk",
+                "value": "@moba_official",
+                "description": "リアルタイム相談とお問い合わせ"
+            }
+        },
+        "info": {
+            "title": "連絡先情報",
+            "email": "メールアドレス",
+            "phone": "電話番号",
+            "address": "住所"
+        },
+        "faq": {
+            "title": "よくある質問",
+            "subtitle": "MOBAに関するよくある質問",
+            "questions": {
+                "membership": {
+                    "question": "MOBAメンバーになるにはどうすればいいですか？",
+                    "answer": "当ウェブサイトで無料登録するか、追加特典のためのプレミアムメンバーシッププランを選択できます。"
+                },
+                "activities": {
+                    "question": "どのような活動に参加できますか？",
+                    "answer": "ビーチクリーンアップ、教育プログラム、コミュニティイベントなど、様々な活動に参加できます。"
+                },
+                "corporate": {
+                    "question": "企業パートナーシッププログラムはありますか？",
+                    "answer": "はい、カスタマイズされた特典とブランディング機会を提供する企業メンバーシッププログラムがあります。"
+                },
+                "funding": {
+                    "question": "MOBAはどのように資金調達していますか？",
+                    "answer": "MOBAは会員費、寄付、企業パートナーシップを通じて資金調達しています。"
+                }
+            }
+        },
+        "cta": {
+            "title": "お問い合わせ",
+            "subtitle": "詳細を見る"
+        }
+    }
+}

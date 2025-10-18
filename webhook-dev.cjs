@@ -3,7 +3,7 @@ const { exec } = require('child_process');
 const crypto = require('crypto');
 const http = require('http');
 
-const PORT = 8086; // 개발용 webhook 포트
+const PORT = 8084; // webhook 포트 (기존 웹 포트와 공유)
 const SECRET = 'moba-dev-webhook-secret-2024'; // 개발용 webhook secret
 
 // 개발용 배포 스크립트 실행 함수

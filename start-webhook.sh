@@ -24,7 +24,7 @@ echo "   - Events: Just the push event"
 echo ""
 
 # 백그라운드에서 webhook 서버 실행
-nohup node webhook-server.js > webhook.log 2>&1 &
+nohup node webhook-server.cjs > webhook.log 2>&1 &
 
 # PID 저장
 echo $! > webhook.pid

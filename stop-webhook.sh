@@ -17,6 +17,6 @@ if [ -f webhook.pid ]; then
 else
     echo "⚠️ PID 파일을 찾을 수 없습니다"
     echo "🔍 실행 중인 webhook 프로세스를 찾는 중..."
-    pkill -f webhook-server.js
+    pkill -f webhook-server.cjs
     echo "✅ Webhook 프로세스가 종료되었습니다"
 fi

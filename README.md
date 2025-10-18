@@ -254,4 +254,4 @@ MOBA와 함께 시작하세요. 기업은 검증 가능한 ESG 성과를 얻고,
 [![Email](https://img.shields.io/badge/Email-Contact-blue?style=for-the-badge&logo=gmail)](mailto:make.ocean.blue.again.project@gmail.com)
 
 </div><- Test webhook automatic deployment Webhook 자동 배포 테스트: Sat Oct 18 10:16:16 PM KST 2025 -->
-<- Test webhook automatic deployment GitHub Actions 테스트: Sat Oct 18 10:35:26 PM KST 2025 -->
+<!-- Webhook 자동 배포 테스트: Sat Oct 18 22:42:00 PM KST 2025 -->

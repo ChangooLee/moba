@@ -253,4 +253,4 @@ MOBA와 함께 시작하세요. 기업은 검증 가능한 ESG 성과를 얻고,
 [![GitHub](https://img.shields.io/badge/GitHub-ChangooLee-black?style=for-the-badge&logo=github)](https://github.com/ChangooLee)
 [![Email](https://img.shields.io/badge/Email-Contact-blue?style=for-the-badge&logo=gmail)](mailto:make.ocean.blue.again.project@gmail.com)
 
-</div>
+</div><- Test webhook automatic deployment Webhook 자동 배포 테스트: Sat Oct 18 10:16:16 PM KST 2025 -->

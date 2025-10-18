@@ -380,18 +380,18 @@
         "contactMethods": {
             "email": {
                 "title": "이메일",
-                "value": "contact@moba.org",
+                "value": "make.ocean.blue.again.project@gmail.com",
                 "description": "일반 문의 및 정보 요청"
             },
             "phone": {
                 "title": "전화",
-                "value": "+82-2-1234-5678",
+                "value": "010-7586-9029",
                 "description": "평일 오전 9시 - 오후 6시"
             },
-            "address": {
-                "title": "주소",
-                "value": "서울특별시 강남구 테헤란로 123",
-                "description": "MOBA 본사 (방문 시 사전 연락 요청)"
+            "website": {
+                "title": "웹사이트",
+                "value": "www.moba-project.org",
+                "description": "공식 웹사이트 (진행 중)"
             },
             "kakao": {
                 "title": "카카오톡",

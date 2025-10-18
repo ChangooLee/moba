@@ -369,22 +369,22 @@
         "contactMethods": {
             "email": {
                 "title": "メールアドレス",
-                "value": "contact@moba.org",
+                "value": "make.ocean.blue.again.project@gmail.com",
                 "description": "一般的なお問い合わせと情報リクエスト"
             },
             "phone": {
                 "title": "電話",
-                "value": "+82-2-1234-5678",
+                "value": "010-7586-9029",
                 "description": "月曜日から金曜日、午前9時 - 午後6時"
             },
-            "address": {
-                "title": "住所",
-                "value": "韓国ソウル海洋街123",
-                "description": "MOBA本社（訪問前にご連絡ください）"
+            "website": {
+                "title": "ウェブサイト",
+                "value": "www.moba-project.org",
+                "description": "公式ウェブサイト（進行中）"
             },
             "kakao": {
                 "title": "KakaoTalk",
-                "value": "@moba_official",
+                "value": "@MOBA",
                 "description": "リアルタイム相談とお問い合わせ"
             }
         },

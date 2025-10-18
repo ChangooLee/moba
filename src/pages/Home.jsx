@@ -61,7 +61,15 @@ const Home = () => {
             <section className="bg-gradient-to-br from-padi-blue to-padi-dark-blue text-white section-padding">
                 <Container>
                     <div className="text-center">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+                        {/* 로고 */}
+                        <div className="mb-8 animate-fade-in">
+                            <img 
+                                src="/images/logo-512-transparent.png" 
+                                alt="MOBA Logo" 
+                                className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] mx-auto object-contain drop-shadow-lg"
+                            />
+                        </div>
+                        <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in font-heading">
                             {t('pages.home.hero.title')}
                         </h1>
                         <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-slide-up">
@@ -83,7 +91,7 @@ const Home = () => {
             <section className="py-16 bg-gray-50">
                 <Container>
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">
                             {t('pages.home.stats.title')}
                         </h2>
                     </div>
@@ -106,7 +114,7 @@ const Home = () => {
             <section className="section-padding">
                 <Container>
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">
                             {t('pages.home.features.title')}
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">

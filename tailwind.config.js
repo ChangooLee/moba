@@ -14,6 +14,8 @@ export default {
             },
             fontFamily: {
                 sans: ['Noto Sans', 'system-ui', 'sans-serif'],
+                heading: ['Montserrat', 'Noto Sans', 'system-ui', 'sans-serif'],
+                display: ['Montserrat', 'Noto Sans', 'system-ui', 'sans-serif'],
             },
             spacing: {
                 '18': '4.5rem',

@@ -411,22 +411,22 @@
         "contactMethods": {
             "email": {
                 "title": "Email",
-                "value": "contact@moba.org",
+                "value": "make.ocean.blue.again.project@gmail.com",
                 "description": "General inquiries and information requests"
             },
             "phone": {
                 "title": "Phone",
-                "value": "+82-2-1234-5678",
+                "value": "010-7586-9029",
                 "description": "Monday to Friday, 9 AM - 6 PM"
             },
-            "address": {
-                "title": "Address",
-                "value": "123 Ocean Street, Seoul, Korea",
-                "description": "MOBA Headquarters (Please call before visiting)"
+            "website": {
+                "title": "Website",
+                "value": "www.moba-project.org",
+                "description": "Official website (in progress)"
             },
             "kakao": {
                 "title": "KakaoTalk",
-                "value": "@moba_official",
+                "value": "@MOBA",
                 "description": "Real-time consultation and inquiries"
             }
         },

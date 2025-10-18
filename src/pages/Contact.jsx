@@ -49,11 +49,11 @@ const Contact = () => {
                     description: t('pages.contact.contactMethods.phone.description')
                 },
                 {
-                    icon: '📍',
-                    key: 'address',
-                    title: t('pages.contact.contactMethods.address.title'),
-                    value: t('pages.contact.contactMethods.address.value'),
-                    description: t('pages.contact.contactMethods.address.description')
+                    icon: '🌐',
+                    key: 'website',
+                    title: t('pages.contact.contactMethods.website.title'),
+                    value: t('pages.contact.contactMethods.website.value'),
+                    description: t('pages.contact.contactMethods.website.description')
                 },
                 {
                     icon: '💬',

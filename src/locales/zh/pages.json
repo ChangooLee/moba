@@ -382,22 +382,22 @@
         "contactMethods": {
             "email": {
                 "title": "邮箱",
-                "value": "contact@moba.org",
+                "value": "make.ocean.blue.again.project@gmail.com",
                 "description": "一般咨询和信息请求"
             },
             "phone": {
                 "title": "电话",
-                "value": "+82-2-1234-5678",
+                "value": "010-7586-9029",
                 "description": "周一至周五，上午9点 - 下午6点"
             },
-            "address": {
-                "title": "地址",
-                "value": "韩国首尔海洋街123号",
-                "description": "MOBA总部（访问前请先致电）"
+            "website": {
+                "title": "网站",
+                "value": "www.moba-project.org",
+                "description": "官方网站（进行中）"
             },
             "kakao": {
                 "title": "KakaoTalk",
-                "value": "@moba_official",
+                "value": "@MOBA",
                 "description": "实时咨询和询问"
             }
         },

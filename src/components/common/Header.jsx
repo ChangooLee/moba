@@ -24,11 +24,15 @@ const Header = () => {
             <div className="container-custom">
                 <div className="flex justify-between items-center h-16">
                     {/* 로고 */}
-                    <Link to="/" className="flex items-center space-x-2">
-                        <div className="w-8 h-8 bg-padi-blue rounded-full flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">M</span>
+                    <Link to="/" className="flex items-center space-x-3">
+                        <img 
+                            src="/images/logo-64-transparent.png" 
+                            alt="MOBA Logo" 
+                            className="w-10 h-10 object-contain"
+                        />
+                        <div className="flex flex-col">
+                            <span className="text-lg font-bold text-gray-900 font-heading">Make Ocean Blue Again</span>
                         </div>
-                        <span className="text-xl font-bold text-gray-900">MOBA</span>
                     </Link>
 
                     {/* 데스크톱 네비게이션 */}

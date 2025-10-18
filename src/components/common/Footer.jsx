@@ -70,9 +70,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">{t('common.footer.contactInfo')}</h3>
                         <div className="space-y-2 text-sm text-gray-300">
-                            <p>📧 info@moba.org</p>
-                            <p>📞 +82-2-1234-5678</p>
-                            <p>📍 서울특별시 강남구 테헤란로 123</p>
+                            <p>📧 make.ocean.blue.again.project@gmail.com</p>
+                            <p>📞 010-7586-9029</p>
+                            <p>🌐 www.moba-project.org</p>
                         </div>
                     </div>
 

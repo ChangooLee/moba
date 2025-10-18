@@ -10,12 +10,18 @@ const SECRET = 'moba-webhook-secret-2024'; // GitHub webhook secret과 동일해
 function deploy() {
     console.log('🚀 Webhook 감지! 자동 배포 시작...');
     
-    exec('cd /home/lchangoo/Workspace/moba && ./deploy.sh', (error, stdout, stderr) => {
+    exec('cd /home/lchangoo/Workspace/moba && git pull origin main && ./deploy.sh', 
+         { timeout: 300000 }, // 5분 타임아웃
+         (error, stdout, stderr) => {
         if (error) {
-            console.error('❌ 배포 실패:', error);
+            console.error('❌ 배포 실패:', error.message);
+            console.error('❌ 오류 코드:', error.code);
+            console.error('❌ 표준 출력:', stdout);
+            console.error('❌ 표준 오류:', stderr);
             return;
         }
-        console.log('✅ 배포 성공:', stdout);
+        console.log('✅ 배포 성공!');
+        console.log('📋 표준 출력:', stdout);
         if (stderr) console.log('⚠️ 경고:', stderr);
     });
 }

@@ -56,18 +56,7 @@ function verifySignature(payload, signature, secret) {
 
 // Express 앱 설정
 const app = express();
-app.use(express.json({
-    verify: (req, res, buf, encoding) => {
-        if (req.headers['x-hub-signature-256']) {
-            const signature = req.headers['x-hub-signature-256'];
-            const hmac = crypto.createHmac('sha256', DEV_SECRET);
-            const digest = 'sha256=' + hmac.update(buf).digest('hex');
-            if (signature !== digest) {
-                throw new Error('Invalid signature');
-            }
-        }
-    }
-}));
+app.use(express.json());
 
 // 모든 요청 로깅
 app.use((req, res, next) => {
@@ -83,15 +72,9 @@ app.post('/webhook', (req, res) => {
     const payload = JSON.stringify(req.body);
 
     if (event === 'push' && ref === 'refs/heads/develop') {
-        // 서명 검증 (테스트를 위해 임시 비활성화)
-        // if (!signature || verifySignature(payload, signature, DEV_SECRET)) {
-            console.log('📬 GitHub develop push 이벤트 감지됨');
-            fs.appendFileSync(LOG_FILE, `[${new Date().toISOString()}] 📬 GitHub develop push 이벤트 감지됨\n`);
-            deploy();
-        // } else {
-        //     console.log('⚠️ develop 브랜치 서명 검증 실패');
-        //     fs.appendFileSync(LOG_FILE, `[${new Date().toISOString()}] ⚠️ develop 브랜치 서명 검증 실패\n`);
-        // }
+        console.log('📬 GitHub develop push 이벤트 감지됨');
+        fs.appendFileSync(LOG_FILE, `[${new Date().toISOString()}] 📬 GitHub develop push 이벤트 감지됨\n`);
+        deploy();
     } else {
         console.log('⚠️ develop 브랜치가 아닌 push 이벤트 무시 또는 비 push 이벤트 무시:', ref || event);
         fs.appendFileSync(LOG_FILE, `[${new Date().toISOString()}] ⚠️ develop 브랜치가 아닌 push 이벤트 무시 또는 비 push 이벤트 무시: ${ref || event}\n`);

@@ -4,35 +4,35 @@
         "subtitle": "Make Ocean Blue Again",
         "description": "해양 환경 보호를 위한 글로벌 프로젝트에 참여하세요. 함께 깨끗한 바다를 만들어가겠습니다.",
         "hero": {
-            "title": "바다의 미래는 우리 손에 있습니다",
-            "subtitle": "MOBA와 함께 해양 환경을 보호하고 지속가능한 미래를 만들어가세요",
+            "title": "교육 → 수중 정화 → 데이터 업로드 → ESG 보고",
+            "subtitle": "MOBA는 해양오염의 심각성을 알리고, 실제 해양정화 활동을 통해 기업의 ESG 가치를 실현하는 혁신적인 플랫폼입니다",
             "cta": "지금 참여하기"
         },
         "stats": {
-            "title": "우리의 성과",
-            "members": "활성 멤버",
-            "projects": "진행 중인 프로젝트",
+            "title": "MOBA의 임팩트",
+            "members": "기업 멤버",
+            "projects": "정화 프로젝트",
             "countries": "참여 국가",
-            "impact": "환경적 영향"
+            "impact": "ESG 가치 실현"
         },
         "features": {
-            "title": "MOBA의 주요 활동",
-            "subtitle": "해양 환경 보호를 위한 다양한 프로그램과 활동을 제공합니다",
+            "title": "MOBA의 핵심 가치",
+            "subtitle": "기업의 ESG 경영과 해양보호를 연결하는 혁신적인 플랫폼",
             "conservation": {
-                "title": "해양 보전",
-                "description": "해양 생태계 보호를 위한 연구 및 보전 활동"
+                "title": "E (환경) 가치",
+                "description": "실제 해양정화 활동을 통한 환경적 임팩트 창출"
             },
             "education": {
-                "title": "환경 교육",
-                "description": "해양 환경의 중요성에 대한 교육 프로그램"
+                "title": "S (사회) 가치",
+                "description": "직원 교육과 사회적 책임 실현을 통한 브랜드 가치 향상"
             },
             "community": {
-                "title": "커뮤니티",
-                "description": "전 세계 환경 보호 활동가들과의 네트워킹"
+                "title": "G (지배구조) 가치",
+                "description": "투명한 데이터 관리와 국제 표준 연계를 통한 거버넌스 강화"
             },
             "action": {
-                "title": "실천 활동",
-                "description": "실제 해양 정화 및 보호 활동 참여"
+                "title": "실제 행동",
+                "description": "PADI AWARE Foundation과의 파트너십을 통한 국제적 해양보호 활동"
             }
         }
     },

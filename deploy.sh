@@ -29,7 +29,7 @@ echo "✅ 배포 상태 확인 중..."
 sleep 3
 
 # 서비스 상태 확인
-if docker ps | grep -q "moba-web-1.*Up"; then
+if docker ps | grep -q "moba-web-1"; then
     echo "🎉 MOBA Hot Swap 배포 성공!"
     echo "🌐 서비스 URL: http://125.240.175.68:8084/"
     

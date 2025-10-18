@@ -3,7 +3,7 @@ const { exec } = require('child_process');
 const crypto = require('crypto');
 const http = require('http');
 
-const PORT = 8084; // 8084 포트 전용
+const PORT = 8085; // 8085 포트 전용
 const SECRET = 'moba-dev-webhook-secret-2024'; // develop 브랜치용 secret
 
 // develop 브랜치 배포 함수

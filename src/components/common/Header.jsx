@@ -30,6 +30,9 @@ const Header = () => {
                             alt="MOBA Logo" 
                             className="w-10 h-10 object-contain"
                         />
+                        <div className="flex flex-col">
+                            <span className="text-lg font-bold text-gray-900 font-heading">Make Ocean Blue Again</span>
+                        </div>
                     </Link>
 
                     {/* 데스크톱 네비게이션 */}

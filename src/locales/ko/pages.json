@@ -71,6 +71,26 @@
             "title": "MOBA 팀",
             "subtitle": "PADI AWARE Foundation과 협력하는 해양보호 전문가들",
             "members": {
+                "kimBada": {
+                    "name": "김바다",
+                    "position": "해양 생물학자",
+                    "description": "해양 생태계 연구 및 보전 전문가"
+                },
+                "parkGreen": {
+                    "name": "박그린",
+                    "position": "환경 활동가",
+                    "description": "환경 보호와 커뮤니티 구축에 열정적인 활동가"
+                },
+                "leeBlue": {
+                    "name": "이청해",
+                    "position": "해양 기술자",
+                    "description": "해양 기술과 혁신 전문가"
+                },
+                "choiOcean": {
+                    "name": "최오션",
+                    "position": "해양 디자이너",
+                    "description": "해양 환경 인식에 중점을 둔 크리에이티브 디자이너"
+                },
                 "padiPartnership": {
                     "name": "PADI AWARE Foundation",
                     "position": "국제 파트너",

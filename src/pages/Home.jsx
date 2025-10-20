@@ -58,7 +58,7 @@ const Home = () => {
     return (
         <div className="min-h-screen">
             {/* 히어로 섹션 */}
-            <section className="bg-white text-gray-900 section-padding">
+            <section className="bg-gradient-to-br from-padi-blue to-padi-dark-blue text-white section-padding">
                 <Container>
                     <div className="text-center">
                         {/* 로고 */}
@@ -72,14 +72,14 @@ const Home = () => {
                         <h1 className="text-2xl md:text-4xl font-bold mb-6 animate-fade-in font-heading">
                             {t('pages.home.hero.title')}
                         </h1>
-                        <p className="text-xl md:text-2xl mb-8 text-gray-600 animate-slide-up">
+                        <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-slide-up">
                             {t('pages.home.hero.subtitle')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg" className="bg-padi-blue text-white hover:bg-padi-dark-blue">
+                            <Button size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
                                 {t('pages.home.hero.cta')}
                             </Button>
-                            <Button variant="outline" size="lg" className="border-padi-blue text-padi-blue hover:bg-padi-blue hover:text-white">
+                            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">
                                 {t('common.buttons.learnMore')}
                             </Button>
                         </div>

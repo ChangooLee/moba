@@ -40,32 +40,32 @@ const About = () => {
 
             setTeam([
                 {
-                    key: 'kimBada',
-                    name: t('pages.about.team.members.kimBada.name'),
-                    position: t('pages.about.team.members.kimBada.position'),
-                    description: t('pages.about.team.members.kimBada.description'),
-                    image: '👨‍🔬'
+                    key: 'padiPartnership',
+                    name: t('pages.about.team.members.padiPartnership.name'),
+                    position: t('pages.about.team.members.padiPartnership.position'),
+                    description: t('pages.about.team.members.padiPartnership.description'),
+                    image: '🌊'
                 },
                 {
-                    key: 'parkGreen',
-                    name: t('pages.about.team.members.parkGreen.name'),
-                    position: t('pages.about.team.members.parkGreen.position'),
-                    description: t('pages.about.team.members.parkGreen.description'),
-                    image: '👩‍💼'
+                    key: 'mobaCore',
+                    name: t('pages.about.team.members.mobaCore.name'),
+                    position: t('pages.about.team.members.mobaCore.position'),
+                    description: t('pages.about.team.members.mobaCore.description'),
+                    image: '🚀'
                 },
                 {
-                    key: 'leeBlue',
-                    name: t('pages.about.team.members.leeBlue.name'),
-                    position: t('pages.about.team.members.leeBlue.position'),
-                    description: t('pages.about.team.members.leeBlue.description'),
-                    image: '👨‍💻'
+                    key: 'corporateMembers',
+                    name: t('pages.about.team.members.corporateMembers.name'),
+                    position: t('pages.about.team.members.corporateMembers.position'),
+                    description: t('pages.about.team.members.corporateMembers.description'),
+                    image: '🏢'
                 },
                 {
-                    key: 'choiOcean',
-                    name: t('pages.about.team.members.choiOcean.name'),
-                    position: t('pages.about.team.members.choiOcean.position'),
-                    description: t('pages.about.team.members.choiOcean.description'),
-                    image: '👩‍🎨'
+                    key: 'instructorNetwork',
+                    name: t('pages.about.team.members.instructorNetwork.name'),
+                    position: t('pages.about.team.members.instructorNetwork.position'),
+                    description: t('pages.about.team.members.instructorNetwork.description'),
+                    image: '👨‍🏫'
                 }
             ]);
         }

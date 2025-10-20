@@ -41,31 +41,31 @@ const Membership = () => {
 
             setPlans([
                 {
-                    name: t('pages.membership.plans.basic.title'),
-                    price: t('pages.membership.plans.basic.price'),
-                    description: t('pages.membership.plans.basic.description'),
-                    features: t('pages.membership.plans.basic.features', { returnObjects: true }) || [],
-                    popular: false,
-                    buttonText: t('pages.membership.plans.basic.buttonText'),
-                    buttonVariant: 'outline'
-                },
-                {
-                    name: t('pages.membership.plans.premium.title'),
-                    price: t('pages.membership.plans.premium.price'),
-                    description: t('pages.membership.plans.premium.description'),
-                    features: t('pages.membership.plans.premium.features', { returnObjects: true }) || [],
-                    popular: true,
-                    buttonText: t('pages.membership.plans.premium.buttonText'),
-                    buttonVariant: 'primary'
-                },
-                {
                     name: t('pages.membership.plans.corporate.title'),
                     price: t('pages.membership.plans.corporate.price'),
                     description: t('pages.membership.plans.corporate.description'),
                     features: t('pages.membership.plans.corporate.features', { returnObjects: true }) || [],
-                    popular: false,
+                    popular: true,
                     buttonText: t('pages.membership.plans.corporate.buttonText'),
-                    buttonVariant: 'secondary'
+                    buttonVariant: 'primary'
+                },
+                {
+                    name: t('pages.membership.plans.instructor.title'),
+                    price: t('pages.membership.plans.instructor.price'),
+                    description: t('pages.membership.plans.instructor.description'),
+                    features: t('pages.membership.plans.instructor.features', { returnObjects: true }) || [],
+                    popular: false,
+                    buttonText: t('pages.membership.plans.instructor.buttonText'),
+                    buttonVariant: 'outline'
+                },
+                {
+                    name: t('pages.membership.plans.diver.title'),
+                    price: t('pages.membership.plans.diver.price'),
+                    description: t('pages.membership.plans.diver.description'),
+                    features: t('pages.membership.plans.diver.features', { returnObjects: true }) || [],
+                    popular: false,
+                    buttonText: t('pages.membership.plans.diver.buttonText'),
+                    buttonVariant: 'outline'
                 }
             ]);
 

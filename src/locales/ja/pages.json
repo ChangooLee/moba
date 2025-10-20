@@ -2,18 +2,18 @@
     "home": {
         "title": "海を再び青く",
         "subtitle": "Make Ocean Blue Again",
-        "description": "海洋保護のためのグローバルプロジェクトに参加してください。一緒に清潔な海を作りましょう。",
+        "description": "企業のESG経営と海洋保護を結ぶ革新的なプラットフォームです。従業員のダイビング資格取得と四半期ごとの水中清掃活動を通じて、検証可能なESG成果を創出します。",
         "hero": {
-            "title": "海の未来は私たちの手にあります",
-            "subtitle": "MOBAと一緒に海洋環境を保護し、持続可能な未来を作りましょう",
-            "cta": "今すぐ参加"
+            "title": "企業ESGと海洋保護の出会い",
+            "subtitle": "MOBAはPADI AWARE Foundationとのパートナーシップにより、企業が従業員のダイビング資格取得を支援し、四半期1回の水中清掃（プロービング）活動を定期化できるESG実行プラットフォームです",
+            "cta": "ESG海洋清掃を始める"
         },
         "stats": {
-            "title": "私たちの成果",
-            "members": "アクティブメンバー",
-            "projects": "進行中プロジェクト",
-            "countries": "参加国",
-            "impact": "環境への影響"
+            "title": "MOBAの成果",
+            "members": "企業パートナー",
+            "projects": "水中清掃活動",
+            "countries": "グローバルネットワーク",
+            "impact": "ESG価値創出"
         },
         "features": {
             "title": "MOBAの主要活動",

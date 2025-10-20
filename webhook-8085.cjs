@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 8085; // webhook 포트
+const PORT = 443; // webhook 포트
 const DEV_SECRET = 'moba-dev-webhook-secret-2024'; // 개발용 webhook secret
 const PROJECT_ROOT = '/home/lchangoo/Workspace/moba';
 const DEPLOY_SCRIPT = path.join(PROJECT_ROOT, 'deploy.sh');

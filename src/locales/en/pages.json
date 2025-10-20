@@ -2,50 +2,50 @@
     "home": {
         "title": "Make Ocean Blue Again",
         "subtitle": "Make Ocean Blue Again",
-        "description": "Join our global project for ocean conservation. Together, we'll create a cleaner ocean.",
+        "description": "An innovative platform that connects corporate ESG management with ocean conservation. We help companies achieve verifiable ESG outcomes through employee diving certification and quarterly underwater cleanup activities.",
         "hero": {
-            "title": "Education → Underwater Cleanup → Data Upload → ESG Reporting",
-            "subtitle": "MOBA is an innovative platform that raises awareness about marine pollution and enables companies to realize ESG values through actual marine cleanup activities",
-            "cta": "Join Now"
+            "title": "Where Corporate ESG Meets Ocean Conservation",
+            "subtitle": "MOBA is an ESG execution platform that partners with PADI AWARE Foundation to help companies support employee diving certification and regularize quarterly underwater cleanup (ploving) activities for verifiable ESG outcomes",
+            "cta": "Start ESG Ocean Cleanup"
         },
         "stats": {
-            "title": "Our Impact",
-            "members": "Active Members",
-            "projects": "Ongoing Projects",
-            "countries": "Participating Countries",
-            "impact": "Environmental Impact"
+            "title": "MOBA's Achievements",
+            "members": "Corporate Partners",
+            "projects": "Underwater Cleanup Activities",
+            "countries": "Global Network",
+            "impact": "ESG Value Creation"
         },
         "features": {
-            "title": "MOBA's Key Activities",
-            "subtitle": "We provide various programs and activities for ocean conservation",
+            "title": "MOBA's Core Values",
+            "subtitle": "Realizing sustainable corporate ocean conservation through E-S-G three pillars",
             "conservation": {
-                "title": "Marine Conservation",
-                "description": "Research and conservation activities to protect marine ecosystems"
+                "title": "E (Environmental) Value",
+                "description": "Actual marine waste removal and environmental impact creation through quarterly underwater cleanup activities"
             },
             "education": {
-                "title": "Environmental Education",
-                "description": "Educational programs about the importance of marine environments"
+                "title": "S (Social) Value",
+                "description": "Organizational culture enhancement and local community cooperation network building through employee participation"
             },
             "community": {
-                "title": "Community",
-                "description": "Networking with environmental activists worldwide"
+                "title": "G (Governance) Value",
+                "description": "Transparent data management and verification system through international standard linkage with PADI AWARE Foundation"
             },
             "action": {
-                "title": "Action",
-                "description": "Participation in actual ocean cleanup and protection activities"
+                "title": "Execution Platform",
+                "description": "Standard process of Education (Certification) → Ploving (Underwater Cleanup) → Data Upload → ESG Reporting"
             }
         }
     },
     "about": {
         "title": "About MOBA",
-        "description": "MOBA is an environmental protection project that works together with people around the world to make the ocean clean and blue again.",
+        "description": "MOBA is an innovative platform that connects corporate ESG management with ocean conservation through partnership with PADI AWARE Foundation. We help companies achieve verifiable ESG outcomes through employee diving certification and quarterly underwater cleanup activities.",
         "mission": {
             "title": "Our Mission",
-            "description": "To make the ocean clean and blue again, creating a sustainable future."
+            "description": "To help companies support employee diving certification and regularize quarterly underwater cleanup (ploving) activities to create verifiable ESG outcomes."
         },
         "vision": {
             "title": "Our Vision",
-            "description": "A world where everyone recognizes the importance of marine environments and participates in their protection."
+            "description": "A world where all companies participate in ESG value realization through ocean conservation and work together to protect sustainable marine ecosystems."
         },
         "values": {
             "title": "Core Values",
@@ -309,64 +309,71 @@
         }
     },
     "membership": {
-        "title": "Membership",
-        "description": "Join MOBA and participate in ocean conservation",
+        "title": "Membership Information",
+        "description": "MOBA operates a three-tier membership system where companies, instructors, and divers each have their own roles and responsibilities to perform regular ocean cleanup activities (4 times a year) and jointly create measurable ESG outcomes.",
         "benefits": {
-            "title": "Member Benefits",
-            "subtitle": "As a MOBA member, you can enjoy various benefits.",
+            "title": "Membership Benefits",
+            "subtitle": "Optimized benefits for each membership type.",
             "education": {
-                "title": "Access to Educational Materials",
-                "description": "Unlimited access to expert-created marine environment educational materials"
+                "title": "Professional Education & Certification",
+                "description": "Diving certification support and professional education programs linked with PADI AWARE Foundation"
             },
             "events": {
-                "title": "Member-Only Events",
-                "description": "Participate in member-only workshops, seminars, and networking events"
+                "title": "Regular Underwater Cleanup Activities",
+                "description": "Participation in regular underwater cleanup activities (4 times a year, quarterly) and ocean conservation practice in a safe environment"
             },
             "network": {
-                "title": "Global Networking Opportunities",
-                "description": "Networking opportunities with environmental activists worldwide"
+                "title": "Global Partnership Network",
+                "description": "Participation in global ocean conservation network through international partnership with PADI AWARE Foundation"
             },
             "resources": {
-                "title": "Project Resource Support",
-                "description": "Funding and resource support for project implementation"
+                "title": "ESG Data & Reporting",
+                "description": "Provision of verifiable ESG performance data through Dive Against Debris® international database linkage"
             }
         },
         "plans": {
-            "title": "Membership Plans",
-            "subtitle": "Choose the membership that's right for you.",
-            "basic": {
-                "title": "Basic Member",
-                "price": "Free",
-                "description": "Join the MOBA community and enjoy basic benefits",
-                "buttonText": "Sign Up Free",
-                "features": [
-                    "Newsletter Subscription",
-                    "Basic Educational Materials",
-                    "Community Participation"
-                ]
-            },
-            "premium": {
-                "title": "Premium Member",
-                "price": "$9.99/month",
-                "description": "All basic benefits plus additional premium benefits",
-                "buttonText": "Sign Up Premium",
-                "features": [
-                    "All Basic Benefits",
-                    "Advanced Educational Materials",
-                    "Member-Only Events",
-                    "Project Resource Support"
-                ]
-            },
+            "title": "Membership Types",
+            "subtitle": "Ocean conservation ecosystem consisting of three-tier membership: Corporate, Instructor, and Diver",
             "corporate": {
-                "title": "Corporate Member",
+                "title": "Corporate Membership",
                 "price": "Contact",
-                "description": "Customized programs and branding opportunities for businesses",
+                "description": "ESG-focused corporate-tailored ocean conservation program",
                 "buttonText": "Contact Us",
                 "features": [
-                    "All Premium Benefits",
-                    "Custom Corporate Programs",
-                    "Branding Opportunities",
-                    "Dedicated Support"
+                    "Priority for 4 annual regular underwater cleanup activities",
+                    "Employee diving certification support",
+                    "PADI AWARE Foundation international database linkage",
+                    "ESG report data provision",
+                    "Joint branding and promotional support",
+                    "Dedicated operations team assignment"
+                ]
+            },
+            "instructor": {
+                "title": "Instructor Membership",
+                "price": "Contact",
+                "description": "Activity leadership, safety management, and education quality assurance",
+                "buttonText": "Contact Us",
+                "features": [
+                    "Priority assignment for Lead and Sub-Lead positions",
+                    "Leader compensation and incentives",
+                    "Equipment and insurance support",
+                    "Regular update training provision",
+                    "Safety management specialized training",
+                    "Data standard training"
+                ]
+            },
+            "diver": {
+                "title": "Diver Membership",
+                "price": "Contact",
+                "description": "Participation and citizen science-focused individual membership",
+                "buttonText": "Contact Us",
+                "features": [
+                    "Activity priority application rights",
+                    "Education/certification discount benefits",
+                    "Point and level system",
+                    "Right to participate 2+ times annually",
+                    "Activity log and data management",
+                    "Local partner collaboration opportunities"
                 ]
             }
         },

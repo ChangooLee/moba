@@ -196,10 +196,10 @@ const About = () => {
                             {t('pages.about.cta.description')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
+                            <Button size="lg">
                                 {t('common.buttons.join')}
                             </Button>
-                            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">
+                            <Button variant="outline" size="lg">
                                 {t('common.buttons.contact')}
                             </Button>
                         </div>

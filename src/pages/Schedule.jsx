@@ -2,6 +2,7 @@ import React, { useMemo, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Container from '../components/layout/Container';
 import Card from '../components/ui/Card';
+import Button from '../components/ui/Button';
 
 const Schedule = () => {
     const { t, ready } = useTranslation();
@@ -286,12 +287,12 @@ const Schedule = () => {
                             {t('pages.schedule.cta.description')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-white text-padi-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+                            <Button size="lg">
                                 {t('pages.schedule.cta.membershipButton')}
-                            </button>
-                            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-padi-blue transition-colors duration-200">
+                            </Button>
+                            <Button variant="outline" size="lg">
                                 {t('pages.schedule.cta.notificationButton')}
-                            </button>
+                            </Button>
                         </div>
                     </Card>
                 </Container>

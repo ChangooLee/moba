@@ -63,9 +63,9 @@ const Home = () => {
                     <div className="text-center">
                         {/* 로고 */}
                         <div className="mb-8 animate-fade-in">
-                            <img 
-                                src="/images/logo-512-transparent.png" 
-                                alt="MOBA Logo" 
+                            <img
+                                src="/images/logo-512-transparent.png"
+                                alt="MOBA Logo"
                                 className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] mx-auto object-contain drop-shadow-lg"
                             />
                         </div>
@@ -76,7 +76,7 @@ const Home = () => {
                             {t('pages.home.hero.subtitle')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
+                            <Button size="lg">
                                 {t('pages.home.hero.cta')}
                             </Button>
                             <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">

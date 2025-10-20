@@ -16,13 +16,14 @@ git pull origin develop
 echo "🔨 프론트엔드 빌드 중..."
 npm run build
 
-# 빌드된 파일을 Docker 컨테이너로 복사
-echo "🔄 빌드된 파일을 컨테이너로 복사 중..."
-docker cp dist/. moba-web-1:/usr/share/nginx/html/
+# Docker 컨테이너 재시작 (443 포트 사용)
+echo "🔄 Docker 컨테이너 재시작 중..."
+docker-compose down
+docker-compose up -d --build
 
-# Nginx 설정 리로드 (컨테이너 재시작 없이)
-echo "🌐 Nginx 설정 리로드 중..."
-docker exec moba-web-1 nginx -s reload
+# 배포 상태 확인
+echo "✅ 배포 상태 확인 중..."
+sleep 5
 
 # 배포 상태 확인
 echo "✅ 배포 상태 확인 중..."

@@ -358,6 +358,37 @@
         "achievements": {
             "title": "Key Achievements"
         },
+        "pastEvents": {
+            "title": "Past Activities",
+            "subtitle": "Records of ocean cleanup activities with MOBA",
+            "pohang20250920": {
+                "id": "pohang-20250920",
+                "title": "Bubbly 6th Sea Cleanup Joint Ocean Cleanup Activity",
+                "host": "Bubbly",
+                "participants": ["Bubbly", "MOBA", "L&F", "Green Foundation Korea"],
+                "date": "September 20, 2025",
+                "time": "10:00 ~ 13:00",
+                "location": "Guryongso, Daedongbae-ri, Homigot-myeon, Pohang-si, Gyeongbuk (UNESCO Global Geopark)",
+                "attendees": 52,
+                "description": "International Coastal Cleanup Day (ICC Day) linked ocean cleanup activity",
+                "results": {
+                    "totalVolume": "Approx. 3,100L",
+                    "categories": [
+                        { "name": "Fishing waste", "percentage": "70%", "details": "Fishing floats, lures, fishing lines, ghost nets, etc." },
+                        { "name": "Household waste", "percentage": "30%", "details": "Beverage bottles, cigarette butts, glass fragments, etc." }
+                    ]
+                },
+                "notes": "Changed from ploving to plogging due to weather conditions",
+                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "images": [
+                    "/images/20250920_pohang/1761035795110.jpg",
+                    "/images/20250920_pohang/1761035808196.jpg",
+                    "/images/20250920_pohang/1761035808451.jpg",
+                    "/images/20250920_pohang/1761035808525.jpg",
+                    "/images/20250920_pohang/1761035808556.jpg"
+                ]
+            }
+        },
         "cta": {
             "title": "Want to participate in events?",
             "description": "Become a MOBA member to get priority access to all events.",

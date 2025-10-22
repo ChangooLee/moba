@@ -163,6 +163,17 @@
                     "GRI 306, SDG 14, ISO 14001 linkage",
                     "Annual MOBA performance report"
                 ]
+            },
+            "phase5": {
+                "title": "Phase 5: Visualization Project",
+                "description": "Transform collection outcomes into local cultural assets",
+                "activities": [
+                    "Create murals, sculptures, and boat paintings using collected debris",
+                    "Co-create with local artists, youth, and fishers",
+                    "Display cleanup data on-site via signage and QR codes",
+                    "Publish annual ESG Art Report",
+                    "Preserve as permanent local cultural assets"
+                ]
             }
         },
         "status": {

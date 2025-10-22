@@ -5,7 +5,7 @@
         "description": "连接企业ESG管理与海洋保护的创新平台。通过员工潜水资格认证和季度性水下清洁活动，创造可验证的ESG成果。",
         "hero": {
             "title": "企业ESG与海洋保护的相遇",
-            "subtitle": "MOBA与PADI AWARE Foundation合作，帮助企业支持员工潜水资格认证，并定期开展季度性水下清洁（浮潜）活动，实现可验证的ESG成果",
+            "subtitle": "MOBA是一个让企业与员工将海洋清洁常态化，并将结果转化为可验证数据以映射到ESG指标的综合执行项目",
             "cta": "开始ESG海洋清洁"
         },
         "stats": {
@@ -502,20 +502,32 @@
             "subtitle": "关于MOBA的常见问题",
             "questions": {
                 "membership": {
-                    "question": "如何成为MOBA会员？",
-                    "answer": "您可以在我们的网站上免费注册，或选择高级会员计划以获得额外福利。"
+                    "question": "没有资格证也能开始吗？",
+                    "answer": "可以。我们支持培训后的国际资格认证。"
                 },
                 "activities": {
-                    "question": "我可以参加哪些活动？",
-                    "answer": "您可以参加各种活动，包括海滩清理、教育项目和社区活动。"
+                    "question": "安全如何保障？",
+                    "answer": "我们采用指导员指导、伙伴潜水、检查清单和专业保险。"
                 },
                 "corporate": {
-                    "question": "你们有企业合作计划吗？",
-                    "answer": "是的，我们提供企业会员计划，具有定制福利和品牌机会。"
+                    "question": "在什么深度工作？",
+                    "answer": "通常在2-10米范围内进行。"
                 },
                 "funding": {
-                    "question": "MOBA是如何获得资金的？",
-                    "answer": "MOBA通过会员费、捐款和企业合作获得资金。"
+                    "question": "数据记录在哪里？",
+                    "answer": "上传到Dive Against Debris®等外部数据库。"
+                },
+                "diving": {
+                    "question": "与福利相关吗？",
+                    "answer": "通过资格认证体验休闲和志愿服务。"
+                },
+                "waste": {
+                    "question": "收集物如何处理？",
+                    "answer": "与地方政府和专门机构合作进行合法处理和回收。"
+                },
+                "visualization": {
+                    "question": "可视化项目是必需的吗？",
+                    "answer": "这是可选活动。将环境成果扩展为社会价值的有效方法。"
                 }
             }
         },

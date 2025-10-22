@@ -5,7 +5,7 @@
         "description": "An innovative platform that connects corporate ESG management with ocean conservation. We help companies achieve verifiable ESG outcomes through employee diving certification and quarterly underwater cleanup activities.",
         "hero": {
             "title": "Where Corporate ESG Meets Ocean Conservation",
-            "subtitle": "MOBA is an ESG execution platform that partners with PADI AWARE Foundation to help companies support employee diving certification and regularize quarterly underwater cleanup (ploving) activities for verifiable ESG outcomes",
+            "subtitle": "MOBA is an integrated execution program that enables companies and employees to regularize ocean cleanup and convert the results into verifiable data that map to ESG indicators",
             "cta": "Start ESG Ocean Cleanup"
         },
         "stats": {
@@ -505,20 +505,32 @@
             "subtitle": "Common questions about MOBA",
             "questions": {
                 "membership": {
-                    "question": "How do I become a MOBA member?",
-                    "answer": "You can sign up for free on our website or choose a premium membership plan for additional benefits."
+                    "question": "Can I start without certification?",
+                    "answer": "Yes. We support international certification after training."
                 },
                 "activities": {
-                    "question": "What activities can I participate in?",
-                    "answer": "You can participate in various activities including beach cleanups, educational programs, and community events."
+                    "question": "How is safety guaranteed?",
+                    "answer": "We apply instructor guidance, buddy diving, checklists, and professional insurance."
                 },
                 "corporate": {
-                    "question": "Do you have corporate partnership programs?",
-                    "answer": "Yes, we offer corporate membership programs with customized benefits and branding opportunities."
+                    "question": "What depth do you work at?",
+                    "answer": "Usually 2-10m range."
                 },
                 "funding": {
-                    "question": "How is MOBA funded?",
-                    "answer": "MOBA is funded through membership fees, donations, and corporate partnerships."
+                    "question": "Where is data recorded?",
+                    "answer": "Uploaded to external DBs like Dive Against Debris®."
+                },
+                "diving": {
+                    "question": "Is it connected to welfare?",
+                    "answer": "Experience leisure and volunteer work through certification."
+                },
+                "waste": {
+                    "question": "How is collected waste processed?",
+                    "answer": "Legal processing and recycling through cooperation with local authorities and specialized institutions."
+                },
+                "visualization": {
+                    "question": "Is the visualization project mandatory?",
+                    "answer": "It's optional. An effective way to expand environmental performance into social value."
                 }
             }
         },

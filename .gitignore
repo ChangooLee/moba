@@ -85,3 +85,7 @@ jspm_packages/
 tmp/
 temp/
 
+# Images - keep directory structure but ignore files
+public/images/20250920_pohang/*
+!public/images/20250920_pohang/
+

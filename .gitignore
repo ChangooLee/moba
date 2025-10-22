@@ -85,7 +85,5 @@ jspm_packages/
 tmp/
 temp/
 
-# Images - ignore files in subdirectories but keep images and directories
-!public/images/*/*
-public/images/*
+
 

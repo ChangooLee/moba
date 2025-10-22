@@ -64,7 +64,7 @@ const Home = () => {
                         {/* 로고 */}
                         <div className="mb-8 animate-fade-in">
                             <img
-                                src="/images/logo-512-transparent.png"
+                                src="/images/logo-512-transparent.png?v=20241022"
                                 alt="MOBA Logo"
                                 className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] mx-auto object-contain drop-shadow-lg"
                             />

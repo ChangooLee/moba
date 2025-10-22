@@ -26,7 +26,7 @@ const Header = () => {
                     {/* 로고 */}
                     <Link to="/" className="flex items-center space-x-3">
                         <img 
-                            src="/images/logo-64-transparent.png" 
+                            src="/images/logo-64-transparent.png?v=20241022" 
                             alt="MOBA Logo" 
                             className="w-10 h-10 object-contain"
                         />

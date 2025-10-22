@@ -15,6 +15,36 @@ const Schedule = () => {
             console.log('Setting schedule data...');
             setUpcomingEvents([
                 {
+                    key: 'padiPartnership',
+                    title: t('pages.schedule.events.padiPartnership.title'),
+                    date: t('pages.schedule.events.padiPartnership.date'),
+                    time: t('pages.schedule.events.padiPartnership.time'),
+                    location: t('pages.schedule.events.padiPartnership.location'),
+                    description: t('pages.schedule.events.padiPartnership.description'),
+                    type: 'conference',
+                    status: 'completed'
+                },
+                {
+                    key: 'platformLaunch',
+                    title: t('pages.schedule.events.platformLaunch.title'),
+                    date: t('pages.schedule.events.platformLaunch.date'),
+                    time: t('pages.schedule.events.platformLaunch.time'),
+                    location: t('pages.schedule.events.platformLaunch.location'),
+                    description: t('pages.schedule.events.platformLaunch.description'),
+                    type: 'campaign',
+                    status: 'completed'
+                },
+                {
+                    key: 'corporateOnboarding',
+                    title: t('pages.schedule.events.corporateOnboarding.title'),
+                    date: t('pages.schedule.events.corporateOnboarding.date'),
+                    time: t('pages.schedule.events.corporateOnboarding.time'),
+                    location: t('pages.schedule.events.corporateOnboarding.location'),
+                    description: t('pages.schedule.events.corporateOnboarding.description'),
+                    type: 'workshop',
+                    status: 'in-progress'
+                },
+                {
                     key: 'globalCampaign',
                     title: t('pages.schedule.events.globalCampaign.title'),
                     date: t('pages.schedule.events.globalCampaign.date'),
@@ -22,6 +52,16 @@ const Schedule = () => {
                     location: t('pages.schedule.events.globalCampaign.location'),
                     description: t('pages.schedule.events.globalCampaign.description'),
                     type: 'campaign',
+                    status: 'upcoming'
+                },
+                {
+                    key: 'esgReporting',
+                    title: t('pages.schedule.events.esgReporting.title'),
+                    date: t('pages.schedule.events.esgReporting.date'),
+                    time: t('pages.schedule.events.esgReporting.time'),
+                    location: t('pages.schedule.events.esgReporting.location'),
+                    description: t('pages.schedule.events.esgReporting.description'),
+                    type: 'seminar',
                     status: 'upcoming'
                 },
                 {

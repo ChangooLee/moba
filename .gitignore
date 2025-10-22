@@ -85,8 +85,7 @@ jspm_packages/
 tmp/
 temp/
 
-# Image storage - mounted to Docker volume
-# Keep directories but ignore files
-public/images/*
-!public/images/*/
+# Images - ignore files in subdirectories but keep images and directories
+public/images/*/*
+!public/images/
 

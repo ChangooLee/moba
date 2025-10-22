@@ -85,3 +85,6 @@ jspm_packages/
 tmp/
 temp/
 
+# Image storage - mounted to Docker volume
+public/images/
+

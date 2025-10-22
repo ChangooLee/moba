@@ -362,6 +362,37 @@
         "achievements": {
             "title": "主要成就"
         },
+        "pastEvents": {
+            "title": "过往活动",
+            "subtitle": "与MOBA一起进行的海洋清理活动记录",
+            "pohang20250920": {
+                "id": "pohang-20250920",
+                "title": "Bubbly第6次海洋清理联合海洋清理活动",
+                "host": "Bubbly",
+                "participants": ["Bubbly", "MOBA", "L&F", "环境财团"],
+                "date": "2025年9月20日",
+                "time": "10:00 ~ 13:00",
+                "location": "庆尚北道浦项市虎尾串面大东培里九龙沼（联合国教科文组织世界地质公园）",
+                "attendees": 52,
+                "description": "国际海岸清理日（ICC Day）联动海洋清理活动",
+                "results": {
+                    "totalVolume": "约3,100L",
+                    "categories": [
+                        { "name": "渔业垃圾", "percentage": "70%", "details": "浮标、鱼饵、鱼线、废网等" },
+                        { "name": "生活垃圾", "percentage": "30%", "details": "饮料瓶、烟蒂、玻璃碎片等" }
+                    ]
+                },
+                "notes": "因天气恶劣从潜水清理改为陆地清理",
+                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "images": [
+                    "/images/20250920_pohang/1761035795110.jpg",
+                    "/images/20250920_pohang/1761035808196.jpg",
+                    "/images/20250920_pohang/1761035808451.jpg",
+                    "/images/20250920_pohang/1761035808525.jpg",
+                    "/images/20250920_pohang/1761035808556.jpg"
+                ]
+            }
+        },
         "cta": {
             "title": "想参与活动吗？",
             "description": "成为MOBA会员，优先参与所有活动。",

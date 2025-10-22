@@ -433,6 +433,37 @@
             "planned": "계획됨",
             "scheduled": "예정"
         },
+        "pastEvents": {
+            "title": "지난 활동",
+            "subtitle": "MOBA가 함께한 해양정화 활동 기록",
+            "pohang20250920": {
+                "id": "pohang-20250920",
+                "title": "버블리 6회 바다쓰담 연합 해양정화활동",
+                "host": "버블리 (Bubbly)",
+                "participants": ["버블리", "MOBA", "L&F", "환경재단"],
+                "date": "2025년 9월 20일",
+                "time": "10:00 ~ 13:00",
+                "location": "경북 포항시 호미곶면 대동배리 구룡소 (유네스코 세계지질공원)",
+                "attendees": 52,
+                "description": "국제 연안정화의 날(ICC Day) 연계 해양정화 활동",
+                "results": {
+                    "totalVolume": "약 3,100L",
+                    "categories": [
+                        { "name": "낚시 쓰레기", "percentage": "70%", "details": "찌, 루어, 낚시줄, 폐그물 등" },
+                        { "name": "생활폐기물", "percentage": "30%", "details": "음료병, 담배꽁초, 유리조각 등" }
+                    ]
+                },
+                "notes": "기상악화로 플로빙에서 플로깅으로 전환",
+                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "images": [
+                    "/images/20250920_pohang/1761035795110.jpg",
+                    "/images/20250920_pohang/1761035808196.jpg",
+                    "/images/20250920_pohang/1761035808451.jpg",
+                    "/images/20250920_pohang/1761035808525.jpg",
+                    "/images/20250920_pohang/1761035808556.jpg"
+                ]
+            }
+        },
         "cta": {
             "title": "이벤트에 참여하고 싶으신가요?",
             "description": "MOBA 멤버가 되시면 모든 이벤트에 우선 참여할 수 있습니다.",

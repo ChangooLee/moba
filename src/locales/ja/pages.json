@@ -349,6 +349,37 @@
         "achievements": {
             "title": "主要な成果"
         },
+        "pastEvents": {
+            "title": "過去の活動",
+            "subtitle": "MOBAと一緒に行った海洋清掃活動の記録",
+            "pohang20250920": {
+                "id": "pohang-20250920",
+                "title": "バブリー6回海清掃連合海洋清掃活動",
+                "host": "バブリー (Bubbly)",
+                "participants": ["バブリー", "MOBA", "L&F", "環境財団"],
+                "date": "2025年9月20日",
+                "time": "10:00 ~ 13:00",
+                "location": "慶尚北道浦項市虎尾串面大東培里九龍沼（ユネスコ世界ジオパーク）",
+                "attendees": 52,
+                "description": "国際海岸清掃デー（ICC Day）連携海洋清掃活動",
+                "results": {
+                    "totalVolume": "約3,100L",
+                    "categories": [
+                        { "name": "釣りごみ", "percentage": "70%", "details": "ウキ、ルアー、釣り糸、廃網など" },
+                        { "name": "生活廃棄物", "percentage": "30%", "details": "飲料ボトル、タバコの吸い殻、ガラス片など" }
+                    ]
+                },
+                "notes": "天候悪化によりプラビングからプラギングに変更",
+                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "images": [
+                    "/images/20250920_pohang/1761035795110.jpg",
+                    "/images/20250920_pohang/1761035808196.jpg",
+                    "/images/20250920_pohang/1761035808451.jpg",
+                    "/images/20250920_pohang/1761035808525.jpg",
+                    "/images/20250920_pohang/1761035808556.jpg"
+                ]
+            }
+        },
         "cta": {
             "title": "イベントに参加しませんか？",
             "description": "MOBAメンバーになると、すべてのイベントに優先的に参加できます。",

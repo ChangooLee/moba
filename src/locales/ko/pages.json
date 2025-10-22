@@ -427,6 +427,9 @@
             "description": "MOBA 멤버가 되시면 모든 이벤트에 우선 참여할 수 있습니다.",
             "membershipButton": "멤버십 가입하기",
             "notificationButton": "이벤트 알림 받기"
+        },
+        "achievements": {
+            "title": "주요 성과"
         }
     },
     "contact": {

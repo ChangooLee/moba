@@ -86,5 +86,7 @@ tmp/
 temp/
 
 # Image storage - mounted to Docker volume
-public/images/
+# Keep directories but ignore files
+public/images/*
+!public/images/*/
 

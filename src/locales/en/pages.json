@@ -9,11 +9,11 @@
             "cta": "Start ESG Ocean Cleanup"
         },
         "stats": {
-            "title": "MOBA's Achievements",
-            "members": "Corporate Partners",
-            "projects": "Underwater Cleanup Activities",
-            "countries": "Global Network",
-            "impact": "ESG Value Creation"
+            "title": "MOBA Performance",
+            "members": "Pilot Companies Recruiting",
+            "projects": "4 Annual Regular Activities",
+            "countries": "South Sea·East Sea·Jeju",
+            "impact": "PADI AWARE Partner"
         },
         "features": {
             "title": "MOBA's Core Values",
@@ -41,7 +41,21 @@
         "description": "MOBA is an innovative platform that connects corporate ESG management with ocean conservation through partnership with PADI AWARE Foundation. We help companies achieve verifiable ESG outcomes through employee diving certification and quarterly underwater cleanup activities.",
         "mission": {
             "title": "Our Mission",
-            "description": "To help companies support employee diving certification and regularize quarterly underwater cleanup (ploving) activities to create verifiable ESG outcomes."
+            "description": "MOBA is an integrated execution program that enables companies and employees to regularize ocean cleanup and convert the results into verifiable data that map to ESG indicators."
+        },
+        "visualization": {
+            "title": "Impact Communication: Post-Collection Visualization",
+            "description": "Expand social impact through the flow of Collect → Collaborate → Visualize → Share.",
+            "subtitle": "Turn cleanup outcomes into local cultural assets",
+            "process": {
+                "title": "Visualization Process",
+                "items": [
+                    { "title": "Murals & Sculptures", "description": "Create public art using collected debris" },
+                    { "title": "Boat Painting", "description": "Eco-friendly paint for local boats" },
+                    { "title": "QR Code Linking", "description": "Display cleanup data on-site via signage" },
+                    { "title": "Local Collaboration", "description": "Co-create with artists, youth and fishers" }
+                ]
+            }
         },
         "vision": {
             "title": "Our Vision",
@@ -106,42 +120,48 @@
             "detailedDescription": "The MOBA project achieves its goals of marine environment protection through a systematic 4-phase approach. Each phase builds upon the achievements of the previous phase, and our ultimate goal is to create a sustainable marine protection ecosystem."
         },
         "phases": {
-            "title": "Phase-by-Phase Plan",
-            "subtitle": "A systematic approach to marine environment protection through 4 phases",
+            "title": "Execution Process",
+            "subtitle": "Education (Certification) → Ploving (Underwater Cleanup) → Data Upload → ESG Reporting",
             "phase1": {
-                "title": "Phase 1: Awareness",
-                "description": "Raising awareness and education about the importance of marine environments",
+                "title": "Phase 1: Education & Certification",
+                "description": "Support for scuba/freediving international certifications",
                 "activities": [
-                    "Educational campaign development",
-                    "Awareness program creation",
-                    "Public outreach initiatives"
+                    "Open Water (Scuba) or Freediver training",
+                    "Dive Against Debris® training (collection, safety, data)",
+                    "Safety equipment and collection tools provision",
+                    "Mandatory pre-activity safety briefing"
                 ]
             },
             "phase2": {
-                "title": "Phase 2: Community Building",
-                "description": "Building a global community of environmental activists",
+                "title": "Phase 2: Underwater Cleanup (Ploving)",
+                "description": "4 annual regular cleanup activities (quarterly)",
                 "activities": [
-                    "Member recruitment",
-                    "Community platform development",
-                    "Partnership establishment"
+                    "2-10m coastal dives in 2-3 person teams",
+                    "Professional dive leader guidance",
+                    "Removal of ghost nets and plastics",
+                    "Precise GPS, item, weight, count, photo logging",
+                    "Buddy diving and checklist compliance"
                 ]
             },
             "phase3": {
-                "title": "Phase 3: Action",
-                "description": "Executing actual ocean cleanup and protection activities",
+                "title": "Phase 3: Data Upload & Processing",
+                "description": "Upload to international DB and legal waste processing",
                 "activities": [
-                    "Beach cleanup operations",
-                    "Marine debris collection",
-                    "Environmental monitoring"
+                    "Upload to Dive Against Debris® platform",
+                    "Use for UNEP and policy development",
+                    "Legal processing with local authorities",
+                    "Maximize recycling of recyclables"
                 ]
             },
             "phase4": {
-                "title": "Phase 4: Expansion",
-                "description": "Project expansion and sustainable development",
+                "title": "Phase 4: ESG Reporting",
+                "description": "Create verifiable ESG performance reports",
                 "activities": [
-                    "Global expansion",
-                    "Technology development",
-                    "Long-term sustainability planning"
+                    "Environment: volumes, item ratios, carbon reduction",
+                    "Social: participants, volunteer hours, local cooperation",
+                    "Governance: safety training, insurance, third-party verification",
+                    "GRI 306, SDG 14, ISO 14001 linkage",
+                    "Annual MOBA performance report"
                 ]
             }
         },
@@ -181,33 +201,59 @@
             "resources": "Project resource support"
         },
         "plans": {
-            "basic": {
-                "title": "Basic Member",
-                "price": "Free",
-                "features": [
-                    "Newsletter subscription",
-                    "Basic educational materials",
-                    "Community participation"
-                ]
-            },
-            "premium": {
-                "title": "Premium Member",
-                "price": "$9.99/month",
-                "features": [
-                    "All basic benefits",
-                    "Advanced educational materials",
-                    "Member-only events",
-                    "Project resource support"
-                ]
-            },
+            "title": "Corporate Membership Plans",
+            "subtitle": "3-tier membership: Corporate · Instructor · Diver",
             "corporate": {
-                "title": "Corporate Member",
-                "price": "Contact us",
+                "title": "Corporate Membership",
+                "price": "Initial 20M KRW / Renewal 10M KRW/year",
+                "description": "Maintain 10 employees, create ESG outcomes",
+                "buttonText": "Corporate Inquiry",
                 "features": [
-                    "All premium benefits",
-                    "Custom corporate programs",
-                    "Branding opportunities",
-                    "Dedicated support"
+                    "Initial: PADI Freediver 6 + SSI Scuba 4 certification support",
+                    "Renewal (Year 2+): PADI Freediver 4 + SSI Scuba 2 certification support",
+                    "4 annual regular underwater cleanup activities (quarterly)",
+                    "Dive Against Debris® training and certification",
+                    "ESG report data (GRI, SDG 14, ISO 14001)",
+                    "Dedicated operations and safety insurance"
+                ]
+            },
+            "pilot": {
+                "title": "Pilot Companies (limited 2)",
+                "price": "Membership fee waived/discounted",
+                "description": "Cost-based settlement for 1-year effectiveness validation",
+                "buttonText": "Apply for Pilot",
+                "features": [
+                    "Membership fee waived or heavily discounted",
+                    "Transparent cost+expenses settlement",
+                    "First success case branding",
+                    "Customized ESG consulting",
+                    "Priority promotion and media exposure"
+                ]
+            },
+            "instructor": {
+                "title": "Instructor Membership",
+                "price": "Contact",
+                "description": "Activity leadership, compensation and incentives",
+                "buttonText": "Instructor Inquiry",
+                "features": [
+                    "Lead/Sub-lead priority assignment",
+                    "Per-activity leader compensation (base + headcount)",
+                    "Safety bonus incentives",
+                    "Insurance and equipment support",
+                    "Regular update training"
+                ]
+            },
+            "diver": {
+                "title": "Diver Membership",
+                "price": "Contact",
+                "description": "Regular cleanup participation, education discounts",
+                "buttonText": "Join Diver Membership",
+                "features": [
+                    "Activity priority application",
+                    "Education/certification discounts",
+                    "Point accumulation → goods/voucher",
+                    "Level-up system (Supporter→Diver→Leader candidate)",
+                    "Regional partner project priority"
                 ]
             }
         }

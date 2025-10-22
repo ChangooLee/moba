@@ -9,11 +9,11 @@
             "cta": "开始ESG海洋清洁"
         },
         "stats": {
-            "title": "MOBA的成就",
-            "members": "企业合作伙伴",
-            "projects": "水下清洁活动",
-            "countries": "全球网络",
-            "impact": "ESG价值创造"
+            "title": "MOBA的成果",
+            "members": "试点企业招募中",
+            "projects": "年4次定期活动",
+            "countries": "南海·东海·济州",
+            "impact": "PADI AWARE合作伙伴"
         },
         "features": {
             "title": "MOBA的主要活动",
@@ -41,7 +41,21 @@
         "description": "MOBA是一个环境保护项目，与世界各地的人们一起努力让海洋再次清洁和蔚蓝。",
         "mission": {
             "title": "我们的使命",
-            "description": "让海洋再次清洁和蔚蓝，创造可持续的未来。"
+            "description": "MOBA是一个让企业与员工将海洋清洁常态化，并将结果转化为可验证数据以映射到ESG指标的综合执行项目。"
+        },
+        "visualization": {
+            "title": "成果传播：收集后的可视化",
+            "description": "通过 收集 → 合作 → 可视化 → 分享 的流程扩大社会影响力",
+            "subtitle": "将清洁成果转化为本地文化资产",
+            "process": {
+                "title": "可视化流程",
+                "items": [
+                    { "title": "壁画与雕塑", "description": "用收集的废弃物创作公共艺术" },
+                    { "title": "渔船涂装", "description": "使用环保涂料为当地渔船涂装" },
+                    { "title": "二维码联动", "description": "在现场标识上展示清洁数据" },
+                    { "title": "本地协作", "description": "与艺术家、青少年、渔民共同创作" }
+                ]
+            }
         },
         "vision": {
             "title": "我们的愿景",
@@ -106,22 +120,48 @@
             "detailedDescription": "MOBA项目通过系统性的4阶段方法实现海洋环境保护目标。每个阶段都建立在前一阶段成果的基础上，我们的最终目标是创建可持续的海洋保护生态系统。"
         },
         "phases": {
-            "title": "分阶段计划",
+            "title": "执行流程",
             "phase1": {
-                "title": "第一阶段：提高意识",
-                "description": "提高对海洋环境重要性的认识和教育"
+                "title": "第一阶段：教育与资格获取",
+                "description": "支持水肺/自由潜水国际资格证",
+                "activities": [
+                    "Open Water 或 Freediver 资格教学",
+                    "Dive Against Debris® 专项培训（收集、安全、数据）",
+                    "提供安全装备与收集工具",
+                    "活动前安全简报必做"
+                ]
             },
             "phase2": {
-                "title": "第二阶段：社区建设",
-                "description": "建立全球环保活动家社区"
+                "title": "第二阶段：水下清洁（潜水清洁）",
+                "description": "年4次（季度1次）定期水下清洁",
+                "activities": [
+                    "2-10米沿岸水域，2-3人一组潜水",
+                    "专业潜水领队带队",
+                    "回收废渔网与塑料等海底垃圾",
+                    "精确记录GPS、品目、重量、数量、照片",
+                    "遵守伙伴潜水与检查清单"
+                ]
             },
             "phase3": {
-                "title": "第三阶段：行动",
-                "description": "执行实际的海洋清洁和保护活动"
+                "title": "第三阶段：数据上传与处理",
+                "description": "上传国际数据库并进行合法处理",
+                "activities": [
+                    "上传至 Dive Against Debris® 平台",
+                    "用于UNEP等政策制定",
+                    "与地方政府/海洋机构合作合法处理",
+                    "最大化回收可回收资源"
+                ]
             },
             "phase4": {
-                "title": "第四阶段：扩展",
-                "description": "项目扩展和可持续发展"
+                "title": "第四阶段：ESG报告",
+                "description": "编制可验证的ESG成果报告",
+                "activities": [
+                    "环境：收集量、品目比重、碳减排",
+                    "社会：参与人数、志愿时数、地方协作",
+                    "治理：安全教育、保险、第三方验证",
+                    "GRI 306、SDG 14、ISO 14001 联动",
+                    "年度MOBA成果报告"
+                ]
             }
         },
         "expectedResults": {
@@ -142,43 +182,82 @@
         }
     },
     "membership": {
-        "title": "会员",
-        "description": "成为MOBA会员，参与海洋保护",
+        "title": "会员资格",
+        "description": "企业·教练·潜水员分工协作，年4次定期水下清洁，共同创造可验证ESG成果的三层会员体系。",
         "benefits": {
             "title": "会员福利",
-            "education": "访问专属教育材料",
-            "events": "参与会员专属活动",
-            "network": "全球网络机会",
-            "resources": "项目资源支持"
+            "subtitle": "为各类型会员提供最优化福利",
+            "education": {
+                "title": "专业教育与资格",
+                "description": "与PADI AWARE Foundation联动的潜水资格认证支持与专业培训"
+            },
+            "events": {
+                "title": "定期水下清洁",
+                "description": "年4次（季度1次）在安全环境中参与水下清洁"
+            },
+            "network": {
+                "title": "全球网络",
+                "description": "通过与PADI AWARE国际合作参与全球海洋保护网络"
+            },
+            "resources": {
+                "title": "ESG数据与报告",
+                "description": "通过Dive Against Debris®国际数据库提供可验证ESG数据"
+            }
         },
         "plans": {
-            "basic": {
-                "title": "基础会员",
-                "price": "免费",
-                "features": [
-                    "订阅通讯",
-                    "基础教育材料",
-                    "社区参与"
-                ]
-            },
-            "premium": {
-                "title": "高级会员",
-                "price": "每月$9.99",
-                "features": [
-                    "所有基础福利",
-                    "高级教育材料",
-                    "会员专属活动",
-                    "项目资源支持"
-                ]
-            },
+            "title": "会员计划",
+            "subtitle": "三层：企业·教练·潜水员",
             "corporate": {
-                "title": "企业会员",
-                "price": "联系我们",
+                "title": "企业会员资格",
+                "price": "首次2,000万韩元 / 续费1,000万韩元/年",
+                "description": "维持10人规模，创造ESG成果",
+                "buttonText": "企业咨询",
                 "features": [
-                    "所有高级福利",
-                    "定制企业项目",
-                    "品牌机会",
-                    "专属支持"
+                    "首次：支持PADI自由潜水6人 + SSI水肺4人资格证",
+                    "续费（第2年起）：支持PADI自由潜水4人 + SSI水肺2人资格证",
+                    "年4次定期水下清洁（季度1次）",
+                    "Dive Against Debris®专业培训与认证",
+                    "ESG报告用数据（GRI, SDG 14, ISO 14001）",
+                    "专属运营与安全保险"
+                ]
+            },
+            "pilot": {
+                "title": "试点企业（限2家）",
+                "price": "会员费免除/折扣",
+                "description": "以成本+实费透明结算进行1年效果验证",
+                "buttonText": "申请试点",
+                "features": [
+                    "会员费免除或大幅折扣",
+                    "成本+实费透明结算",
+                    "首个成功案例品牌机会",
+                    "定制化ESG咨询",
+                    "优先宣传与媒体曝光"
+                ]
+            },
+            "instructor": {
+                "title": "教练会员资格",
+                "price": "详情咨询",
+                "description": "活动带队、报酬与激励",
+                "buttonText": "教练咨询",
+                "features": [
+                    "优先分配领队/副领队",
+                    "按活动发放领队报酬（基础+人数联动）",
+                    "安全管理加分激励",
+                    "保险与装备支持",
+                    "定期更新培训"
+                ]
+            },
+            "diver": {
+                "title": "潜水员会员资格",
+                "price": "详情咨询",
+                "description": "参与定期清洁·教育优惠",
+                "buttonText": "加入潜水员会员",
+                "features": [
+                    "活动优先申请",
+                    "教育/资格优惠",
+                    "积分累积 → 兑换周边/代金券",
+                    "升级体系（支持者→潜水员→领队候选）",
+                    "地区合作项目优先权"
                 ]
             }
         }

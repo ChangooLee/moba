@@ -62,14 +62,14 @@ const Home = () => {
                 <Container>
                     <div className="text-center">
                         {/* 로고 */}
-                        <div className="mb-8 animate-fade-in">
-                            <div className="bg-white rounded-full p-8 mx-auto w-fit shadow-lg">
+                        <div className="mb-4 animate-fade-in">
+                            <div className="mx-auto w-fit">
                                 <img
                                     src="/images/logo-512-transparent.png?v=20241022"
                                     alt="MOBA Logo"
                                     className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] object-contain"
                                 />
-                            </div>32520bd7d8bfc8575f3487cf7936f2d3f
+                            </div>
                         </div>
                         <h1 className="text-2xl md:text-4xl font-bold mb-6 animate-fade-in font-heading">
                             {t('pages.home.hero.title')}

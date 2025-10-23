@@ -455,10 +455,10 @@ const Schedule = () => {
                             {t('pages.schedule.cta.description')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg">
+                            <Button to="/membership" size="lg">
                                 {t('pages.schedule.cta.membershipButton')}
                             </Button>
-                            <Button variant="outline" size="lg">
+                            <Button to="/contact" variant="outline" size="lg">
                                 {t('pages.schedule.cta.notificationButton')}
                             </Button>
                         </div>

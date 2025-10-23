@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 /**
  * 다국어 지원 버튼 컴포넌트
@@ -10,6 +11,8 @@ import React from 'react';
  * @param {boolean} props.disabled - 비활성화 상태
  * @param {string} props.className - 추가 CSS 클래스
  * @param {string} props.type - 버튼 타입 ('button' | 'submit' | 'reset')
+ * @param {string} props.to - Link 경로 (Link로 사용할 때)
+ * @param {string} props.href - 외부 링크 (a 태그로 사용할 때)
  */
 const Button = ({
     variant = 'primary',
@@ -19,6 +22,8 @@ const Button = ({
     className = '',
     type = 'button',
     onClick,
+    to,
+    href,
     ...props
 }) => {
     const baseClasses = 'font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
@@ -38,6 +43,35 @@ const Button = ({
 
     const classes = `${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`;
 
+    // Link로 사용할 때
+    if (to) {
+        return (
+            <Link
+                to={to}
+                className={`${classes} inline-block text-center no-underline`}
+                onClick={onClick}
+                {...props}
+            >
+                {children}
+            </Link>
+        );
+    }
+
+    // 외부 링크로 사용할 때
+    if (href) {
+        return (
+            <a
+                href={href}
+                className={`${classes} inline-block text-center no-underline`}
+                onClick={onClick}
+                {...props}
+            >
+                {children}
+            </a>
+        );
+    }
+
+    // 일반 버튼으로 사용할 때
     return (
         <button
             type={type}

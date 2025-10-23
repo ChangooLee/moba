@@ -156,7 +156,7 @@ const Home = () => {
                                 </Button>
                             </Link>
                             <Link to="/about">
-                                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">
+                                <Button variant="outline" size="lg" className="border-white text-white hover:bg-padi-blue hover:border-padi-blue focus:ring-white">
                                     {t('common.buttons.learnMore')}
                                 </Button>
                             </Link>

@@ -151,12 +151,12 @@ const Home = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link to="/membership">
-                                <Button size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
+                                <Button size="lg" className="!bg-white !text-padi-blue hover:!bg-gray-100">
                                     {t('common.buttons.join')}
                                 </Button>
                             </Link>
                             <Link to="/about">
-                                <Button variant="outline" size="lg" className="border-white text-white hover:bg-padi-blue hover:border-padi-blue focus:ring-white">
+                                <Button variant="outline" size="lg" className="!border-white !text-white hover:!bg-padi-blue hover:!border-padi-blue focus:!ring-white">
                                     {t('common.buttons.learnMore')}
                                 </Button>
                             </Link>

@@ -2,50 +2,64 @@
     "home": {
         "title": "Make Ocean Blue Again",
         "subtitle": "Make Ocean Blue Again",
-        "description": "Join our global project for ocean conservation. Together, we'll create a cleaner ocean.",
+        "description": "An innovative platform that connects corporate ESG management with ocean conservation. We help companies achieve verifiable ESG outcomes through employee diving certification and quarterly underwater cleanup activities.",
         "hero": {
-            "title": "Education → Underwater Cleanup → Data Upload → ESG Reporting",
-            "subtitle": "MOBA is an innovative platform that raises awareness about marine pollution and enables companies to realize ESG values through actual marine cleanup activities",
-            "cta": "Join Now"
+            "title": "Where Corporate ESG Meets Ocean Conservation",
+            "subtitle": "MOBA is an integrated execution program that enables companies and employees to regularize ocean cleanup and convert the results into verifiable data that map to ESG indicators",
+            "cta": "Start ESG Ocean Cleanup"
         },
         "stats": {
-            "title": "Our Impact",
-            "members": "Active Members",
-            "projects": "Ongoing Projects",
-            "countries": "Participating Countries",
-            "impact": "Environmental Impact"
+            "title": "MOBA Performance",
+            "members": "Pilot Companies Recruiting",
+            "projects": "4 Annual Regular Activities",
+            "countries": "South Sea·East Sea·Jeju",
+            "impact": "PADI AWARE Partner"
         },
         "features": {
-            "title": "MOBA's Key Activities",
-            "subtitle": "We provide various programs and activities for ocean conservation",
+            "title": "MOBA's Core Values",
+            "subtitle": "Realizing sustainable corporate ocean conservation through E-S-G three pillars",
             "conservation": {
-                "title": "Marine Conservation",
-                "description": "Research and conservation activities to protect marine ecosystems"
+                "title": "E (Environmental) Value",
+                "description": "Actual marine waste removal and environmental impact creation through quarterly underwater cleanup activities"
             },
             "education": {
-                "title": "Environmental Education",
-                "description": "Educational programs about the importance of marine environments"
+                "title": "S (Social) Value",
+                "description": "Organizational culture enhancement and local community cooperation network building through employee participation"
             },
             "community": {
-                "title": "Community",
-                "description": "Networking with environmental activists worldwide"
+                "title": "G (Governance) Value",
+                "description": "Transparent data management and verification system through international standard linkage with PADI AWARE Foundation"
             },
             "action": {
-                "title": "Action",
-                "description": "Participation in actual ocean cleanup and protection activities"
+                "title": "Execution Platform",
+                "description": "Standard process of Education (Certification) → Ploving (Underwater Cleanup) → Data Upload → ESG Reporting"
             }
         }
     },
     "about": {
         "title": "About MOBA",
-        "description": "MOBA is an environmental protection project that works together with people around the world to make the ocean clean and blue again.",
+        "description": "MOBA is an innovative platform that connects corporate ESG management with ocean conservation through partnership with PADI AWARE Foundation. We help companies achieve verifiable ESG outcomes through employee diving certification and quarterly underwater cleanup activities.",
         "mission": {
             "title": "Our Mission",
-            "description": "To make the ocean clean and blue again, creating a sustainable future."
+            "description": "MOBA is an integrated execution program that enables companies and employees to regularize ocean cleanup and convert the results into verifiable data that map to ESG indicators."
+        },
+        "visualization": {
+            "title": "Impact Communication: Post-Collection Visualization",
+            "description": "Expand social impact through the flow of Collect → Collaborate → Visualize → Share.",
+            "subtitle": "Turn cleanup outcomes into local cultural assets",
+            "process": {
+                "title": "Visualization Process",
+                "items": [
+                    { "title": "Murals & Sculptures", "description": "Create public art using collected debris" },
+                    { "title": "Boat Painting", "description": "Eco-friendly paint for local boats" },
+                    { "title": "QR Code Linking", "description": "Display cleanup data on-site via signage" },
+                    { "title": "Local Collaboration", "description": "Co-create with artists, youth and fishers" }
+                ]
+            }
         },
         "vision": {
             "title": "Our Vision",
-            "description": "A world where everyone recognizes the importance of marine environments and participates in their protection."
+            "description": "A world where all companies participate in ESG value realization through ocean conservation and work together to protect sustainable marine ecosystems."
         },
         "values": {
             "title": "Core Values",
@@ -106,42 +120,59 @@
             "detailedDescription": "The MOBA project achieves its goals of marine environment protection through a systematic 4-phase approach. Each phase builds upon the achievements of the previous phase, and our ultimate goal is to create a sustainable marine protection ecosystem."
         },
         "phases": {
-            "title": "Phase-by-Phase Plan",
-            "subtitle": "A systematic approach to marine environment protection through 4 phases",
+            "title": "Execution Process",
+            "subtitle": "Education (Certification) → Ploving (Underwater Cleanup) → Data Upload → ESG Reporting",
             "phase1": {
-                "title": "Phase 1: Awareness",
-                "description": "Raising awareness and education about the importance of marine environments",
+                "title": "Phase 1: Education & Certification",
+                "description": "Support for scuba/freediving international certifications",
                 "activities": [
-                    "Educational campaign development",
-                    "Awareness program creation",
-                    "Public outreach initiatives"
+                    "Open Water (Scuba) or Freediver training",
+                    "Dive Against Debris® training (collection, safety, data)",
+                    "Safety equipment and collection tools provision",
+                    "Mandatory pre-activity safety briefing"
                 ]
             },
             "phase2": {
-                "title": "Phase 2: Community Building",
-                "description": "Building a global community of environmental activists",
+                "title": "Phase 2: Underwater Cleanup (Ploving)",
+                "description": "4 annual regular cleanup activities (quarterly)",
                 "activities": [
-                    "Member recruitment",
-                    "Community platform development",
-                    "Partnership establishment"
+                    "2-10m coastal dives in 2-3 person teams",
+                    "Professional dive leader guidance",
+                    "Removal of ghost nets and plastics",
+                    "Precise GPS, item, weight, count, photo logging",
+                    "Buddy diving and checklist compliance"
                 ]
             },
             "phase3": {
-                "title": "Phase 3: Action",
-                "description": "Executing actual ocean cleanup and protection activities",
+                "title": "Phase 3: Data Upload & Processing",
+                "description": "Upload to international DB and legal waste processing",
                 "activities": [
-                    "Beach cleanup operations",
-                    "Marine debris collection",
-                    "Environmental monitoring"
+                    "Upload to Dive Against Debris® platform",
+                    "Use for UNEP and policy development",
+                    "Legal processing with local authorities",
+                    "Maximize recycling of recyclables"
                 ]
             },
             "phase4": {
-                "title": "Phase 4: Expansion",
-                "description": "Project expansion and sustainable development",
+                "title": "Phase 4: ESG Reporting",
+                "description": "Create verifiable ESG performance reports",
                 "activities": [
-                    "Global expansion",
-                    "Technology development",
-                    "Long-term sustainability planning"
+                    "Environment: volumes, item ratios, carbon reduction",
+                    "Social: participants, volunteer hours, local cooperation",
+                    "Governance: safety training, insurance, third-party verification",
+                    "GRI 306, SDG 14, ISO 14001 linkage",
+                    "Annual MOBA performance report"
+                ]
+            },
+            "phase5": {
+                "title": "Phase 5: Visualization Project",
+                "description": "Transform collection outcomes into local cultural assets",
+                "activities": [
+                    "Create murals, sculptures, and boat paintings using collected debris",
+                    "Co-create with local artists, youth, and fishers",
+                    "Display cleanup data on-site via signage and QR codes",
+                    "Publish annual ESG Art Report",
+                    "Preserve as permanent local cultural assets"
                 ]
             }
         },
@@ -181,33 +212,59 @@
             "resources": "Project resource support"
         },
         "plans": {
-            "basic": {
-                "title": "Basic Member",
-                "price": "Free",
-                "features": [
-                    "Newsletter subscription",
-                    "Basic educational materials",
-                    "Community participation"
-                ]
-            },
-            "premium": {
-                "title": "Premium Member",
-                "price": "$9.99/month",
-                "features": [
-                    "All basic benefits",
-                    "Advanced educational materials",
-                    "Member-only events",
-                    "Project resource support"
-                ]
-            },
+            "title": "Corporate Membership Plans",
+            "subtitle": "3-tier membership: Corporate · Instructor · Diver",
             "corporate": {
-                "title": "Corporate Member",
-                "price": "Contact us",
+                "title": "Corporate Membership",
+                "price": "Initial 20M KRW / Renewal 10M KRW/year",
+                "description": "Maintain 10 employees, create ESG outcomes",
+                "buttonText": "Corporate Inquiry",
                 "features": [
-                    "All premium benefits",
-                    "Custom corporate programs",
-                    "Branding opportunities",
-                    "Dedicated support"
+                    "Initial: PADI Freediver 6 + SSI Scuba 4 certification support",
+                    "Renewal (Year 2+): PADI Freediver 4 + SSI Scuba 2 certification support",
+                    "4 annual regular underwater cleanup activities (quarterly)",
+                    "Dive Against Debris® training and certification",
+                    "ESG report data (GRI, SDG 14, ISO 14001)",
+                    "Dedicated operations and safety insurance"
+                ]
+            },
+            "pilot": {
+                "title": "Pilot Companies (limited 2)",
+                "price": "Membership fee waived/discounted",
+                "description": "Cost-based settlement for 1-year effectiveness validation",
+                "buttonText": "Apply for Pilot",
+                "features": [
+                    "Membership fee waived or heavily discounted",
+                    "Transparent cost+expenses settlement",
+                    "First success case branding",
+                    "Customized ESG consulting",
+                    "Priority promotion and media exposure"
+                ]
+            },
+            "instructor": {
+                "title": "Instructor Membership",
+                "price": "Contact",
+                "description": "Activity leadership, compensation and incentives",
+                "buttonText": "Instructor Inquiry",
+                "features": [
+                    "Lead/Sub-lead priority assignment",
+                    "Per-activity leader compensation (base + headcount)",
+                    "Safety bonus incentives",
+                    "Insurance and equipment support",
+                    "Regular update training"
+                ]
+            },
+            "diver": {
+                "title": "Diver Membership",
+                "price": "Contact",
+                "description": "Regular cleanup participation, education discounts",
+                "buttonText": "Join Diver Membership",
+                "features": [
+                    "Activity priority application",
+                    "Education/certification discounts",
+                    "Point accumulation → goods/voucher",
+                    "Level-up system (Supporter→Diver→Leader candidate)",
+                    "Regional partner project priority"
                 ]
             }
         }
@@ -301,6 +358,37 @@
         "achievements": {
             "title": "Key Achievements"
         },
+        "pastEvents": {
+            "title": "Past Activities",
+            "subtitle": "Records of ocean cleanup activities with MOBA",
+            "pohang20250920": {
+                "id": "pohang-20250920",
+                "title": "Bubbly 6th Sea Cleanup Joint Ocean Cleanup Activity",
+                "host": "Bubbly",
+                "participants": ["Bubbly", "MOBA", "L&F", "Green Foundation Korea"],
+                "date": "September 20, 2025",
+                "time": "10:00 ~ 13:00",
+                "location": "Guryongso, Daedongbae-ri, Homigot-myeon, Pohang-si, Gyeongbuk (UNESCO Global Geopark)",
+                "attendees": 52,
+                "description": "International Coastal Cleanup Day (ICC Day) linked ocean cleanup activity",
+                "results": {
+                    "totalVolume": "Approx. 3,100L",
+                    "categories": [
+                        { "name": "Fishing waste", "percentage": "70%", "details": "Fishing floats, lures, fishing lines, ghost nets, etc." },
+                        { "name": "Household waste", "percentage": "30%", "details": "Beverage bottles, cigarette butts, glass fragments, etc." }
+                    ]
+                },
+                "notes": "Changed from ploving to plogging due to weather conditions",
+                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "images": [
+                    "/images/20250920_pohang/1761035795110.jpg",
+                    "/images/20250920_pohang/1761035808196.jpg",
+                    "/images/20250920_pohang/1761035808451.jpg",
+                    "/images/20250920_pohang/1761035808525.jpg",
+                    "/images/20250920_pohang/1761035808556.jpg"
+                ]
+            }
+        },
         "cta": {
             "title": "Want to participate in events?",
             "description": "Become a MOBA member to get priority access to all events.",
@@ -309,64 +397,71 @@
         }
     },
     "membership": {
-        "title": "Membership",
-        "description": "Join MOBA and participate in ocean conservation",
+        "title": "Membership Information",
+        "description": "MOBA operates a three-tier membership system where companies, instructors, and divers each have their own roles and responsibilities to perform regular ocean cleanup activities (4 times a year) and jointly create measurable ESG outcomes.",
         "benefits": {
-            "title": "Member Benefits",
-            "subtitle": "As a MOBA member, you can enjoy various benefits.",
+            "title": "Membership Benefits",
+            "subtitle": "Optimized benefits for each membership type.",
             "education": {
-                "title": "Access to Educational Materials",
-                "description": "Unlimited access to expert-created marine environment educational materials"
+                "title": "Professional Education & Certification",
+                "description": "Diving certification support and professional education programs linked with PADI AWARE Foundation"
             },
             "events": {
-                "title": "Member-Only Events",
-                "description": "Participate in member-only workshops, seminars, and networking events"
+                "title": "Regular Underwater Cleanup Activities",
+                "description": "Participation in regular underwater cleanup activities (4 times a year, quarterly) and ocean conservation practice in a safe environment"
             },
             "network": {
-                "title": "Global Networking Opportunities",
-                "description": "Networking opportunities with environmental activists worldwide"
+                "title": "Global Partnership Network",
+                "description": "Participation in global ocean conservation network through international partnership with PADI AWARE Foundation"
             },
             "resources": {
-                "title": "Project Resource Support",
-                "description": "Funding and resource support for project implementation"
+                "title": "ESG Data & Reporting",
+                "description": "Provision of verifiable ESG performance data through Dive Against Debris® international database linkage"
             }
         },
         "plans": {
-            "title": "Membership Plans",
-            "subtitle": "Choose the membership that's right for you.",
-            "basic": {
-                "title": "Basic Member",
-                "price": "Free",
-                "description": "Join the MOBA community and enjoy basic benefits",
-                "buttonText": "Sign Up Free",
-                "features": [
-                    "Newsletter Subscription",
-                    "Basic Educational Materials",
-                    "Community Participation"
-                ]
-            },
-            "premium": {
-                "title": "Premium Member",
-                "price": "$9.99/month",
-                "description": "All basic benefits plus additional premium benefits",
-                "buttonText": "Sign Up Premium",
-                "features": [
-                    "All Basic Benefits",
-                    "Advanced Educational Materials",
-                    "Member-Only Events",
-                    "Project Resource Support"
-                ]
-            },
+            "title": "Membership Types",
+            "subtitle": "Ocean conservation ecosystem consisting of three-tier membership: Corporate, Instructor, and Diver",
             "corporate": {
-                "title": "Corporate Member",
+                "title": "Corporate Membership",
                 "price": "Contact",
-                "description": "Customized programs and branding opportunities for businesses",
+                "description": "ESG-focused corporate-tailored ocean conservation program",
                 "buttonText": "Contact Us",
                 "features": [
-                    "All Premium Benefits",
-                    "Custom Corporate Programs",
-                    "Branding Opportunities",
-                    "Dedicated Support"
+                    "Priority for 4 annual regular underwater cleanup activities",
+                    "Employee diving certification support",
+                    "PADI AWARE Foundation international database linkage",
+                    "ESG report data provision",
+                    "Joint branding and promotional support",
+                    "Dedicated operations team assignment"
+                ]
+            },
+            "instructor": {
+                "title": "Instructor Membership",
+                "price": "Contact",
+                "description": "Activity leadership, safety management, and education quality assurance",
+                "buttonText": "Contact Us",
+                "features": [
+                    "Priority assignment for Lead and Sub-Lead positions",
+                    "Leader compensation and incentives",
+                    "Equipment and insurance support",
+                    "Regular update training provision",
+                    "Safety management specialized training",
+                    "Data standard training"
+                ]
+            },
+            "diver": {
+                "title": "Diver Membership",
+                "price": "Contact",
+                "description": "Participation and citizen science-focused individual membership",
+                "buttonText": "Contact Us",
+                "features": [
+                    "Activity priority application rights",
+                    "Education/certification discount benefits",
+                    "Point and level system",
+                    "Right to participate 2+ times annually",
+                    "Activity log and data management",
+                    "Local partner collaboration opportunities"
                 ]
             }
         },
@@ -441,20 +536,32 @@
             "subtitle": "Common questions about MOBA",
             "questions": {
                 "membership": {
-                    "question": "How do I become a MOBA member?",
-                    "answer": "You can sign up for free on our website or choose a premium membership plan for additional benefits."
+                    "question": "Can I start without certification?",
+                    "answer": "Yes. We support international certification after training."
                 },
                 "activities": {
-                    "question": "What activities can I participate in?",
-                    "answer": "You can participate in various activities including beach cleanups, educational programs, and community events."
+                    "question": "How is safety guaranteed?",
+                    "answer": "We apply instructor guidance, buddy diving, checklists, and professional insurance."
                 },
                 "corporate": {
-                    "question": "Do you have corporate partnership programs?",
-                    "answer": "Yes, we offer corporate membership programs with customized benefits and branding opportunities."
+                    "question": "What depth do you work at?",
+                    "answer": "Usually 2-10m range."
                 },
                 "funding": {
-                    "question": "How is MOBA funded?",
-                    "answer": "MOBA is funded through membership fees, donations, and corporate partnerships."
+                    "question": "Where is data recorded?",
+                    "answer": "Uploaded to external DBs like Dive Against Debris®."
+                },
+                "diving": {
+                    "question": "Is it connected to welfare?",
+                    "answer": "Experience leisure and volunteer work through certification."
+                },
+                "waste": {
+                    "question": "How is collected waste processed?",
+                    "answer": "Legal processing and recycling through cooperation with local authorities and specialized institutions."
+                },
+                "visualization": {
+                    "question": "Is the visualization project mandatory?",
+                    "answer": "It's optional. An effective way to expand environmental performance into social value."
                 }
             }
         },

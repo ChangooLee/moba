@@ -13,10 +13,10 @@ const Home = () => {
     useEffect(() => {
         if (ready) {
             setStats([
-                { number: '10,000+', label: t('pages.home.stats.members') },
-                { number: '50+', label: t('pages.home.stats.projects') },
-                { number: '25+', label: t('pages.home.stats.countries') },
-                { number: '95%', label: t('pages.home.stats.impact') },
+                { number: '', label: t('pages.home.stats.members') },
+                { number: '', label: t('pages.home.stats.projects') },
+                { number: '', label: t('pages.home.stats.countries') },
+                { number: '', label: t('pages.home.stats.impact') },
             ]);
 
             setFeatures([
@@ -65,11 +65,11 @@ const Home = () => {
                         <div className="mb-8 animate-fade-in">
                             <div className="bg-white rounded-full p-8 mx-auto w-fit shadow-lg">
                                 <img
-                                    src="/images/logo-512-transparent.png"
+                                    src="/images/logo-512-transparent.png?v=20241022"
                                     alt="MOBA Logo"
                                     className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] object-contain"
                                 />
-                            </div>
+                            </div>32520bd7d8bfc8575f3487cf7936f2d3f
                         </div>
                         <h1 className="text-2xl md:text-4xl font-bold mb-6 animate-fade-in font-heading">
                             {t('pages.home.hero.title')}
@@ -100,9 +100,9 @@ const Home = () => {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {stats.map((stat, index) => (
                             <div key={index} className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold text-padi-blue mb-2">
-                                    {stat.number}
-                                </div>
+                                {stat.number ? (
+                                    <div className="text-3xl md:text-4xl font-bold text-padi-blue mb-2">{stat.number}</div>
+                                ) : null}
                                 <div className="text-gray-600 font-medium">
                                     {stat.label}
                                 </div>
@@ -151,12 +151,12 @@ const Home = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link to="/membership">
-                                <Button size="lg">
+                                <Button size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
                                     {t('common.buttons.join')}
                                 </Button>
                             </Link>
                             <Link to="/about">
-                                <Button variant="outline" size="lg">
+                                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">
                                     {t('common.buttons.learnMore')}
                                 </Button>
                             </Link>

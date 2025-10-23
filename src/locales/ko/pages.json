@@ -2,50 +2,50 @@
     "home": {
         "title": "바다를 다시 푸르게",
         "subtitle": "Make Ocean Blue Again",
-        "description": "해양 환경 보호를 위한 글로벌 프로젝트에 참여하세요. 함께 깨끗한 바다를 만들어가겠습니다.",
+        "description": "기업의 ESG 경영과 해양보호를 연결하는 혁신적인 플랫폼입니다. 임직원의 다이빙 자격증 취득과 분기별 수중 정화 활동을 통해 검증 가능한 ESG 성과를 창출합니다.",
         "hero": {
-            "title": "다이빙으로 바다를 구하세요",
-            "subtitle": "MOBA는 기업의 ESG 경영과 해양보호를 연결하는 혁신적인 플랫폼으로, 실제 다이빙을 통한 해양정화 활동으로 환경적 임팩트를 창출합니다",
-            "cta": "다이빙 정화 시작하기"
+            "title": "기업 ESG와 해양보호의 만남",
+            "subtitle": "MOBA는 기업과 임직원이 해양정화를 정례화하고 그 결과를 검증 가능한 데이터로 전환해 ESG 지표로 반영하게 하는 통합 실행 프로그램입니다",
+            "cta": "ESG 해양정화 시작하기"
         },
         "stats": {
             "title": "MOBA의 성과",
-            "members": "기업 파트너",
-            "projects": "다이빙 정화",
-            "countries": "글로벌 확장",
-            "impact": "환경 임팩트"
+            "members": "시범 기업 모집 중",
+            "projects": "연 4회 정기 활동",
+            "countries": "남해·동해·제주",
+            "impact": "PADI AWARE 파트너"
         },
         "features": {
-            "title": "MOBA의 핵심 서비스",
-            "subtitle": "실제 다이빙을 통한 해양정화와 ESG 데이터 수집의 통합 솔루션",
+            "title": "MOBA의 핵심 가치",
+            "subtitle": "E-S-G 3축을 통한 기업의 지속가능한 해양보호 실현",
             "conservation": {
                 "title": "E (환경) 가치",
-                "description": "실제 해양정화 활동을 통한 환경적 임팩트 창출"
+                "description": "분기별 수중 정화 활동을 통한 실제 해양폐기물 제거 및 환경적 임팩트 창출"
             },
             "education": {
-                "title": "수중 정화 활동",
-                "description": "실제 다이빙을 통한 해양 쓰레기 수거 및 정화 활동으로 직접적인 환경 개선"
+                "title": "S (사회) 가치",
+                "description": "임직원 참여를 통한 조직문화 강화 및 지역사회와의 협력 네트워크 구축"
             },
             "community": {
-                "title": "G (지배구조) 가치",
-                "description": "투명한 데이터 관리와 국제 표준 연계를 통한 거버넌스 강화"
+                "title": "G (거버넌스) 가치",
+                "description": "PADI AWARE Foundation과의 국제 표준 연계를 통한 투명한 데이터 관리 및 검증 체계"
             },
             "action": {
-                "title": "실제 행동",
-                "description": "PADI AWARE Foundation과의 파트너십을 통한 국제적 해양보호 활동"
+                "title": "실행 플랫폼",
+                "description": "교육(자격) → 플로빙(수중 정화) → 데이터 업로드 → ESG 보고의 표준 프로세스"
             }
         }
     },
     "about": {
         "title": "MOBA 소개",
-        "description": "MOBA는 해양을 다시 깨끗하고 푸르게 만들기 위해 전 세계 사람들과 함께 노력하는 환경 보호 프로젝트입니다.",
+        "description": "MOBA는 PADI AWARE Foundation과의 파트너십을 통해 기업의 ESG 경영과 해양보호를 연결하는 혁신적인 플랫폼입니다. 임직원의 다이빙 자격증 취득과 분기별 수중 정화 활동을 통해 검증 가능한 ESG 성과를 창출합니다.",
         "mission": {
             "title": "우리의 미션",
-            "description": "해양을 다시 깨끗하고 푸르게 만들어 지속가능한 미래를 만들어가는 것입니다."
+            "description": "MOBA는 기업과 임직원이 해양정화를 정례화하고 그 결과를 검증 가능한 데이터로 전환해 ESG 지표로 반영하게 하는 통합 실행 프로그램입니다."
         },
         "vision": {
             "title": "우리의 비전",
-            "description": "모든 사람이 해양 환경의 중요성을 인식하고 보호에 참여하는 세상입니다."
+            "description": "모든 기업이 해양보호를 통한 ESG 가치 실현에 참여하고, 지속가능한 해양 생태계를 함께 지켜나가는 세상입니다."
         },
         "values": {
             "title": "핵심 가치",
@@ -68,29 +68,43 @@
             }
         },
         "team": {
-            "title": "MOBA 팀",
-            "subtitle": "PADI AWARE Foundation과 협력하는 해양보호 전문가들",
+            "title": "MOBA 파트너십",
+            "subtitle": "PADI AWARE Foundation과의 국제 파트너십을 중심으로 한 해양보호 생태계",
             "members": {
                 "padiPartnership": {
                     "name": "PADI AWARE Foundation",
-                    "position": "국제 파트너",
-                    "description": "전 세계 6,600개 다이빙 센터와 180개국에서 활동하는 해양보호 전문기관"
+                    "position": "핵심 국제 파트너",
+                    "description": "전 세계 6,600개 다이빙 센터와 180개국에서 활동하는 해양보호 전문기관. Dive Against Debris® 프로그램을 통해 국제 표준 데이터 수집 및 검증 체계 제공"
                 },
                 "mobaCore": {
                     "name": "MOBA 코어팀",
-                    "position": "프로젝트 운영",
-                    "description": "ESG 경영과 해양보호를 연결하는 혁신적인 플랫폼 개발 및 운영"
+                    "position": "플랫폼 운영",
+                    "description": "기업 ESG 경영과 해양보호를 연결하는 혁신적인 플랫폼 개발 및 운영. 연 4회(분기 1회) 정기 수중 정화 활동 관리"
                 },
                 "corporateMembers": {
                     "name": "기업 멤버",
                     "position": "ESG 실현 파트너",
-                    "description": "해양정화 활동을 통한 ESG 가치 실현을 추구하는 기업들"
+                    "description": "임직원 다이빙 자격증 취득 지원 및 분기별 수중 정화 활동을 통한 ESG 가치 실현을 추구하는 기업들"
                 },
-                "globalCommunity": {
-                    "name": "글로벌 커뮤니티",
-                    "position": "해양보호 활동가",
-                    "description": "전 세계 다이버들과 해양보호 활동가들이 참여하는 커뮤니티"
+                "instructorNetwork": {
+                    "name": "강사 네트워크",
+                    "position": "활동 리더십",
+                    "description": "국제 자격 보유 강사/다이브마스터들로 구성된 전문 네트워크. 안전관리 및 교육 품질 담보"
                 }
+            }
+        },
+        "visualization": {
+            "title": "성과 커뮤니케이션: 수거 후 시각화",
+            "description": "수거 → 협력 → 시각화 → 공유의 흐름으로 사회적 파급력을 확장합니다.",
+            "subtitle": "해양 정화 성과를 지역 사회 문화 자산으로 전환",
+            "process": {
+                "title": "시각화 프로세스",
+                "items": [
+                    { "title": "벽화 및 조형물", "description": "수거 폐기물로 공공예술 작품 제작" },
+                    { "title": "어선 페인팅", "description": "친환경 페인트로 지역 어선 도장" },
+                    { "title": "QR 코드 연계", "description": "현장 안내판에서 정화 데이터 공개" },
+                    { "title": "지역 협력", "description": "예술가, 청소년, 어민과 공동 창작" }
+                ]
             }
         },
         "cta": {
@@ -102,50 +116,63 @@
         "title": "사업계획",
         "overview": {
             "title": "프로젝트 개요",
-            "description": "MOBA의 단계별 사업계획과 전략을 소개합니다.",
-            "detailedDescription": "MOBA 프로젝트는 4단계로 구성된 체계적인 접근 방식을 통해 해양 환경 보호의 목표를 달성합니다. 각 단계는 이전 단계의 성과를 바탕으로 구축되며, 지속가능한 해양 보호 생태계를 만들어가는 것이 우리의 최종 목표입니다."
+            "description": "MOBA의 기업 ESG 연계 해양보호 사업계획과 전략을 소개합니다.",
+            "detailedDescription": "MOBA 프로젝트는 PADI AWARE Foundation과의 파트너십을 통해 기업이 임직원의 다이빙 자격증 취득을 지원하고, 연 4회(분기 1회) 수중 정화(플로빙) 활동을 정례화하여 검증 가능한 ESG 성과를 창출하는 통합 실행 프로그램입니다."
         },
         "phases": {
             "title": "단계별 계획",
-            "subtitle": "체계적이고 단계적인 접근으로 해양 보호의 목표를 달성합니다.",
+            "subtitle": "교육(자격) → 플로빙(수중 정화) → 데이터 업로드 → ESG 보고",
             "phase1": {
-                "title": "1단계: 인식 제고",
-                "description": "해양 환경의 중요성에 대한 인식 제고 및 교육",
+                "title": "1단계: 교육 및 자격 취득",
+                "description": "스쿠버/프리다이빙 국제 자격증 취득 지원",
                 "activities": [
-                    "해양 환경 교육 프로그램 개발",
-                    "전 세계 대학과의 파트너십 구축",
-                    "온라인 교육 플랫폼 런칭",
-                    "초기 멤버십 프로그램 설계"
+                    "Open Water(스쿠버) 또는 Freediver(프리다이빙) 자격 교육",
+                    "Dive Against Debris® 전문 교육 (수거 요령, 안전, 데이터 기록)",
+                    "안전 장비 및 수거 도구 지급",
+                    "활동 전 안전 브리핑 필수"
                 ]
             },
             "phase2": {
-                "title": "2단계: 커뮤니티 구축",
-                "description": "전 세계 환경 보호 활동가 커뮤니티 구축",
+                "title": "2단계: 수중 정화 (플로빙)",
+                "description": "연 4회(분기 1회) 정기 수중 정화 활동",
                 "activities": [
-                    "글로벌 커뮤니티 플랫폼 구축",
-                    "지역별 챕터 설립",
-                    "멤버 간 네트워킹 이벤트 개최",
-                    "소셜 미디어 캠페인 확장"
+                    "수심 2-10m 연안에서 2-3인 1조 잠수",
+                    "전문 다이브 리더(강사/다이브마스터) 인솔",
+                    "폐어망, 플라스틱 등 해저 폐기물 수거",
+                    "GPS 좌표, 품목, 중량, 개수, 사진 정밀 기록",
+                    "페어 다이빙 원칙 준수, 체크리스트 의무화"
                 ]
             },
             "phase3": {
-                "title": "3단계: 실천 활동",
-                "description": "실제 해양 정화 및 보호 활동 실행",
+                "title": "3단계: 데이터 업로드 및 처리",
+                "description": "국제 DB 업로드 및 적법 폐기물 처리",
                 "activities": [
-                    "해양 정화 활동 프로그램 시작",
-                    "해양 보호 기술 연구 프로젝트",
-                    "정부 및 NGO와의 협력 강화",
-                    "국제 해양 보호 컨퍼런스 개최"
+                    "Dive Against Debris® 플랫폼 데이터 업로드",
+                    "UNEP 등 국제기구 정책 수립 활용",
+                    "지자체·해양환경공단 협력 적법 처리",
+                    "재활용 가능 자원 최대한 재활용"
                 ]
             },
             "phase4": {
-                "title": "4단계: 확장 및 발전",
-                "description": "프로젝트 확장 및 지속가능한 발전",
+                "title": "4단계: ESG 보고",
+                "description": "검증 가능한 ESG 성과 보고서 작성",
                 "activities": [
-                    "프로젝트 성과 분석 및 보고",
-                    "지속가능한 운영 모델 구축",
-                    "신규 지역 확장",
-                    "차세대 리더 양성 프로그램"
+                    "환경(E): 수거량, 품목별 비중, 탄소 저감",
+                    "사회(S): 참여 인원, 봉사시간, 지역 협력",
+                    "거버넌스(G): 안전 교육, 보험, 제3자 검증",
+                    "GRI 306, SDG 14, ISO 14001 기준 연계",
+                    "연말 MOBA 성과 보고서 발간"
+                ]
+            },
+            "phase5": {
+                "title": "5단계: 시각화 프로젝트",
+                "description": "수거 성과를 지역 문화 자산으로 전환",
+                "activities": [
+                    "수거 폐기물로 벽화, 조형물, 어선 페인팅 제작",
+                    "지역 예술가, 청소년, 어민과 공동 창작",
+                    "현장 안내판과 QR 코드로 정화 데이터 공개",
+                    "ESG Art Report 매년 발간",
+                    "지역 사회 문화 자산으로 영구 보존"
                 ]
             }
         },
@@ -179,68 +206,84 @@
         }
     },
     "membership": {
-        "title": "멤버십",
-        "description": "MOBA 멤버가 되어 해양 환경 보호에 참여하세요",
+        "title": "멤버십 안내",
+        "description": "MOBA는 기업·강사·다이버가 각자의 역할과 책임을 갖고 정기적 해양정화 활동(연 4회)을 수행하며, 측정 가능한 ESG 성과를 공동 창출하는 3계층 멤버십을 운영합니다.",
         "benefits": {
-            "title": "멤버 혜택",
-            "subtitle": "MOBA 멤버가 되면 다양한 혜택을 누릴 수 있습니다.",
+            "title": "멤버십 혜택",
+            "subtitle": "각 멤버십 유형별로 최적화된 혜택을 제공합니다.",
             "education": {
-                "title": "전용 교육 자료 접근",
-                "description": "전문가가 제작한 해양 환경 교육 자료에 무제한 접근"
+                "title": "전문 교육 및 자격증",
+                "description": "PADI AWARE Foundation과 연계한 다이빙 자격증 취득 지원 및 전문 교육 프로그램"
             },
             "events": {
-                "title": "멤버 전용 이벤트 참여",
-                "description": "멤버 전용 워크샵, 세미나, 네트워킹 이벤트 참여"
+                "title": "정기 수중 정화 활동",
+                "description": "연 4회(분기 1회) 정기 수중 정화 활동 참여 및 안전한 환경에서의 해양보호 실천"
             },
             "network": {
-                "title": "글로벌 네트워킹 기회",
-                "description": "전 세계 환경 보호 활동가들과의 네트워킹 기회"
+                "title": "글로벌 파트너십 네트워크",
+                "description": "PADI AWARE Foundation과의 국제 파트너십을 통한 글로벌 해양보호 네트워크 참여"
             },
             "resources": {
-                "title": "프로젝트 자원 지원",
-                "description": "프로젝트 실행을 위한 자금 및 자원 지원"
+                "title": "ESG 데이터 및 보고",
+                "description": "Dive Against Debris® 국제 DB 연계를 통한 검증 가능한 ESG 성과 데이터 제공"
             }
         },
         "plans": {
-            "title": "기업 멤버십 플랜",
-            "subtitle": "ESG 가치 실현을 위한 기업 맞춤형 해양보호 프로그램",
-            "basic": {
-                "title": "스타터 플랜",
-                "price": "월 50만원",
-                "description": "소규모 기업을 위한 기본 ESG 해양보호 프로그램",
-                "buttonText": "문의하기",
-                "features": [
-                    "월 1회 해양정화 활동 (최대 10명)",
-                    "기본 ESG 보고서 제공",
-                    "PADI AWARE 교육 프로그램",
-                    "활동 인증서 발급"
-                ]
-            },
-            "premium": {
-                "title": "비즈니스 플랜",
-                "price": "월 100만원",
-                "description": "중간 규모 기업을 위한 종합 ESG 해양보호 솔루션",
-                "buttonText": "문의하기",
-                "features": [
-                    "월 2회 해양정화 활동 (최대 25명)",
-                    "상세 ESG 보고서 및 데이터 분석",
-                    "맞춤형 교육 프로그램",
-                    "브랜딩 기회 및 홍보 지원",
-                    "전담 매니저 배정"
-                ]
-            },
+            "title": "멤버십 유형",
+            "subtitle": "기업·강사·다이버 3계층 멤버십으로 구성된 해양보호 생태계",
             "corporate": {
-                "title": "엔터프라이즈 플랜",
-                "price": "월 200만원",
-                "description": "대기업을 위한 프리미엄 ESG 해양보호 플랫폼",
+                "title": "기업 멤버십",
+                "price": "최초 2,000만원 / 갱신 1,000만원/년",
+                "description": "상시 10명 유지, ESG 성과 창출",
                 "buttonText": "문의하기",
                 "features": [
-                    "무제한 해양정화 활동",
-                    "실시간 ESG 대시보드",
-                    "글로벌 해양보호 프로젝트 참여",
-                    "전용 브랜딩 및 마케팅 지원",
-                    "PADI AWARE 파트너십 혜택",
-                    "24/7 전담 지원팀"
+                    "최초 가입: PADI 프리다이버 6명 + SSI 스쿠버 4명 자격증 지원",
+                    "갱신(2년차~): PADI 프리다이버 4명 + SSI 스쿠버 2명 자격증 지원",
+                    "연 4회 정기 수중 정화 활동 (분기 1회)",
+                    "PADI AWARE Foundation 국제 DB 연계",
+                    "ESG 리포트용 데이터 제공 (GRI, SDG 14, ISO 14001)",
+                    "전담 운영팀 배정 및 안전 보험"
+                ]
+            },
+            "pilot": {
+                "title": "시범 기업 (2곳 한정)",
+                "price": "가입비 면제/할인",
+                "description": "실비 정산으로 1년간 효과성 검증",
+                "buttonText": "문의하기",
+                "features": [
+                    "가입비 면제 또는 대폭 할인",
+                    "원가+실비 기준 투명 정산",
+                    "첫 성공 사례 브랜딩 기회",
+                    "맞춤형 ESG 컨설팅",
+                    "우선 홍보 및 언론 노출"
+                ]
+            },
+            "instructor": {
+                "title": "강사 멤버십",
+                "price": "문의",
+                "description": "활동 리더십·안전관리·교육 품질 담보",
+                "buttonText": "문의하기",
+                "features": [
+                    "리드(Lead)·서브 리드 우선 배정",
+                    "리더 수당 및 인센티브",
+                    "장비·보험 지원",
+                    "정기 갱신교육 제공",
+                    "안전관리 전문 교육",
+                    "데이터 표준 교육"
+                ]
+            },
+            "diver": {
+                "title": "다이버 멤버십",
+                "price": "문의",
+                "description": "참여·시민과학 중심의 개인 멤버십",
+                "buttonText": "문의하기",
+                "features": [
+                    "활동 우선 신청권",
+                    "교육/자격 할인 혜택",
+                    "포인트·레벨 시스템",
+                    "연 2회 이상 참여 권리",
+                    "활동 로그 및 데이터 관리",
+                    "지역 파트너 협업 기회"
                 ]
             }
         },
@@ -282,6 +325,34 @@
             "subtitle": "MOBA 프로젝트의 주요 이정표와 성과"
         },
         "events": {
+            "globalCampaign": {
+                "title": "글로벌 해양정화 캠페인",
+                "date": "2024년 3월 15일",
+                "time": "오전 10:00 - 오후 6:00",
+                "location": "전 세계",
+                "description": "해양 쓰레기 정화와 해양 오염에 대한 인식 제고를 위한 글로벌 캠페인"
+            },
+            "workshop": {
+                "title": "해양보전 워크샵",
+                "date": "2024년 4월 20일",
+                "time": "오후 2:00 - 오후 5:00",
+                "location": "서울, 대한민국",
+                "description": "해양보전 기술과 모범 사례에 대한 교육 워크샵"
+            },
+            "conference": {
+                "title": "국제 해양보호 컨퍼런스",
+                "date": "2024년 5월 10-12일",
+                "time": "오전 9:00 - 오후 6:00",
+                "location": "도쿄, 일본",
+                "description": "해양보호를 위한 전문가와 활동가들이 모이는 국제 컨퍼런스"
+            },
+            "seminar": {
+                "title": "지속가능한 해양관리 세미나",
+                "date": "2024년 6월 5일",
+                "time": "오후 1:00 - 오후 4:00",
+                "location": "온라인",
+                "description": "지속가능한 해양관리와 정책 개발에 대한 온라인 세미나"
+            },
             "padiPartnership": {
                 "title": "PADI AWARE Foundation 파트너십 체결",
                 "date": "2024년 1월 15일",
@@ -362,6 +433,37 @@
             "planned": "계획됨",
             "scheduled": "예정"
         },
+        "pastEvents": {
+            "title": "지난 활동",
+            "subtitle": "MOBA가 함께한 해양정화 활동 기록",
+            "pohang20250920": {
+                "id": "pohang-20250920",
+                "title": "버블리 6회 바다쓰담 연합 해양정화활동",
+                "host": "버블리 (Bubbly)",
+                "participants": ["버블리", "MOBA", "L&F", "환경재단"],
+                "date": "2025년 9월 20일",
+                "time": "10:00 ~ 13:00",
+                "location": "경북 포항시 호미곶면 대동배리 구룡소 (유네스코 세계지질공원)",
+                "attendees": 52,
+                "description": "국제 연안정화의 날(ICC Day) 연계 해양정화 활동",
+                "results": {
+                    "totalVolume": "약 3,100L",
+                    "categories": [
+                        { "name": "낚시 쓰레기", "percentage": "70%", "details": "찌, 루어, 낚시줄, 폐그물 등" },
+                        { "name": "생활폐기물", "percentage": "30%", "details": "음료병, 담배꽁초, 유리조각 등" }
+                    ]
+                },
+                "notes": "기상악화로 플로빙에서 플로깅으로 전환",
+                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "images": [
+                    "/images/20250920_pohang/1761035795110.jpg",
+                    "/images/20250920_pohang/1761035808196.jpg",
+                    "/images/20250920_pohang/1761035808451.jpg",
+                    "/images/20250920_pohang/1761035808525.jpg",
+                    "/images/20250920_pohang/1761035808556.jpg"
+                ]
+            }
+        },
         "cta": {
             "title": "이벤트에 참여하고 싶으신가요?",
             "description": "MOBA 멤버가 되시면 모든 이벤트에 우선 참여할 수 있습니다.",
@@ -419,20 +521,32 @@
             "subtitle": "MOBA에 대해 자주 묻는 질문들을 정리했습니다.",
             "questions": {
                 "membership": {
-                    "question": "MOBA 멤버십은 어떻게 가입하나요?",
-                    "answer": "홈페이지의 \"멤버십\" 페이지에서 원하는 플랜을 선택하고 가입하실 수 있습니다. 기본 멤버십은 무료로 가입 가능합니다."
+                    "question": "자격증이 없어도 시작할 수 있나요?",
+                    "answer": "가능합니다. 교육 후 국제 자격증 취득을 지원합니다."
                 },
                 "activities": {
-                    "question": "해양 정화 활동에 참여하려면 어떻게 해야 하나요?",
-                    "answer": "MOBA 멤버가 되시면 정기적으로 개최되는 해양 정화 활동에 참여하실 수 있습니다. 이벤트 일정은 \"일정\" 페이지에서 확인하실 수 있습니다."
+                    "question": "안전은 어떻게 보장하나요?",
+                    "answer": "인솔자·페어 다이빙·체크리스트·전문 보험을 적용합니다."
                 },
                 "corporate": {
-                    "question": "기업 파트너십은 어떻게 진행되나요?",
-                    "answer": "기업 파트너십에 관심이 있으시면 contact@moba.org로 문의해주세요. 맞춤형 협력 방안을 제안해드리겠습니다."
+                    "question": "어느 수심에서 활동하나요?",
+                    "answer": "보통 2-10m 범위에서 진행합니다."
                 },
                 "funding": {
-                    "question": "MOBA는 어떤 방식으로 자금을 조달하나요?",
-                    "answer": "MOBA는 멤버십 수익, 기업 후원, 정부 보조금, 개인 기부 등을 통해 운영됩니다. 모든 자금 사용 내역은 투명하게 공개합니다."
+                    "question": "데이터는 어디에 기록되나요?",
+                    "answer": "Dive Against Debris® 등 외부 DB에 업로드합니다."
+                },
+                "diving": {
+                    "question": "복지와 연결되나요?",
+                    "answer": "자격증 취득으로 레저·봉사를 함께 경험합니다."
+                },
+                "waste": {
+                    "question": "수거물 처리는 어떻게 하나요?",
+                    "answer": "지자체·전문기관과 협력해 합법 처리·재활용합니다."
+                },
+                "visualization": {
+                    "question": "시각화 프로젝트는 필수인가요?",
+                    "answer": "선택 활동입니다. 환경 성과를 사회적 가치로 확장하는 효과적 방법입니다."
                 }
             }
         },

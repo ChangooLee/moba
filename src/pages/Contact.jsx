@@ -267,10 +267,10 @@ const Contact = () => {
                             {t('pages.contact.cta.subtitle')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg">
+                            <Button size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
                                 {t('common.buttons.contact')}
                             </Button>
-                            <Button variant="outline" size="lg">
+                            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">
                                 {t('common.buttons.learnMore')}
                             </Button>
                         </div>

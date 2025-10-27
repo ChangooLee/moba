@@ -382,8 +382,26 @@
                         { "name": "生活垃圾", "percentage": "30%", "details": "饮料瓶、烟蒂、玻璃碎片等" }
                     ]
                 },
-                "notes": "因天气恶劣从潜水清理改为陆地清理",
+                "notes": "因天气恶劣从潜水清理改为陆地清理。渔业垃圾占收集总量的70%，对海洋生物构成危险",
                 "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "detailedResults": {
+                    "title": "清理物品详细清单",
+                    "weather": "上午多云 / 下午晴朗",
+                    "totalCollected": "约3,100L",
+                    "items": [
+                        { "name": "烟头", "count": "20个" },
+                        { "name": "饮料瓶及瓶盖", "count": "约300个（3袋以上）" },
+                        { "name": "一次性食品容器", "count": "15个" },
+                        { "name": "扎带·绳索", "count": "10个" },
+                        { "name": "塑料碎片", "count": "100个" },
+                        { "name": "玻璃碎片", "count": "10个" },
+                        { "name": "罐装饮料", "count": "30个" },
+                        { "name": "渔业垃圾", "count": "50个（浮漂、鱼饵、鱼线、钓鱼竿等，存在安全隐患）" },
+                        { "name": "泡沫浮漂", "count": "11个（包括大型圆形浮漂）" },
+                        { "name": "鱼篓与渔网", "count": "多个" }
+                    ],
+                    "summary": "渔业垃圾（浮漂、鱼饵、鱼线等）约占70%，生活垃圾（烟头、饮料瓶、玻璃碎片等）约占30%"
+                },
                 "images": [
                     "/images/20250920_pohang/1761035795110.jpg",
                     "/images/20250920_pohang/1761035808196.jpg",

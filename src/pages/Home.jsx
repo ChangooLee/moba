@@ -9,6 +9,7 @@ const Home = () => {
     const { t, ready } = useTranslation();
     const [stats, setStats] = useState([]);
     const [features, setFeatures] = useState([]);
+    const [recentActivity, setRecentActivity] = useState(null);
 
     useEffect(() => {
         if (ready) {
@@ -41,6 +42,12 @@ const Home = () => {
                     description: t('pages.home.features.action.description'),
                 },
             ]);
+
+            // 최근 활동 데이터 설정
+            const event = t('pages.schedule.pastEvents.pohang20250920', { returnObjects: true });
+            if (event && typeof event === 'object') {
+                setRecentActivity(event);
+            }
         }
     }, [ready, t]);
 
@@ -111,6 +118,93 @@ const Home = () => {
                     </div>
                 </Container>
             </section>
+
+            {/* 최근 활동 섹션 */}
+            {recentActivity && (
+                <section className="section-padding bg-gradient-to-br from-blue-50 to-green-50">
+                    <Container>
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">
+                                🌊 최근 활동
+                            </h2>
+                            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                                MOBA와 함께한 해양정화 활동 성과
+                            </p>
+                        </div>
+                        <Card className="max-w-4xl mx-auto bg-white shadow-xl">
+                            <div className="p-6 md:p-8">
+                                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4">
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                                            {recentActivity.title}
+                                        </h3>
+                                        <div className="flex flex-wrap items-center gap-3 text-sm text-gray-600">
+                                            <span className="flex items-center gap-1">
+                                                <span className="font-semibold">주관:</span> {recentActivity.host}
+                                            </span>
+                                            <span className="flex items-center gap-1">
+                                                <span className="font-semibold">참여:</span> {Array.isArray(recentActivity.participants) ? recentActivity.participants.join(' x ') : recentActivity.participants}
+                                            </span>
+                                            <span className="flex items-center gap-1">
+                                                <span className="font-semibold">일시:</span> {recentActivity.date} {recentActivity.time}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                                            ✅ 완료
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-lg">
+                                        <p className="text-sm font-medium text-gray-600 mb-1">📍 장소</p>
+                                        <p className="text-base font-semibold text-gray-900">{recentActivity.location}</p>
+                                    </div>
+                                    <div className="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-lg">
+                                        <p className="text-sm font-medium text-gray-600 mb-1">👥 참여자</p>
+                                        <p className="text-2xl font-bold text-padi-blue">{recentActivity.attendees}명</p>
+                                    </div>
+                                    <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-4 rounded-lg">
+                                        <p className="text-sm font-medium text-gray-600 mb-1">🗑️ 수거량</p>
+                                        <p className="text-2xl font-bold text-padi-blue">{recentActivity.results?.totalVolume}</p>
+                                    </div>
+                                </div>
+
+                                {recentActivity.results && (
+                                    <div className="bg-blue-50 p-4 rounded-lg mb-4">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2">📊 주요 수거 항목:</p>
+                                        <div className="flex flex-wrap gap-3">
+                                            {Array.isArray(recentActivity.results.categories) && recentActivity.results.categories.map((category, catIndex) => (
+                                                <div key={catIndex} className="inline-flex items-center gap-2 bg-white px-3 py-1 rounded-full">
+                                                    <span className="text-sm font-medium">{category.name}:</span>
+                                                    <span className="text-sm font-bold text-padi-blue">{category.percentage}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                {recentActivity.press && (
+                                    <div className="flex items-center justify-center">
+                                        <a 
+                                            href={recentActivity.press} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 px-6 py-3 bg-padi-blue text-white font-semibold rounded-lg hover:bg-padi-dark-blue transition-colors duration-200 shadow-md hover:shadow-lg"
+                                        >
+                                            <span className="text-xl">📰</span>
+                                            <span>보도자료 보기</span>
+                                            <span className="text-sm">→</span>
+                                        </a>
+                                    </div>
+                                )}
+                            </div>
+                        </Card>
+                    </Container>
+                </section>
+            )}
 
             {/* 주요 활동 섹션 */}
             <section className="section-padding">

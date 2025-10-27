@@ -378,8 +378,26 @@
                         { "name": "Household waste", "percentage": "30%", "details": "Beverage bottles, cigarette butts, glass fragments, etc." }
                     ]
                 },
-                "notes": "Changed from ploving to plogging due to weather conditions",
+                "notes": "Changed from ploving to plogging due to weather conditions. Fishing waste accounts for 70% of total collection, posing risks to marine life.",
                 "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "detailedResults": {
+                    "title": "Detailed Collection Items",
+                    "weather": "Cloudy morning / Clear afternoon",
+                    "totalCollected": "Approx. 3,100L",
+                    "items": [
+                        { "name": "Cigarette butts", "count": "20 items" },
+                        { "name": "Beverage bottles & caps", "count": "Approx. 300 items (3+ bags)" },
+                        { "name": "Disposable food containers", "count": "15 items" },
+                        { "name": "Ties & ropes", "count": "10 items" },
+                        { "name": "Plastic fragments", "count": "100 items" },
+                        { "name": "Glass fragments", "count": "10 items" },
+                        { "name": "Cans", "count": "30 items" },
+                        { "name": "Fishing waste", "count": "50 items (floats, lures, fishing lines, rods, safety hazard exists)" },
+                        { "name": "Styrofoam buoys", "count": "11 items (including large round buoys)" },
+                        { "name": "Fish traps & nets", "count": "Multiple" }
+                    ],
+                    "summary": "Fishing waste (floats, lures, fishing lines, etc.) accounts for approximately 70% of the total, while household waste (cigarette butts, beverage bottles, glass fragments, etc.) accounts for approximately 30%"
+                },
                 "images": [
                     "/images/20250920_pohang/1761035795110.jpg",
                     "/images/20250920_pohang/1761035808196.jpg",

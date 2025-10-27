@@ -333,6 +333,43 @@ const Schedule = () => {
                                         </div>
                                     )}
 
+                                    {/* 상세 수거 내역 */}
+                                    {event.detailedResults && (
+                                        <div className="bg-green-50 rounded-lg p-6 mb-6 border-2 border-green-200">
+                                            <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                                                📊 {event.detailedResults.title}
+                                            </h4>
+                                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                                <div className="bg-white p-3 rounded">
+                                                    <span className="text-sm font-medium text-gray-600">날씨</span>
+                                                    <p className="text-base font-semibold text-gray-900">{event.detailedResults.weather}</p>
+                                                </div>
+                                                <div className="bg-white p-3 rounded">
+                                                    <span className="text-sm font-medium text-gray-600">총 수거량</span>
+                                                    <p className="text-base font-semibold text-padi-blue">{event.detailedResults.totalCollected}</p>
+                                                </div>
+                                                <div className="bg-white p-3 rounded">
+                                                    <span className="text-sm font-medium text-gray-600">참여자</span>
+                                                    <p className="text-base font-semibold text-padi-blue">{event.attendees}명</p>
+                                                </div>
+                                            </div>
+                                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                                                {Array.isArray(event.detailedResults.items) && event.detailedResults.items.map((item, itemIndex) => (
+                                                    <div key={itemIndex} className="bg-white p-3 rounded border border-gray-200">
+                                                        <p className="text-sm font-semibold text-gray-900 mb-1">{item.name}</p>
+                                                        <p className="text-base font-bold text-padi-blue">{item.count}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            {event.detailedResults.summary && (
+                                                <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded">
+                                                    <p className="text-sm font-semibold text-gray-900 mb-1">📝 요약</p>
+                                                    <p className="text-sm text-gray-700">{event.detailedResults.summary}</p>
+                                                </div>
+                                            )}
+                                        </div>
+                                    )}
+
                                     {/* 이미지 갤러리 */}
                                     {event.images && event.images.length > 0 && (
                                         <div className="mb-6">
@@ -356,15 +393,16 @@ const Schedule = () => {
 
                                     {/* 보도자료 링크 */}
                                     {event.press && (
-                                        <div className="flex items-center gap-2">
-                                            <span className="text-padi-blue">📰</span>
+                                        <div className="flex items-center justify-center pt-4">
                                             <a 
                                                 href={event.press} 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
-                                                className="text-padi-blue hover:text-padi-dark-blue font-medium underline"
+                                                className="inline-flex items-center gap-2 px-6 py-3 bg-padi-blue text-white font-semibold rounded-lg hover:bg-padi-dark-blue transition-colors duration-200 shadow-md hover:shadow-lg"
                                             >
-                                                관련 보도자료 보기
+                                                <span className="text-xl">📰</span>
+                                                <span>관련 보도자료 보기</span>
+                                                <span className="text-sm">→</span>
                                             </a>
                                         </div>
                                     )}

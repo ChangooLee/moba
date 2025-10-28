@@ -172,7 +172,7 @@ const Home = () => {
                         </div>
                         {/* 사진 영역 */}
                         <div className="flex flex-col items-center justify-center">
-                            <div className="relative w-full aspect-[4/3] rounded-lg shadow-lg overflow-hidden group">
+                            <div className="relative w-full aspect-square rounded-lg shadow-lg overflow-hidden group">
                                 <img 
                                     src={galleryImages[currentImageIndex]} 
                                     alt="해양 정화 활동"

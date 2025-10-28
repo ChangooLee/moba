@@ -81,7 +81,7 @@ const Home = () => {
                         <h1 className="text-2xl md:text-4xl font-bold mb-6 animate-fade-in font-heading">
                             {t('pages.home.hero.title')}
                         </h1>
-                        <p className="text-xl md:text-2xl mb-8 text-gray-600 animate-slide-up">
+                        <p className="text-xl md:text-2xl mb-8 text-gray-600 animate-slide-up whitespace-pre-line">
                             {t('pages.home.hero.subtitle')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

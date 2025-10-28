@@ -84,7 +84,7 @@ const Home = () => {
                         <p className="text-xl md:text-2xl mb-8 text-gray-600 animate-slide-up whitespace-pre-line leading-relaxed [&_br]:mb-1">
                             {t('pages.home.hero.subtitle')}
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Button size="lg" className="bg-padi-blue text-white hover:bg-padi-dark-blue">
                                 {t('pages.home.hero.cta')}
                             </Button>

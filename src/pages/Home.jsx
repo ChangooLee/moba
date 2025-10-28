@@ -129,6 +129,31 @@ const Home = () => {
                 </Container>
             </section>
 
+            {/* 이미지 섹션 1 - 통계와 주요 활동 사이 */}
+            <section className="relative py-16 overflow-hidden bg-gradient-to-br from-blue-50 to-green-50">
+                <div className="absolute inset-0 opacity-5">
+                    <div className="absolute inset-0 bg-gradient-to-b from-padi-blue via-transparent to-green-200"></div>
+                </div>
+                <Container className="relative z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden aspect-video">
+                            <img 
+                                src="/images/20250920_pohang/1761035795110.jpg" 
+                                alt="해양 정화 활동"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div className="bg-white rounded-lg shadow-md overflow-hidden aspect-video">
+                            <img 
+                                src="/images/20250920_pohang/1761035808196.jpg" 
+                                alt="해양 정화 활동"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                </Container>
+            </section>
+
             {/* 주요 활동 섹션 */}
             <section className="section-padding">
                 <Container>

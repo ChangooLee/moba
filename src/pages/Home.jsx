@@ -10,6 +10,21 @@ const Home = () => {
     const [stats, setStats] = useState([]);
     const [features, setFeatures] = useState([]);
     const [recentActivity, setRecentActivity] = useState(null);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    
+    const galleryImages = [
+        '/images/20250920_pohang/1761035795110.jpg',
+        '/images/20250920_pohang/1761035808196.jpg',
+        '/images/20250920_pohang/1761035808451.jpg',
+        '/images/20250920_pohang/1761035808525.jpg'
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+        }, 4000);
+        return () => clearInterval(interval);
+    }, [galleryImages.length]);
 
     useEffect(() => {
         if (ready) {
@@ -156,13 +171,29 @@ const Home = () => {
                             ))}
                         </div>
                         {/* 사진 영역 */}
-                        <div className="flex items-center justify-center">
-                            <div className="w-full aspect-square rounded-lg shadow-lg overflow-hidden">
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="relative w-full aspect-square rounded-lg shadow-lg overflow-hidden group">
                                 <img 
-                                    src="/images/20250920_pohang/1761035808525.jpg" 
+                                    src={galleryImages[currentImageIndex]} 
                                     alt="해양 정화 활동"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover transition-opacity duration-500"
+                                    key={currentImageIndex}
                                 />
+                                {/* 인디케이터 */}
+                                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                                    {galleryImages.map((_, index) => (
+                                        <button
+                                            key={index}
+                                            onClick={() => setCurrentImageIndex(index)}
+                                            className={`w-2 h-2 rounded-full transition-all ${
+                                                index === currentImageIndex 
+                                                    ? 'bg-white w-6' 
+                                                    : 'bg-white/50 hover:bg-white/75'
+                                            }`}
+                                            aria-label={`Slide ${index + 1}`}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -143,22 +143,29 @@ const Home = () => {
                             </Card>
                         ))}
                     </div>
+                </Container>
+            </section>
 
-                    {/* 파트너 및 인증기관 로고 */}
-                    <div className="mt-16">
-                        <h3 className="text-center text-xl font-semibold text-gray-900 mb-6">
+            {/* 파트너 및 인증기관 섹션 */}
+            <section className="section-padding bg-gray-50">
+                <Container>
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">
                             파트너 및 인증기관
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
-                            <div className="flex justify-center">
-                                <img src="/images/padi-aware.svg" alt="PADI AWARE" className="h-16 w-auto" />
-                            </div>
-                            <div className="flex justify-center">
-                                <img src="/images/iso-14001.svg" alt="ISO 14001" className="h-16 w-auto" />
-                            </div>
-                            <div className="flex justify-center">
-                                <img src="/images/gri.svg" alt="GRI" className="h-16 w-auto" />
-                            </div>
+                        </h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                            MOBA와 협력하는 국제 인증 기관 및 파트너
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
+                        <div className="flex justify-center">
+                            <img src="/images/padi-aware.svg" alt="PADI AWARE" className="h-20 w-auto" />
+                        </div>
+                        <div className="flex justify-center">
+                            <img src="/images/iso-14001.svg" alt="ISO 14001" className="h-20 w-auto" />
+                        </div>
+                        <div className="flex justify-center">
+                            <img src="/images/gri.svg" alt="GRI" className="h-20 w-auto" />
                         </div>
                     </div>
                 </Container>

@@ -20,15 +20,15 @@
             "title": "MOBA의 핵심 가치",
             "subtitle": "E-S-G 3축을 통한 기업의 지속가능한 해양보호 실현",
             "conservation": {
-                "title": "E (환경) 가치",
-                "description": "분기별 수중 정화 활동을 통한 실제 해양폐기물 제거 및 환경적 임팩트 창출"
+                "title": "E (Environment) 환경",
+                "description": "분기별 수중 정화 활동을 통한 실제 해양 폐기물 수거로 바다 생태계 회복"
             },
             "education": {
-                "title": "S (사회) 가치",
+                "title": "S (Social) 사회",
                 "description": "임직원 참여를 통한 조직문화 강화 및 지역사회와의 협력 네트워크 구축"
             },
             "community": {
-                "title": "G (거버넌스) 가치",
+                "title": "G (Governance) 구조",
                 "description": "PADI AWARE Foundation과의 국제 표준 연계를 통한 투명한 데이터 관리 및 검증 체계"
             },
             "action": {

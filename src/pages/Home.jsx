@@ -15,6 +15,7 @@ const Home = () => {
     const galleryImages = [
         '/images/IMG_7163.JPG',
         '/images/IMG_7170.JPG',
+        '/images/IMG_8779.jpg',
         '/images/IMG_8777.jpg',
         '/images/IMG_8781.jpg'
     ];

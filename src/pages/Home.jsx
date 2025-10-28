@@ -165,7 +165,7 @@ const Home = () => {
                             <img src="/images/ISO_Logo_(Red_square).svg.png" alt="ISO 14001" className="h-48 w-auto object-contain" />
                         </div>
                         <div className="flex justify-center items-center">
-                            <img src="/images/GRI-logo-300x150.webp" alt="GRI Standards" className="h-48 w-auto object-contain" />
+                            <img src="/images/O431-Global-Reporting-Initative.png" alt="GRI Standards" className="h-48 w-auto object-contain" />
                         </div>
                     </div>
                 </Container>

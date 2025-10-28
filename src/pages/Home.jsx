@@ -159,7 +159,7 @@ const Home = () => {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 items-center max-w-6xl mx-auto">
                         <div className="flex justify-center items-center">
-                            <img src="/images/PADI-AWARE-Logo%20복사본.tiff" alt="PADI AWARE Foundation" className="h-48 w-auto object-contain" />
+                            <img src="/images/PADI-AWARE-Logo.webp" alt="PADI AWARE Foundation" className="h-48 w-auto object-contain" />
                         </div>
                         <div className="flex justify-center items-center">
                             <img src="/images/ISO_Logo_(Red_square).svg.png" alt="ISO 14001" className="h-48 w-auto object-contain" />

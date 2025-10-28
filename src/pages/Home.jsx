@@ -159,13 +159,13 @@ const Home = () => {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 items-center max-w-5xl mx-auto">
                         <div className="flex justify-center bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                            <img src="/images/PADI_AWARE_Foundation_Logo_RGB_Hor_Tag_Blue.png" alt="PADI AWARE Foundation" className="h-20 w-auto" />
+                            <img src="/images/PADI-AWARE-Logo.webp" alt="PADI AWARE Foundation" className="h-32 w-auto" />
                         </div>
                         <div className="flex justify-center bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                            <img src="/images/ISO_Logo_(Red_square).svg.png" alt="ISO 14001" className="h-20 w-auto" />
+                            <img src="/images/ISO_Logo_(Red_square).svg.png" alt="ISO 14001" className="h-32 w-auto" />
                         </div>
                         <div className="flex justify-center bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                            <img src="/images/gri.svg" alt="GRI Standards" className="h-20 w-auto" />
+                            <img src="/images/64dd240a11d841b04033a3a4_An introduction to GRI .jpg" alt="GRI Standards" className="h-32 w-auto" />
                         </div>
                     </div>
                 </Container>

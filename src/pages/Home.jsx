@@ -159,7 +159,7 @@ const Home = () => {
                         <div className="flex items-center justify-center">
                             <div className="w-full aspect-square rounded-lg shadow-lg overflow-hidden">
                                 <img 
-                                    src="/images/20250920_pohang/8779.jpg" 
+                                    src="/images/20250920_pohang/1761035808525.jpg" 
                                     alt="해양 정화 활동"
                                     className="w-full h-full object-cover"
                                 />

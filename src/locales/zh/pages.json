@@ -6,7 +6,8 @@
         "hero": {
             "title": "企业与潜水员共同参与的海洋清洁ESG平台",
             "subtitle": "MOBA为企业和个人提供潜水教育和认证支持。\n我们在实际海洋中直接收集垃圾，并将结果数据化，转化为ESG成果。",
-            "cta": "开始ESG海洋清洁"
+            "cta": "企业ESG开始",
+            "ctaSecondary": "个人志愿服务申请"
         },
         "stats": {
             "title": "MOBA的成果",

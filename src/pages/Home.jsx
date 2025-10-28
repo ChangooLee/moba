@@ -89,7 +89,7 @@ const Home = () => {
                                 {t('pages.home.hero.cta')}
                             </Button>
                             <Button variant="outline" size="lg" className="border-padi-blue text-padi-blue hover:bg-padi-blue hover:text-white">
-                                {t('common.buttons.learnMore')}
+                                {t('pages.home.hero.ctaSecondary')}
                             </Button>
                         </div>
                     </div>

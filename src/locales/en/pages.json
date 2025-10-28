@@ -6,7 +6,8 @@
         "hero": {
             "title": "Corporate & Diver Ocean Cleanup ESG Platform",
             "subtitle": "MOBA provides diving education and certification support for corporate employees and individuals.\nWe collect trash directly from the ocean, and convert the results into data-driven ESG performance.",
-            "cta": "Start ESG Ocean Cleanup"
+            "cta": "Start Corporate ESG",
+            "ctaSecondary": "Apply for Individual Volunteering"
         },
         "stats": {
             "title": "MOBA Performance",

@@ -13,10 +13,10 @@ const Home = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     
     const galleryImages = [
-        '/images/20250920_pohang/1761035795110.jpg',
-        '/images/20250920_pohang/1761035808196.jpg',
-        '/images/20250920_pohang/1761035808451.jpg',
-        '/images/20250920_pohang/1761035808525.jpg'
+        '/images/IMG_7163.JPG',
+        '/images/IMG_7170.JPG',
+        '/images/IMG_8777.jpg',
+        '/images/IMG_8781.jpg'
     ];
 
     useEffect(() => {

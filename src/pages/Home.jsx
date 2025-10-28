@@ -65,8 +65,13 @@ const Home = () => {
     return (
         <div className="min-h-screen">
             {/* 히어로 섹션 */}
-            <section className="bg-white text-gray-900 section-padding">
-                <Container>
+            <section className="relative bg-white text-gray-900 section-padding overflow-hidden">
+                {/* 배경 이미지 */}
+                <div className="absolute inset-0 opacity-5 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-br from-padi-blue via-padi-dark-blue to-transparent"></div>
+                </div>
+                
+                <Container className="relative z-10">
                     <div className="text-center">
                         {/* 로고 */}
                         <div className="mb-4 animate-fade-in">
@@ -97,8 +102,13 @@ const Home = () => {
             </section>
 
             {/* 통계 섹션 */}
-            <section className="py-16 bg-gray-50">
-                <Container>
+            <section className="relative py-16 bg-gray-50 overflow-hidden">
+                {/* 배경 이미지 */}
+                <div className="absolute inset-0 opacity-5 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-100 via-transparent to-blue-100"></div>
+                </div>
+                
+                <Container className="relative z-10">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">
                             {t('pages.home.stats.title')}

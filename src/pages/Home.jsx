@@ -155,7 +155,7 @@ const Home = () => {
                             {t('pages.home.features.subtitle')}
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                         {/* 핵심 가치 4개를 2x2 그리드로 */}
                         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
                             {features.map((feature, index) => (
@@ -172,13 +172,37 @@ const Home = () => {
                         </div>
                         {/* 사진 영역 */}
                         <div className="flex flex-col items-center justify-center">
-                            <div className="relative w-full aspect-square rounded-lg shadow-lg overflow-hidden group">
+                            <div className="relative w-full aspect-[4/3] rounded-lg shadow-lg overflow-hidden group">
                                 <img 
                                     src={galleryImages[currentImageIndex]} 
                                     alt="해양 정화 활동"
                                     className="w-full h-full object-cover transition-opacity duration-500"
                                     key={currentImageIndex}
                                 />
+                                {/* 이전 화살표 */}
+                                <button
+                                    onClick={() => setCurrentImageIndex((prev) => 
+                                        prev === 0 ? galleryImages.length - 1 : prev - 1
+                                    )}
+                                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all hover:scale-110"
+                                    aria-label="Previous image"
+                                >
+                                    <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                {/* 다음 화살표 */}
+                                <button
+                                    onClick={() => setCurrentImageIndex((prev) => 
+                                        (prev + 1) % galleryImages.length
+                                    )}
+                                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all hover:scale-110"
+                                    aria-label="Next image"
+                                >
+                                    <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
                                 {/* 인디케이터 */}
                                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
                                     {galleryImages.map((_, index) => (

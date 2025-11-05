@@ -4,10 +4,9 @@
         "subtitle": "Make Ocean Blue Again",
         "description": "기업의 ESG 경영과 해양보호를 연결하는 혁신적인 플랫폼입니다. 임직원의 다이빙 자격증 취득과 분기별 수중 정화 활동을 통해 검증 가능한 ESG 성과를 창출합니다.",
         "hero": {
-            "title": "기업과 다이버가 함께하는 해양 정화 ESG 플랫폼",
-            "subtitle": "MOBA는 기업 임직원과 개인에게 다이빙을 교육하고 자격증 취득을 지원합니다.\n실제 바다에서 쓰레기를 직접 수거하며, 그 결과는 데이터화해 ESG 성과로 전환합니다.",
-            "cta": "기업용 ESG 시작하기",
-            "ctaSecondary": "개인 봉사 신청하기"
+            "title": "기업 ESG와 해양보호의 만남",
+            "subtitle": "MOBA는 PADI AWARE Foundation과 파트너십을 맺고, 기업이 임직원의 다이빙 자격증 취득을 지원하여 분기 1회 수중 정화(플로빙) 활동을 정례화할 수 있도록 돕는 ESG 실행 플랫폼입니다",
+            "cta": "ESG 해양정화 시작하기"
         },
         "stats": {
             "title": "MOBA의 성과",
@@ -20,15 +19,15 @@
             "title": "MOBA의 핵심 가치",
             "subtitle": "E-S-G 3축을 통한 기업의 지속가능한 해양보호 실현",
             "conservation": {
-                "title": "E (Environment) 환경",
-                "description": "분기별 수중 정화 활동을 통한 실제 해양 폐기물 수거로 바다 생태계 회복"
+                "title": "E (환경) 가치",
+                "description": "분기별 수중 정화 활동을 통한 실제 해양폐기물 제거 및 환경적 임팩트 창출"
             },
             "education": {
-                "title": "S (Social) 사회",
+                "title": "S (사회) 가치",
                 "description": "임직원 참여를 통한 조직문화 강화 및 지역사회와의 협력 네트워크 구축"
             },
             "community": {
-                "title": "G (Governance) 구조",
+                "title": "G (거버넌스) 가치",
                 "description": "PADI AWARE Foundation과의 국제 표준 연계를 통한 투명한 데이터 관리 및 검증 체계"
             },
             "action": {
@@ -163,17 +162,6 @@
                     "거버넌스(G): 안전 교육, 보험, 제3자 검증",
                     "GRI 306, SDG 14, ISO 14001 기준 연계",
                     "연말 MOBA 성과 보고서 발간"
-                ]
-            },
-            "phase5": {
-                "title": "5단계: 시각화 프로젝트",
-                "description": "수거 성과를 지역 문화 자산으로 전환",
-                "activities": [
-                    "수거 폐기물로 벽화, 조형물, 어선 페인팅 제작",
-                    "지역 예술가, 청소년, 어민과 공동 창작",
-                    "현장 안내판과 QR 코드로 정화 데이터 공개",
-                    "ESG Art Report 매년 발간",
-                    "지역 사회 문화 자산으로 영구 보존"
                 ]
             }
         },
@@ -434,60 +422,18 @@
             "planned": "계획됨",
             "scheduled": "예정"
         },
-        "pastEvents": {
-            "title": "지난 활동",
-            "subtitle": "MOBA가 함께한 해양정화 활동 기록",
-            "pohang20250920": {
-                "id": "pohang-20250920",
-                "title": "버블리 6회 바다쓰담 연합 해양정화활동",
-                "host": "버블리 (Bubbly)",
-                "participants": ["버블리", "MOBA", "L&F", "환경재단"],
-                "date": "2025년 9월 20일",
-                "time": "10:00 ~ 13:00",
-                "location": "경북 포항시 호미곶면 대동배리 구룡소 (유네스코 세계지질공원)",
-                "attendees": 52,
-                "description": "국제 연안정화의 날(ICC Day) 연계 해양정화 활동",
-                "results": {
-                    "totalVolume": "약 3,100L",
-                    "categories": [
-                        { "name": "낚시 쓰레기", "percentage": "70%", "details": "찌, 루어, 낚시줄, 폐그물 등" },
-                        { "name": "생활폐기물", "percentage": "30%", "details": "음료병, 담배꽁초, 유리조각 등" }
-                    ]
-                },
-                "notes": "기상악화로 플로빙에서 플로깅으로 전환. 낚시 쓰레기가 전체 수거량의 70%를 차지하며 해양생물에게 위험을 주고 있음",
-                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
-                "detailedResults": {
-                    "title": "수거 항목 상세 내역",
-                    "weather": "오전 흐림 / 오후 맑음",
-                    "totalCollected": "약 3,100L",
-                    "items": [
-                        { "name": "담배꽁초", "count": "20개" },
-                        { "name": "음료수 병&뚜껑", "count": "약 300개 (포대 3개 이상)" },
-                        { "name": "1회용품 음식용기", "count": "15개" },
-                        { "name": "타이·노끈", "count": "10개" },
-                        { "name": "플라스틱 조각", "count": "100개" },
-                        { "name": "유리 조각", "count": "10개" },
-                        { "name": "캔", "count": "30개" },
-                        { "name": "낚시 쓰레기", "count": "50개 (찌, 루어, 낚시줄, 낚싯대 등, 안전 위험 존재)" },
-                        { "name": "스티로폼 부표", "count": "11개 (둥근 큰 부표 포함)" },
-                        { "name": "통발 & 그물", "count": "다수" }
-                    ],
-                    "summary": "낚시 쓰레기(찌, 루어, 낚시줄 등)가 전체의 약 70%를 차지하며, 생활폐기물(담배꽁초, 음료병, 유리조각 등)이 약 30%를 차지"
-                },
-                "images": [
-                    "/images/20250920_pohang/1761035795110.jpg",
-                    "/images/20250920_pohang/1761035808196.jpg",
-                    "/images/20250920_pohang/1761035808451.jpg",
-                    "/images/20250920_pohang/1761035808525.jpg",
-                    "/images/20250920_pohang/1761035808556.jpg"
-                ]
-            }
-        },
         "cta": {
             "title": "이벤트에 참여하고 싶으신가요?",
             "description": "MOBA 멤버가 되시면 모든 이벤트에 우선 참여할 수 있습니다.",
             "membershipButton": "멤버십 가입하기",
             "notificationButton": "이벤트 알림 받기"
+        },
+        "achievements": {
+            "title": "주요 성과"
+        },
+        "recentActivities": {
+            "title": "최근 활동",
+            "subtitle": "MOBA와 함께한 해양정화 활동 성과"
         }
     },
     "contact": {
@@ -540,32 +486,20 @@
             "subtitle": "MOBA에 대해 자주 묻는 질문들을 정리했습니다.",
             "questions": {
                 "membership": {
-                    "question": "자격증이 없어도 시작할 수 있나요?",
-                    "answer": "가능합니다. 교육 후 국제 자격증 취득을 지원합니다."
+                    "question": "MOBA 멤버십은 어떻게 가입하나요?",
+                    "answer": "홈페이지의 \"멤버십\" 페이지에서 원하는 플랜을 선택하고 가입하실 수 있습니다. 기본 멤버십은 무료로 가입 가능합니다."
                 },
                 "activities": {
-                    "question": "안전은 어떻게 보장하나요?",
-                    "answer": "인솔자·페어 다이빙·체크리스트·전문 보험을 적용합니다."
+                    "question": "해양 정화 활동에 참여하려면 어떻게 해야 하나요?",
+                    "answer": "MOBA 멤버가 되시면 정기적으로 개최되는 해양 정화 활동에 참여하실 수 있습니다. 이벤트 일정은 \"일정\" 페이지에서 확인하실 수 있습니다."
                 },
                 "corporate": {
-                    "question": "어느 수심에서 활동하나요?",
-                    "answer": "보통 2-10m 범위에서 진행합니다."
+                    "question": "기업 파트너십은 어떻게 진행되나요?",
+                    "answer": "기업 파트너십에 관심이 있으시면 contact@moba.org로 문의해주세요. 맞춤형 협력 방안을 제안해드리겠습니다."
                 },
                 "funding": {
-                    "question": "데이터는 어디에 기록되나요?",
-                    "answer": "Dive Against Debris® 등 외부 DB에 업로드합니다."
-                },
-                "diving": {
-                    "question": "복지와 연결되나요?",
-                    "answer": "자격증 취득으로 레저·봉사를 함께 경험합니다."
-                },
-                "waste": {
-                    "question": "수거물 처리는 어떻게 하나요?",
-                    "answer": "지자체·전문기관과 협력해 합법 처리·재활용합니다."
-                },
-                "visualization": {
-                    "question": "시각화 프로젝트는 필수인가요?",
-                    "answer": "선택 활동입니다. 환경 성과를 사회적 가치로 확장하는 효과적 방법입니다."
+                    "question": "MOBA는 어떤 방식으로 자금을 조달하나요?",
+                    "answer": "MOBA는 멤버십 수익, 기업 후원, 정부 보조금, 개인 기부 등을 통해 운영됩니다. 모든 자금 사용 내역은 투명하게 공개합니다."
                 }
             }
         },

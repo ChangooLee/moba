@@ -4,9 +4,10 @@
         "subtitle": "Make Ocean Blue Again",
         "description": "连接企业ESG管理与海洋保护的创新平台。通过员工潜水资格认证和季度性水下清洁活动，创造可验证的ESG成果。",
         "hero": {
-            "title": "企业ESG与海洋保护的相遇",
-            "subtitle": "MOBA与PADI AWARE Foundation合作，帮助企业支持员工潜水资格认证，并定期开展季度性水下清洁（浮潜）活动，实现可验证的ESG成果",
-            "cta": "开始ESG海洋清洁"
+            "title": "企业与潜水员共同参与的海洋清洁ESG平台",
+            "subtitle": "MOBA为企业和个人提供潜水教育和认证支持。\n我们在实际海洋中直接收集垃圾，并将结果数据化，转化为ESG成果。",
+            "cta": "企业ESG开始",
+            "ctaSecondary": "个人志愿服务申请"
         },
         "stats": {
             "title": "MOBA的成果",
@@ -161,6 +162,17 @@
                     "治理：安全教育、保险、第三方验证",
                     "GRI 306、SDG 14、ISO 14001 联动",
                     "年度MOBA成果报告"
+                ]
+            },
+            "phase5": {
+                "title": "第五阶段：可视化项目",
+                "description": "将收集成果转化为本地文化资产",
+                "activities": [
+                    "用收集的废弃物制作壁画、雕塑、渔船涂装",
+                    "与本地艺术家、青少年、渔民共同创作",
+                    "通过现场标识和二维码展示清洁数据",
+                    "发布年度ESG艺术报告",
+                    "作为永久本地文化资产保存"
                 ]
             }
         },
@@ -351,9 +363,54 @@
         "achievements": {
             "title": "主要成就"
         },
-        "recentActivities": {
-            "title": "最近活动",
-            "subtitle": "与MOBA一起进行的海洋清洁活动成果"
+        "pastEvents": {
+            "title": "过往活动",
+            "subtitle": "与MOBA一起进行的海洋清理活动记录",
+            "pohang20250920": {
+                "id": "pohang-20250920",
+                "title": "Bubbly第6次海洋清理联合海洋清理活动",
+                "host": "Bubbly",
+                "participants": ["Bubbly", "MOBA", "L&F", "环境财团"],
+                "date": "2025年9月20日",
+                "time": "10:00 ~ 13:00",
+                "location": "庆尚北道浦项市虎尾串面大东培里九龙沼（联合国教科文组织世界地质公园）",
+                "attendees": 52,
+                "description": "国际海岸清理日（ICC Day）联动海洋清理活动",
+                "results": {
+                    "totalVolume": "约3,100L",
+                    "categories": [
+                        { "name": "渔业垃圾", "percentage": "70%", "details": "浮标、鱼饵、鱼线、废网等" },
+                        { "name": "生活垃圾", "percentage": "30%", "details": "饮料瓶、烟蒂、玻璃碎片等" }
+                    ]
+                },
+                "notes": "因天气恶劣从潜水清理改为陆地清理。渔业垃圾占收集总量的70%，对海洋生物构成危险",
+                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "detailedResults": {
+                    "title": "清理物品详细清单",
+                    "weather": "上午多云 / 下午晴朗",
+                    "totalCollected": "约3,100L",
+                    "items": [
+                        { "name": "烟头", "count": "20个" },
+                        { "name": "饮料瓶及瓶盖", "count": "约300个（3袋以上）" },
+                        { "name": "一次性食品容器", "count": "15个" },
+                        { "name": "扎带·绳索", "count": "10个" },
+                        { "name": "塑料碎片", "count": "100个" },
+                        { "name": "玻璃碎片", "count": "10个" },
+                        { "name": "罐装饮料", "count": "30个" },
+                        { "name": "渔业垃圾", "count": "50个（浮漂、鱼饵、鱼线、钓鱼竿等，存在安全隐患）" },
+                        { "name": "泡沫浮漂", "count": "11个（包括大型圆形浮漂）" },
+                        { "name": "鱼篓与渔网", "count": "多个" }
+                    ],
+                    "summary": "渔业垃圾（浮漂、鱼饵、鱼线等）约占70%，生活垃圾（烟头、饮料瓶、玻璃碎片等）约占30%"
+                },
+                "images": [
+                    "/images/20250920_pohang/1761035795110.jpg",
+                    "/images/20250920_pohang/1761035808196.jpg",
+                    "/images/20250920_pohang/1761035808451.jpg",
+                    "/images/20250920_pohang/1761035808525.jpg",
+                    "/images/20250920_pohang/1761035808556.jpg"
+                ]
+            }
         },
         "cta": {
             "title": "想参与活动吗？",
@@ -495,20 +552,32 @@
             "subtitle": "关于MOBA的常见问题",
             "questions": {
                 "membership": {
-                    "question": "如何成为MOBA会员？",
-                    "answer": "您可以在我们的网站上免费注册，或选择高级会员计划以获得额外福利。"
+                    "question": "没有资格证也能开始吗？",
+                    "answer": "可以。我们支持培训后的国际资格认证。"
                 },
                 "activities": {
-                    "question": "我可以参加哪些活动？",
-                    "answer": "您可以参加各种活动，包括海滩清理、教育项目和社区活动。"
+                    "question": "安全如何保障？",
+                    "answer": "我们采用指导员指导、伙伴潜水、检查清单和专业保险。"
                 },
                 "corporate": {
-                    "question": "你们有企业合作计划吗？",
-                    "answer": "是的，我们提供企业会员计划，具有定制福利和品牌机会。"
+                    "question": "在什么深度工作？",
+                    "answer": "通常在2-10米范围内进行。"
                 },
                 "funding": {
-                    "question": "MOBA是如何获得资金的？",
-                    "answer": "MOBA通过会员费、捐款和企业合作获得资金。"
+                    "question": "数据记录在哪里？",
+                    "answer": "上传到Dive Against Debris®等外部数据库。"
+                },
+                "diving": {
+                    "question": "与福利相关吗？",
+                    "answer": "通过资格认证体验休闲和志愿服务。"
+                },
+                "waste": {
+                    "question": "收集物如何处理？",
+                    "answer": "与地方政府和专门机构合作进行合法处理和回收。"
+                },
+                "visualization": {
+                    "question": "可视化项目是必需的吗？",
+                    "answer": "这是可选活动。将环境成果扩展为社会价值的有效方法。"
                 }
             }
         },

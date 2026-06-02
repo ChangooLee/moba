@@ -4,9 +4,10 @@
         "subtitle": "Make Ocean Blue Again",
         "description": "An innovative platform that connects corporate ESG management with ocean conservation. We help companies achieve verifiable ESG outcomes through employee diving certification and quarterly underwater cleanup activities.",
         "hero": {
-            "title": "Where Corporate ESG Meets Ocean Conservation",
-            "subtitle": "MOBA is an ESG execution platform that partners with PADI AWARE Foundation to help companies support employee diving certification and regularize quarterly underwater cleanup (ploving) activities for verifiable ESG outcomes",
-            "cta": "Start ESG Ocean Cleanup"
+            "title": "Corporate & Diver Ocean Cleanup ESG Platform",
+            "subtitle": "MOBA provides diving education and certification support for corporate employees and individuals.\nWe collect trash directly from the ocean, and convert the results into data-driven ESG performance.",
+            "cta": "Start Corporate ESG",
+            "ctaSecondary": "Apply for Individual Volunteering"
         },
         "stats": {
             "title": "MOBA Performance",
@@ -162,6 +163,17 @@
                     "Governance: safety training, insurance, third-party verification",
                     "GRI 306, SDG 14, ISO 14001 linkage",
                     "Annual MOBA performance report"
+                ]
+            },
+            "phase5": {
+                "title": "Phase 5: Visualization Project",
+                "description": "Transform collection outcomes into local cultural assets",
+                "activities": [
+                    "Create murals, sculptures, and boat paintings using collected debris",
+                    "Co-create with local artists, youth, and fishers",
+                    "Display cleanup data on-site via signage and QR codes",
+                    "Publish annual ESG Art Report",
+                    "Preserve as permanent local cultural assets"
                 ]
             }
         },
@@ -347,6 +359,55 @@
         "achievements": {
             "title": "Key Achievements"
         },
+        "pastEvents": {
+            "title": "Past Activities",
+            "subtitle": "Records of ocean cleanup activities with MOBA",
+            "pohang20250920": {
+                "id": "pohang-20250920",
+                "title": "Bubbly 6th Sea Cleanup Joint Ocean Cleanup Activity",
+                "host": "Bubbly",
+                "participants": ["Bubbly", "MOBA", "L&F", "Green Foundation Korea"],
+                "date": "September 20, 2025",
+                "time": "10:00 ~ 13:00",
+                "location": "Guryongso, Daedongbae-ri, Homigot-myeon, Pohang-si, Gyeongbuk (UNESCO Global Geopark)",
+                "attendees": 52,
+                "description": "International Coastal Cleanup Day (ICC Day) linked ocean cleanup activity",
+                "results": {
+                    "totalVolume": "Approx. 3,100L",
+                    "categories": [
+                        { "name": "Fishing waste", "percentage": "70%", "details": "Fishing floats, lures, fishing lines, ghost nets, etc." },
+                        { "name": "Household waste", "percentage": "30%", "details": "Beverage bottles, cigarette butts, glass fragments, etc." }
+                    ]
+                },
+                "notes": "Changed from ploving to plogging due to weather conditions. Fishing waste accounts for 70% of total collection, posing risks to marine life.",
+                "press": "https://edu.donga.com/news/articleView.html?idxno=95539",
+                "detailedResults": {
+                    "title": "Detailed Collection Items",
+                    "weather": "Cloudy morning / Clear afternoon",
+                    "totalCollected": "Approx. 3,100L",
+                    "items": [
+                        { "name": "Cigarette butts", "count": "20 items" },
+                        { "name": "Beverage bottles & caps", "count": "Approx. 300 items (3+ bags)" },
+                        { "name": "Disposable food containers", "count": "15 items" },
+                        { "name": "Ties & ropes", "count": "10 items" },
+                        { "name": "Plastic fragments", "count": "100 items" },
+                        { "name": "Glass fragments", "count": "10 items" },
+                        { "name": "Cans", "count": "30 items" },
+                        { "name": "Fishing waste", "count": "50 items (floats, lures, fishing lines, rods, safety hazard exists)" },
+                        { "name": "Styrofoam buoys", "count": "11 items (including large round buoys)" },
+                        { "name": "Fish traps & nets", "count": "Multiple" }
+                    ],
+                    "summary": "Fishing waste (floats, lures, fishing lines, etc.) accounts for approximately 70% of the total, while household waste (cigarette butts, beverage bottles, glass fragments, etc.) accounts for approximately 30%"
+                },
+                "images": [
+                    "/images/20250920_pohang/1761035795110.jpg",
+                    "/images/20250920_pohang/1761035808196.jpg",
+                    "/images/20250920_pohang/1761035808451.jpg",
+                    "/images/20250920_pohang/1761035808525.jpg",
+                    "/images/20250920_pohang/1761035808556.jpg"
+                ]
+            }
+        },
         "cta": {
             "title": "Want to participate in events?",
             "description": "Become a MOBA member to get priority access to all events.",
@@ -494,20 +555,32 @@
             "subtitle": "Common questions about MOBA",
             "questions": {
                 "membership": {
-                    "question": "How do I become a MOBA member?",
-                    "answer": "You can sign up for free on our website or choose a premium membership plan for additional benefits."
+                    "question": "Can I start without certification?",
+                    "answer": "Yes. We support international certification after training."
                 },
                 "activities": {
-                    "question": "What activities can I participate in?",
-                    "answer": "You can participate in various activities including beach cleanups, educational programs, and community events."
+                    "question": "How is safety guaranteed?",
+                    "answer": "We apply instructor guidance, buddy diving, checklists, and professional insurance."
                 },
                 "corporate": {
-                    "question": "Do you have corporate partnership programs?",
-                    "answer": "Yes, we offer corporate membership programs with customized benefits and branding opportunities."
+                    "question": "What depth do you work at?",
+                    "answer": "Usually 2-10m range."
                 },
                 "funding": {
-                    "question": "How is MOBA funded?",
-                    "answer": "MOBA is funded through membership fees, donations, and corporate partnerships."
+                    "question": "Where is data recorded?",
+                    "answer": "Uploaded to external DBs like Dive Against Debris®."
+                },
+                "diving": {
+                    "question": "Is it connected to welfare?",
+                    "answer": "Experience leisure and volunteer work through certification."
+                },
+                "waste": {
+                    "question": "How is collected waste processed?",
+                    "answer": "Legal processing and recycling through cooperation with local authorities and specialized institutions."
+                },
+                "visualization": {
+                    "question": "Is the visualization project mandatory?",
+                    "answer": "It's optional. An effective way to expand environmental performance into social value."
                 }
             }
         },

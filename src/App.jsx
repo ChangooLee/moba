@@ -7,6 +7,7 @@ import Plan from './pages/Plan';
 import Membership from './pages/Membership';
 import Schedule from './pages/Schedule';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import './i18n';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/membership" element={<Membership />} />
                     <Route path="/schedule" element={<Schedule />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 </Routes>
             </Layout>
         </BrowserRouter>

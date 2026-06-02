@@ -8,6 +8,7 @@ const Schedule = () => {
     const { t, ready } = useTranslation();
     const [upcomingEvents, setUpcomingEvents] = useState([]);
     const [timeline, setTimeline] = useState([]);
+    const [pastEvents, setPastEvents] = useState([]);
 
     useEffect(() => {
         console.log('Schedule useEffect - ready:', ready);
@@ -128,6 +129,25 @@ const Schedule = () => {
                     description: t('pages.schedule.milestones.impact.description'),
                     status: 'planned',
                     achievements: t('pages.schedule.milestones.impact.activities', { returnObjects: true }) || []
+                }
+            ]);
+
+            // 과거 이벤트 데이터 설정
+            setPastEvents([
+                {
+                    key: 'pohang20250920',
+                    title: t('pages.schedule.pastEvents.pohang20250920.title'),
+                    host: t('pages.schedule.pastEvents.pohang20250920.host'),
+                    participants: t('pages.schedule.pastEvents.pohang20250920.participants', { returnObjects: true }) || [],
+                    date: t('pages.schedule.pastEvents.pohang20250920.date'),
+                    time: t('pages.schedule.pastEvents.pohang20250920.time'),
+                    location: t('pages.schedule.pastEvents.pohang20250920.location'),
+                    attendees: t('pages.schedule.pastEvents.pohang20250920.attendees'),
+                    description: t('pages.schedule.pastEvents.pohang20250920.description'),
+                    results: t('pages.schedule.pastEvents.pohang20250920.results', { returnObjects: true }) || {},
+                    notes: t('pages.schedule.pastEvents.pohang20250920.notes'),
+                    press: t('pages.schedule.pastEvents.pohang20250920.press'),
+                    images: t('pages.schedule.pastEvents.pohang20250920.images', { returnObjects: true }) || []
                 }
             ]);
         }
@@ -251,8 +271,194 @@ const Schedule = () => {
                 </Container>
             </section>
 
-            {/* 프로젝트 타임라인 */}
+            {/* 과거 활동 */}
             <section className="bg-gray-50 section-padding">
+                <Container>
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            {t('pages.schedule.pastEvents.title')}
+                        </h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                            {t('pages.schedule.pastEvents.subtitle')}
+                        </p>
+                    </div>
+
+                    <div className="space-y-8">
+                        {pastEvents.length > 0 ? pastEvents.map((event, index) => (
+                            <Card key={index} className="overflow-hidden">
+                                <div className="p-8">
+                                    {/* 이벤트 헤더 */}
+                                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                                        <div>
+                                            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                                                {event.title}
+                                            </h3>
+                                            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
+                                                <span className="flex items-center gap-1">
+                                                    <span className="font-semibold">주관:</span> {event.host}
+                                                </span>
+                                                <span className="flex items-center gap-1">
+                                                    <span className="font-semibold">참여:</span> {Array.isArray(event.participants) ? event.participants.join(', ') : event.participants}
+                                                </span>
+                                                <span className="flex items-center gap-1">
+                                                    <span className="font-semibold">참가자:</span> {event.attendees}명
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="mt-4 lg:mt-0">
+                                            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                                                완료
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    {/* 이벤트 정보 */}
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                        <div className="space-y-3">
+                                            <div className="flex items-center gap-2">
+                                                <span className="text-padi-blue">📅</span>
+                                                <span className="font-semibold">일시:</span>
+                                                <span>{event.date} {event.time}</span>
+                                            </div>
+                                            <div className="flex items-start gap-2">
+                                                <span className="text-padi-blue">📍</span>
+                                                <div>
+                                                    <span className="font-semibold">장소:</span>
+                                                    <p className="text-gray-600">{event.location}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="space-y-3">
+                                            <div className="flex items-start gap-2">
+                                                <span className="text-padi-blue">📝</span>
+                                                <div>
+                                                    <span className="font-semibold">활동 내용:</span>
+                                                    <p className="text-gray-600">{event.description}</p>
+                                                </div>
+                                            </div>
+                                            {event.notes && (
+                                                <div className="flex items-start gap-2">
+                                                    <span className="text-padi-blue">⚠️</span>
+                                                    <div>
+                                                        <span className="font-semibold">특이사항:</span>
+                                                        <p className="text-gray-600">{event.notes}</p>
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+
+                                    {/* 활동 결과 */}
+                                    {event.results && (
+                                        <div className="bg-blue-50 rounded-lg p-6 mb-6">
+                                            <h4 className="text-lg font-semibold text-gray-900 mb-4">활동 결과</h4>
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                <div>
+                                                    <span className="font-semibold text-padi-blue">총 수거량:</span>
+                                                    <p className="text-xl font-bold text-gray-900">{event.results.totalVolume}</p>
+                                                </div>
+                                                <div>
+                                                    <span className="font-semibold text-padi-blue">수거 항목:</span>
+                                                    <div className="space-y-1">
+                                                        {Array.isArray(event.results.categories) && event.results.categories.map((category, catIndex) => (
+                                                            <div key={catIndex} className="flex items-center gap-2">
+                                                                <span className="text-sm font-medium">{category.name}:</span>
+                                                                <span className="text-sm font-bold text-padi-blue">{category.percentage}</span>
+                                                                <span className="text-xs text-gray-600">({category.details})</span>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {/* 상세 수거 내역 */}
+                                    {event.detailedResults && (
+                                        <div className="bg-green-50 rounded-lg p-6 mb-6 border-2 border-green-200">
+                                            <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                                                📊 {event.detailedResults.title}
+                                            </h4>
+                                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                                <div className="bg-white p-3 rounded">
+                                                    <span className="text-sm font-medium text-gray-600">날씨</span>
+                                                    <p className="text-base font-semibold text-gray-900">{event.detailedResults.weather}</p>
+                                                </div>
+                                                <div className="bg-white p-3 rounded">
+                                                    <span className="text-sm font-medium text-gray-600">총 수거량</span>
+                                                    <p className="text-base font-semibold text-padi-blue">{event.detailedResults.totalCollected}</p>
+                                                </div>
+                                                <div className="bg-white p-3 rounded">
+                                                    <span className="text-sm font-medium text-gray-600">참여자</span>
+                                                    <p className="text-base font-semibold text-padi-blue">{event.attendees}명</p>
+                                                </div>
+                                            </div>
+                                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                                                {Array.isArray(event.detailedResults.items) && event.detailedResults.items.map((item, itemIndex) => (
+                                                    <div key={itemIndex} className="bg-white p-3 rounded border border-gray-200">
+                                                        <p className="text-sm font-semibold text-gray-900 mb-1">{item.name}</p>
+                                                        <p className="text-base font-bold text-padi-blue">{item.count}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            {event.detailedResults.summary && (
+                                                <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded">
+                                                    <p className="text-sm font-semibold text-gray-900 mb-1">📝 요약</p>
+                                                    <p className="text-sm text-gray-700">{event.detailedResults.summary}</p>
+                                                </div>
+                                            )}
+                                        </div>
+                                    )}
+
+                                    {/* 이미지 갤러리 */}
+                                    {event.images && event.images.length > 0 && (
+                                        <div className="mb-6">
+                                            <h4 className="text-lg font-semibold text-gray-900 mb-4">활동 사진</h4>
+                                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                                                {event.images.map((image, imgIndex) => (
+                                                    <div key={imgIndex} className="aspect-square overflow-hidden rounded-lg">
+                                                        <img 
+                                                            src={image} 
+                                                            alt={`활동 사진 ${imgIndex + 1}`}
+                                                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-200 cursor-pointer"
+                                                            onError={(e) => {
+                                                                e.target.style.display = 'none';
+                                                            }}
+                                                        />
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {/* 보도자료 링크 */}
+                                    {event.press && (
+                                        <div className="flex items-center justify-center pt-4">
+                                            <a 
+                                                href={event.press} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 px-6 py-3 bg-padi-blue text-white font-semibold rounded-lg hover:bg-padi-dark-blue transition-colors duration-200 shadow-md hover:shadow-lg"
+                                            >
+                                                <span className="text-xl">📰</span>
+                                                <span>관련 보도자료 보기</span>
+                                                <span className="text-sm">→</span>
+                                            </a>
+                                        </div>
+                                    )}
+                                </div>
+                            </Card>
+                        )) : (
+                            <div className="text-center py-12">
+                                <p className="text-gray-500">Loading past events...</p>
+                            </div>
+                        )}
+                    </div>
+                </Container>
+            </section>
+
+            {/* 프로젝트 타임라인 */}
+            <section className="section-padding">
                 <Container>
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -317,7 +523,7 @@ const Schedule = () => {
             </section>
 
             {/* 이벤트 참여 안내 */}
-            <section className="section-padding">
+            <section className="bg-gray-50 section-padding">
                 <Container>
                     <Card className="text-center bg-gradient-to-r from-padi-blue to-padi-dark-blue text-white">
                         <h2 className="text-3xl font-bold mb-4">
@@ -327,10 +533,10 @@ const Schedule = () => {
                             {t('pages.schedule.cta.description')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg">
+                            <Button to="/membership" size="lg">
                                 {t('pages.schedule.cta.membershipButton')}
                             </Button>
-                            <Button variant="outline" size="lg">
+                            <Button to="/contact" variant="outline" size="lg">
                                 {t('pages.schedule.cta.notificationButton')}
                             </Button>
                         </div>

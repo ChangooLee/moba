@@ -27,7 +27,7 @@
                 "Data upload",
                 "ESG reporting"
             ],
-            "note": "This four-step cycle is repeated four times a year."
+            "note": "First we train and certify divers — then Underwater Cleanup → Data Upload → ESG Reporting repeats every quarter (4× a year)."
         },
         "stats": {
             "eyebrow": "AT A GLANCE",
@@ -136,7 +136,7 @@
         "cycle": {
             "eyebrow": "OUR APPROACH · THE OPERATING CYCLE",
             "title": "A simple but powerful 4-step cycle",
-            "lead": "Repeated every quarter, this cycle produces the quantitative results in your ESG report.",
+            "lead": "Once divers are certified, it's the quarterly cleanup activities that generate the quantitative results in your ESG report.",
             "steps": [
                 {
                     "no": "01",
@@ -163,7 +163,7 @@
                     "desc": "Quarterly summaries → a year-end integrated report. Automatically mapped to GRI 306 · ISO 14001 · SDG 14. Immediately reflected in your sustainability report."
                 }
             ],
-            "freq": "Four times a year, repeated every quarter — a sustainable process, not a one-off event."
+            "freq": "Certification is a one-time onboarding — the cleanup then repeats every quarter (4× a year) as a sustainable process."
         },
         "difference": {
             "eyebrow": "WHAT MAKES MOBA DIFFERENT",
@@ -1097,7 +1097,7 @@
     },
     "howItWorks": {
         "title": "How It Works",
-        "subtitle": "Education & certification → underwater cleanup → data verification → ESG results.\nMOBA's four-step cycle, repeated four times a year.",
+        "subtitle": "First we train and certify divers.\nThen Underwater Cleanup → Data Verification → ESG Impact repeats every quarter (4× a year).",
         "roles": {
             "eyebrow": "WHO DOES WHAT",
             "title": "One outcome, built by three parties together",

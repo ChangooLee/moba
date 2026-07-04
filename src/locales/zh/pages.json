@@ -27,7 +27,7 @@
                 "数据上传",
                 "ESG报告"
             ],
-            "note": "这4个步骤的循环每年重复4次。"
+            "note": "先通过培训取得资格、培养潜水员，之后每季度（每年4次）重复 水下清理 → 数据上传 → ESG 报告。"
         },
         "stats": {
             "eyebrow": "AT A GLANCE",
@@ -136,7 +136,7 @@
         "cycle": {
             "eyebrow": "OUR APPROACH · THE OPERATING CYCLE",
             "title": "简单而强大的4-Step循环",
-            "lead": "每季度重复的这一循环，创造ESG报告的量化成果。",
+            "lead": "潜水员取得资格后，每季度开展的清理活动才是 ESG 报告量化成果的来源。",
             "steps": [
                 {
                     "no": "01",
@@ -163,7 +163,7 @@
                     "desc": "季度摘要 → 年末综合报告。GRI 306 · ISO 14001 · SDG 14 自动映射。即刻纳入可持续经营报告。"
                 }
             ],
-            "freq": "每年4次、每季度重复 — 并非一次性活动，而是可持续的流程。"
+            "freq": "资格培训为首次一次性环节 — 之后清理活动每季度（每年4次）重复，形成可持续流程。"
         },
         "difference": {
             "eyebrow": "WHAT MAKES MOBA DIFFERENT",
@@ -1081,7 +1081,7 @@
     },
     "howItWorks": {
         "title": "活动方式",
-        "subtitle": "教育·认证 → 水下清洁 → 数据验证 → ESG成果。\nMOBA的4步循环每年重复4次。",
+        "subtitle": "首先通过培训与认证培养潜水员，\n之后每季度（每年4次）重复 水下清理 → 数据核验 → ESG 成果。",
         "roles": {
             "eyebrow": "WHO DOES WHAT",
             "title": "三方共同创造的一次成果",

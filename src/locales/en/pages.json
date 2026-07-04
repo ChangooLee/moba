@@ -1,39 +1,530 @@
 {
     "home": {
-        "title": "Make Ocean Blue Again",
+        "title": "Make the Ocean Blue Again",
         "subtitle": "Make Ocean Blue Again",
-        "description": "An innovative platform that connects corporate ESG management with ocean conservation. We help companies achieve verifiable ESG outcomes through employee diving certification and quarterly underwater cleanup activities.",
+        "description": "A corporate ESG membership in which employees earn international diving certifications, carry out quarterly underwater cleanups, and have their results internationally verified by the PADI AWARE Foundation. We create verifiable, quantitative ocean conservation data.",
         "hero": {
-            "title": "Corporate & Diver Ocean Cleanup ESG Platform",
-            "subtitle": "MOBA provides diving education and certification support for corporate employees and individuals.\nWe collect trash directly from the ocean, and convert the results into data-driven ESG performance.",
-            "cta": "Start Corporate ESG",
-            "ctaSecondary": "Apply for Individual Volunteering"
+            "eyebrow": "CORPORATE MEMBERSHIP · ESG IMPACT",
+            "title": "Make the Ocean Blue Again.",
+            "subtitle": "A corporate ocean conservation membership that delivers ESG performance\nand employee benefits at the same time.",
+            "ctaPrimary": "Inquire About Pilot Participation",
+            "ctaSecondary": "Explore the Membership",
+            "scrollHint": "SCROLL",
+            "trust": [
+                "Verifiable, quantitative ocean conservation results",
+                "Internationally verified by the PADI AWARE Foundation",
+                "Four regular cycles per year"
+            ],
+            "cta": "Inquire About Pilot Participation",
+            "ctaSecondary_legacy": "Explore the Membership"
+        },
+        "definition": {
+            "eyebrow": "ONE-LINE DEFINITION",
+            "lead": "MOBA in a single sentence",
+            "steps": [
+                "Education (Certification)",
+                "Underwater cleanup",
+                "Data upload",
+                "ESG reporting"
+            ],
+            "note": "This four-step cycle is repeated four times a year."
         },
         "stats": {
-            "title": "MOBA Performance",
-            "members": "Pilot Companies Recruiting",
-            "projects": "4 Annual Regular Activities",
-            "countries": "South Sea·East Sea·Jeju",
-            "impact": "PADI AWARE Partner"
+            "eyebrow": "AT A GLANCE",
+            "title": "Ocean conservation ESG proven by facts, not words",
+            "subtitle": "Four concrete deliverables that start the moment you join.",
+            "items": [
+                {
+                    "value": "10",
+                    "unit": "people",
+                    "label": "Employees with active certifications",
+                    "sub": "6 freedivers + 4 scuba divers at initial enrollment"
+                },
+                {
+                    "value": "4",
+                    "unit": "times / yr",
+                    "label": "Regular underwater cleanup cycles",
+                    "sub": "Operated quarterly: spring · summer · fall · winter"
+                },
+                {
+                    "value": "100",
+                    "unit": "%",
+                    "label": "Third-party verification coverage",
+                    "sub": "PADI AWARE Foundation international certification"
+                },
+                {
+                    "value": "0",
+                    "unit": "",
+                    "label": "Greenwashing risk",
+                    "sub": "Tamper-proof GPS, photos, and international database"
+                }
+            ],
+            "members": "Recruiting pilot companies",
+            "projects": "4 regular activities per year",
+            "countries": "South Sea · East Sea · Jeju",
+            "impact": "PADI AWARE partner"
+        },
+        "crisis": {
+            "eyebrow": "WHY NOW · GLOBAL OCEAN CRISIS",
+            "title": "The ocean has already passed its limits.",
+            "lead": "Ocean pollution is no longer an issue for environmental groups alone; it is a business risk that extends to supply chains, brands, investor ratings, and regulation.",
+            "items": [
+                {
+                    "value": "480~1,270",
+                    "unit": "10K tons / yr",
+                    "label": "Plastic entering the ocean each year",
+                    "desc": "In the North Pacific, a giant garbage patch roughly 16 times the size of South Korea has formed."
+                },
+                {
+                    "value": "14~17",
+                    "unit": "10K tons / yr",
+                    "label": "Marine debris generated along Korea's coasts",
+                    "desc": "More than half goes uncollected, threatening ecosystems as it sinks to the seabed or drifts."
+                },
+                {
+                    "value": "3,787",
+                    "unit": "100M KRW",
+                    "label": "Annual losses from ghost fishing",
+                    "desc": "Fishing losses caused by abandoned ghost nets. Microplastics ultimately return to our dinner tables."
+                }
+            ],
+            "note": "Since 2024, the government has been tightening regulations aimed at reducing the net generation of marine debris (Net Negative). Companies that participate now secure an advantageous position as environmental leaders."
+        },
+        "standard": {
+            "eyebrow": "THE NEW STANDARD",
+            "title": "ESG reporting now has to prove 'action.'",
+            "lead": "Investors, consumers, and regulators now demand answers to the following questions, not declarations.",
+            "questions": [
+                {
+                    "q": "Q1.",
+                    "text": "What specifically did you do last year?",
+                    "desc": "Evidence of action — not declarations or plans."
+                },
+                {
+                    "q": "Q2.",
+                    "text": "How much did your environmental metrics improve?",
+                    "desc": "Quantitative figures — kg, count, time, coordinates."
+                },
+                {
+                    "q": "Q3.",
+                    "text": "How can you prove this objectively?",
+                    "desc": "Third-party verification — international NGOs and standards mapping."
+                }
+            ],
+            "warn": "If you cannot answer clearly, you face accusations of greenwashing. Both the EU CSRD and ISSB specify verifiable data as a core requirement.",
+            "answerEyebrow": "MOBA · HOW WE PROVE IT",
+            "answer": "MOBA answers with tamper-proof evidence.",
+            "proofs": [
+                {
+                    "title": "Real action",
+                    "desc": "Employees enter the ocean and collect debris themselves"
+                },
+                {
+                    "title": "Physical evidence",
+                    "desc": "Underwater cameras · GPS · on-site weight and count measurement"
+                },
+                {
+                    "title": "International NGO verification",
+                    "desc": "Registered in the PADI AWARE Foundation official database"
+                },
+                {
+                    "title": "Reflected in UN policy",
+                    "desc": "Can be used as policy material by international organizations"
+                }
+            ]
+        },
+        "cycle": {
+            "eyebrow": "OUR APPROACH · THE OPERATING CYCLE",
+            "title": "A simple but powerful 4-step cycle",
+            "lead": "Repeated every quarter, this cycle produces the quantitative results in your ESG report.",
+            "steps": [
+                {
+                    "no": "01",
+                    "tag": "EDUCATE",
+                    "title": "Education (Certification)",
+                    "desc": "Support for earning PADI scuba / freediver international certifications. Certified members take the additional Dive Against Debris® Specialty course."
+                },
+                {
+                    "no": "02",
+                    "tag": "CLEAN UP",
+                    "title": "Underwater cleanup",
+                    "desc": "Teams of 2–3 conduct buddy dives to collect ghost nets, plastic, metal, glass, and more. Accompanied by professional guides and operated within a safe depth range of 2–10m."
+                },
+                {
+                    "no": "03",
+                    "tag": "UPLOAD",
+                    "title": "Data upload",
+                    "desc": "Item, weight, GPS, and timestamp data are registered in the Dive Against Debris® global database. Used as policy material by international organizations."
+                },
+                {
+                    "no": "04",
+                    "tag": "REPORT",
+                    "title": "ESG reporting",
+                    "desc": "Quarterly summaries → a year-end integrated report. Automatically mapped to GRI 306 · ISO 14001 · SDG 14. Immediately reflected in your sustainability report."
+                }
+            ],
+            "freq": "Four times a year, repeated every quarter — a sustainable process, not a one-off event."
+        },
+        "difference": {
+            "eyebrow": "WHAT MAKES MOBA DIFFERENT",
+            "title": "What decisively sets MOBA apart from typical ESG activities",
+            "lead": "On the left, typical ESG activities in the market; on the right, MOBA. Compare each row.",
+            "colLabel": "Criteria",
+            "colGeneric": "Typical ESG activities",
+            "colMoba": "MOBA",
+            "rows": [
+                {
+                    "label": "Activity results",
+                    "generic": "Qualitative, anecdote-driven — \"We ran a volunteer event N times\"",
+                    "moba": "Quantified data down to waste weight (kg), item, and GPS coordinates"
+                },
+                {
+                    "label": "Verifier",
+                    "generic": "Self-reported",
+                    "moba": "PADI AWARE Foundation (a PADI-backed international nonprofit)"
+                },
+                {
+                    "label": "Employee benefits",
+                    "generic": "One-time volunteer hours credited",
+                    "moba": "A lifelong international certification + a leisure hobby + a global certification card"
+                },
+                {
+                    "label": "International standards",
+                    "generic": "Requires separate mapping",
+                    "moba": "Automatically mapped to GRI 306 · ISO 14001 · SDG 14"
+                },
+                {
+                    "label": "Greenwashing risk",
+                    "generic": "High (photos and plans alone are not enough)",
+                    "moba": "Effectively zero (tamper-proof GPS, photos, and international database)"
+                },
+                {
+                    "label": "Continuity",
+                    "generic": "Often ends as a single event",
+                    "moba": "Four times a year with quarterly reports → embedded into corporate culture"
+                }
+            ],
+            "footnote": "With the same ESG budget, you secure verifiable results and lifelong employee assets at the same time."
+        },
+        "value": {
+            "eyebrow": "CORPORATE VALUE",
+            "title": "Five essential benefits for your company",
+            "lead": "Not just a cost for your ESG report — a two-for-one investment funded together with your HR and employee-benefits budget.",
+            "items": [
+                {
+                    "no": "01",
+                    "title": "Verifiable ESG data — speaking in numbers",
+                    "desc": "Waste type, weight, and count, along with precise GPS coordinates and collection times, are all captured as data. Registered in the PADI AWARE Foundation global database and automatically mapped to GRI 306, ISO 14001, and UN SDG 14."
+                },
+                {
+                    "no": "02",
+                    "title": "Eliminating greenwashing risk at the source",
+                    "desc": "Aligned with the verifiability requirements of the EU CSRD and ISSB. A certificate co-issued with an international NGO plus an audit letter back the claim \"We contribute to ocean conservation\" with official documentation."
+                },
+                {
+                    "no": "03",
+                    "title": "Rising brand value and social trust",
+                    "desc": "Delivering an 'action, not words' message to the market. Regular cleanups near your sites naturally generate letters of appreciation from local governments and press coverage. Media exposure on ICC Day and AWARE Week."
+                },
+                {
+                    "no": "04",
+                    "title": "Proactive regulatory readiness + higher ratings",
+                    "desc": "Secure data for ISSB, EU CSRD, and domestic ESG disclosure. Expect improved environmental (E) ratings from KCGS, Sustainalytics, and MSCI. Usable for DJSI assessment."
+                },
+                {
+                    "no": "05",
+                    "title": "Stronger benefits and organizational culture",
+                    "desc": "Your membership fee funds international certifications of lifelong value for employees. Can be classified as an HR/benefits investment rather than an ESG cost — same budget, twice the value.",
+                    "tag": "UNIQUE · Same budget, twice the value"
+                }
+            ]
+        },
+        "metrics": {
+            "eyebrow": "QUANTIFIED IMPACT",
+            "title": "E · S · G — every metric in numbers",
+            "lead": "Example headline metrics measured, verified, and registered per quarterly activity. All figures are recorded in the PADI AWARE Foundation global database.",
+            "groups": [
+                {
+                    "key": "E",
+                    "name": "Quantitative environmental metrics",
+                    "items": [
+                        {
+                            "value": "600",
+                            "unit": "kg",
+                            "label": "Waste plastic collected"
+                        },
+                        {
+                            "value": "80",
+                            "unit": "items",
+                            "label": "Ghost nets removed"
+                        },
+                        {
+                            "value": "20",
+                            "unit": "sites",
+                            "label": "Pollution hotspots cleaned"
+                        },
+                        {
+                            "value": "65",
+                            "unit": "%",
+                            "label": "Recycling conversion rate"
+                        },
+                        {
+                            "value": "1,800",
+                            "unit": "kgCO₂e",
+                            "label": "Net carbon avoided"
+                        }
+                    ]
+                },
+                {
+                    "key": "S",
+                    "name": "Quantitative social metrics",
+                    "items": [
+                        {
+                            "value": "100",
+                            "unit": "people",
+                            "label": "Cumulative employee participation"
+                        },
+                        {
+                            "value": "800",
+                            "unit": "h",
+                            "label": "Total volunteer hours"
+                        },
+                        {
+                            "value": "5",
+                            "unit": "orgs",
+                            "label": "Community partner organizations"
+                        },
+                        {
+                            "value": "72",
+                            "unit": "%",
+                            "label": "Return participation rate"
+                        },
+                        {
+                            "value": "3",
+                            "unit": "cases",
+                            "label": "Public visualization cases"
+                        }
+                    ]
+                },
+                {
+                    "key": "G",
+                    "name": "Quantitative governance metrics",
+                    "items": [
+                        {
+                            "value": "4",
+                            "unit": "times",
+                            "label": "ESG committee agenda adoptions"
+                        },
+                        {
+                            "value": "100",
+                            "unit": "%",
+                            "label": "Data quality coverage"
+                        },
+                        {
+                            "value": "100",
+                            "unit": "%",
+                            "label": "Third-party (PADI) verification coverage"
+                        },
+                        {
+                            "value": "100",
+                            "unit": "%",
+                            "label": "Insurance and safety training completion rate"
+                        },
+                        {
+                            "value": "100",
+                            "unit": "%",
+                            "label": "Budget settlement disclosure rate"
+                        }
+                    ]
+                }
+            ]
+        },
+        "employee": {
+            "eyebrow": "EMPLOYEE VALUE",
+            "title": "The company sponsors an international certification that lasts a lifetime.",
+            "lead": "Certifications earned are held for life and usable worldwide — for diving on business trips and vacations, a new hobby with family, and building personal career assets.",
+            "costs": [
+                {
+                    "name": "PADI Open Water (Scuba)",
+                    "price": "KRW 600K~900K",
+                    "dur": "2–3 day course"
+                },
+                {
+                    "name": "PADI Freediver Level 2",
+                    "price": "KRW 500K~700K",
+                    "dur": "2–3 day course"
+                }
+            ],
+            "free": "With MOBA, earned free of charge, fully sponsored by the company",
+            "quote": "\"The kg I collected are clearly documented.\"",
+            "quoteSub": "PROFESSIONAL — NOT JUST VOLUNTEER"
+        },
+        "partners": {
+            "eyebrow": "INTERNATIONAL PARTNERS",
+            "title": "MOBA's international partnerships",
+            "lead": "Not self-verification — we establish credibility through official data registration with a global NGO.",
+            "padiName": "PADI AWARE Foundation",
+            "padiDesc": "An independent nonprofit foundation backed by PADI, the world's largest scuba diving training organization. It works with international organizations such as UNEP and provides global leadership in policy, citizen science, and community action.",
+            "padiStats": [
+                {
+                    "value": "100+",
+                    "label": "countries in its diver community · the world's largest"
+                },
+                {
+                    "value": "2011~",
+                    "label": "Dive Against Debris® operated globally since"
+                }
+            ],
+            "standardsTitle": "International standards — 6 frameworks mapped automatically",
+            "standards": [
+                {
+                    "org": "UNITED NATIONS",
+                    "name": "SDG 14",
+                    "desc": "Marine ecosystem conservation"
+                },
+                {
+                    "org": "GLOBAL REPORTING",
+                    "name": "GRI 306",
+                    "desc": "Waste management"
+                },
+                {
+                    "org": "INTERNATIONAL STD",
+                    "name": "ISO 14001",
+                    "desc": "Environmental management systems"
+                },
+                {
+                    "org": "INTERNATIONAL STD",
+                    "name": "ISO 26000",
+                    "desc": "Social responsibility guidance"
+                },
+                {
+                    "org": "GLOBAL DISCLOSURE",
+                    "name": "ISSB · CSRD",
+                    "desc": "IFRS S1·S2 · EU disclosure"
+                },
+                {
+                    "org": "NATURE DISCLOSURE",
+                    "name": "TNFD · CDP",
+                    "desc": "Natural capital · carbon disclosure"
+                }
+            ],
+            "agencies": [
+                "DJSI",
+                "MSCI ESG",
+                "Sustainalytics",
+                "KCGS",
+                "CDP"
+            ],
+            "agenciesNote": "5 global ESG rating agencies · 100% data coverage"
+        },
+        "disclosure": {
+            "eyebrow": "KOREA ESG DISCLOSURE",
+            "title": "Mandatory ESG disclosure in Korea — 2028 is D-Day.",
+            "lead": "With the FSC's phased mandate roadmap and the finalization of the KSSB disclosure standards, the deadline is drawing near.",
+            "warning": "For the first disclosure in 2028, FY27 (fiscal year 2027) data is essential. If you do not have a complete data collection system in place by the end of 2026, preparing that first disclosure report will be impossible.",
+            "edgeValue": "2 years",
+            "edgeLabel": "Head start",
+            "edgeDesc": "Join in 2026–2027 and secure two years of quantitative data for the first disclosure in 2028. By the time competitors are starting, you are already verified."
+        },
+        "pricing": {
+            "eyebrow": "MEMBERSHIP & PRICING",
+            "title": "Corporate membership — transparent pricing, clear deliverables",
+            "lead": "The core structure is maintaining 10 employees with active certifications. Additional participants can be accommodated on an ongoing basis by separate arrangement.",
+            "plans": [
+                {
+                    "tag": "PLAN A — YEAR 1",
+                    "name": "Initial enrollment",
+                    "price": "KRW 20M",
+                    "unit": "",
+                    "note": "Year 1 / VAT not included",
+                    "features": [
+                        "PADI Freediver Level 2 — 6 people",
+                        "Scuba Open Water — 4 people",
+                        "All operations for 4 regular activities per year",
+                        "All equipment, insurance, transportation, and meals",
+                        "Dive Against Debris® Specialty training",
+                        "ESG consulting + year-end integrated report",
+                        "PR and content package"
+                    ]
+                },
+                {
+                    "tag": "PLAN B — YEAR 2+",
+                    "name": "Renewal (from Year 2)",
+                    "price": "KRW 10M",
+                    "unit": "/yr",
+                    "note": "Year 2 onward / VAT not included",
+                    "badge": "RENEWAL",
+                    "highlight": true,
+                    "features": [
+                        "PADI Freediver Level 2 — 4 new people",
+                        "Scuba Open Water — 2 new people",
+                        "All Year 1 operational items included",
+                        "Unused activities may be carried over once to the next year",
+                        "Quarterly + year-end integrated ESG report",
+                        "PADI AWARE co-certification renewal"
+                    ]
+                },
+                {
+                    "tag": "PILOT — LIMITED 2 COMPANIES",
+                    "name": "Pilot company benefits",
+                    "price": "At cost",
+                    "unit": "",
+                    "note": "Membership fee waived or negotiated · operated for one year at cost plus expenses",
+                    "accent": true,
+                    "features": [
+                        "Convert to full membership after effectiveness validation",
+                        "Joint press release rights",
+                        "Co-produced case study",
+                        "Priority renewal rights for the following year",
+                        "Priority input on operational improvements"
+                    ]
+                }
+            ]
+        },
+        "cta": {
+            "eyebrow": "NEXT STEP",
+            "title": "Make the Ocean Blue Again.",
+            "subtitle": "From here to your first MOBA regular activity — it starts with a 60-minute kickoff meeting.",
+            "steps": [
+                {
+                    "no": "01",
+                    "title": "Kickoff meeting (60 min)",
+                    "desc": "Current-state assessment · membership design · schedule confirmation"
+                },
+                {
+                    "no": "02",
+                    "title": "Tailored proposal + contract",
+                    "desc": "An operating plan tailored to your company · contract signing · pilot discussion"
+                },
+                {
+                    "no": "03",
+                    "title": "First regular activity (M2)",
+                    "desc": "About 8 weeks from kickoff — your employees enter the ocean."
+                }
+            ],
+            "buttonPrimary": "Inquire About Pilot Participation",
+            "buttonSecondary": "Explore the Membership",
+            "contact": "MOBA · Make Ocean Blue Again — recruiting 2 pilot companies on a first-come, first-served basis",
+            "partner": "PADI AWARE Foundation · in cooperation with international organizations such as UNEP · Dive Against Debris®"
         },
         "features": {
-            "title": "MOBA's Core Values",
-            "subtitle": "Realizing sustainable corporate ocean conservation through E-S-G three pillars",
+            "title": "MOBA's core values",
+            "subtitle": "Realizing sustainable corporate ocean conservation through the three E-S-G pillars",
             "conservation": {
-                "title": "E (Environmental) Value",
-                "description": "Actual marine waste removal and environmental impact creation through quarterly underwater cleanup activities"
+                "title": "E (Environment)",
+                "description": "Restoring marine ecosystems by collecting real ocean waste through quarterly underwater cleanup activities"
             },
             "education": {
-                "title": "S (Social) Value",
-                "description": "Organizational culture enhancement and local community cooperation network building through employee participation"
+                "title": "S (Social)",
+                "description": "Strengthening organizational culture and building cooperation networks with local communities through employee participation"
             },
             "community": {
-                "title": "G (Governance) Value",
-                "description": "Transparent data management and verification system through international standard linkage with PADI AWARE Foundation"
+                "title": "G (Governance)",
+                "description": "Transparent data management and verification through international standard linkage with the PADI AWARE Foundation"
             },
             "action": {
-                "title": "Execution Platform",
-                "description": "Standard process of Education (Certification) → Ploving (Underwater Cleanup) → Data Upload → ESG Reporting"
+                "title": "Execution platform",
+                "description": "A standard process of Education (Certification) → Ploving (underwater cleanup) → Data upload → ESG reporting"
             }
         }
     },
@@ -51,10 +542,22 @@
             "process": {
                 "title": "Visualization Process",
                 "items": [
-                    { "title": "Murals & Sculptures", "description": "Create public art using collected debris" },
-                    { "title": "Boat Painting", "description": "Eco-friendly paint for local boats" },
-                    { "title": "QR Code Linking", "description": "Display cleanup data on-site via signage" },
-                    { "title": "Local Collaboration", "description": "Co-create with artists, youth and fishers" }
+                    {
+                        "title": "Murals & Sculptures",
+                        "description": "Create public art using collected debris"
+                    },
+                    {
+                        "title": "Boat Painting",
+                        "description": "Eco-friendly paint for local boats"
+                    },
+                    {
+                        "title": "QR Code Linking",
+                        "description": "Display cleanup data on-site via signage"
+                    },
+                    {
+                        "title": "Local Collaboration",
+                        "description": "Co-create with artists, youth and fishers"
+                    }
                 ]
             }
         },
@@ -203,71 +706,98 @@
         }
     },
     "membership": {
-        "title": "Membership",
-        "description": "Become a MOBA member and participate in ocean conservation",
+        "title": "Membership Information",
+        "description": "MOBA operates a three-tier membership system where companies, instructors, and divers each have their own roles and responsibilities to perform regular ocean cleanup activities (4 times a year) and jointly create measurable ESG outcomes.",
         "benefits": {
-            "title": "Member Benefits",
-            "education": "Access to exclusive educational materials",
-            "events": "Participation in member-only events",
-            "network": "Global networking opportunities",
-            "resources": "Project resource support"
+            "title": "Membership Benefits",
+            "subtitle": "Optimized benefits for each membership type.",
+            "education": {
+                "title": "Professional Education & Certification",
+                "description": "Diving certification support and professional education programs linked with PADI AWARE Foundation"
+            },
+            "events": {
+                "title": "Regular Underwater Cleanup Activities",
+                "description": "Participation in regular underwater cleanup activities (4 times a year, quarterly) and ocean conservation practice in a safe environment"
+            },
+            "network": {
+                "title": "Global Partnership Network",
+                "description": "Participation in global ocean conservation network through international partnership with PADI AWARE Foundation"
+            },
+            "resources": {
+                "title": "ESG Data & Reporting",
+                "description": "Provision of verifiable ESG performance data through Dive Against Debris® international database linkage"
+            }
         },
         "plans": {
-            "title": "Corporate Membership Plans",
-            "subtitle": "3-tier membership: Corporate · Instructor · Diver",
+            "title": "Membership Types",
+            "subtitle": "Ocean conservation ecosystem consisting of three-tier membership: Corporate, Instructor, and Diver",
             "corporate": {
                 "title": "Corporate Membership",
-                "price": "Initial 20M KRW / Renewal 10M KRW/year",
-                "description": "Maintain 10 employees, create ESG outcomes",
-                "buttonText": "Corporate Inquiry",
+                "price": "Contact",
+                "description": "ESG-focused corporate-tailored ocean conservation program",
+                "buttonText": "Contact Us",
                 "features": [
-                    "Initial: PADI Freediver 6 + SSI Scuba 4 certification support",
-                    "Renewal (Year 2+): PADI Freediver 4 + SSI Scuba 2 certification support",
-                    "4 annual regular underwater cleanup activities (quarterly)",
-                    "Dive Against Debris® training and certification",
-                    "ESG report data (GRI, SDG 14, ISO 14001)",
-                    "Dedicated operations and safety insurance"
-                ]
-            },
-            "pilot": {
-                "title": "Pilot Companies (limited 2)",
-                "price": "Membership fee waived/discounted",
-                "description": "Cost-based settlement for 1-year effectiveness validation",
-                "buttonText": "Apply for Pilot",
-                "features": [
-                    "Membership fee waived or heavily discounted",
-                    "Transparent cost+expenses settlement",
-                    "First success case branding",
-                    "Customized ESG consulting",
-                    "Priority promotion and media exposure"
+                    "Priority for 4 annual regular underwater cleanup activities",
+                    "Employee diving certification support",
+                    "PADI AWARE Foundation international database linkage",
+                    "ESG report data provision",
+                    "Joint branding and promotional support",
+                    "Dedicated operations team assignment"
                 ]
             },
             "instructor": {
                 "title": "Instructor Membership",
                 "price": "Contact",
-                "description": "Activity leadership, compensation and incentives",
-                "buttonText": "Instructor Inquiry",
+                "description": "Activity leadership, safety management, and education quality assurance",
+                "buttonText": "Contact Us",
                 "features": [
-                    "Lead/Sub-lead priority assignment",
-                    "Per-activity leader compensation (base + headcount)",
-                    "Safety bonus incentives",
-                    "Insurance and equipment support",
-                    "Regular update training"
+                    "Priority assignment for Lead and Sub-Lead positions",
+                    "Leader compensation and incentives",
+                    "Equipment and insurance support",
+                    "Regular update training provision",
+                    "Safety management specialized training",
+                    "Data standard training"
                 ]
             },
             "diver": {
                 "title": "Diver Membership",
                 "price": "Contact",
-                "description": "Regular cleanup participation, education discounts",
-                "buttonText": "Join Diver Membership",
+                "description": "Participation and citizen science-focused individual membership",
+                "buttonText": "Contact Us",
                 "features": [
-                    "Activity priority application",
-                    "Education/certification discounts",
-                    "Point accumulation → goods/voucher",
-                    "Level-up system (Supporter→Diver→Leader candidate)",
-                    "Regional partner project priority"
+                    "Activity priority application rights",
+                    "Education/certification discount benefits",
+                    "Point and level system",
+                    "Right to participate 2+ times annually",
+                    "Activity log and data management",
+                    "Local partner collaboration opportunities"
                 ]
             }
+        },
+        "testimonials": {
+            "title": "Member Testimonials",
+            "subtitle": "Hear from our MOBA members",
+            "members": {
+                "kimBada": {
+                    "name": "Kim Bada",
+                    "role": "Marine Biologist",
+                    "content": "Through MOBA membership, I was able to communicate with colleagues worldwide and create greater impact."
+                },
+                "parkGreen": {
+                    "name": "Park Green",
+                    "role": "Environmental Activist",
+                    "content": "The educational materials and networking opportunities are really helpful. Highly recommended!"
+                },
+                "leeBlue": {
+                    "name": "Lee Blue",
+                    "role": "Marine Technologist",
+                    "content": "Thanks to the premium membership's project support, I was able to turn my ideas into reality."
+                }
+            }
+        },
+        "cta": {
+            "title": "Become a MOBA Member",
+            "subtitle": "Join MOBA to participate in ocean conservation and create a better future with colleagues worldwide."
         }
     },
     "schedule": {
@@ -366,7 +896,12 @@
                 "id": "pohang-20250920",
                 "title": "Bubbly 6th Sea Cleanup Joint Ocean Cleanup Activity",
                 "host": "Bubbly",
-                "participants": ["Bubbly", "MOBA", "L&F", "Green Foundation Korea"],
+                "participants": [
+                    "Bubbly",
+                    "MOBA",
+                    "L&F",
+                    "Green Foundation Korea"
+                ],
                 "date": "September 20, 2025",
                 "time": "10:00 ~ 13:00",
                 "location": "Guryongso, Daedongbae-ri, Homigot-myeon, Pohang-si, Gyeongbuk (UNESCO Global Geopark)",
@@ -375,8 +910,16 @@
                 "results": {
                     "totalVolume": "Approx. 3,100L",
                     "categories": [
-                        { "name": "Fishing waste", "percentage": "70%", "details": "Fishing floats, lures, fishing lines, ghost nets, etc." },
-                        { "name": "Household waste", "percentage": "30%", "details": "Beverage bottles, cigarette butts, glass fragments, etc." }
+                        {
+                            "name": "Fishing waste",
+                            "percentage": "70%",
+                            "details": "Fishing floats, lures, fishing lines, ghost nets, etc."
+                        },
+                        {
+                            "name": "Household waste",
+                            "percentage": "30%",
+                            "details": "Beverage bottles, cigarette butts, glass fragments, etc."
+                        }
                     ]
                 },
                 "notes": "Changed from ploving to plogging due to weather conditions. Fishing waste accounts for 70% of total collection, posing risks to marine life.",
@@ -386,16 +929,46 @@
                     "weather": "Cloudy morning / Clear afternoon",
                     "totalCollected": "Approx. 3,100L",
                     "items": [
-                        { "name": "Cigarette butts", "count": "20 items" },
-                        { "name": "Beverage bottles & caps", "count": "Approx. 300 items (3+ bags)" },
-                        { "name": "Disposable food containers", "count": "15 items" },
-                        { "name": "Ties & ropes", "count": "10 items" },
-                        { "name": "Plastic fragments", "count": "100 items" },
-                        { "name": "Glass fragments", "count": "10 items" },
-                        { "name": "Cans", "count": "30 items" },
-                        { "name": "Fishing waste", "count": "50 items (floats, lures, fishing lines, rods, safety hazard exists)" },
-                        { "name": "Styrofoam buoys", "count": "11 items (including large round buoys)" },
-                        { "name": "Fish traps & nets", "count": "Multiple" }
+                        {
+                            "name": "Cigarette butts",
+                            "count": "20 items"
+                        },
+                        {
+                            "name": "Beverage bottles & caps",
+                            "count": "Approx. 300 items (3+ bags)"
+                        },
+                        {
+                            "name": "Disposable food containers",
+                            "count": "15 items"
+                        },
+                        {
+                            "name": "Ties & ropes",
+                            "count": "10 items"
+                        },
+                        {
+                            "name": "Plastic fragments",
+                            "count": "100 items"
+                        },
+                        {
+                            "name": "Glass fragments",
+                            "count": "10 items"
+                        },
+                        {
+                            "name": "Cans",
+                            "count": "30 items"
+                        },
+                        {
+                            "name": "Fishing waste",
+                            "count": "50 items (floats, lures, fishing lines, rods, safety hazard exists)"
+                        },
+                        {
+                            "name": "Styrofoam buoys",
+                            "count": "11 items (including large round buoys)"
+                        },
+                        {
+                            "name": "Fish traps & nets",
+                            "count": "Multiple"
+                        }
                     ],
                     "summary": "Fishing waste (floats, lures, fishing lines, etc.) accounts for approximately 70% of the total, while household waste (cigarette butts, beverage bottles, glass fragments, etc.) accounts for approximately 30%"
                 },
@@ -413,101 +986,6 @@
             "description": "Become a MOBA member to get priority access to all events.",
             "membershipButton": "Join Membership",
             "notificationButton": "Get Event Notifications"
-        }
-    },
-    "membership": {
-        "title": "Membership Information",
-        "description": "MOBA operates a three-tier membership system where companies, instructors, and divers each have their own roles and responsibilities to perform regular ocean cleanup activities (4 times a year) and jointly create measurable ESG outcomes.",
-        "benefits": {
-            "title": "Membership Benefits",
-            "subtitle": "Optimized benefits for each membership type.",
-            "education": {
-                "title": "Professional Education & Certification",
-                "description": "Diving certification support and professional education programs linked with PADI AWARE Foundation"
-            },
-            "events": {
-                "title": "Regular Underwater Cleanup Activities",
-                "description": "Participation in regular underwater cleanup activities (4 times a year, quarterly) and ocean conservation practice in a safe environment"
-            },
-            "network": {
-                "title": "Global Partnership Network",
-                "description": "Participation in global ocean conservation network through international partnership with PADI AWARE Foundation"
-            },
-            "resources": {
-                "title": "ESG Data & Reporting",
-                "description": "Provision of verifiable ESG performance data through Dive Against Debris® international database linkage"
-            }
-        },
-        "plans": {
-            "title": "Membership Types",
-            "subtitle": "Ocean conservation ecosystem consisting of three-tier membership: Corporate, Instructor, and Diver",
-            "corporate": {
-                "title": "Corporate Membership",
-                "price": "Contact",
-                "description": "ESG-focused corporate-tailored ocean conservation program",
-                "buttonText": "Contact Us",
-                "features": [
-                    "Priority for 4 annual regular underwater cleanup activities",
-                    "Employee diving certification support",
-                    "PADI AWARE Foundation international database linkage",
-                    "ESG report data provision",
-                    "Joint branding and promotional support",
-                    "Dedicated operations team assignment"
-                ]
-            },
-            "instructor": {
-                "title": "Instructor Membership",
-                "price": "Contact",
-                "description": "Activity leadership, safety management, and education quality assurance",
-                "buttonText": "Contact Us",
-                "features": [
-                    "Priority assignment for Lead and Sub-Lead positions",
-                    "Leader compensation and incentives",
-                    "Equipment and insurance support",
-                    "Regular update training provision",
-                    "Safety management specialized training",
-                    "Data standard training"
-                ]
-            },
-            "diver": {
-                "title": "Diver Membership",
-                "price": "Contact",
-                "description": "Participation and citizen science-focused individual membership",
-                "buttonText": "Contact Us",
-                "features": [
-                    "Activity priority application rights",
-                    "Education/certification discount benefits",
-                    "Point and level system",
-                    "Right to participate 2+ times annually",
-                    "Activity log and data management",
-                    "Local partner collaboration opportunities"
-                ]
-            }
-        },
-        "testimonials": {
-            "title": "Member Testimonials",
-            "subtitle": "Hear from our MOBA members",
-            "members": {
-                "kimBada": {
-                    "name": "Kim Bada",
-                    "role": "Marine Biologist",
-                    "content": "Through MOBA membership, I was able to communicate with colleagues worldwide and create greater impact."
-                },
-                "parkGreen": {
-                    "name": "Park Green",
-                    "role": "Environmental Activist",
-                    "content": "The educational materials and networking opportunities are really helpful. Highly recommended!"
-                },
-                "leeBlue": {
-                    "name": "Lee Blue",
-                    "role": "Marine Technologist",
-                    "content": "Thanks to the premium membership's project support, I was able to turn my ideas into reality."
-                }
-            }
-        },
-        "cta": {
-            "title": "Become a MOBA Member",
-            "subtitle": "Join MOBA to participate in ocean conservation and create a better future with colleagues worldwide."
         }
     },
     "contact": {

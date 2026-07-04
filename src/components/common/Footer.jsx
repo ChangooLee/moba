@@ -13,51 +13,34 @@ const Footer = () => {
         { name: t('common.nav.contact'), href: '/contact' },
     ];
 
-    const socialLinks = [
-        { name: 'Facebook', href: '#', icon: '📘' },
-        { name: 'Twitter', href: '#', icon: '🐦' },
-        { name: 'Instagram', href: '#', icon: '📷' },
-        { name: 'YouTube', href: '#', icon: '📺' },
-    ];
-
     return (
-        <footer className="bg-gray-900 text-white">
+        <footer className="bg-navy-950 text-white">
             <div className="container-custom">
-                <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {/* 브랜드 정보 */}
-                    <div className="space-y-4">
-                        <div className="flex items-center space-x-2">
-                            <div className="w-8 h-8 bg-padi-blue rounded-full flex items-center justify-center">
-                                <span className="text-white font-bold text-lg">M</span>
-                            </div>
-                            <span className="text-xl font-bold">MOBA</span>
-                        </div>
-                        <p className="text-gray-300 text-sm leading-relaxed">
+                <div className="py-14 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    {/* 브랜드 */}
+                    <div className="space-y-4 lg:col-span-1">
+                        <img
+                            src="/images/logo-256-transparent.png?v=20241022"
+                            alt="MOBA"
+                            className="h-10 w-auto object-contain [filter:brightness(0)_invert(1)]"
+                        />
+                        <p className="font-heading font-extrabold text-2xl text-aqua-light">바다를 다시 푸르게.</p>
+                        <p className="text-sky-100/60 text-sm leading-relaxed">
                             {t('common.footer.description')}
                         </p>
-                        <div className="flex space-x-4">
-                            {socialLinks.map((social) => (
-                                <a
-                                    key={social.name}
-                                    href={social.href}
-                                    className="text-gray-400 hover:text-padi-blue transition-colors duration-200"
-                                    aria-label={social.name}
-                                >
-                                    <span className="text-xl">{social.icon}</span>
-                                </a>
-                            ))}
-                        </div>
                     </div>
 
                     {/* 빠른 링크 */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">{t('common.footer.quickLinks')}</h3>
-                        <ul className="space-y-2">
+                        <h3 className="text-xs font-heading font-semibold tracking-eyebrow text-aqua-light uppercase mb-4">
+                            {t('common.footer.quickLinks')}
+                        </h3>
+                        <ul className="space-y-3">
                             {quickLinks.map((link) => (
                                 <li key={link.name}>
                                     <Link
                                         to={link.href}
-                                        className="text-gray-300 hover:text-padi-blue transition-colors duration-200 text-sm"
+                                        className="text-sky-100/70 hover:text-aqua-light transition-colors duration-200 text-sm"
                                     >
                                         {link.name}
                                     </Link>
@@ -66,54 +49,44 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* 연락처 정보 */}
+                    {/* 연락처 */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">{t('common.footer.contactInfo')}</h3>
-                        <div className="space-y-2 text-sm text-gray-300">
-                            <p>📧 make.ocean.blue.again.project@gmail.com</p>
-                            <p>📞 010-7586-9029</p>
-                            <p>🌐 www.moba-project.org</p>
+                        <h3 className="text-xs font-heading font-semibold tracking-eyebrow text-aqua-light uppercase mb-4">
+                            {t('common.footer.contactInfo')}
+                        </h3>
+                        <div className="space-y-3 text-sm text-sky-100/70">
+                            <p><a href="mailto:make.ocean.blue.again.project@gmail.com" className="hover:text-aqua-light transition-colors break-all">make.ocean.blue.again.project@gmail.com</a></p>
+                            <p><a href="tel:01075869029" className="hover:text-aqua-light transition-colors">010-7586-9029</a></p>
+                            <p>www.moba-project.org</p>
                         </div>
                     </div>
 
-                    {/* 뉴스레터 구독 */}
-                    <div>
-                        <h3 className="text-lg font-semibold mb-4">{t('common.footer.newsletter')}</h3>
-                        <p className="text-gray-300 text-sm mb-4">
-                            {t('common.footer.newsletterDescription')}
+                    {/* CTA */}
+                    <div className="rounded-2xl bg-white/[0.05] border border-white/10 p-6">
+                        <p className="font-heading font-bold text-white">시범 기업 2곳 선착순 모집 중</p>
+                        <p className="mt-2 text-sm text-sky-100/60 leading-relaxed">
+                            60분 킥오프 미팅으로 시작합니다.
                         </p>
-                        <div className="flex">
-                            <input
-                                type="email"
-                                placeholder={t('common.footer.newsletterPlaceholder')}
-                                className="flex-1 px-3 py-2 text-sm text-gray-900 bg-white border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-padi-blue focus:border-padi-blue"
-                            />
-                            <button className="px-4 py-2 bg-padi-blue text-white text-sm font-medium rounded-r-md hover:bg-padi-dark-blue transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-padi-blue focus:ring-offset-2">
-                                {t('common.footer.newsletterButton')}
-                            </button>
-                        </div>
+                        <Link
+                            to="/contact"
+                            className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-aqua px-6 py-3 text-sm font-heading font-bold text-ink transition-all hover:bg-aqua-light w-full"
+                        >
+                            {t('common.buttons.contact')} <span aria-hidden="true">→</span>
+                        </Link>
                     </div>
                 </div>
 
-                {/* 하단 정보 */}
-                <div className="border-t border-gray-800 py-6">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-gray-400 text-sm">
-                            {t('common.footer.copyright')}
+                {/* 하단 바 */}
+                <div className="border-t border-white/10 py-6">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p className="text-sky-100/50 text-sm">
+                            © 2026 MOBA · Make Ocean Blue Again. All rights reserved.
                         </p>
-                        <div className="flex space-x-6 text-sm">
-                            <a
-                                href="#"
-                                className="text-gray-400 hover:text-padi-blue transition-colors duration-200"
-                            >
+                        <div className="flex items-center gap-6 text-sm text-sky-100/60">
+                            <span>PADI AWARE Foundation · Dive Against Debris®</span>
+                            <Link to="/privacy-policy" className="hover:text-aqua-light transition-colors">
                                 {t('common.footer.privacy')}
-                            </a>
-                            <a
-                                href="#"
-                                className="text-gray-400 hover:text-padi-blue transition-colors duration-200"
-                            >
-                                {t('common.footer.terms')}
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -123,4 +96,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

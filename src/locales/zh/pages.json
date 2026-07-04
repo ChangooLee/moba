@@ -2,38 +2,529 @@
     "home": {
         "title": "让海洋再次蔚蓝",
         "subtitle": "Make Ocean Blue Again",
-        "description": "连接企业ESG管理与海洋保护的创新平台。通过员工潜水资格认证和季度性水下清洁活动，创造可验证的ESG成果。",
+        "description": "员工取得国际潜水资格证并开展季度水下清洁，其成果由PADI AWARE Foundation进行国际验证的企业ESG会员计划。我们创造可验证的量化海洋保护数据。",
         "hero": {
-            "title": "企业与潜水员共同参与的海洋清洁ESG平台",
-            "subtitle": "MOBA为企业和个人提供潜水教育和认证支持。\n我们在实际海洋中直接收集垃圾，并将结果数据化，转化为ESG成果。",
-            "cta": "企业ESG开始",
-            "ctaSecondary": "个人志愿服务申请"
+            "eyebrow": "CORPORATE MEMBERSHIP · ESG IMPACT",
+            "title": "让海洋再次蔚蓝。",
+            "subtitle": "同时实现ESG成果与员工福利的\n企业海洋保护会员计划。",
+            "ctaPrimary": "试点企业参与咨询",
+            "ctaSecondary": "了解会员计划详情",
+            "scrollHint": "SCROLL",
+            "trust": [
+                "可验证的量化海洋保护成果",
+                "PADI AWARE Foundation 国际验证",
+                "每年4次定期循环"
+            ],
+            "cta": "试点企业参与咨询",
+            "ctaSecondary_legacy": "了解会员计划详情"
+        },
+        "definition": {
+            "eyebrow": "ONE-LINE DEFINITION",
+            "lead": "一句话读懂MOBA",
+            "steps": [
+                "教育（资格）",
+                "水下清洁",
+                "数据上传",
+                "ESG报告"
+            ],
+            "note": "这4个步骤的循环每年重复4次。"
         },
         "stats": {
-            "title": "MOBA的成果",
+            "eyebrow": "AT A GLANCE",
+            "title": "以事实而非言辞证明的海洋保护ESG",
+            "subtitle": "加入即刻启动的4项确定产出。",
+            "items": [
+                {
+                    "value": "10",
+                    "unit": "名",
+                    "label": "常备持证员工",
+                    "sub": "首次加入时自由潜水6 + 水肺4"
+                },
+                {
+                    "value": "4",
+                    "unit": "次 / 年",
+                    "label": "定期水下清洁循环",
+                    "sub": "春·夏·秋·冬 按季度运营"
+                },
+                {
+                    "value": "100",
+                    "unit": "%",
+                    "label": "第三方验证覆盖率",
+                    "sub": "PADI AWARE Foundation 国际认证"
+                },
+                {
+                    "value": "0",
+                    "unit": "",
+                    "label": "漂绿风险",
+                    "sub": "无法篡改的GPS·照片·国际数据库"
+                }
+            ],
             "members": "试点企业招募中",
-            "projects": "年4次定期活动",
+            "projects": "每年4次定期活动",
             "countries": "南海·东海·济州",
-            "impact": "PADI AWARE合作伙伴"
+            "impact": "PADI AWARE 合作伙伴"
+        },
+        "crisis": {
+            "eyebrow": "WHY NOW · GLOBAL OCEAN CRISIS",
+            "title": "海洋已经超越极限。",
+            "lead": "海洋污染不再只是环保组织的课题，而是关系到供应链·品牌·投资者评估·监管的企业经营风险。",
+            "items": [
+                {
+                    "value": "480~1,270",
+                    "unit": "万吨 / 年",
+                    "label": "每年流入海洋的塑料",
+                    "desc": "北太平洋已形成约为韩国面积16倍的巨大垃圾带。"
+                },
+                {
+                    "value": "14~17",
+                    "unit": "万吨 / 年",
+                    "label": "韩国沿岸海洋垃圾产生量",
+                    "desc": "半数以上未能回收，沉积海底·漂浮，威胁生态系统。"
+                },
+                {
+                    "value": "3,787",
+                    "unit": "亿韩元",
+                    "label": "幽灵渔业（Ghost Fishing）年度损失额",
+                    "desc": "废弃渔网造成的渔业损失。微塑料最终回到我们的餐桌。"
+                }
+            ],
+            "note": "政府自2024年起以削减海洋垃圾净产生量（Net Negative）为目标强化监管。现在参与的企业将作为环境先行企业抢占有利地位。"
+        },
+        "standard": {
+            "eyebrow": "THE NEW STANDARD",
+            "title": "ESG报告，如今必须证明“实践”。",
+            "lead": "投资者·消费者·监管机构如今要求的不是宣言，而是对以下问题的回答。",
+            "questions": [
+                {
+                    "q": "Q1.",
+                    "text": "去年具体做了什么？",
+                    "desc": "不是宣言或计划 — 而是行动的证据。"
+                },
+                {
+                    "q": "Q2.",
+                    "text": "环境指标改善了多少？",
+                    "desc": "量化数值 — kg、件、时间、坐标。"
+                },
+                {
+                    "q": "Q3.",
+                    "text": "如何客观地证明这一点？",
+                    "desc": "第三方验证 — 国际NGO·标准映射。"
+                }
+            ],
+            "warn": "若无法明确回答，将面临漂绿（greenwashing）的批评。EU CSRD·ISSB 均将可验证数据明确列为核心要求。",
+            "answerEyebrow": "MOBA · HOW WE PROVE IT",
+            "answer": "MOBA以无法篡改的证据作答。",
+            "proofs": [
+                {
+                    "title": "实际行动",
+                    "desc": "员工亲自下海收集"
+                },
+                {
+                    "title": "物理证据",
+                    "desc": "水下摄像 · GPS · 重量·数量现场计量"
+                },
+                {
+                    "title": "国际NGO验证",
+                    "desc": "录入PADI AWARE Foundation 官方数据库"
+                },
+                {
+                    "title": "纳入UN政策",
+                    "desc": "可用作国际机构政策资料"
+                }
+            ]
+        },
+        "cycle": {
+            "eyebrow": "OUR APPROACH · THE OPERATING CYCLE",
+            "title": "简单而强大的4-Step循环",
+            "lead": "每季度重复的这一循环，创造ESG报告的量化成果。",
+            "steps": [
+                {
+                    "no": "01",
+                    "tag": "EDUCATE",
+                    "title": "教育（资格）",
+                    "desc": "支持取得PADI水肺 / 自由潜水国际资格证。持证者加修 Dive Against Debris® Specialty 专项培训。"
+                },
+                {
+                    "no": "02",
+                    "tag": "CLEAN UP",
+                    "title": "水下清洁",
+                    "desc": "以2~3人一组的伙伴潜水回收废渔网·塑料·金属·玻璃等。专业领队随行，在水深2~10m安全范围内运营。"
+                },
+                {
+                    "no": "03",
+                    "tag": "UPLOAD",
+                    "title": "数据上传",
+                    "desc": "将品目·重量·GPS·时间数据录入 Dive Against Debris® 全球数据库。用作国际机构政策资料。"
+                },
+                {
+                    "no": "04",
+                    "tag": "REPORT",
+                    "title": "ESG报告",
+                    "desc": "季度摘要 → 年末综合报告。GRI 306 · ISO 14001 · SDG 14 自动映射。即刻纳入可持续经营报告。"
+                }
+            ],
+            "freq": "每年4次、每季度重复 — 并非一次性活动，而是可持续的流程。"
+        },
+        "difference": {
+            "eyebrow": "WHAT MAKES MOBA DIFFERENT",
+            "title": "与一般ESG活动的决定性区别",
+            "lead": "左侧是市场上常见的ESG活动，右侧是MOBA。请对比同一行。",
+            "colLabel": "评估项目",
+            "colGeneric": "一般ESG活动",
+            "colMoba": "MOBA",
+            "rows": [
+                {
+                    "label": "活动结果",
+                    "generic": "以定性案例为主 — “进行了○○次志愿活动”",
+                    "moba": "将废弃物重量(kg)·品目·GPS坐标全部量化为数据"
+                },
+                {
+                    "label": "验证主体",
+                    "generic": "自我报告",
+                    "moba": "PADI AWARE Foundation（PADI资助的国际非营利组织）"
+                },
+                {
+                    "label": "员工福利",
+                    "generic": "仅认定一次性志愿时数",
+                    "moba": "终身可用的国际资格证 + 休闲爱好 + 全球认证卡"
+                },
+                {
+                    "label": "国际标准",
+                    "generic": "需另行映射",
+                    "moba": "GRI 306 · ISO 14001 · SDG 14 自动映射"
+                },
+                {
+                    "label": "漂绿风险",
+                    "generic": "高（仅凭照片·计划不足）",
+                    "moba": "实质为0（无法篡改的GPS·照片·国际数据库）"
+                },
+                {
+                    "label": "持续性",
+                    "generic": "多以一次性活动告终",
+                    "moba": "每年4次定期、季度报告 → 沉淀为企业文化"
+                }
+            ],
+            "footnote": "以相同的ESG预算，同时获得可验证的成果 + 员工终身资产。"
+        },
+        "value": {
+            "eyebrow": "CORPORATE VALUE",
+            "title": "企业获得的5项本质价值",
+            "lead": "并非用于ESG报告的成本 — 而是与人事·福利预算同时兼顾的一举两得投资。",
+            "items": [
+                {
+                    "no": "01",
+                    "title": "可验证的ESG数据 — 用量化数据说话",
+                    "desc": "将废弃物的种类·重量·数量、精确的GPS坐标与收集时间全部数据化。录入PADI AWARE Foundation 全球数据库，并自动映射到 GRI 306、ISO 14001、UN SDG 14。"
+                },
+                {
+                    "no": "02",
+                    "title": "从源头杜绝漂绿风险",
+                    "desc": "符合EU CSRD·ISSB的可验证性要求。以国际NGO联合署名的证书 + 审计函，为“我们为海洋保护作出贡献”的主张附上正式文件。"
+                },
+                {
+                    "no": "03",
+                    "title": "品牌价值与社会信任提升",
+                    "desc": "向市场传递“行动胜于言辞”的讯息。在营业场所周边的定期清洁自然带来地方政府感谢状·媒体报道。ICC Day·AWARE Week 媒体曝光。"
+                },
+                {
+                    "no": "04",
+                    "title": "提前应对监管 + 评级提升",
+                    "desc": "确保应对ISSB·EU CSRD·国内ESG披露的数据。有望提升KCGS·Sustainalytics·MSCI环境(E)评级。可用于DJSI评估。"
+                },
+                {
+                    "no": "05",
+                    "title": "福利·组织文化强化效应",
+                    "desc": "以会员费为员工支持具有终身价值的国际资格证。可归类为人事·福利投资而非ESG成本 — 相同预算，2倍价值。",
+                    "tag": "UNIQUE · 相同预算，2倍价值"
+                }
+            ]
+        },
+        "metrics": {
+            "eyebrow": "QUANTIFIED IMPACT",
+            "title": "E · S · G — 所有指标皆以数字呈现",
+            "lead": "每次季度活动测量·验证·录入的代表性指标示例。所有数值均记录于 PADI AWARE Foundation 全球数据库。",
+            "groups": [
+                {
+                    "key": "E",
+                    "name": "环境量化指标",
+                    "items": [
+                        {
+                            "value": "600",
+                            "unit": "kg",
+                            "label": "废塑料回收量"
+                        },
+                        {
+                            "value": "80",
+                            "unit": "个",
+                            "label": "废渔网清除件数"
+                        },
+                        {
+                            "value": "20",
+                            "unit": "处",
+                            "label": "污染热点清洁"
+                        },
+                        {
+                            "value": "65",
+                            "unit": "%",
+                            "label": "回收转化率"
+                        },
+                        {
+                            "value": "1,800",
+                            "unit": "kgCO₂e",
+                            "label": "净碳规避量"
+                        }
+                    ]
+                },
+                {
+                    "key": "S",
+                    "name": "社会量化指标",
+                    "items": [
+                        {
+                            "value": "100",
+                            "unit": "名",
+                            "label": "员工累计参与"
+                        },
+                        {
+                            "value": "800",
+                            "unit": "h",
+                            "label": "总志愿时数"
+                        },
+                        {
+                            "value": "5",
+                            "unit": "个",
+                            "label": "社区合作团体"
+                        },
+                        {
+                            "value": "72",
+                            "unit": "%",
+                            "label": "再参与率"
+                        },
+                        {
+                            "value": "3",
+                            "unit": "件",
+                            "label": "公共可视化案例"
+                        }
+                    ]
+                },
+                {
+                    "key": "G",
+                    "name": "治理量化指标",
+                    "items": [
+                        {
+                            "value": "4",
+                            "unit": "次",
+                            "label": "ESG委员会定期议案采纳"
+                        },
+                        {
+                            "value": "100",
+                            "unit": "%",
+                            "label": "数据质量覆盖率"
+                        },
+                        {
+                            "value": "100",
+                            "unit": "%",
+                            "label": "第三方(PADI)验证覆盖率"
+                        },
+                        {
+                            "value": "100",
+                            "unit": "%",
+                            "label": "保险·安全教育完成率"
+                        },
+                        {
+                            "value": "100",
+                            "unit": "%",
+                            "label": "预算结算公开率"
+                        }
+                    ]
+                }
+            ]
+        },
+        "employee": {
+            "eyebrow": "EMPLOYEE VALUE",
+            "title": "公司支持员工取得终身受用的国际资格证。",
+            "lead": "取得的资格证终身持有 · 全球通用。从海外出差·度假地潜水，到与家人的新爱好，再到个人职业资产化。",
+            "costs": [
+                {
+                    "name": "PADI Open Water（水肺）",
+                    "price": "60~90万韩元",
+                    "dur": "培训周期2~3天"
+                },
+                {
+                    "name": "PADI Freediver Level 2",
+                    "price": "50~70万韩元",
+                    "dur": "培训周期2~3天"
+                }
+            ],
+            "free": "在MOBA由公司全额支持，免费取得",
+            "quote": "“我收集了多少kg，一清二楚。”",
+            "quoteSub": "PROFESSIONAL — NOT JUST VOLUNTEER"
+        },
+        "partners": {
+            "eyebrow": "INTERNATIONAL PARTNERS",
+            "title": "MOBA的国际合作伙伴关系",
+            "lead": "并非自我验证 — 而是通过全球NGO的官方数据录入来确保可信度。",
+            "padiName": "PADI AWARE Foundation",
+            "padiDesc": "由全球最大的水肺潜水培训机构PADI资助的独立非营利基金会。与UNEP等国际机构合作，在政策·公民科学·社区行动领域发挥全球领导力。",
+            "padiStats": [
+                {
+                    "value": "100+",
+                    "label": "个国家的潜水员社区 · 全球最大"
+                },
+                {
+                    "value": "2011~",
+                    "label": "Dive Against Debris® 全球运营"
+                }
+            ],
+            "standardsTitle": "国际标准 — 自动映射的6大框架",
+            "standards": [
+                {
+                    "org": "UNITED NATIONS",
+                    "name": "SDG 14",
+                    "desc": "海洋生态系统保护"
+                },
+                {
+                    "org": "GLOBAL REPORTING",
+                    "name": "GRI 306",
+                    "desc": "废弃物管理"
+                },
+                {
+                    "org": "INTERNATIONAL STD",
+                    "name": "ISO 14001",
+                    "desc": "环境管理体系"
+                },
+                {
+                    "org": "INTERNATIONAL STD",
+                    "name": "ISO 26000",
+                    "desc": "社会责任指南"
+                },
+                {
+                    "org": "GLOBAL DISCLOSURE",
+                    "name": "ISSB · CSRD",
+                    "desc": "IFRS S1·S2 · EU披露"
+                },
+                {
+                    "org": "NATURE DISCLOSURE",
+                    "name": "TNFD · CDP",
+                    "desc": "自然资本 · 碳披露"
+                }
+            ],
+            "agencies": [
+                "DJSI",
+                "MSCI ESG",
+                "Sustainalytics",
+                "KCGS",
+                "CDP"
+            ],
+            "agenciesNote": "全球ESG评级机构5家 · 100%数据应对"
+        },
+        "disclosure": {
+            "eyebrow": "KOREA ESG DISCLOSURE",
+            "title": "韩国ESG披露强制化 — 2028年是D-Day。",
+            "lead": "随着金融委分阶段强制化路线图与KSSB披露标准的最终确定，时点正日益临近。",
+            "warning": "为2028年首次披露，FY27（2027会计年度）数据必不可少。若无法在2026年底前完备数据收集体系，首份披露报告的编制本身将无法实现。",
+            "edgeValue": "2年",
+            "edgeLabel": "抢占先机",
+            "edgeDesc": "在2026~2027年加入 — 到2028年首次披露即拥有2年的量化数据。当竞争对手才起步时，我们已完成验证。"
+        },
+        "pricing": {
+            "eyebrow": "MEMBERSHIP & PRICING",
+            "title": "企业会员计划 — 透明的价格，明确的产出",
+            "lead": "维持常备持证员工10名是核心结构。额外人员可通过另行协商持续接纳。",
+            "plans": [
+                {
+                    "tag": "PLAN A — YEAR 1",
+                    "name": "首次加入",
+                    "price": "2,000",
+                    "unit": "万韩元",
+                    "note": "第1年 / 增值税另计",
+                    "features": [
+                        "PADI 自由潜水 Level 2 — 6名",
+                        "水肺开放水域 — 4名",
+                        "每年4次定期活动运营全包",
+                        "装备·保险·交通·餐费全包",
+                        "Dive Against Debris® Specialty 培训",
+                        "ESG咨询 + 年末综合报告",
+                        "宣传·内容套餐"
+                    ]
+                },
+                {
+                    "tag": "PLAN B — YEAR 2+",
+                    "name": "续费（自第2年起）",
+                    "price": "1,000",
+                    "unit": "万韩元/年",
+                    "note": "第2年以后 / 增值税另计",
+                    "badge": "RENEWAL",
+                    "highlight": true,
+                    "features": [
+                        "PADI 自由潜水 Level 2 — 4名新增",
+                        "水肺开放水域 — 2名新增",
+                        "第1年运营项目全部相同",
+                        "未使用的活动可结转至次年1次",
+                        "季度 + 年末综合ESG报告",
+                        "PADI AWARE 联合认证续期"
+                    ]
+                },
+                {
+                    "tag": "PILOT — LIMITED 2 COMPANIES",
+                    "name": "试点企业专属优惠",
+                    "price": "按成本",
+                    "unit": "结算",
+                    "note": "会员费免除或协商 · 以原价 + 实费运营1年",
+                    "accent": true,
+                    "features": [
+                        "效果验证后转为正式会员",
+                        "联合新闻稿权限",
+                        "联合制作案例研究（Case Study）",
+                        "次年优先续费权",
+                        "运营改进意见优先采纳"
+                    ]
+                }
+            ]
+        },
+        "cta": {
+            "eyebrow": "NEXT STEP",
+            "title": "让海洋再次蔚蓝。",
+            "subtitle": "直到MOBA首次定期活动 — 从60分钟的启动会议开始。",
+            "steps": [
+                {
+                    "no": "01",
+                    "title": "启动会议（60分钟）",
+                    "desc": "现状诊断 · 会员方案设计 · 日程确认"
+                },
+                {
+                    "no": "02",
+                    "title": "定制提案 + 签约",
+                    "desc": "贴合企业特点的运营方案 · 签订合同 · 试点企业协商"
+                },
+                {
+                    "no": "03",
+                    "title": "首次定期活动（M2）",
+                    "desc": "从启动会议起约8周 — 员工下海。"
+                }
+            ],
+            "buttonPrimary": "试点企业参与咨询",
+            "buttonSecondary": "了解会员计划详情",
+            "contact": "MOBA · Make Ocean Blue Again — 试点企业2家先到先得招募中",
+            "partner": "PADI AWARE Foundation · UNEP等国际机构合作 · Dive Against Debris®"
         },
         "features": {
-            "title": "MOBA的主要活动",
-            "subtitle": "我们提供各种海洋保护项目和活动",
+            "title": "MOBA的核心价值",
+            "subtitle": "通过E-S-G三大支柱实现企业可持续的海洋保护",
             "conservation": {
-                "title": "海洋保护",
-                "description": "保护海洋生态系统的研究和保护活动"
+                "title": "E (Environment) 环境",
+                "description": "通过季度水下清洁活动实际收集海洋废弃物，恢复海洋生态系统"
             },
             "education": {
-                "title": "环境教育",
-                "description": "关于海洋环境重要性的教育项目"
+                "title": "S (Social) 社会",
+                "description": "通过员工参与强化组织文化，并构建与社区的合作网络"
             },
             "community": {
-                "title": "社区",
-                "description": "与全球环保活动家的网络联系"
+                "title": "G (Governance) 治理",
+                "description": "通过与PADI AWARE Foundation的国际标准衔接，实现透明的数据管理与验证体系"
             },
             "action": {
-                "title": "行动",
-                "description": "参与实际的海洋清洁和保护活动"
+                "title": "执行平台",
+                "description": "教育（资格）→ 潜水清洁（水下清洁）→ 数据上传 → ESG报告的标准流程"
             }
         }
     },

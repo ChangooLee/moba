@@ -2,10 +2,14 @@
     "nav": {
         "home": "Home",
         "about": "About",
-        "plan": "Plan",
-        "membership": "Membership",
-        "schedule": "Schedule",
-        "contact": "Contact"
+        "howItWorks": "How It Works",
+        "impact": "Impact",
+        "join": "Get Involved",
+        "news": "News",
+        "contact": "Contact",
+        "plan": "How It Works",
+        "membership": "Get Involved",
+        "schedule": "News"
     },
     "buttons": {
         "join": "Join Now",
@@ -22,7 +26,14 @@
         "cancel": "Cancel",
         "save": "Save",
         "edit": "Edit",
-        "delete": "Delete"
+        "delete": "Delete",
+        "getInvolved": "Get Involved",
+        "businessInquiry": "Get in touch",
+        "requestProposal": "Request a Proposal",
+        "joinDiver": "Join as a Diver",
+        "joinInstructor": "Join as an Instructor",
+        "viewImpact": "View Impact",
+        "viewHowItWorks": "View How It Works"
     },
     "common": {
         "loading": "Loading...",

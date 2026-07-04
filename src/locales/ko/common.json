@@ -2,10 +2,14 @@
     "nav": {
         "home": "홈",
         "about": "소개",
-        "plan": "사업계획",
-        "membership": "멤버십",
-        "schedule": "일정",
-        "contact": "문의"
+        "howItWorks": "활동 방식",
+        "impact": "임팩트",
+        "join": "참여하기",
+        "news": "소식",
+        "contact": "문의",
+        "plan": "활동 방식",
+        "membership": "참여하기",
+        "schedule": "소식"
     },
     "buttons": {
         "join": "가입하기",
@@ -22,7 +26,14 @@
         "cancel": "취소",
         "save": "저장",
         "edit": "수정",
-        "delete": "삭제"
+        "delete": "삭제",
+        "getInvolved": "참여하기",
+        "businessInquiry": "기업 도입 문의",
+        "requestProposal": "제안서 요청",
+        "joinDiver": "다이버로 참여",
+        "joinInstructor": "강사로 참여",
+        "viewImpact": "임팩트 보기",
+        "viewHowItWorks": "활동 방식 보기"
     },
     "common": {
         "loading": "로딩 중...",

@@ -2,10 +2,14 @@
     "nav": {
         "home": "ホーム",
         "about": "概要",
-        "plan": "計画",
-        "membership": "メンバーシップ",
-        "schedule": "スケジュール",
-        "contact": "お問い合わせ"
+        "howItWorks": "活動方式",
+        "impact": "インパクト",
+        "join": "参加する",
+        "news": "お知らせ",
+        "contact": "お問い合わせ",
+        "plan": "活動方式",
+        "membership": "参加する",
+        "schedule": "お知らせ"
     },
     "buttons": {
         "join": "今すぐ参加",
@@ -22,7 +26,14 @@
         "cancel": "キャンセル",
         "save": "保存",
         "edit": "編集",
-        "delete": "削除"
+        "delete": "削除",
+        "getInvolved": "参加する",
+        "businessInquiry": "企業導入のお問い合わせ",
+        "requestProposal": "提案書のご依頼",
+        "joinDiver": "ダイバーとして参加",
+        "joinInstructor": "インストラクターとして参加",
+        "viewImpact": "インパクトを見る",
+        "viewHowItWorks": "活動方式を見る"
     },
     "common": {
         "loading": "読み込み中...",

@@ -7,9 +7,10 @@ const Footer = () => {
 
     const quickLinks = [
         { name: t('common.nav.about'), href: '/about' },
-        { name: t('common.nav.plan'), href: '/plan' },
-        { name: t('common.nav.membership'), href: '/membership' },
-        { name: t('common.nav.schedule'), href: '/schedule' },
+        { name: t('common.nav.howItWorks'), href: '/how-it-works' },
+        { name: t('common.nav.impact'), href: '/impact' },
+        { name: t('common.nav.join'), href: '/join' },
+        { name: t('common.nav.news'), href: '/news' },
         { name: t('common.nav.contact'), href: '/contact' },
     ];
 

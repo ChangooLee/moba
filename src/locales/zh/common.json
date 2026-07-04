@@ -2,10 +2,14 @@
     "nav": {
         "home": "首页",
         "about": "关于我们",
-        "plan": "计划",
-        "membership": "会员",
-        "schedule": "日程",
-        "contact": "联系我们"
+        "howItWorks": "活动方式",
+        "impact": "影响力",
+        "join": "参与",
+        "news": "动态",
+        "contact": "联系我们",
+        "plan": "活动方式",
+        "membership": "参与",
+        "schedule": "动态"
     },
     "buttons": {
         "join": "立即加入",
@@ -22,7 +26,14 @@
         "cancel": "取消",
         "save": "保存",
         "edit": "编辑",
-        "delete": "删除"
+        "delete": "删除",
+        "getInvolved": "参与",
+        "businessInquiry": "企业导入咨询",
+        "requestProposal": "索取提案",
+        "joinDiver": "以潜水员身份参与",
+        "joinInstructor": "以教练身份参与",
+        "viewImpact": "查看影响力",
+        "viewHowItWorks": "查看活动方式"
     },
     "common": {
         "loading": "加载中...",

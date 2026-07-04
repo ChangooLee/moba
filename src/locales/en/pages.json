@@ -526,6 +526,34 @@
                 "title": "Execution platform",
                 "description": "A standard process of Education (Certification) → Ploving (underwater cleanup) → Data upload → ESG reporting"
             }
+        },
+        "audiences": {
+            "eyebrow": "WHO IT'S FOR",
+            "title": "Who we work with",
+            "lead": "Businesses, instructors, and divers each play their part to build one verified ESG outcome together.",
+            "items": [
+                {
+                    "tag": "FOR BUSINESS",
+                    "title": "Business partners",
+                    "desc": "Employee benefits and verifiable ESG results at the same time. Start with a 60-minute kickoff and a tailored proposal.",
+                    "cta": "Get in touch",
+                    "to": "/join/business"
+                },
+                {
+                    "tag": "FOR INSTRUCTORS",
+                    "title": "Diving instructors",
+                    "desc": "The experts who lead in the field. Participate by leading activities, issuing certifications, and managing safety, and receive partner benefits.",
+                    "cta": "Join as an instructor",
+                    "to": "/join"
+                },
+                {
+                    "tag": "FOR DIVERS",
+                    "title": "Individual divers",
+                    "desc": "A member who protects the ocean together with an international certification. Join the community now with priority for regular activities.",
+                    "cta": "Join as a diver",
+                    "to": "/join"
+                }
+            ]
         }
     },
     "about": {
@@ -1066,5 +1094,84 @@
             "title": "Contact Us",
             "subtitle": "Learn More"
         }
+    },
+    "howItWorks": {
+        "title": "How It Works",
+        "subtitle": "Education & certification → underwater cleanup → data verification → ESG results.\nMOBA's four-step cycle, repeated four times a year.",
+        "roles": {
+            "eyebrow": "WHO DOES WHAT",
+            "title": "One outcome, built by three parties together",
+            "lead": "The verifiable, quantitative ESG results of a single cycle are completed when all three parties fulfill their responsibilities.",
+            "items": [
+                {
+                    "who": "Business",
+                    "role": "Resources · governance · receiving results",
+                    "desc": "Responsible for employee participation, budget, and insurance, and receives the results as an ESG committee agenda item."
+                },
+                {
+                    "who": "Instructor",
+                    "role": "Field lead · safety · data quality",
+                    "desc": "Manages safety through professional guidance and guarantees the accuracy of collection data."
+                },
+                {
+                    "who": "Diver",
+                    "role": "Execution · citizen science data",
+                    "desc": "Enters the ocean to collect debris and records items, weight, and GPS."
+                }
+            ]
+        },
+        "verify": {
+            "eyebrow": "VERIFICATION",
+            "title": "International verification by the PADI AWARE Foundation",
+            "desc": "All collection data is registered in the Dive Against Debris® global database and automatically mapped to GRI 306 · ISO 14001 · SDG 14. Official verification by an international NGO — not self-reporting — eliminates greenwashing risk at the source."
+        }
+    },
+    "impact": {
+        "title": "Impact",
+        "subtitle": "Proven with data, not words.\nFrom the Pohang field study to international standards mapping.",
+        "standardsNote": "A single data collection addresses six international frameworks at once."
+    },
+    "join": {
+        "title": "Get Involved",
+        "subtitle": "Choose your place. Businesses, instructors, and divers each reclaim the ocean in their own way.",
+        "lanes": {
+            "eyebrow": "CHOOSE YOUR LANE",
+            "items": [
+                {
+                    "tag": "FOR BUSINESS",
+                    "title": "Business partners",
+                    "desc": "Verifiable ESG results and employee benefits at the same time. Instead of a public price list, start with a proposal tailored to your company.",
+                    "cta": "Get in touch · Request a Proposal",
+                    "to": "/join/business"
+                },
+                {
+                    "tag": "FOR INSTRUCTORS",
+                    "title": "Diving instructors",
+                    "desc": "Participate as an expert responsible for leading activities, managing safety, and issuing certifications. Lead compensation, insurance, and regular update training provided.",
+                    "cta": "Join as an instructor",
+                    "to": "/contact"
+                },
+                {
+                    "tag": "FOR DIVERS",
+                    "title": "Individual divers",
+                    "desc": "Participate in regular activities as an internationally certified diver or a new trainee. Activity priority, training discounts, and a points program.",
+                    "cta": "Join as a diver",
+                    "to": "/contact"
+                }
+            ]
+        },
+        "benefitsTitle": "Benefits you receive when you participate"
+    },
+    "business": {
+        "eyebrow": "FOR BUSINESS",
+        "title": "Prove your corporate ESG in the ocean",
+        "subtitle": "With the same budget, verifiable ESG results and lifelong employee assets at the same time.\nStart with a 60-minute kickoff meeting.",
+        "cta": {
+            "eyebrow": "NEXT STEP",
+            "title": "Request a proposal",
+            "subtitle": "We'll send you a tailored proposal with an operating plan and quote suited to your company. Recruiting 2 pilot companies on a first-come, first-served basis.",
+            "button": "Request a Proposal · Get in touch"
+        },
+        "membershipNote": "The core structure is maintaining 10 employees with active certifications. We'll provide an exact quote in the proposal."
     }
 }

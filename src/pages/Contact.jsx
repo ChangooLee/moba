@@ -148,8 +148,8 @@ const Contact = () => {
             <CtaBand
                 title={t('pages.contact.cta.title')}
                 subtitle={t('pages.contact.cta.subtitle')}
-                primary={{ to: '/membership', label: t('common.buttons.join') }}
-                secondary={{ to: '/about', label: t('common.buttons.learnMore') }}
+                primary={{ to: '/join', label: t('common.buttons.getInvolved') }}
+                secondary={{ to: '/how-it-works', label: t('common.buttons.viewHowItWorks') }}
             />
         </div>
     );

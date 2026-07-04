@@ -1,114 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-
-/* ── 스크롤 인뷰 훅 ──────────────────────────────── */
-const useInView = (options = { threshold: 0.15, rootMargin: '0px 0px -8% 0px' }) => {
-    const ref = useRef(null);
-    const [inView, setInView] = useState(false);
-    useEffect(() => {
-        const el = ref.current;
-        if (!el) return;
-        if (typeof IntersectionObserver === 'undefined') {
-            setInView(true);
-            return;
-        }
-        const obs = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
-                setInView(true);
-                obs.disconnect();
-            }
-        }, options);
-        obs.observe(el);
-        return () => obs.disconnect();
-    }, []);
-    return [ref, inView];
-};
-
-/* ── 스크롤 리빌 래퍼 ─────────────────────────────── */
-const Reveal = ({ children, className = '', delay = 0, as: Tag = 'div' }) => {
-    const [ref, inView] = useInView();
-    return (
-        <Tag
-            ref={ref}
-            className={`reveal ${inView ? 'is-visible' : ''} ${className}`}
-            style={delay ? { transitionDelay: `${delay}ms` } : undefined}
-        >
-            {children}
-        </Tag>
-    );
-};
-
-/* ── 숫자 카운트업 (정수형만) ─────────────────────── */
-const CountUp = ({ value, className = '' }) => {
-    const match = /^(\d[\d,]*)/.exec(String(value));
-    const numeric = match ? parseInt(match[1].replace(/,/g, ''), 10) : null;
-    const suffix = match ? String(value).slice(match[1].length) : String(value);
-    const [ref, inView] = useInView({ threshold: 0.4 });
-    const [display, setDisplay] = useState(numeric === null ? value : '0');
-
-    useEffect(() => {
-        if (numeric === null || !inView) return;
-        if (typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
-            setDisplay(numeric.toLocaleString());
-            return;
-        }
-        let raf;
-        const start = performance.now();
-        const dur = 1400;
-        const tick = (now) => {
-            const p = Math.min(1, (now - start) / dur);
-            const eased = 1 - Math.pow(1 - p, 3);
-            setDisplay(Math.round(numeric * eased).toLocaleString());
-            if (p < 1) raf = requestAnimationFrame(tick);
-        };
-        raf = requestAnimationFrame(tick);
-        return () => cancelAnimationFrame(raf);
-    }, [inView, numeric]);
-
-    if (numeric === null) return <span className={className}>{value}</span>;
-    return (
-        <span ref={ref} className={className}>
-            {display}
-            {suffix}
-        </span>
-    );
-};
-
-const Eyebrow = ({ children, light = false, className = '' }) => (
-    <span className={`${light ? 'eyebrow-light' : 'eyebrow'} ${className}`}>
-        <span className="inline-block w-6 h-px bg-current opacity-70" />
-        {children}
-    </span>
-);
-
-const BUBBLES = [
-    { l: '8%', s: 10, d: 13, delay: 0 }, { l: '18%', s: 6, d: 17, delay: 3 },
-    { l: '27%', s: 14, d: 11, delay: 6 }, { l: '38%', s: 8, d: 15, delay: 1 },
-    { l: '47%', s: 5, d: 19, delay: 8 }, { l: '58%', s: 12, d: 12, delay: 4 },
-    { l: '66%', s: 7, d: 16, delay: 2 }, { l: '74%', s: 10, d: 14, delay: 7 },
-    { l: '83%', s: 6, d: 18, delay: 5 }, { l: '91%', s: 13, d: 12, delay: 9 },
-];
-
-const OceanFX = () => (
-    <>
-        <div className="ocean-rays" aria-hidden="true" />
-        <div className="ocean-bubbles" aria-hidden="true">
-            {BUBBLES.map((b, i) => (
-                <span
-                    key={i}
-                    style={{
-                        left: b.l,
-                        width: `${b.s}px`,
-                        height: `${b.s}px`,
-                        animationDuration: `${b.d}s`,
-                        animationDelay: `${b.delay}s`,
-                    }}
-                />
-            ))}
-        </div>
-    </>
-);
+import { Reveal, CountUp, Eyebrow, OceanFX, Icon } from '../components/ui/primitives';
 
 const Home = () => {
     const { t, ready } = useTranslation();
@@ -183,7 +76,7 @@ const Home = () => {
                         <ul className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-6 text-sm text-sky-100/80">
                             {(hero.trust || []).map((item, i) => (
                                 <li key={i} className="flex items-center gap-2">
-                                    <span className="text-aqua-light" aria-hidden="true">✓</span>
+                                    <Icon name="check" className="w-4 h-4 text-aqua-light shrink-0" />
                                     <span>{item}</span>
                                 </li>
                             ))}
@@ -640,7 +533,7 @@ const Home = () => {
                                         <ul className={`mt-6 space-y-3 text-sm flex-1 ${dark ? 'text-sky-100/85' : accent ? 'text-ink/85' : 'text-gray-600'}`}>
                                             {(p.features || []).map((f, fi) => (
                                                 <li key={fi} className="flex items-start gap-2">
-                                                    <span className={`mt-0.5 ${dark ? 'text-aqua-light' : accent ? 'text-ink' : 'text-aqua-dark'}`} aria-hidden="true">✓</span>
+                                                    <Icon name="check" className={`w-4 h-4 mt-1 shrink-0 ${dark ? 'text-aqua-light' : accent ? 'text-ink' : 'text-aqua-dark'}`} />
                                                     <span>{f}</span>
                                                 </li>
                                             ))}

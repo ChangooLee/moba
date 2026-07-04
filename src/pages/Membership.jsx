@@ -1,272 +1,134 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Container from '../components/layout/Container';
-import Card from '../components/ui/Card';
-import Button from '../components/ui/Button';
+import { Link } from 'react-router-dom';
+import { Reveal, Eyebrow, Icon, PageHero, CtaBand } from '../components/ui/primitives';
+
+const BENEFIT_ICONS = { education: 'book', events: 'calendar', network: 'globe', resources: 'recycle' };
 
 const Membership = () => {
     const { t, ready } = useTranslation();
-    const [benefits, setBenefits] = useState([]);
-    const [plans, setPlans] = useState([]);
-    const [testimonials, setTestimonials] = useState([]);
-
-    useEffect(() => {
-        if (ready) {
-            setBenefits([
-                {
-                    icon: '📚',
-                    key: 'education',
-                    title: t('pages.membership.benefits.education.title'),
-                    description: t('pages.membership.benefits.education.description')
-                },
-                {
-                    icon: '🎉',
-                    key: 'events',
-                    title: t('pages.membership.benefits.events.title'),
-                    description: t('pages.membership.benefits.events.description')
-                },
-                {
-                    icon: '🌐',
-                    key: 'network',
-                    title: t('pages.membership.benefits.network.title'),
-                    description: t('pages.membership.benefits.network.description')
-                },
-                {
-                    icon: '🛠️',
-                    key: 'resources',
-                    title: t('pages.membership.benefits.resources.title'),
-                    description: t('pages.membership.benefits.resources.description')
-                }
-            ]);
-
-            setPlans([
-                {
-                    name: t('pages.membership.plans.corporate.title'),
-                    price: t('pages.membership.plans.corporate.price'),
-                    description: t('pages.membership.plans.corporate.description'),
-                    features: t('pages.membership.plans.corporate.features', { returnObjects: true }) || [],
-                    popular: true,
-                    buttonText: t('pages.membership.plans.corporate.buttonText'),
-                    buttonVariant: 'primary'
-                },
-                {
-                    name: t('pages.membership.plans.instructor.title'),
-                    price: t('pages.membership.plans.instructor.price'),
-                    description: t('pages.membership.plans.instructor.description'),
-                    features: t('pages.membership.plans.instructor.features', { returnObjects: true }) || [],
-                    popular: false,
-                    buttonText: t('pages.membership.plans.instructor.buttonText'),
-                    buttonVariant: 'outline'
-                },
-                {
-                    name: t('pages.membership.plans.diver.title'),
-                    price: t('pages.membership.plans.diver.price'),
-                    description: t('pages.membership.plans.diver.description'),
-                    features: t('pages.membership.plans.diver.features', { returnObjects: true }) || [],
-                    popular: false,
-                    buttonText: t('pages.membership.plans.diver.buttonText'),
-                    buttonVariant: 'outline'
-                }
-            ]);
-
-            setTestimonials([
-                {
-                    key: 'kimBada',
-                    name: t('pages.membership.testimonials.members.kimBada.name'),
-                    role: t('pages.membership.testimonials.members.kimBada.role'),
-                    content: t('pages.membership.testimonials.members.kimBada.content'),
-                    avatar: '👨‍🔬'
-                },
-                {
-                    key: 'parkGreen',
-                    name: t('pages.membership.testimonials.members.parkGreen.name'),
-                    role: t('pages.membership.testimonials.members.parkGreen.role'),
-                    content: t('pages.membership.testimonials.members.parkGreen.content'),
-                    avatar: '👩‍💼'
-                },
-                {
-                    key: 'leeBlue',
-                    name: t('pages.membership.testimonials.members.leeBlue.name'),
-                    role: t('pages.membership.testimonials.members.leeBlue.role'),
-                    content: t('pages.membership.testimonials.members.leeBlue.content'),
-                    avatar: '👨‍💻'
-                }
-            ]);
-        }
-    }, [ready, t]);
 
     if (!ready) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-padi-blue mx-auto mb-4"></div>
-                    <p className="text-gray-600">Loading...</p>
-                </div>
+            <div className="min-h-screen flex items-center justify-center bg-ink">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-aqua" />
             </div>
         );
     }
 
+    const arr = (key) => {
+        const v = t(key, { returnObjects: true });
+        return Array.isArray(v) ? v : [];
+    };
+
+    const benefitKeys = ['education', 'events', 'network', 'resources'];
+    const planDefs = [
+        { key: 'corporate', highlight: true },
+        { key: 'instructor', highlight: false },
+        { key: 'diver', highlight: false },
+    ];
+
     return (
-        <div className="min-h-screen">
-            {/* 히어로 섹션 */}
-            <section className="bg-gradient-to-r from-padi-blue to-padi-dark-blue text-white section-padding">
-                <Container>
-                    <div className="text-center">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                            {t('pages.membership.title')}
-                        </h1>
-                        <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                            {t('pages.membership.description')}
-                        </p>
-                    </div>
-                </Container>
-            </section>
+        <div className="overflow-x-hidden">
+            <PageHero
+                eyebrow="MEMBERSHIP"
+                title={t('pages.membership.title')}
+                subtitle={t('pages.membership.description')}
+            />
 
             {/* 멤버 혜택 */}
-            <section className="section-padding">
-                <Container>
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <section className="section-padding bg-white">
+                <div className="container-custom">
+                    <Reveal className="max-w-3xl">
+                        <Eyebrow>BENEFITS</Eyebrow>
+                        <h2 className="mt-4 font-heading font-extrabold text-3xl md:text-5xl text-navy leading-tight">
                             {t('pages.membership.benefits.title')}
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            {t('pages.membership.benefits.subtitle')}
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {benefits.map((benefit, index) => (
-                            <Card key={index} className="text-center">
-                                <div className="text-4xl mb-4">{benefit.icon}</div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    {benefit.title}
-                                </h3>
-                                <p className="text-gray-600">
-                                    {benefit.description}
-                                </p>
-                            </Card>
+                        <p className="mt-5 text-gray-600 text-lg">{t('pages.membership.benefits.subtitle')}</p>
+                    </Reveal>
+                    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {benefitKeys.map((key, i) => (
+                            <Reveal key={key} delay={i * 80}>
+                                <div className="h-full rounded-2xl border border-mist-deep bg-mist/50 p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+                                    <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-navy-900 text-aqua-light">
+                                        <Icon name={BENEFIT_ICONS[key]} className="w-6 h-6" />
+                                    </div>
+                                    <h3 className="mt-5 font-heading font-bold text-lg text-navy">
+                                        {t(`pages.membership.benefits.${key}.title`)}
+                                    </h3>
+                                    <p className="mt-2 text-sm text-gray-500 leading-relaxed">
+                                        {t(`pages.membership.benefits.${key}.description`)}
+                                    </p>
+                                </div>
+                            </Reveal>
                         ))}
                     </div>
-                </Container>
+                </div>
             </section>
 
             {/* 멤버십 플랜 */}
-            <section className="bg-gray-50 section-padding">
-                <Container>
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <section className="section-padding bg-mist">
+                <div className="container-custom">
+                    <Reveal className="max-w-3xl">
+                        <Eyebrow>PLANS</Eyebrow>
+                        <h2 className="mt-4 font-heading font-extrabold text-3xl md:text-5xl text-navy leading-tight">
                             {t('pages.membership.plans.title')}
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            {t('pages.membership.plans.subtitle')}
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {plans.map((plan, index) => (
-                            <Card
-                                key={index}
-                                className={`relative ${plan.popular ? 'ring-2 ring-padi-blue' : ''}`}
-                            >
-                                {plan.popular && (
-                                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                                        <span className="bg-padi-blue text-white px-4 py-1 rounded-full text-sm font-medium">
-                                            인기
-                                        </span>
-                                    </div>
-                                )}
-
-                                <div className="text-center">
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                                        {plan.name}
-                                    </h3>
-                                    <div className="text-3xl font-bold text-padi-blue mb-4">
-                                        {plan.price}
-                                    </div>
-                                    <p className="text-gray-600 mb-6">
-                                        {plan.description}
-                                    </p>
-
-                                    <ul className="space-y-3 mb-8 text-left">
-                                        {Array.isArray(plan.features) ? plan.features.map((feature, featureIndex) => (
-                                            <li key={featureIndex} className="flex items-start gap-2">
-                                                <span className="text-green-500 mt-1">✓</span>
-                                                <span className="text-gray-600">{feature}</span>
-                                            </li>
-                                        )) : (
-                                            <li className="flex items-start gap-2">
-                                                <span className="text-green-500 mt-1">✓</span>
-                                                <span className="text-gray-600">{plan.features}</span>
-                                            </li>
+                        <p className="mt-5 text-gray-600 text-lg">{t('pages.membership.plans.subtitle')}</p>
+                    </Reveal>
+                    <div className="mt-12 grid md:grid-cols-3 gap-6 items-stretch">
+                        {planDefs.map((def, i) => {
+                            const base = `pages.membership.plans.${def.key}`;
+                            const features = arr(`${base}.features`);
+                            const dark = def.highlight;
+                            return (
+                                <Reveal key={def.key} delay={i * 100}>
+                                    <div className={`relative h-full rounded-2xl p-7 md:p-8 flex flex-col ${dark ? 'bg-navy-900 text-white shadow-card-lg lg:-translate-y-2' : 'bg-white border border-mist-deep shadow-card'}`}>
+                                        {dark && (
+                                            <span className="absolute top-5 right-5 rounded-full bg-aqua px-3 py-1 text-xs font-heading font-bold text-ink">
+                                                RECOMMENDED
+                                            </span>
                                         )}
-                                    </ul>
-
-                                    <Button
-                                        variant={plan.buttonVariant}
-                                        size="lg"
-                                        className="w-full"
-                                    >
-                                        {plan.buttonText}
-                                    </Button>
-                                </div>
-                            </Card>
-                        ))}
+                                        <h3 className={`font-heading font-bold text-xl ${dark ? 'text-white' : 'text-navy'}`}>
+                                            {t(`${base}.title`)}
+                                        </h3>
+                                        <div className={`mt-3 stat-number text-4xl ${dark ? 'text-aqua-light' : 'text-navy'}`}>
+                                            {t(`${base}.price`)}
+                                        </div>
+                                        <p className={`mt-3 text-sm ${dark ? 'text-sky-100/70' : 'text-gray-500'}`}>
+                                            {t(`${base}.description`)}
+                                        </p>
+                                        <ul className={`mt-6 space-y-3 text-sm flex-1 ${dark ? 'text-sky-100/85' : 'text-gray-600'}`}>
+                                            {features.map((f, fi) => (
+                                                <li key={fi} className="flex items-start gap-2">
+                                                    <Icon name="check" className={`w-4 h-4 mt-0.5 shrink-0 ${dark ? 'text-aqua-light' : 'text-aqua-dark'}`} />
+                                                    <span>{f}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        <Link
+                                            to="/contact"
+                                            className={`mt-7 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-heading font-bold transition-all ${dark ? 'bg-aqua text-ink hover:bg-aqua-light' : 'bg-navy text-white hover:bg-navy-700'}`}
+                                        >
+                                            {t(`${base}.buttonText`)} <Icon name="arrowRight" className="w-4 h-4" />
+                                        </Link>
+                                    </div>
+                                </Reveal>
+                            );
+                        })}
                     </div>
-                </Container>
+                </div>
             </section>
 
-            {/* 멤버 후기 */}
-            <section className="section-padding">
-                <Container>
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            {t('pages.membership.testimonials.title')}
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            {t('pages.membership.testimonials.subtitle')}
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {testimonials.map((testimonial, index) => (
-                            <Card key={index} className="text-center">
-                                <div className="text-4xl mb-4">{testimonial.avatar}</div>
-                                <p className="text-gray-600 mb-6 italic">
-                                    "{testimonial.content}"
-                                </p>
-                                <div>
-                                    <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                                    <p className="text-padi-blue text-sm">{testimonial.role}</p>
-                                </div>
-                            </Card>
-                        ))}
-                    </div>
-                </Container>
-            </section>
-
-            {/* CTA 섹션 */}
-            <section className="bg-padi-blue text-white section-padding">
-                <Container>
-                    <div className="text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                            {t('pages.membership.cta.title')}
-                        </h2>
-                        <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-                            {t('pages.membership.cta.subtitle')}
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
-                                {t('common.buttons.join')}
-                            </Button>
-                            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">
-                                {t('common.buttons.learnMore')}
-                            </Button>
-                        </div>
-                    </div>
-                </Container>
-            </section>
+            <CtaBand
+                eyebrow="NEXT STEP"
+                title={t('pages.membership.cta.title')}
+                subtitle={t('pages.membership.cta.subtitle')}
+                primary={{ to: '/contact', label: t('common.buttons.contact') }}
+                secondary={{ to: '/about', label: t('common.buttons.learnMore') }}
+            />
         </div>
     );
 };
 
 export default Membership;
-

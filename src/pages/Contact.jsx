@@ -1,285 +1,158 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Container from '../components/layout/Container';
-import Card from '../components/ui/Card';
-import Button from '../components/ui/Button';
+import { Reveal, Eyebrow, Icon, PageHero, CtaBand } from '../components/ui/primitives';
+
+const METHOD_ICONS = { email: 'mail', phone: 'phone', website: 'globe', kakao: 'chat' };
+const CONTACT_EMAIL = 'make.ocean.blue.again.project@gmail.com';
 
 const Contact = () => {
     const { t, ready } = useTranslation();
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    });
-    const [contactInfo, setContactInfo] = useState([]);
-    const [faqs, setFaqs] = useState([]);
+    const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
+        setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // 폼 제출 로직 (실제 구현에서는 API 호출)
-        console.log('Form submitted:', formData);
-        alert(t('pages.contact.form.successMessage'));
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        const subject = encodeURIComponent(formData.subject || 'MOBA 문의');
+        const body = encodeURIComponent(
+            `${formData.message}\n\n---\n${formData.name} (${formData.email})`
+        );
+        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
     };
-
-    useEffect(() => {
-        if (ready) {
-            setContactInfo([
-                {
-                    icon: '📧',
-                    key: 'email',
-                    title: t('pages.contact.contactMethods.email.title'),
-                    value: t('pages.contact.contactMethods.email.value'),
-                    description: t('pages.contact.contactMethods.email.description')
-                },
-                {
-                    icon: '📞',
-                    key: 'phone',
-                    title: t('pages.contact.contactMethods.phone.title'),
-                    value: t('pages.contact.contactMethods.phone.value'),
-                    description: t('pages.contact.contactMethods.phone.description')
-                },
-                {
-                    icon: '🌐',
-                    key: 'website',
-                    title: t('pages.contact.contactMethods.website.title'),
-                    value: t('pages.contact.contactMethods.website.value'),
-                    description: t('pages.contact.contactMethods.website.description')
-                },
-                {
-                    icon: '💬',
-                    key: 'kakao',
-                    title: t('pages.contact.contactMethods.kakao.title'),
-                    value: t('pages.contact.contactMethods.kakao.value'),
-                    description: t('pages.contact.contactMethods.kakao.description')
-                }
-            ]);
-
-            setFaqs([
-                {
-                    key: 'membership',
-                    question: t('pages.contact.faq.questions.membership.question'),
-                    answer: t('pages.contact.faq.questions.membership.answer')
-                },
-                {
-                    key: 'activities',
-                    question: t('pages.contact.faq.questions.activities.question'),
-                    answer: t('pages.contact.faq.questions.activities.answer')
-                },
-                {
-                    key: 'corporate',
-                    question: t('pages.contact.faq.questions.corporate.question'),
-                    answer: t('pages.contact.faq.questions.corporate.answer')
-                },
-                {
-                    key: 'funding',
-                    question: t('pages.contact.faq.questions.funding.question'),
-                    answer: t('pages.contact.faq.questions.funding.answer')
-                }
-            ]);
-        }
-    }, [ready, t]);
 
     if (!ready) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-padi-blue mx-auto mb-4"></div>
-                    <p className="text-gray-600">Loading...</p>
-                </div>
+            <div className="min-h-screen flex items-center justify-center bg-ink">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-aqua" />
             </div>
         );
     }
 
+    const methodKeys = ['email', 'phone', 'website', 'kakao'];
+    const faqKeys = ['membership', 'activities', 'corporate', 'funding'];
+    const inputClass =
+        'w-full rounded-lg border border-mist-deep bg-white px-4 py-3 text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aqua/40 focus:border-aqua transition';
+
     return (
-        <div className="min-h-screen">
-            {/* 히어로 섹션 */}
-            <section className="bg-gradient-to-r from-padi-blue to-padi-dark-blue text-white section-padding">
-                <Container>
-                    <div className="text-center">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                            {t('pages.contact.title')}
-                        </h1>
-                        <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                            {t('pages.contact.description')}
-                        </p>
-                    </div>
-                </Container>
-            </section>
+        <div className="overflow-x-hidden">
+            <PageHero
+                eyebrow="CONTACT"
+                title={t('pages.contact.title')}
+                subtitle={t('pages.contact.description')}
+            />
 
-            {/* 연락처 정보 및 문의 폼 */}
-            <section className="section-padding">
-                <Container>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                        {/* 연락처 정보 */}
-                        <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                                {t('pages.contact.info.title')}
-                            </h2>
-                            <div className="space-y-6">
-                                {contactInfo.map((info, index) => (
-                                    <Card key={index} className="flex items-start gap-4">
-                                        <div className="text-3xl">{info.icon}</div>
-                                        <div>
-                                            <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                                                {info.title}
-                                            </h3>
-                                            <p className="text-padi-blue font-medium mb-1">
-                                                {info.value}
-                                            </p>
-                                            <p className="text-gray-600 text-sm">
-                                                {info.description}
-                                            </p>
+            {/* 연락처 + 폼 */}
+            <section className="section-padding bg-white">
+                <div className="container-custom grid lg:grid-cols-2 gap-10 lg:gap-14">
+                    {/* 연락처 방법 */}
+                    <Reveal>
+                        <Eyebrow>GET IN TOUCH</Eyebrow>
+                        <h2 className="mt-4 font-heading font-extrabold text-2xl md:text-4xl text-navy">
+                            {t('pages.contact.info.title')}
+                        </h2>
+                        <div className="mt-8 space-y-4">
+                            {methodKeys.map((key) => {
+                                const base = `pages.contact.contactMethods.${key}`;
+                                return (
+                                    <div key={key} className="flex items-start gap-4 rounded-2xl border border-mist-deep bg-mist/40 p-5">
+                                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-navy-900 text-aqua-light">
+                                            <Icon name={METHOD_ICONS[key]} className="w-5 h-5" />
                                         </div>
-                                    </Card>
-                                ))}
-                            </div>
+                                        <div>
+                                            <h3 className="font-heading font-bold text-navy">{t(`${base}.title`)}</h3>
+                                            <p className="mt-0.5 text-aqua-dark font-medium">{t(`${base}.value`)}</p>
+                                            <p className="mt-1 text-sm text-gray-500">{t(`${base}.description`)}</p>
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
+                    </Reveal>
 
-                        {/* 문의 폼 */}
-                        <div>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+                    {/* 문의 폼 */}
+                    <Reveal delay={120}>
+                        <div className="rounded-2xl border border-mist-deep bg-mist/40 p-7 md:p-8">
+                            <h2 className="font-heading font-extrabold text-2xl text-navy">
                                 {t('pages.contact.form.title')}
                             </h2>
-                            <Card>
-                                <form onSubmit={handleSubmit} className="space-y-6">
-                                    <div>
-                                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                                            {t('pages.contact.form.name')}
-                                        </label>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            value={formData.name}
-                                            onChange={handleInputChange}
-                                            required
-                                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-padi-blue focus:border-padi-blue"
-                                        />
-                                    </div>
-
-                                    <div>
-                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                                            {t('pages.contact.form.email')}
-                                        </label>
-                                        <input
-                                            type="email"
-                                            id="email"
-                                            name="email"
-                                            value={formData.email}
-                                            onChange={handleInputChange}
-                                            required
-                                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-padi-blue focus:border-padi-blue"
-                                        />
-                                    </div>
-
-                                    <div>
-                                        <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                                            {t('pages.contact.form.subject')}
-                                        </label>
-                                        <input
-                                            type="text"
-                                            id="subject"
-                                            name="subject"
-                                            value={formData.subject}
-                                            onChange={handleInputChange}
-                                            required
-                                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-padi-blue focus:border-padi-blue"
-                                        />
-                                    </div>
-
-                                    <div>
-                                        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                                            {t('pages.contact.form.message')}
-                                        </label>
-                                        <textarea
-                                            id="message"
-                                            name="message"
-                                            value={formData.message}
-                                            onChange={handleInputChange}
-                                            required
-                                            rows={6}
-                                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-padi-blue focus:border-padi-blue"
-                                        />
-                                    </div>
-
-                                    <Button type="submit" size="lg" className="w-full">
-                                        {t('pages.contact.form.send')}
-                                    </Button>
-                                </form>
-                            </Card>
+                            <form onSubmit={handleSubmit} className="mt-6 space-y-5">
+                                <div>
+                                    <label htmlFor="name" className="block text-sm font-medium text-navy mb-1.5">
+                                        {t('pages.contact.form.name')}
+                                    </label>
+                                    <input id="name" name="name" type="text" required value={formData.name} onChange={handleInputChange} className={inputClass} />
+                                </div>
+                                <div>
+                                    <label htmlFor="email" className="block text-sm font-medium text-navy mb-1.5">
+                                        {t('pages.contact.form.email')}
+                                    </label>
+                                    <input id="email" name="email" type="email" required value={formData.email} onChange={handleInputChange} className={inputClass} />
+                                </div>
+                                <div>
+                                    <label htmlFor="subject" className="block text-sm font-medium text-navy mb-1.5">
+                                        {t('pages.contact.form.subject')}
+                                    </label>
+                                    <input id="subject" name="subject" type="text" required value={formData.subject} onChange={handleInputChange} className={inputClass} />
+                                </div>
+                                <div>
+                                    <label htmlFor="message" className="block text-sm font-medium text-navy mb-1.5">
+                                        {t('pages.contact.form.message')}
+                                    </label>
+                                    <textarea id="message" name="message" rows={6} required value={formData.message} onChange={handleInputChange} className={inputClass} />
+                                </div>
+                                <button
+                                    type="submit"
+                                    className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-navy px-6 py-3.5 text-sm font-heading font-bold text-white transition-colors hover:bg-navy-700"
+                                >
+                                    {t('pages.contact.form.send')} <Icon name="arrowRight" className="w-4 h-4" />
+                                </button>
+                            </form>
                         </div>
-                    </div>
-                </Container>
+                    </Reveal>
+                </div>
             </section>
 
-            {/* FAQ 섹션 */}
-            <section className="bg-gray-50 section-padding">
-                <Container>
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            {/* FAQ */}
+            <section className="section-padding bg-mist">
+                <div className="container-custom">
+                    <Reveal className="max-w-3xl">
+                        <Eyebrow>FAQ</Eyebrow>
+                        <h2 className="mt-4 font-heading font-extrabold text-3xl md:text-5xl text-navy leading-tight">
                             {t('pages.contact.faq.title')}
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            {t('pages.contact.faq.subtitle')}
-                        </p>
-                    </div>
-
-                    <div className="max-w-4xl mx-auto space-y-6">
-                        {faqs.map((faq, index) => (
-                            <Card key={index}>
-                                <details className="group">
-                                    <summary className="flex justify-between items-center cursor-pointer list-none">
-                                        <h3 className="text-lg font-semibold text-gray-900 group-open:text-padi-blue">
-                                            {faq.question}
+                        <p className="mt-5 text-gray-600 text-lg">{t('pages.contact.faq.subtitle')}</p>
+                    </Reveal>
+                    <div className="mt-10 max-w-3xl space-y-4">
+                        {faqKeys.map((key, i) => (
+                            <Reveal key={key} delay={i * 60}>
+                                <details className="group rounded-2xl border border-mist-deep bg-white p-6">
+                                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
+                                        <h3 className="font-heading font-bold text-navy group-open:text-aqua-dark transition-colors">
+                                            {t(`pages.contact.faq.questions.${key}.question`)}
                                         </h3>
-                                        <span className="text-padi-blue group-open:rotate-180 transition-transform duration-200">
-                                            ▼
-                                        </span>
+                                        <Icon name="chevronDown" className="w-5 h-5 shrink-0 text-aqua-dark transition-transform duration-200 group-open:rotate-180" strokeWidth={2} />
                                     </summary>
-                                    <div className="mt-4 text-gray-600">
-                                        {faq.answer}
-                                    </div>
+                                    <p className="mt-4 text-gray-600 leading-relaxed">
+                                        {t(`pages.contact.faq.questions.${key}.answer`)}
+                                    </p>
                                 </details>
-                            </Card>
+                            </Reveal>
                         ))}
                     </div>
-                </Container>
+                </div>
             </section>
 
-            {/* CTA 섹션 */}
-            <section className="bg-padi-blue text-white section-padding">
-                <Container>
-                    <div className="text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                            {t('pages.contact.cta.title')}
-                        </h2>
-                        <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-                            {t('pages.contact.cta.subtitle')}
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button to="/contact" size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
-                                {t('common.buttons.contact')}
-                            </Button>
-                            <Button to="/about" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">
-                                {t('common.buttons.learnMore')}
-                            </Button>
-                        </div>
-                    </div>
-                </Container>
-            </section>
+            <CtaBand
+                title={t('pages.contact.cta.title')}
+                subtitle={t('pages.contact.cta.subtitle')}
+                primary={{ to: '/membership', label: t('common.buttons.join') }}
+                secondary={{ to: '/about', label: t('common.buttons.learnMore') }}
+            />
         </div>
     );
 };
 
 export default Contact;
-

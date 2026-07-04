@@ -1,214 +1,129 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Container from '../components/layout/Container';
-import Card from '../components/ui/Card';
-import Button from '../components/ui/Button';
+import { Reveal, Eyebrow, Icon, PageHero, CtaBand } from '../components/ui/primitives';
+
+const VALUE_ICONS = {
+    sustainability: 'leaf',
+    collaboration: 'link',
+    innovation: 'bulb',
+    transparency: 'shield',
+};
 
 const About = () => {
     const { t, ready } = useTranslation();
-    const [values, setValues] = useState([]);
-    const [team, setTeam] = useState([]);
-
-    useEffect(() => {
-        if (ready) {
-            setValues([
-                {
-                    key: 'sustainability',
-                    title: t('pages.about.values.sustainability.title'),
-                    description: t('pages.about.values.sustainability.description'),
-                    icon: '🌱'
-                },
-                {
-                    key: 'collaboration',
-                    title: t('pages.about.values.collaboration.title'),
-                    description: t('pages.about.values.collaboration.description'),
-                    icon: '🤝'
-                },
-                {
-                    key: 'innovation',
-                    title: t('pages.about.values.innovation.title'),
-                    description: t('pages.about.values.innovation.description'),
-                    icon: '💡'
-                },
-                {
-                    key: 'transparency',
-                    title: t('pages.about.values.transparency.title'),
-                    description: t('pages.about.values.transparency.description'),
-                    icon: '🔍'
-                }
-            ]);
-
-            setTeam([
-                {
-                    key: 'padiPartnership',
-                    name: t('pages.about.team.members.padiPartnership.name'),
-                    position: t('pages.about.team.members.padiPartnership.position'),
-                    description: t('pages.about.team.members.padiPartnership.description'),
-                    image: '🌊'
-                },
-                {
-                    key: 'mobaCore',
-                    name: t('pages.about.team.members.mobaCore.name'),
-                    position: t('pages.about.team.members.mobaCore.position'),
-                    description: t('pages.about.team.members.mobaCore.description'),
-                    image: '🚀'
-                },
-                {
-                    key: 'corporateMembers',
-                    name: t('pages.about.team.members.corporateMembers.name'),
-                    position: t('pages.about.team.members.corporateMembers.position'),
-                    description: t('pages.about.team.members.corporateMembers.description'),
-                    image: '🏢'
-                },
-                {
-                    key: 'instructorNetwork',
-                    name: t('pages.about.team.members.instructorNetwork.name'),
-                    position: t('pages.about.team.members.instructorNetwork.position'),
-                    description: t('pages.about.team.members.instructorNetwork.description'),
-                    image: '👨‍🏫'
-                }
-            ]);
-        }
-    }, [ready, t]);
 
     if (!ready) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-padi-blue mx-auto mb-4"></div>
-                    <p className="text-gray-600">Loading...</p>
-                </div>
+            <div className="min-h-screen flex items-center justify-center bg-ink">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-aqua" />
             </div>
         );
     }
 
+    const obj = (key, fb = []) => {
+        const v = t(key, { returnObjects: true });
+        return v && typeof v === 'object' ? v : fb;
+    };
+
+    const valueKeys = ['sustainability', 'collaboration', 'innovation', 'transparency'];
+    const vizItems = obj('pages.about.visualization.process.items', []);
+
     return (
-        <div className="min-h-screen">
-            {/* 히어로 섹션 */}
-            <section className="bg-gradient-to-r from-padi-blue to-padi-dark-blue text-white section-padding">
-                <Container>
-                    <div className="text-center">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                            {t('pages.about.title')}
-                        </h1>
-                        <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                            {t('pages.about.description')}
-                        </p>
-                    </div>
-                </Container>
-            </section>
+        <div className="overflow-x-hidden">
+            <PageHero
+                eyebrow="ABOUT MOBA"
+                title={t('pages.about.title')}
+                subtitle={t('pages.about.description')}
+            />
 
-            {/* 미션 & 비전 섹션 */}
-            <section className="section-padding">
-                <Container>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                        <Card>
-                            <div className="text-center">
-                                <div className="text-5xl mb-4">🎯</div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                    {t('pages.about.mission.title')}
+            {/* 미션 · 비전 */}
+            <section className="section-padding bg-white">
+                <div className="container-custom grid md:grid-cols-2 gap-6">
+                    {[
+                        { key: 'mission', icon: 'target' },
+                        { key: 'vision', icon: 'eye' },
+                    ].map((item, i) => (
+                        <Reveal key={item.key} delay={i * 100}>
+                            <div className="h-full rounded-2xl border border-mist-deep bg-mist/50 p-8 md:p-10">
+                                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-900 text-aqua-light">
+                                    <Icon name={item.icon} className="w-6 h-6" />
+                                </div>
+                                <h2 className="mt-6 font-heading font-extrabold text-2xl md:text-3xl text-navy">
+                                    {t(`pages.about.${item.key}.title`)}
                                 </h2>
-                                <p className="text-gray-600 text-lg">
-                                    {t('pages.about.mission.description')}
+                                <p className="mt-4 text-gray-600 text-lg leading-relaxed">
+                                    {t(`pages.about.${item.key}.description`)}
                                 </p>
                             </div>
-                        </Card>
-                        <Card>
-                            <div className="text-center">
-                                <div className="text-5xl mb-4">👁️</div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                    {t('pages.about.vision.title')}
-                                </h2>
-                                <p className="text-gray-600 text-lg">
-                                    {t('pages.about.vision.description')}
-                                </p>
-                            </div>
-                        </Card>
-                    </div>
-                </Container>
+                        </Reveal>
+                    ))}
+                </div>
             </section>
 
-            {/* 핵심 가치 섹션 */}
-            <section className="bg-gray-50 section-padding">
-                <Container>
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            {/* 핵심 가치 */}
+            <section className="section-padding bg-mist">
+                <div className="container-custom">
+                    <Reveal className="max-w-3xl">
+                        <Eyebrow>CORE VALUES</Eyebrow>
+                        <h2 className="mt-4 font-heading font-extrabold text-3xl md:text-5xl text-navy leading-tight">
                             {t('pages.about.values.title')}
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            {t('pages.about.values.subtitle')}
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {values.map((value, index) => (
-                            <Card key={index} className="text-center">
-                                <div className="text-4xl mb-4">{value.icon}</div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    {value.title}
-                                </h3>
-                                <p className="text-gray-600">
-                                    {value.description}
-                                </p>
-                            </Card>
+                        <p className="mt-5 text-gray-600 text-lg">{t('pages.about.values.subtitle')}</p>
+                    </Reveal>
+                    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {valueKeys.map((key, i) => (
+                            <Reveal key={key} delay={i * 80}>
+                                <div className="h-full rounded-2xl bg-white border border-mist-deep p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+                                    <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-aqua-50 text-aqua-dark">
+                                        <Icon name={VALUE_ICONS[key]} className="w-6 h-6" />
+                                    </div>
+                                    <h3 className="mt-5 font-heading font-bold text-lg text-navy">
+                                        {t(`pages.about.values.${key}.title`)}
+                                    </h3>
+                                    <p className="mt-2 text-sm text-gray-500 leading-relaxed">
+                                        {t(`pages.about.values.${key}.description`)}
+                                    </p>
+                                </div>
+                            </Reveal>
                         ))}
                     </div>
-                </Container>
+                </div>
             </section>
 
-            {/* 팀 섹션 */}
-            <section className="section-padding">
-                <Container>
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            {t('pages.about.team.title')}
+            {/* 성과 시각화 프로세스 */}
+            <section className="section-padding bg-ocean-deep text-white">
+                <div className="container-custom">
+                    <Reveal className="max-w-3xl">
+                        <Eyebrow light>IMPACT VISUALIZATION</Eyebrow>
+                        <h2 className="mt-4 font-heading font-extrabold text-3xl md:text-5xl leading-tight">
+                            {t('pages.about.visualization.title')}
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            {t('pages.about.team.subtitle')}
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {team.map((member, index) => (
-                            <Card key={index} className="text-center">
-                                <div className="text-6xl mb-4">{member.image}</div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                                    {member.name}
-                                </h3>
-                                <p className="text-padi-blue font-medium mb-3">
-                                    {member.position}
-                                </p>
-                                <p className="text-gray-600 text-sm">
-                                    {member.description}
-                                </p>
-                            </Card>
+                        <p className="mt-5 text-sky-100/75 text-lg">{t('pages.about.visualization.subtitle')}</p>
+                        <p className="mt-3 text-sky-100/60">{t('pages.about.visualization.description')}</p>
+                    </Reveal>
+                    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                        {vizItems.map((item, i) => (
+                            <Reveal key={i} delay={i * 90}>
+                                <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm">
+                                    <div className="stat-number text-4xl text-aqua-light">{String(i + 1).padStart(2, '0')}</div>
+                                    <h3 className="mt-4 font-heading font-bold text-lg">{item.title}</h3>
+                                    <p className="mt-2 text-sm text-sky-100/70 leading-relaxed">{item.description}</p>
+                                </div>
+                            </Reveal>
                         ))}
                     </div>
-                </Container>
+                </div>
             </section>
 
-            {/* CTA 섹션 */}
-            <section className="bg-padi-blue text-white section-padding">
-                <Container>
-                    <div className="text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                            {t('pages.about.cta.title')}
-                        </h2>
-                        <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
-                            {t('pages.about.cta.description')}
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button to="/membership" size="lg" className="bg-white text-padi-blue hover:bg-gray-100">
-                                {t('common.buttons.join')}
-                            </Button>
-                            <Button to="/contact" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-padi-blue">
-                                {t('common.buttons.contact')}
-                            </Button>
-                        </div>
-                    </div>
-                </Container>
-            </section>
+            <CtaBand
+                eyebrow="JOIN MOBA"
+                title={t('pages.about.cta.title')}
+                subtitle={t('pages.about.cta.description')}
+                primary={{ to: '/membership', label: t('common.buttons.join') }}
+                secondary={{ to: '/contact', label: t('common.buttons.contact') }}
+            />
         </div>
     );
 };
 
 export default About;
-

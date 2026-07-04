@@ -101,6 +101,20 @@ const About = () => {
                 </div>
             </section>
 
+            {/* 풀블리드 활동 밴드 */}
+            <section className="relative h-[48vh] min-h-[340px] flex items-end overflow-hidden">
+                <img src="/images/padi/featured/divers-reef.jpg" alt="함께 다이빙하는 MOBA 다이버들" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" aria-hidden="true" />
+                <div className="container-custom relative z-10 pb-12 md:pb-16 text-white">
+                    <Reveal className="max-w-2xl">
+                        <Eyebrow light>ONE MOVEMENT</Eyebrow>
+                        <p className="mt-4 font-heading font-extrabold text-2xl md:text-4xl leading-snug">
+                            기업·강사·다이버가 함께,<br />검증 가능한 하나의 성과를 만듭니다.
+                        </p>
+                    </Reveal>
+                </div>
+            </section>
+
             {/* 성과 시각화 프로세스 */}
             <section className="section-padding bg-white">
                 <div className="container-custom">

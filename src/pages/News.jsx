@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 import { Reveal, Eyebrow, Icon, PageHero, CtaBand } from '../components/ui/primitives';
 
 const EVENT_ICONS = { globalCampaign: 'waves', workshop: 'book', conference: 'mic', seminar: 'flask' };
+const EVENT_IMAGES = {
+    workshop: '/images/padi/featured/edu-pool.jpg',
+    globalCampaign: '/images/padi/featured/cleanup-bottle.jpg',
+    conference: '/images/padi/featured/divers-reef.jpg',
+    seminar: '/images/padi/featured/data-reef.jpg',
+};
 
 const News = () => {
     const { t, ready } = useTranslation();
@@ -36,20 +42,22 @@ const News = () => {
                             const base = `pages.schedule.events.${key}`;
                             return (
                                 <Reveal key={key} delay={i * 80}>
-                                    <div className="h-full rounded-2xl border border-mist-deep bg-mist/40 p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
-                                        <div className="flex items-start gap-4">
-                                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-aqua-light">
-                                                <Icon name={EVENT_ICONS[key]} className="w-6 h-6" />
+                                    <div className="group h-full overflow-hidden rounded-2xl border border-mist-deep bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-card flex flex-col sm:flex-row">
+                                        <div className="relative sm:w-40 md:w-48 shrink-0 h-40 sm:h-auto overflow-hidden">
+                                            <img src={EVENT_IMAGES[key]} alt="" aria-hidden="true" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent sm:bg-gradient-to-r sm:from-transparent sm:to-navy-900/10" />
+                                            <div className="absolute top-3 left-3 flex h-10 w-10 items-center justify-center rounded-lg bg-aqua text-ink">
+                                                <Icon name={EVENT_ICONS[key]} className="w-5 h-5" />
                                             </div>
-                                            <div className="flex-1">
-                                                <h3 className="font-heading font-bold text-lg text-navy">{t(`${base}.title`)}</h3>
-                                                <div className="mt-3 space-y-1.5 text-sm text-gray-500">
-                                                    <p className="flex items-center gap-2"><Icon name="calendar" className="w-4 h-4 text-aqua-dark" /> {t(`${base}.date`)}</p>
-                                                    <p className="flex items-center gap-2"><Icon name="clock" className="w-4 h-4 text-aqua-dark" /> {t(`${base}.time`)}</p>
-                                                    <p className="flex items-center gap-2"><Icon name="pin" className="w-4 h-4 text-aqua-dark" /> {t(`${base}.location`)}</p>
-                                                </div>
-                                                <p className="mt-3 text-sm text-gray-600 leading-relaxed">{t(`${base}.description`)}</p>
+                                        </div>
+                                        <div className="p-6 flex-1">
+                                            <h3 className="font-heading font-bold text-lg text-navy">{t(`${base}.title`)}</h3>
+                                            <div className="mt-3 space-y-1.5 text-sm text-gray-500">
+                                                <p className="flex items-center gap-2"><Icon name="calendar" className="w-4 h-4 text-aqua-dark" /> {t(`${base}.date`)}</p>
+                                                <p className="flex items-center gap-2"><Icon name="clock" className="w-4 h-4 text-aqua-dark" /> {t(`${base}.time`)}</p>
+                                                <p className="flex items-center gap-2"><Icon name="pin" className="w-4 h-4 text-aqua-dark" /> {t(`${base}.location`)}</p>
                                             </div>
+                                            <p className="mt-3 text-sm text-gray-600 leading-relaxed">{t(`${base}.description`)}</p>
                                         </div>
                                     </div>
                                 </Reveal>

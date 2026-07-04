@@ -51,6 +51,20 @@ const HowItWorks = () => {
                 </div>
             </section>
 
+            {/* 풀블리드 교육 밴드 — STEP 1 */}
+            <section className="relative h-[48vh] min-h-[340px] flex items-end overflow-hidden">
+                <img src="/images/padi/featured/edu-pool.jpg" alt="프리다이빙 교육 훈련 장면" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" aria-hidden="true" />
+                <div className="container-custom relative z-10 pb-12 md:pb-16 text-white">
+                    <Reveal className="max-w-2xl">
+                        <Eyebrow light>STEP 1 · EDUCATE</Eyebrow>
+                        <p className="mt-4 font-heading font-extrabold text-2xl md:text-4xl leading-snug">
+                            모든 것은 교육에서 시작합니다.<br />전문 다이버로 양성된 뒤, 바다로 나갑니다.
+                        </p>
+                    </Reveal>
+                </div>
+            </section>
+
             {/* 세 주체의 역할 */}
             <section className="section-padding bg-white">
                 <div className="container-custom">

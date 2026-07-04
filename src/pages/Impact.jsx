@@ -174,7 +174,7 @@ const Impact = () => {
                     </Reveal>
 
                     <Reveal className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 items-center opacity-90">
-                        <div className="flex justify-center"><img src="/images/PADI-AWARE-Logo.webp" alt="PADI AWARE Foundation" className="h-20 md:h-24 w-auto object-contain" loading="lazy" /></div>
+                        <div className="flex justify-center"><img src="/images/padi/featured/padi-aware-logo.png" alt="PADI AWARE Foundation" className="h-14 md:h-16 w-auto object-contain" loading="lazy" /></div>
                         <div className="flex justify-center"><img src="/images/ISO_Logo_(Red_square).svg.png" alt="ISO 14001" className="h-20 md:h-24 w-auto object-contain" loading="lazy" /></div>
                         <div className="flex justify-center"><img src="/images/O431-Global-Reporting-Initative.png" alt="GRI Standards" className="h-16 md:h-20 w-auto object-contain" loading="lazy" /></div>
                     </Reveal>

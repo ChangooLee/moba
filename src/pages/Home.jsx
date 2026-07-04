@@ -36,6 +36,14 @@ const Home = () => {
         <div className="overflow-x-hidden">
             {/* ═══ HERO ═══ */}
             <section className="ocean-hero relative min-h-[92vh] flex items-center text-white">
+                <img
+                    src="/images/padi/featured/hero-descend.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 w-full h-full object-cover opacity-45"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/45" aria-hidden="true" />
+                <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" aria-hidden="true" />
                 <OceanFX />
                 <div className="container-custom relative z-10 py-24">
                     <div className="max-w-3xl">
@@ -176,6 +184,25 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* ═══ 풀블리드 정화 이미지 밴드 ═══ */}
+            <section className="relative h-[52vh] min-h-[380px] flex items-end overflow-hidden">
+                <img
+                    src="/images/padi/featured/cleanup-bottle.jpg"
+                    alt="다이버가 수중에서 폐플라스틱을 수거하는 모습"
+                    className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" aria-hidden="true" />
+                <div className="container-custom relative z-10 pb-12 md:pb-16 text-white">
+                    <Reveal className="max-w-2xl">
+                        <Eyebrow light>REAL ACTION · NOT A PLEDGE</Eyebrow>
+                        <p className="mt-4 font-heading font-extrabold text-2xl md:text-4xl leading-snug">
+                            임직원이 직접 바다에 들어가 수거합니다.<br />모든 수거물은 kg·품목·GPS로 기록됩니다.
+                        </p>
+                    </Reveal>
+                </div>
+            </section>
+
             {/* ═══ 누구와 함께하나요 (오디언스 라우터) ═══ */}
             <section className="section-padding bg-mist">
                 <div className="container-custom">
@@ -229,7 +256,7 @@ const Home = () => {
                         </div>
                     </Reveal>
                     <Reveal className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 items-center opacity-90">
-                        <div className="flex justify-center"><img src="/images/PADI-AWARE-Logo.webp" alt="PADI AWARE Foundation" className="h-20 md:h-24 w-auto object-contain" loading="lazy" /></div>
+                        <div className="flex justify-center"><img src="/images/padi/featured/padi-aware-logo.png" alt="PADI AWARE Foundation" className="h-14 md:h-16 w-auto object-contain" loading="lazy" /></div>
                         <div className="flex justify-center"><img src="/images/ISO_Logo_(Red_square).svg.png" alt="ISO 14001" className="h-20 md:h-24 w-auto object-contain" loading="lazy" /></div>
                         <div className="flex justify-center"><img src="/images/O431-Global-Reporting-Initative.png" alt="GRI Standards" className="h-16 md:h-20 w-auto object-contain" loading="lazy" /></div>
                     </Reveal>

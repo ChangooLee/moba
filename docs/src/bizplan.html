@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOBA 사업계획서 · Make Ocean Blue Again</title>
+<link rel="stylesheet" href="doc.css">
+<style>
+  /* 문서 보조 유틸 (doc.css 디자인 시스템 위 최소 보강) */
+  h3.sub { font-size: 15pt; color: var(--navy); margin: 7mm 0 3mm; }
+  .dark h3.sub, .ink h3.sub { color: #fff; }
+  h4.sub { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; font-size: 11pt; color: var(--navy); margin: 5mm 0 2.5mm; letter-spacing:-0.01em; }
+  .dark h4.sub, .ink h4.sub { color: var(--aqua-light); }
+  .card-mist h4.sub, .card h4.sub { margin-top:0; }
+  .mut { color: var(--muted); font-size: 9.5pt; }
+  .dark .mut, .ink .mut { color: rgba(207,227,240,.7); }
+  .sm { font-size: 9.5pt; line-height:1.55; }
+  ul.clean.sm li { font-size: 9.5pt; }
+  .lbl { font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.15em; font-size:8pt; color:var(--aqua-dark); }
+  .dark .lbl,.ink .lbl{ color:var(--aqua-light);}
+  .toc-row { display:flex; align-items:baseline; gap:5mm; padding:3.2mm 0; border-bottom:1px solid var(--mist-deep); }
+  .toc-row .n { font-family:'IBM Plex Mono',monospace; font-weight:600; color:var(--aqua-dark); font-size:11pt; width:12mm; }
+  .toc-row .t { font-family:'Montserrat','Pretendard',sans-serif; font-weight:700; color:var(--navy); font-size:12pt; }
+  .toc-row .d { margin-left:auto; font-size:8.5pt; color:var(--muted); font-family:'IBM Plex Mono',monospace; }
+  .gloss { display:grid; grid-template-columns:1fr 1fr; gap:0 8mm; }
+  .gloss .g { padding:3mm 0; border-bottom:1px solid rgba(255,255,255,.12); }
+  .gloss .g b { color:var(--aqua-light); font-family:'Montserrat','Pretendard',sans-serif; font-size:10.5pt; }
+  .gloss .g span { display:block; color:rgba(207,227,240,.75); font-size:9pt; margin-top:1mm; }
+  .phase { display:flex; gap:6mm; align-items:stretch; margin-bottom:5mm; }
+  .phase .ph-no { flex:0 0 34mm; border-radius:4mm; background:var(--navy); color:#fff; padding:5mm; display:flex; flex-direction:column; justify-content:center; }
+  .phase .ph-no .p { font-family:'IBM Plex Mono',monospace; font-size:8pt; letter-spacing:.15em; color:var(--aqua-light); }
+  .phase .ph-no .y { font-family:'Montserrat',sans-serif; font-weight:800; font-size:15pt; margin-top:2mm; }
+  .phase .ph-body { flex:1; }
+  .flow { display:flex; align-items:center; gap:3mm; flex-wrap:wrap; margin:4mm 0; }
+  .flow .fq { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; font-size:11pt; color:var(--navy); background:var(--mist); border:1px solid var(--mist-deep); border-radius:999px; padding:2mm 5mm; }
+  .dark .flow .fq,.ink .flow .fq{ background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.15); color:#fff;}
+  .flow .ar { color:var(--aqua-dark); font-weight:800; }
+  .dark .flow .ar,.ink .flow .ar{color:var(--aqua-light);}
+  .faq-q { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; color:var(--navy); font-size:11pt; margin-bottom:1.5mm; }
+  .faq-q .qmark{ color:var(--aqua-dark); }
+  .kpi-chips .chip{ font-size:8.5pt; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ 01 · 표지 ══════════════ -->
+<div class="page ink cover">
+  <div class="cover-hero" style="position:absolute;inset:0;z-index:0;"><img src="img/manta.jpg" alt="바닷속을 유영하는 만타가오리"></div>
+  <div class="cover-overlay" style="position:absolute;inset:0;z-index:1;"></div>
+  <div>
+    <img src="img/logo.png" alt="MOBA 로고" style="height:13mm;">
+    <div class="eyebrow" style="margin-top:9mm;">Business Plan · 2026</div>
+  </div>
+  <div>
+    <div class="eyebrow">Make Ocean Blue Again</div>
+    <h1 class="display" style="font-size:48pt; line-height:1.05; color:#fff; margin:6mm 0 4mm;">MOBA<br>사업계획서</h1>
+    <p class="lead" style="font-size:14pt; color:#fff; max-width:150mm;">해양환경 정화 및 보전 ESG 경영 모델</p>
+    <p class="lead" style="max-width:150mm; margin-top:3mm;">임직원이 국제 자격증을 취득해 정기적으로 바다를 정화하고, 그 결과를 검증 가능한 데이터로 전환해 ESG 지표에 반영하는 통합 실행 프로그램.</p>
+    <hr class="rule">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:6mm;">
+      <div class="lbl" style="color:var(--aqua-light);">2026 &nbsp;·&nbsp; PADI AWARE Foundation · Dive Against Debris®</div>
+      <img src="img/padi-aware-rev.png" alt="PADI AWARE Foundation" style="height:12mm;">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ 02 · 핵심 요약 ══════════════ -->
+<div class="page dark">
+  <div class="eyebrow">Executive Summary</div>
+  <h2 class="title" style="font-size:26pt;">교육 → 플로빙 → 데이터 → ESG 보고,<br>바다를 되살리는 하나의 실행 사이클</h2>
+  <p class="lead" style="max-width:160mm;">MOBA(Make Ocean Blue Again)는 기업이 임직원에게 스쿠버·프리다이빙 국제 자격증(PADI) 취득을 지원하고, 그 자격을 바탕으로 분기 1회 수중 정화(플로빙)를 정례 운영하도록 돕는 프로그램입니다. 표준 안전 절차와 외부 데이터베이스를 사용해 연 4회 반복합니다.</p>
+  <hr class="rule">
+  <div class="grid grid-3">
+    <div class="card-glass">
+      <div class="icon-badge">01</div>
+      <h4 class="sub">우리의 목표</h4>
+      <p class="sm mut">임직원이 스쿠버·프리다이빙 국제 자격증을 취득하고, 정기적인 수중 정화(플로빙)로 바다를 깨끗하게 만듭니다.</p>
+    </div>
+    <div class="card-glass">
+      <div class="icon-badge">02</div>
+      <h4 class="sub">어떻게</h4>
+      <p class="sm mut">교육(자격) → 플로빙(수중 정화) → 데이터 업로드 → ESG 보고. 연 4회, 표준 안전 절차와 외부 DB를 사용합니다.</p>
+    </div>
+    <div class="card-glass">
+      <div class="icon-badge">03</div>
+      <h4 class="sub">기업의 이익</h4>
+      <p class="sm mut">검증 가능한 E·S·G 성과 + 임직원 복지(자격증·레저) + 그린워싱 리스크 완화.</p>
+    </div>
+  </div>
+  <hr class="rule">
+  <div class="grid grid-3">
+    <div class="stat"><div class="v stat-num">4</div><div class="u">회 / 년</div><div class="l">정례 수중 정화</div><div class="s">분기 1회 반복</div></div>
+    <div class="stat"><div class="v stat-num">2–10</div><div class="u">m</div><div class="l">활동 수심</div><div class="s">연안 안전 범위</div></div>
+    <div class="stat"><div class="v stat-num">3</div><div class="u">계층</div><div class="l">멤버십 구조</div><div class="s">기업 · 강사 · 다이버</div></div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>02</span></div>
+</div>
+
+<!-- ══════════════ 03 · 목차 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">Contents</div>
+  <h2 class="title" style="font-size:28pt;">목차</h2>
+  <p class="lead" style="margin-bottom:6mm;">해양폐기물 현황과 ESG 연계 필요성부터 프로그램·멤버십·재무·로드맵까지, 실행에 필요한 전 과정을 담았습니다.</p>
+  <div>
+    <div class="toc-row"><span class="n">01</span><span class="t">사업 개요</span><span class="d">Overview</span></div>
+    <div class="toc-row"><span class="n">02</span><span class="t">프로젝트 배경 및 해양폐기물 현황</span><span class="d">Background</span></div>
+    <div class="toc-row"><span class="n">03</span><span class="t">ESG 경영과 해양보전 연계 필요성</span><span class="d">ESG Alignment</span></div>
+    <div class="toc-row"><span class="n">04</span><span class="t">프로그램 개요</span><span class="d">Program</span></div>
+    <div class="toc-row"><span class="n">05</span><span class="t">정기 활동 계획 (연 4회)</span><span class="d">Operations</span></div>
+    <div class="toc-row"><span class="n">06</span><span class="t">멤버십 구조 및 참여 조건</span><span class="d">Membership</span></div>
+    <div class="toc-row"><span class="n">07</span><span class="t">국제 파트너십과 프로그램 정의</span><span class="d">Partnership</span></div>
+    <div class="toc-row"><span class="n">08</span><span class="t">국제 ESG 표준 연계 및 실행 계획</span><span class="d">Standards</span></div>
+    <div class="toc-row"><span class="n">09</span><span class="t">ESG 위원회 및 내부 거버넌스 체계</span><span class="d">Governance</span></div>
+    <div class="toc-row"><span class="n">10</span><span class="t">ESG 인증 및 성과 전략 (로드맵)</span><span class="d">Roadmap</span></div>
+    <div class="toc-row"><span class="n">11</span><span class="t">이해관계자 참여 및 정보공시 계획</span><span class="d">Stakeholders</span></div>
+    <div class="toc-row"><span class="n">12</span><span class="t">기대효과 및 ESG 보고서 반영 방안</span><span class="d">Impact</span></div>
+    <div class="toc-row"><span class="n">13</span><span class="t">성과 커뮤니케이션: 수거 후 시각화</span><span class="d">Visualization</span></div>
+    <div class="toc-row"><span class="n">14</span><span class="t">결론 및 제안 요약</span><span class="d">Conclusion</span></div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>03</span></div>
+</div>
+
+<!-- ══════════════ 04 · Ch1 사업 개요 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">01 · Overview</div>
+  <h2 class="title" style="font-size:26pt;">사업 개요</h2>
+  <p class="lead" style="max-width:165mm;">MOBA는 기업이 임직원에게 스쿠버/프리다이빙 국제 자격증 취득을 지원하고, 자격을 바탕으로 분기 1회 수중 정화(플로빙)를 정례 운영하도록 돕는 프로그램입니다. 임직원은 취미·레저 활동을 즐기며 봉사까지 이어가고, 기업은 검증 가능한 ESG 성과를 확보합니다.</p>
+  <hr class="rule">
+  <h4 class="sub">핵심 프로세스는 하나입니다</h4>
+  <div class="flow">
+    <span class="fq">교육 · 자격</span><span class="ar">→</span>
+    <span class="fq">플로빙 (수중 정화)</span><span class="ar">→</span>
+    <span class="fq">데이터 업로드</span><span class="ar">→</span>
+    <span class="fq">ESG 보고</span>
+  </div>
+  <p class="sm mut">MOBA는 교육-정화-보고의 표준 프로세스와 국제 데이터베이스 연계를 통해 활동 결과를 객관적 지표로 전환합니다.</p>
+  <hr class="rule">
+  <div class="card card-navy">
+    <div class="lbl" style="color:var(--aqua-light);">One-Sentence Definition</div>
+    <p style="font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; font-size:15pt; color:#fff; line-height:1.4; margin:3mm 0 0;">“MOBA는 기업과 임직원이 해양정화를 정례화하고 그 결과를 검증 가능한 데이터로 전환해 ESG 지표로 반영하게 하는 통합 실행 프로그램이다.”</p>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>04</span></div>
+</div>
+
+<!-- ══════════════ 05 · Ch1 핵심 구조 / 네트워크 / 자원순환 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">01 · Overview</div>
+  <h3 class="sub" style="margin-top:2mm;">프로그램의 핵심 3단계 구조</h3>
+  <div class="grid grid-3">
+    <div class="card card-mist">
+      <h4 class="sub">교육 단계</h4>
+      <p class="sm mut">참여 임직원은 프리·스쿠버 다이빙 교육 및 국제 자격증 취득을 지원받습니다. 복지·레저 기회이자 안전한 수중 활동의 기반입니다.</p>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">정화 단계</h4>
+      <p class="sm mut">수심 2–10m 연안에서 전문 인솔자 주관 하에 폐어망·플라스틱 등을 안전하게 수거합니다. 모든 절차는 SOP를 따르며 위치(GPS)·품목·중량·개수를 정밀 계측합니다.</p>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">보고 단계</h4>
+      <p class="sm mut">수집 데이터는 환경 지표(폐기물 감축·핫스팟 변화), 사회 지표(참여·재참여·파트너십), 거버넌스 지표(안전·보험·제3자 검증)로 구분 관리됩니다.</p>
+    </div>
+  </div>
+  <hr class="rule">
+  <div class="grid grid-2">
+    <div>
+      <h4 class="sub">협력 네트워크</h4>
+      <ul class="clean sm">
+        <li>전문 다이버 네트워크</li>
+        <li>환경 NGO (특히 PADI AWARE Foundation)</li>
+        <li>지자체 · 어촌계</li>
+        <li>학교 · 청소년 기관</li>
+        <li>지역 예술가 및 주민</li>
+      </ul>
+      <p class="sm mut" style="margin-top:3mm;">국제적으로는 PADI AWARE Foundation의 Dive Against Debris® 기준을 적용해 데이터 스키마와 보고 체계를 정렬하고, 필요 시 제3자 검증으로 신뢰도를 높입니다.</p>
+    </div>
+    <div>
+      <h4 class="sub">자원 순환 및 지역 연계</h4>
+      <div class="flow">
+        <span class="fq">수거</span><span class="ar">→</span><span class="fq">협력</span><span class="ar">→</span><span class="fq">시각화</span><span class="ar">→</span><span class="fq">공유</span>
+      </div>
+      <p class="sm mut">안전·위생상 활용 가능한 수거 소재는 지역 예술가·청소년·어민과 협력해 벽화, 조형물, 어선 페인팅, 커뮤니티 아트로 재탄생합니다. 임직원은 단순 봉사자가 아니라 공공공간을 함께 만드는 공동 창작자가 됩니다. 현장 안내판·QR로 정화 데이터와 지역 스토리를 공개해 기업–지역사회 장기 파트너십을 구축합니다.</p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>05</span></div>
+</div>
+
+<!-- ══════════════ 06 · 기초 용어 사전 ══════════════ -->
+<div class="page ink">
+  <div class="eyebrow">Glossary</div>
+  <h2 class="title" style="font-size:26pt;">기초 용어 사전</h2>
+  <p class="lead" style="margin-bottom:6mm;">이해를 돕기 위한 핵심 용어를 정리했습니다.</p>
+  <div class="gloss">
+    <div class="g"><b>스쿠버다이빙 국제 자격증</b><span>공기통 호흡 장비로 잠수하는 자격 (Open Water 레벨 또는 동등 자격)</span></div>
+    <div class="g"><b>프리다이빙 국제 자격증</b><span>숨을 참은 상태로 잠수하는 자격 (Freediver 레벨, 인양·운반 수행)</span></div>
+    <div class="g"><b>플로빙 (Ploving)</b><span>잠수를 전제로 한 수중 정화 활동. 본 문서에서는 수중 활동만을 의미</span></div>
+    <div class="g"><b>Dive Against Debris® (DAD)</b><span>PADI AWARE Foundation의 시민과학 수중 정화·데이터 프로그램</span></div>
+    <div class="g"><b>PADI</b><span>Professional Association of Diving Instructors, 세계 최대 다이빙 교육기관</span></div>
+    <div class="g"><b>PADI AWARE Foundation</b><span>PADI가 후원하는 독립 비영리 재단 (정책·시민과학·커뮤니티 행동)</span></div>
+    <div class="g"><b>ICC Day</b><span>International Coastal Cleanup Day, 국제 연안정화의 날</span></div>
+    <div class="g"><b>SDG</b><span>Sustainable Development Goals, UN 지속가능발전목표</span></div>
+    <div class="g"><b>GRI</b><span>Global Reporting Initiative, 지속가능보고 기준</span></div>
+    <div class="g"><b>ISO 14001 / ISO 26000</b><span>환경경영시스템 / 사회적 책임 지침</span></div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>06</span></div>
+</div>
+
+<!-- ══════════════ 07 · Ch2 배경 · 위기와 규모 ══════════════ -->
+<div class="page ink">
+  <div class="eyebrow">02 · Background</div>
+  <h2 class="title" style="font-size:26pt;">해양은 지금, 병들고 있습니다</h2>
+  <p class="lead" style="max-width:165mm;">해양은 인류가 배출한 플라스틱과 산업폐기물로 급속히 병들고 있습니다. 전 세계 해양 쓰레기의 <strong class="aqua">80% 이상</strong>이 육상에서 유입되며, 마이크로플라스틱·PCB·수은·다이옥신 등 유해물질이 생태계를 오염시킵니다. 이는 환경문제를 넘어 인류 건강·지역 경제·기업 공급망과 브랜드 신뢰에 직결되는 글로벌 리스크입니다.</p>
+  <hr class="rule">
+  <h4 class="sub">해양폐기물 규모</h4>
+  <div class="grid grid-2" style="gap:6mm;">
+    <div class="stat"><div class="v stat-num">480–1,270</div><div class="u">만 톤 / 년</div><div class="l">전 세계 바다로 유입되는 플라스틱</div></div>
+    <div class="stat"><div class="v stat-num">7.9</div><div class="u">만 톤</div><div class="l">북태평양 거대 쓰레기 지대(GPGP)</div><div class="s">면적 180만㎢ — 남한의 16배</div></div>
+    <div class="stat"><div class="v stat-num">14–17</div><div class="u">만 톤 / 년</div><div class="l">국내 해양쓰레기 발생량</div><div class="s">절반 이상이 수거되지 못함</div></div>
+    <div class="stat"><div class="v stat-num">7–8</div><div class="u">만 톤 / 년</div><div class="l">국내 연간 수거량</div><div class="s">잔여 부유·침적 쓰레기가 문제</div></div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>07</span></div>
+</div>
+
+<!-- ══════════════ 08 · Ch2 피해 · 대응 · MOBA 위치 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">02 · Background</div>
+  <h3 class="sub" style="margin-top:2mm;">경제적 피해</h3>
+  <div class="grid grid-2" style="gap:6mm;">
+    <div class="card card-mist"><div class="stat"><div class="v stat-num" style="color:var(--coral);">300</div><div class="u" style="color:var(--coral);">억 원</div><div class="l">2011년 집중호우 관광 피해</div><div class="s">강 유입 쓰레기로 인한 피해</div></div></div>
+    <div class="card card-mist"><div class="stat"><div class="v stat-num" style="color:var(--coral);">3,787</div><div class="u" style="color:var(--coral);">억 원 / 년</div><div class="l">유령어업(ghost fishing) 피해</div><div class="s">폐그물로 인한 연간 피해</div></div></div>
+  </div>
+  <hr class="rule">
+  <div class="grid grid-2">
+    <div class="card">
+      <h4 class="sub">국내 대응</h4>
+      <p class="sm mut">해양수산부는 2023년 「해양쓰레기 저감 혁신대책」을 발표, 2024년부터 순발생량(Net Negative) 달성을 목표로 유입량보다 수거량이 많아지는 구조적 전환을 추진합니다.</p>
+      <ul class="clean sm">
+        <li>전국 연안 정화활동 강화</li>
+        <li>해군·해경 합동 수거</li>
+        <li>폐기물 재활용 확대 · 민관 협력체계 구축</li>
+        <li>반려해변 캠페인</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 class="sub">국제 대응</h4>
+      <p class="sm mut">UNEP가 ‘국제 연안정화의 날’(매년 9월 셋째 주 토요일) 캠페인을 주도합니다. <strong>100여 개국</strong>이 참여하며, 각국은 해양쓰레기 저감을 위한 공동 정책과 기술 협력을 진행합니다.</p>
+    </div>
+  </div>
+  <hr class="rule">
+  <div class="card card-aqua">
+    <h4 class="sub" style="color:var(--ink);">MOBA의 위치</h4>
+    <p class="sm" style="color:var(--ink);">해양폐기물은 국가·기업·시민이 함께 대응해야 할 공동 책무입니다. MOBA는 단순 후원이나 일회성 활동을 넘어 <strong style="color:var(--ink);">데이터 기반 환경성과 창출 · 지역사회 협력 · 투명한 ESG 보고</strong>로 이어지는 선순환을 만드는 실행형 ESG 솔루션입니다.</p>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>08</span></div>
+</div>
+
+<!-- ══════════════ 09 · Ch3 ESG 연계 (E) ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">03 · ESG Alignment</div>
+  <h2 class="title" style="font-size:24pt;">ESG 경영과 해양보전 연계 필요성</h2>
+  <p class="lead" style="max-width:165mm;">해양오염은 환경 리스크이자 공급망·브랜드·지역사회 신뢰에 영향을 줍니다. MOBA의 해법은 ‘자격 기반 수중 정화’로 실제 제거 + 외부 DB 업로드로 검증 + ESG 보고로 연결입니다. 매 분기 플로빙 → 데이터(무게·품목·GPS) → 연말 ESG 보고서 반영을 반복합니다.</p>
+  <hr class="rule">
+  <div style="display:flex; align-items:center; gap:5mm;">
+    <div class="icon-badge" style="background:var(--aqua);color:var(--ink);">E</div>
+    <h3 class="sub" style="margin:0;">환경 — 실질적 해양정화와 데이터 기반 ESG 보고</h3>
+  </div>
+  <div class="grid grid-2" style="margin-top:5mm;">
+    <div>
+      <p class="sm mut"><strong>데이터 수집</strong> · GPS 좌표 기반으로 기록되어 기업 ESG 환경성과 지표(탄소저감·폐기물 관리 실적)에 반영됩니다.</p>
+      <p class="sm mut"><strong>정량 보고</strong> · 연 4회 활동으로 “폐플라스틱 X톤, 폐어망 Y개” 등 구체 성과를 기록, 내부 KPI 평가와 대외 지속가능성 보고서에 공개합니다.</p>
+      <p class="sm mut"><strong>국제 기여 · 생물다양성</strong> · 수거 데이터는 국제 해양쓰레기 DB에 기여하고, 연안·해저 생태계 회복으로 생물다양성을 보호합니다.</p>
+      <p class="sm mut"><strong>표준 연계</strong> · SDG 14.1, GRI 306(폐기물), ISO 14001(환경경영)과 일치합니다.</p>
+    </div>
+    <div class="card card-navy">
+      <div class="lbl" style="color:var(--aqua-light);">E 요약 KPI</div>
+      <ul class="clean sm" style="margin-top:3mm;">
+        <li>총 수거량(kg)</li>
+        <li>품목별 비중(%)</li>
+        <li>폐어구 제거(건/m)</li>
+        <li>단위 노력 효율(kg/인·시)</li>
+        <li>핫스팟 개선율(%)</li>
+        <li>재활용 전환율(%)</li>
+        <li>순탄소 회피량(kgCO₂e)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>09</span></div>
+</div>
+
+<!-- ══════════════ 10 · Ch3 ESG 연계 (S) ══════════════ -->
+<div class="page">
+  <div class="eyebrow">03 · ESG Alignment</div>
+  <div style="display:flex; align-items:center; gap:5mm; margin-top:2mm;">
+    <div class="icon-badge" style="background:var(--aqua);color:var(--ink);">S</div>
+    <h3 class="sub" style="margin:0;">사회 — 임직원 참여를 통한 지역사회 공공가치 창출</h3>
+  </div>
+  <div class="grid grid-2" style="margin-top:5mm;">
+    <div>
+      <p class="sm mut"><strong>직원 참여</strong> · 정례화된 환경 봉사는 직원 만족도와 팀워크를 높이고, 세대·부서 협업으로 조직문화를 실천 중심으로 전환합니다.</p>
+      <p class="sm mut"><strong>지역사회 연계</strong> · 인근 해변을 ‘입양(Adopt-a-Beach)’해 정기 정화하면 지자체 지원·감사장이 연계되고 주민 신뢰가 강화됩니다.</p>
+      <p class="sm mut"><strong>포용성 · 인사 연계</strong> · 가족·협력사까지 참여를 확장하고, 봉사 실적은 인사평가·포상 및 연말 ESG 리뷰(S 지표, GRI 413)에 반영합니다.</p>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">시각화 프로세스</h4>
+      <div class="flow"><span class="fq">수거</span><span class="ar">→</span><span class="fq">협력</span><span class="ar">→</span><span class="fq">시각화</span><span class="ar">→</span><span class="fq">공유</span></div>
+      <p class="sm mut">수거 소재를 지역 예술가·청소년·어민과 협력해 벽화·조형물·어선 페인팅·커뮤니티 아트로 재탄생시킵니다. 임직원은 공공공간의 공동 창작자로 참여합니다.</p>
+    </div>
+  </div>
+  <hr class="rule">
+  <div class="grid grid-2">
+    <div>
+      <h4 class="sub">협력 구조</h4>
+      <ul class="clean sm">
+        <li><strong>지자체</strong> — 장소 허가·폐기물 처리·행정 지원</li>
+        <li><strong>어촌계·선주</strong> — 공간 제공·안전 협조</li>
+        <li><strong>학교·청소년기관</strong> — 교육→체험→디자인→설치 워크숍</li>
+        <li><strong>기업</strong> — 자원·예산·보험 책임, 주민 참여로 민주성 확보</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="sub">S 요약 KPI</h4>
+      <div class="kpi-chips">
+        <span class="chip">참여 인원·봉사시간</span><span class="chip">재참여율(%)</span>
+        <span class="chip">지역 파트너 수</span><span class="chip">교육·워크숍(회)</span>
+        <span class="chip">공공시각화 사례(건)</span><span class="chip">만족도(점)</span>
+        <span class="chip">GRI 413 매핑률(%)</span>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>10</span></div>
+</div>
+
+<!-- ══════════════ 11 · Ch3 ESG 연계 (G) ══════════════ -->
+<div class="page dark">
+  <div class="eyebrow">03 · ESG Alignment</div>
+  <div style="display:flex; align-items:center; gap:5mm; margin-top:2mm;">
+    <div class="icon-badge">G</div>
+    <h3 class="sub" style="margin:0;">거버넌스 — 투명한 의사결정과 검증 구조</h3>
+  </div>
+  <div class="grid grid-2" style="margin-top:5mm;">
+    <div class="card-glass">
+      <h4 class="sub">내부 구조</h4>
+      <p class="sm mut">이사회 산하 ESG위원회를 설치하거나, 경영진이 MOBA 추진 현황을 정기 보고받는 체계를 마련해 계획·실행·성과를 상시 점검합니다. 기존 위원회가 있는 기업은 MOBA를 정례 안건으로 포함합니다.</p>
+    </div>
+    <div class="card-glass">
+      <h4 class="sub">감사 및 투명성</h4>
+      <p class="sm mut">감사·준법감시부서가 예산 집행과 운영을 모니터링해 재무 투명성을 제고하고, 참가 기회의 공정성·실적 평가의 형평성을 관리합니다. ISO 26000 공정운영·노동관행 원칙과 부합합니다.</p>
+    </div>
+    <div class="card-glass">
+      <h4 class="sub">외부 검증</h4>
+      <p class="sm mut">PADI AWARE Foundation 및 글로벌 NGO와 협력해 Dive Against Debris® 시스템을 활용하고, 모든 데이터를 ISO 14001·ISO 26000·GRI·SDG 14 기준으로 교차 검증해 그린워싱 우려를 방지합니다.</p>
+    </div>
+    <div class="card-glass">
+      <h4 class="sub">국제 네트워크</h4>
+      <p class="sm mut">PADI AWARE Foundation는 UNEP 및 글로벌 NGO와 연계된 국제 네트워크를 운영합니다. MOBA는 이를 통해 데이터 수집–보고–공시–인증의 전 과정을 국제표준에 맞춰 관리합니다.</p>
+    </div>
+  </div>
+  <hr class="rule">
+  <div class="lbl">G 요약 KPI</div>
+  <div class="kpi-chips" style="margin-top:3mm;">
+    <span class="chip">ESG위원회 개최율(%)</span><span class="chip">회의록 공개율(%)</span>
+    <span class="chip">데이터 품질(사진·GPS 커버리지 %)</span><span class="chip">보험·안전교육 이수율(%)</span>
+    <span class="chip">제3자 검증 커버리지(%)</span><span class="chip">예산 정산 공개율(%)</span>
+    <span class="chip">그린워싱 시정 리드타임(일)</span>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>11</span></div>
+</div>
+
+<!-- ══════════════ 12 · Ch4 프로그램 개요 + 4단계 사이클 ══════════════ -->
+<div class="page ink">
+  <div class="eyebrow">04 · Program</div>
+  <h2 class="title" style="font-size:24pt;">프로그램 개요 — 4단계 실행 사이클</h2>
+  <p class="lead" style="max-width:168mm;">MOBA는 기업이 임직원 다이버를 체계적으로 양성하고, 안전한 수중 정화 활동을 통해 ESG 성과를 창출하는 실행 플랫폼입니다. 핵심 실행은 교육·자격 → 플로빙 → 데이터 → 보고의 하나의 사이클로 이어집니다.</p>
+  <hr class="rule">
+  <div class="grid grid-4" style="gap:5mm;">
+    <div class="card-glass step">
+      <div class="no">01</div>
+      <div class="tag">Education · 최초 1회</div>
+      <div class="t">교육 · 자격</div>
+      <p class="sm mut" style="margin-top:3mm;">안전·장비·수거·기록 교육과 스쿠버/프리다이빙 국제 자격증(PADI) 취득 지원. 다이버 양성은 최초 1회.</p>
+    </div>
+    <div class="card-glass step">
+      <div class="no">02</div>
+      <div class="tag">Cleanup · 분기 반복</div>
+      <div class="t">플로빙</div>
+      <p class="sm mut" style="margin-top:3mm;">분기 1회, 수심 2–10m에서 2–3인 1조로 폐어구·플라스틱 인양 (현장 리더 주관).</p>
+    </div>
+    <div class="card-glass step">
+      <div class="no">03</div>
+      <div class="tag">Data · 분기 반복</div>
+      <div class="t">데이터 업로드</div>
+      <p class="sm mut" style="margin-top:3mm;">항목·무게·개수·사진·GPS·시간을 기록해 Dive Against Debris® 등 외부 DB에 업로드.</p>
+    </div>
+    <div class="card-glass step">
+      <div class="no">04</div>
+      <div class="tag">Report · 분기 반복</div>
+      <div class="t">ESG 보고</div>
+      <p class="sm mut" style="margin-top:3mm;">검증 가능한 E·S·G 지표로 전환, 기업용 요약을 연말 ESG 리포트에 반영.</p>
+    </div>
+  </div>
+  <div class="card card-aqua" style="margin-top:7mm;">
+    <p class="sm" style="color:var(--ink); margin:0;"><strong style="color:var(--ink);">사이클의 원리:</strong> 교육으로 다이버를 양성한 뒤(최초 1회, 갱신 시 신규 인원만 추가 교육), 정화(플로빙) → 데이터 업로드 → ESG 보고를 <strong style="color:var(--ink);">분기마다(연 4회) 반복</strong>합니다.</p>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>12</span></div>
+</div>
+
+<!-- ══════════════ 13 · Ch4 운영 프로세스 상세 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">04 · Program</div>
+  <h3 class="sub" style="margin-top:2mm;">운영 프로세스 상세</h3>
+  <p class="sm mut">MOBA는 PADI AWARE Foundation의 Dive Against Debris® 모델을 활용합니다. 전 세계 스쿠버 다이버가 수중 폐기물을 수거·기록하는 시민과학 운동으로, 2011년 이후 세계 최대 규모의 해양 폐기물 데이터베이스를 구축했습니다.</p>
+  <div class="band" style="height:44mm; margin:5mm 0;">
+    <img src="img/cleanup-bag.jpg" alt="리프트백으로 수거한 해양폐기물">
+    <div class="ov"></div>
+    <div class="cap"><div class="lbl" style="color:var(--aqua-light);">Dive Against Debris®</div></div>
+  </div>
+  <div class="grid grid-3">
+    <div class="card card-mist">
+      <div class="lbl">Stage 01</div>
+      <h4 class="sub">사전 교육 및 준비</h4>
+      <ul class="clean sm">
+        <li>스쿠버 국제 자격 취득 지원</li>
+        <li>Dive Against Debris® 전문 교육</li>
+        <li>안전 장비 지급(장갑·마스크 등)</li>
+        <li>수거 도구 지급(그물망·리프트백)</li>
+      </ul>
+    </div>
+    <div class="card card-mist">
+      <div class="lbl">Stage 02</div>
+      <h4 class="sub">현장 실행</h4>
+      <ul class="clean sm">
+        <li>연 4회(분기 1회) 정기 활동</li>
+        <li>전문 다이브 리더 지도</li>
+        <li>다이버 2–3인 1조, 해저 인양</li>
+        <li>종류별 분류·무게 측정</li>
+        <li>GPS·일시·항목별 개수 기록</li>
+      </ul>
+    </div>
+    <div class="card card-mist">
+      <div class="lbl">Stage 03</div>
+      <h4 class="sub">사후 처리 / 보고</h4>
+      <ul class="clean sm">
+        <li>지자체·해양환경공단 협력 처리</li>
+        <li>재활용 가능 자원 최대 재활용</li>
+        <li>활동별 결과 보고서 작성</li>
+        <li>PADI AWARE Foundation 본부 제출</li>
+        <li>DAD 표준 양식 누적 관리</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>13</span></div>
+</div>
+
+<!-- ══════════════ 14 · Ch4.3 PADI AWARE 파트너십 ══════════════ -->
+<div class="page dark">
+  <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+    <div>
+      <div class="eyebrow">04 · Partnership</div>
+      <h2 class="title" style="font-size:24pt;">PADI AWARE 파트너십</h2>
+    </div>
+    <img src="img/padi-aware-rev.png" alt="PADI AWARE Foundation" style="height:16mm; margin-top:4mm;">
+  </div>
+  <p class="lead" style="max-width:165mm;">MOBA는 PADI AWARE Foundation과의 파트너십을 통해 국제 인증 및 글로벌 인지도를 확보합니다.</p>
+  <hr class="rule">
+  <div class="grid grid-2">
+    <div class="card-glass">
+      <div class="icon-badge">01</div>
+      <h4 class="sub">국제 프로그램 정식 등록</h4>
+      <ul class="clean sm">
+        <li>MOBA를 Marine Debris Program으로 공식 등록</li>
+        <li>모든 데이터·활동이 국제 해양쓰레기 DB에 등재</li>
+        <li>기업 이름으로 글로벌 환경 이니셔티브 기여</li>
+        <li>국제 사회(UNEP 등)에서 인용 가능</li>
+      </ul>
+    </div>
+    <div class="card-glass">
+      <div class="icon-badge">02</div>
+      <h4 class="sub">공동 브랜드 인증서 발급</h4>
+      <ul class="clean sm">
+        <li>PADI AWARE Foundation 공동 명의 참여 인증서</li>
+        <li>국제적 해양보전 기여 인증</li>
+        <li>매년 우수 성과에 대한 감사 서한 제공</li>
+      </ul>
+    </div>
+    <div class="card-glass">
+      <div class="icon-badge">03</div>
+      <h4 class="sub">직원 자격 인증</h4>
+      <ul class="clean sm">
+        <li>수료 직원에게 공식 인증카드 발급</li>
+        <li>자원봉사 실적·역량을 국제적으로 증명</li>
+        <li>Dive Against Debris® Specialty 자격 지원</li>
+      </ul>
+    </div>
+    <div class="card-glass">
+      <div class="icon-badge">04</div>
+      <h4 class="sub">국제 네트워킹 및 참여</h4>
+      <ul class="clean sm">
+        <li>매년 9월 국제 연안정화의 날 행사 참여</li>
+        <li>AWARE Week 공식 파트너 참여</li>
+        <li>국제 해양환경 이벤트 기업 참가</li>
+        <li>글로벌 네트워킹 및 우수 사례 공유</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>14</span></div>
+</div>
+
+<!-- ══════════════ 15 · Ch5 정기 활동 · 연간 계획 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">05 · Operations</div>
+  <h2 class="title" style="font-size:24pt;">정기 활동 계획 (연 4회, 분기 1회)</h2>
+  <p class="lead" style="max-width:168mm;">활동 전 사전 교육, 활동 중 수거·분류·계측, 활동 후 데이터 업로드 및 내부 보고의 사이클을 모든 분기에 동일하게 적용합니다. 각 기업은 본사·사업장 인근 접근 가능한 해역에서 맞춤 운영합니다.</p>
+  <hr class="rule">
+  <table class="cmp">
+    <thead><tr><th style="width:22mm;">분기</th><th>지역 예시</th><th>특징</th></tr></thead>
+    <tbody>
+      <tr><td class="label">Q1 (4월)<br>남해권</td><td>거제·통영·여수·부산</td><td>드라이슈트 착용, 지역 어민과 합동 행사 가능</td></tr>
+      <tr><td class="label">Q2 (5–6월)<br>동해권</td><td>강릉·속초·동해·포항</td><td>바다의 날 정부 캠페인 연계, 임직원 가족 동반 프로그램</td></tr>
+      <tr><td class="label">Q3 (9월)<br>제주·남해권</td><td>제주·부산·거제</td><td>국제 연안정화의 날(ICC Day)·AWARE Week 연계, 미디어 홍보</td></tr>
+      <tr><td class="label">Q4 (11월)<br>동해·남해권</td><td>동해·속초·통영·여수</td><td>한 해 결산, 간담회, 우수 봉사자 포상</td></tr>
+    </tbody>
+  </table>
+  <div class="grid grid-2" style="margin-top:6mm;">
+    <div>
+      <h4 class="sub">지역 선정 원칙</h4>
+      <ul class="clean sm">
+        <li>각 기업이 이동 편한 가까운 지역 우선</li>
+        <li>여러 기업이 각기 다른 지역 담당 가능</li>
+        <li>국제 행사 시기(9월)는 가급적 Q3 권장</li>
+      </ul>
+      <p class="sm" style="color:var(--coral); margin-top:2mm;">⚠ 서해는 수심 및 시정(視程) 특성상 활동 제외</p>
+    </div>
+    <div class="card card-navy">
+      <p class="sm" style="margin:0; color:rgba(207,227,240,.9);">교육으로 다이버를 양성한 뒤(<strong>최초 1회</strong>, 갱신 시 신규 인원만 추가 교육), 매 분기 정화(플로빙) → 데이터 업로드를 <strong>반복</strong>합니다.</p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>15</span></div>
+</div>
+
+<!-- ══════════════ 16 · Ch5 참여 방식 · 안전 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">05 · Operations</div>
+  <h3 class="sub" style="margin-top:2mm;">참여 방식 및 운영</h3>
+  <div class="grid grid-3">
+    <div class="card card-mist">
+      <h4 class="sub">팀 구성 (수중 전용)</h4>
+      <ul class="clean sm">
+        <li><strong>스쿠버 팀</strong> — OW 이상, 해저 인양·운반</li>
+        <li><strong>프리다이버 팀</strong> — Freediver 이상, 인양·운반</li>
+        <li><strong>공통</strong> — 인솔자 배치, 페어 다이빙, 체크리스트, 수면 지원(부이/보트)</li>
+      </ul>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">참여 대상 · 모집</h4>
+      <ul class="clean sm">
+        <li>기본: 회사 임직원</li>
+        <li>확장: 예술가·다이버·협력사·자원봉사자·청소년·환경단체</li>
+        <li>수중팀은 국제 자격증 보유자만</li>
+        <li>활동 1개월 전 사내 공고, 10명 선발</li>
+      </ul>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">참여 방법</h4>
+      <ul class="clean sm">
+        <li>전체 반나절(6–8시간)</li>
+        <li>9시 집결 → 10–12시 정화 → 오후 마무리</li>
+        <li>전후 스트레칭·브리핑/디브리핑</li>
+        <li>다이버 2인 + 인솔자 1인 소그룹</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="rule">
+  <div class="grid grid-2">
+    <div>
+      <h4 class="sub">필요 장비 및 물품</h4>
+      <ul class="clean sm">
+        <li>스쿠버 장비 일체 (개인 또는 다이브센터 대여, 회사 지원)</li>
+        <li>안전 용품 (방한·보온, 상해 방지)</li>
+        <li>수거 도구 (그물망·부력부낭·커터, 운영팀 준비)</li>
+        <li>식수·간식·구급약품·식별 조끼</li>
+      </ul>
+    </div>
+    <div class="card card-navy">
+      <h4 class="sub">안전 · 보험 · 준법 요약</h4>
+      <ul class="clean sm">
+        <li><strong>안전</strong> — 인솔자·페어 다이빙·체크리스트·브리핑 필수</li>
+        <li><strong>보험</strong> — 행사 상해 + 다이빙 특약(전문 보험) 가입</li>
+        <li><strong>준법</strong> — 지자체·해경 협조, 합법 처리·재활용, 동의</li>
+        <li><strong>환경조건</strong> — 풍속·파고·시정 미달 시 연기</li>
+      </ul>
+      <p class="sm mut" style="margin-top:3mm;">응급구조 자격 스태프 현장 배치, 인근 병원 긴급 연락체계, 관계기관 사전 통보, 악천후 연기/취소 기준 마련.</p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>16</span></div>
+</div>
+
+<!-- ══════════════ 17 · Ch6 멤버십 3계층 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">06 · Membership</div>
+  <h2 class="title" style="font-size:24pt;">멤버십 구조 및 참여 조건</h2>
+  <p class="lead" style="max-width:168mm;">MOBA는 기업·강사·다이버가 각자의 역할과 책임을 갖고 정기 해양정화(연 4회)를 수행하며, 측정 가능한 ESG 성과를 공동 창출하는 3계층 멤버십을 채택합니다.</p>
+  <hr class="rule">
+  <div class="grid grid-3">
+    <div class="card">
+      <div class="icon-badge">①</div>
+      <h4 class="sub">기업 멤버십 <span class="mut">(ESG 중심)</span></h4>
+      <p class="sm mut"><strong>목적</strong> 임직원 복지·참여와 검증 가능한 ESG 성과</p>
+      <p class="sm mut"><strong>자격</strong> ESG 위원회 또는 동등 거버넌스를 운영·연계 가능한 법인</p>
+      <p class="sm mut"><strong>권리</strong> 정기 활동 우선권, 국제 DB 연계, 리포트용 데이터, 공동 브랜딩</p>
+      <p class="sm mut"><strong>의무</strong> 안전·보험·준법 준수, 데이터 공개 동의</p>
+    </div>
+    <div class="card">
+      <div class="icon-badge">②</div>
+      <h4 class="sub">강사 멤버십 <span class="mut">(활동 지원)</span></h4>
+      <p class="sm mut"><strong>목적</strong> 활동 리더십·안전관리·교육 품질 담보</p>
+      <p class="sm mut"><strong>자격</strong> 국제 자격 보유 강사/다이브마스터, 인솔·브리핑 역량</p>
+      <p class="sm mut"><strong>권리</strong> 리드·서브 리드 우선 배정, 리더 수당/인센티브, 장비·보험 지원</p>
+      <p class="sm mut"><strong>의무</strong> 연 X회 리드, 안전사고 0건, 데이터 정확도, 갱신교육 이수</p>
+    </div>
+    <div class="card">
+      <div class="icon-badge">③</div>
+      <h4 class="sub">다이버 멤버십 <span class="mut">(시민과학)</span></h4>
+      <p class="sm mut"><strong>목적</strong> 정례 참여 확대와 데이터 품질 향상</p>
+      <p class="sm mut"><strong>자격</strong> 스쿠버(OW↑) 또는 프리다이버(기초↑). 미보유자는 교육/체험 후 참여</p>
+      <p class="sm mut"><strong>권리</strong> 활동 우선 신청, 교육/자격 할인, 포인트·레벨</p>
+      <p class="sm mut"><strong>의무</strong> 연 2회 이상 참여, SOP·체크리스트, 로그·데이터 제출, 동의</p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>17</span></div>
+</div>
+
+<!-- ══════════════ 18 · Ch6 요금·정산·보상 ══════════════ -->
+<div class="page dark">
+  <div class="eyebrow">06 · Membership</div>
+  <h3 class="sub" style="margin-top:2mm;">요금 · 정산 · 보상 — 기업 멤버십</h3>
+  <div class="grid grid-2" style="gap:6mm; margin-top:4mm;">
+    <div class="card-glass">
+      <div class="lbl" style="color:var(--aqua-light);">최초 가입 시</div>
+      <div class="stat" style="margin-top:2mm;"><div class="v stat-num">2,000</div><div class="u">만 원</div></div>
+      <p class="sm mut" style="margin-top:3mm;">PADI 프리다이버 레벨2 취득 지원 <strong>6명</strong> + PADI 스쿠버 오픈워터 취득 지원 <strong>4명</strong></p>
+    </div>
+    <div class="card-glass">
+      <div class="lbl" style="color:var(--aqua-light);">갱신 시 (2년차부터)</div>
+      <div class="stat" style="margin-top:2mm;"><div class="v stat-num">1,000</div><div class="u">만 원 / 년</div></div>
+      <p class="sm mut" style="margin-top:3mm;">연간 PADI 프리다이버 레벨2 지원 <strong>4명</strong> + PADI 스쿠버 오픈워터 지원 <strong>2명</strong></p>
+    </div>
+  </div>
+  <div class="grid grid-3" style="margin-top:5mm;">
+    <div class="stat"><div class="v stat-num">10</div><div class="u">명</div><div class="l">상시 유지 인원</div><div class="s">추가 인원 계속 수용</div></div>
+    <div class="stat"><div class="v stat-num">1–2</div><div class="u">곳</div><div class="l">시범기업</div><div class="s">실비 정산, 가입비 면제·할인</div></div>
+    <div class="stat"><div class="v stat-num">4</div><div class="u">회 / 년</div><div class="l">정기 활동</div><div class="s">국제 DB 업로드 유지</div></div>
+  </div>
+  <hr class="rule">
+  <div class="grid grid-2">
+    <div class="card-glass">
+      <h4 class="sub">강사 멤버십</h4>
+      <ul class="clean sm">
+        <li>연회비 소액(내부 책정)</li>
+        <li>활동 1회 기준 리드 수당(기본+인원 연동)</li>
+        <li>무사고·정확 데이터·시간 준수 가점 인센티브</li>
+        <li>보험·장비·교육 일부 지원(회비 재원 내)</li>
+      </ul>
+    </div>
+    <div class="card-glass">
+      <h4 class="sub">다이버 멤버십</h4>
+      <ul class="clean sm">
+        <li>연회비/시즌패스 저가형(내부 책정)</li>
+        <li>활동 우선권, 교육/자격 할인</li>
+        <li>포인트 → 굿즈/바우처/자격 할인 전환</li>
+        <li>기업 건·개인 건 분리 정산(실비)</li>
+      </ul>
+    </div>
+  </div>
+  <p class="sm mut" style="margin-top:4mm;">* 사용처: 정기 활동 운영, 장비·교육·자격·보험, 대외 커뮤니케이션, ESG 리포트 제작. 연말 투명 결산 후 일부 기부·재투자. 금액은 내부 손익·시장성 검토 후 확정(구조·원칙 제시용 초안).</p>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>18</span></div>
+</div>
+
+<!-- ══════════════ 19 · Ch6 권리·의무·KPI + 운영 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">06 · Membership</div>
+  <h3 class="sub" style="margin-top:2mm;">권리 · 의무 · KPI (유형별)</h3>
+  <table class="cmp">
+    <thead><tr><th style="width:20mm;">구분</th><th>핵심 권리</th><th>핵심 의무</th><th>KPI (예시)</th></tr></thead>
+    <tbody>
+      <tr><td class="label">기업</td><td>정기 활동 보장, ESG 리포트 데이터, 공동 브랜딩</td><td>안전·보험·준법, 데이터 공개·활용 동의</td><td>참여수/봉사시간, 재참여율, 안전사고 0건, 보고 반영률</td></tr>
+      <tr><td class="label">강사</td><td>리드·서브 리드 배정, 리더 수당/인센티브, 교육 업데이트</td><td>연 X회 리드, SOP·체크리스트, 데이터 품질 보증</td><td>리드 충원율, 무사고율, 데이터 정확도(사진·GPS·품목/중량)</td></tr>
+      <tr><td class="label">다이버</td><td>우선 신청, 교육/자격 할인, 포인트·레벨</td><td>연 2회↑ 참여, 로그·데이터 제출, 동의서</td><td>참여·재참여율·만족도, 데이터 완결성, 파트너 협업</td></tr>
+    </tbody>
+  </table>
+  <p class="sm mut" style="margin-top:3mm;"><strong>공통 준수:</strong> 보험 가입, 악천후 연기/취소 기준, 관계기관 사전 통보, 브리핑/디브리핑, 체크리스트 의무화</p>
+  <hr class="rule">
+  <div class="grid grid-3">
+    <div class="card card-mist">
+      <h4 class="sub">거버넌스 연계</h4>
+      <ul class="clean sm">
+        <li>ESG 위원회 정례 안건(분기 회의)로 가입·계획·예산·성과 심의</li>
+        <li>운영팀→경영진→ESG위원회 3단계 보고</li>
+        <li>예산 집행 모니터링, 증빙 관리로 제3자 검증 지원</li>
+      </ul>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">포인트 · 레벨 (다이버)</h4>
+      <ul class="clean sm">
+        <li>활동 참여·데이터 품질 등급에 따라 가점</li>
+        <li>Supporter → Diver → Leader 후보</li>
+        <li>교육 바우처/굿즈/자격 할인, 협력 프로젝트 우선권</li>
+      </ul>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">약관 핵심</h4>
+      <ul class="clean sm">
+        <li>행사 상해 + 다이빙 특약 의무 가입</li>
+        <li>사진·영상·데이터 ESG 보고·공표 사용 동의</li>
+        <li>항만·어항·옥외광고·문화재 규정 준수</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>19</span></div>
+</div>
+
+<!-- ══════════════ 20 · Ch7 파트너십 + Ch8.1 표준 맵 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">07 · Partnership</div>
+  <h2 class="title" style="font-size:24pt;">국제 파트너십과 표준 연계</h2>
+  <div class="grid grid-4" style="gap:5mm;">
+    <div class="card"><h4 class="sub">PADI</h4><p class="sm mut">세계 최대 스쿠버 다이빙 교육기관</p></div>
+    <div class="card"><h4 class="sub">PADI AWARE</h4><p class="sm mut">PADI가 후원하는 독립 비영리 재단</p></div>
+    <div class="card"><h4 class="sub">Dive Against Debris®</h4><p class="sm mut">시민과학 프로그램 (수중 정화 데이터 제출)</p></div>
+    <div class="card"><h4 class="sub">AWARE Week</h4><p class="sm mut">매년 9월 글로벌 보전 주간 (일정 연계 권장)</p></div>
+  </div>
+  <p class="sm mut" style="margin-top:4mm;">MOBA는 Dive Against Debris®와 AWARE Week, ICC Day 등 국제 이니셔티브와 연계합니다. 수거 데이터는 Dive Against Debris® 글로벌 DB로 제출되며, 기업 성과 요약은 연말 ESG 리포트에 반영됩니다.</p>
+  <hr class="rule">
+  <div class="eyebrow">08 · Standards</div>
+  <h3 class="sub">기준 맵 — GRI 306 · SDG 14 · ISO 14001 / 26000</h3>
+  <p class="sm mut">모든 결과는 외부 공식 DB(Dive Against Debris® 등)에 업로드하고, 기업용 요약은 연말 ESG 리포트에 반영합니다.</p>
+  <div class="grid grid-3" style="margin-top:4mm;">
+    <div class="card card-navy"><div class="icon-badge" style="background:var(--aqua);color:var(--ink);">E</div><h4 class="sub">환경</h4><p class="sm mut">수거량·품목·위치 데이터로 환경 성과를 수치화</p></div>
+    <div class="card card-navy"><div class="icon-badge" style="background:var(--aqua);color:var(--ink);">S</div><h4 class="sub">사회</h4><p class="sm mut">임직원 참여·봉사시간·자격 취득 인원 관리</p></div>
+    <div class="card card-navy"><div class="icon-badge" style="background:var(--aqua);color:var(--ink);">G</div><h4 class="sub">거버넌스</h4><p class="sm mut">안전·보험·보고 체계와 외부 업로드로 투명성 강화</p></div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>20</span></div>
+</div>
+
+<!-- ══════════════ 21 · Ch8.1 ISO 26000 + 8.2 도구 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">08 · Standards</div>
+  <h3 class="sub" style="margin-top:2mm;">ISO 26000 7대 핵심주제 매핑</h3>
+  <div class="grid grid-4" style="gap:4mm;">
+    <div class="card card-mist"><div class="lbl">01</div><p class="sm"><strong>조직지배구조</strong><br><span class="mut">ESG위원회 설치·운영</span></p></div>
+    <div class="card card-mist"><div class="lbl">02</div><p class="sm"><strong>인권</strong><br><span class="mut">안전한 봉사 기회, 주민 환경권 보장</span></p></div>
+    <div class="card card-mist"><div class="lbl">03</div><p class="sm"><strong>노동관행</strong><br><span class="mut">봉사 인정, 공정한 보상</span></p></div>
+    <div class="card card-mist"><div class="lbl">04</div><p class="sm"><strong>환경</strong><br><span class="mut">해양 정화 실천, 목표 달성</span></p></div>
+    <div class="card card-mist"><div class="lbl">05</div><p class="sm"><strong>공정운영</strong><br><span class="mut">투명 재원 공개, NGO 협력</span></p></div>
+    <div class="card card-mist"><div class="lbl">06</div><p class="sm"><strong>소비자 이슈</strong><br><span class="mut">미세플라스틱 예방, 인식 제고</span></p></div>
+    <div class="card card-mist"><div class="lbl">07</div><p class="sm"><strong>지역사회 발전</strong><br><span class="mut">지역 협력·교육·역량 강화</span></p></div>
+    <div class="card card-aqua"><div class="lbl" style="color:var(--ink);">Result</div><p class="sm" style="color:var(--ink);"><strong style="color:var(--ink);">국제표준 정합</strong><br>검증 가능한 ESG</p></div>
+  </div>
+  <hr class="rule">
+  <h3 class="sub">체크리스트 및 성과 모니터링 도구</h3>
+  <div class="grid grid-2">
+    <ul class="clean sm">
+      <li><strong>사전 준비 체크리스트</strong> — 장소·인원·장비·보험·대외 신고</li>
+      <li><strong>현장 점검 및 평가표</strong> — 출석/건강, 장비, 안전요원, 수거품 분류/계량</li>
+      <li><strong>성과 모니터링 대시보드</strong> — 누적 수거량·봉사시간·만족도·안전사고 KPI 실시간</li>
+    </ul>
+    <ul class="clean sm">
+      <li><strong>연말 종합 리포트</strong> — 개요·정량 성과·정성 효과·모범 사례·개선 권고</li>
+      <li><strong>외부 검증 지원</strong> — 촬영 사진·계측 기록·PADI AWARE Foundation 확인서 등 증빙 제공</li>
+    </ul>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>21</span></div>
+</div>
+
+<!-- ══════════════ 22 · Ch9 거버넌스 ══════════════ -->
+<div class="page dark">
+  <div class="eyebrow">09 · Governance</div>
+  <h2 class="title" style="font-size:24pt;">ESG 위원회 및 내부 거버넌스 체계</h2>
+  <div class="grid grid-2">
+    <div class="card-glass">
+      <h4 class="sub">ESG 위원회 구성</h4>
+      <ul class="clean sm">
+        <li>위원 총 5–7인, 2/3 이상 사외이사</li>
+        <li>환경/사회 분야 전문가 최소 1명 포함</li>
+        <li>위원장: 선임 사외이사</li>
+      </ul>
+      <h4 class="sub">역할과 책임</h4>
+      <ul class="clean sm">
+        <li>ESG 전략·정책 수립, 주요 이니셔티브 승인, 성과 감독</li>
+        <li>연 4회 분기 회의</li>
+        <li>MOBA 가입 승인·연간 계획·예산 배정·성과 보고</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="sub">분야별 소위원회</h4>
+      <div class="card-glass" style="margin-bottom:4mm;"><p class="sm" style="margin:0;"><strong>환경분과</strong> — 환경 목표 관리, MOBA 프로젝트 주관</p></div>
+      <div class="card-glass" style="margin-bottom:4mm;"><p class="sm" style="margin:0;"><strong>사회분과</strong> — 임직원 봉사, 지역사회 협력</p></div>
+      <div class="card-glass"><p class="sm" style="margin:0;"><strong>거버넌스/윤리분과</strong> — 투명성, 예산 집행, 성과 검증</p></div>
+    </div>
+  </div>
+  <hr class="rule">
+  <h3 class="sub">의사결정 및 보고 체계 (3단계)</h3>
+  <div class="grid grid-3">
+    <div class="card-glass step"><div class="no">01</div><div class="tag">실무 단계</div><div class="t" style="font-size:12pt;">MOBA 운영팀</div><p class="sm mut" style="margin-top:2mm;">계획 수립–실행–결과보고 전담</p></div>
+    <div class="card-glass step"><div class="no">02</div><div class="tag">경영진 단계</div><div class="t" style="font-size:12pt;">ESG 담당 임원</div><p class="sm mut" style="margin-top:2mm;">보고 수령·자원 지원, 분기별 경영회의 공유</p></div>
+    <div class="card-glass step"><div class="no">03</div><div class="tag">이사회 / 위원회</div><div class="t" style="font-size:12pt;">분기 정기회의</div><p class="sm mut" style="margin-top:2mm;">성과·이슈 보고·심의, 필요시 이사회 본회의 의결</p></div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>22</span></div>
+</div>
+
+<!-- ══════════════ 23 · Ch10 로드맵 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">10 · Roadmap</div>
+  <h2 class="title" style="font-size:24pt;">ESG 인증 및 성과 전략</h2>
+  <p class="lead" style="margin-bottom:6mm;">ESG는 기업 내부 거버넌스(ESG위원회 중심)로 운영하며, 전 단계에서 연간 예산·분기 보고·연말 성과보고 체계를 유지합니다.</p>
+  <div class="phase">
+    <div class="ph-no"><div class="p">Phase 1</div><div class="y">Year 0–1</div></div>
+    <div class="ph-body card card-mist">
+      <h4 class="sub">시범 · 정례화</h4>
+      <p class="sm mut">시범기업 2곳 + 강사·다이버 멤버십. 연 4회 정기 활동, 안전/보험/관계기관 통보, 데이터 표준 운영(사진·GPS·품목·중량), 국제 DB 업로드. 지자체 협력(반려해변)·지역 예술인 협력·재활용 연계, ESG위원회–경영진–운영팀 3단계 보고(분기), 예산/결산·실비 정산.</p>
+    </div>
+  </div>
+  <div class="phase">
+    <div class="ph-no"><div class="p">Phase 2</div><div class="y">Year 2–3</div></div>
+    <div class="ph-body card card-mist">
+      <h4 class="sub">기업 멤버십 간 자원순환 콜라보</h4>
+      <p class="sm mut">각 기업의 전문영역(소재·설계·물류·리테일·디자인)을 연결해 재활용·업사이클 가치사슬 공동 설계. 지역/업종 컨소시엄, 공동 캠페인·제품/전시, 품목 특화(어구·플라스틱). 지표: 자원순환 전환율, 공동 프로젝트 수, 교육·전시·IR 연계, 재참여율·무사고율.</p>
+    </div>
+  </div>
+  <div class="phase">
+    <div class="ph-no"><div class="p">Phase 3</div><div class="y">Year 4–5</div></div>
+    <div class="ph-body card card-mist">
+      <h4 class="sub">글로벌 전개</h4>
+      <p class="sm mut">국내 표준(운영·안전·데이터)을 국가별 브랜치로 론칭. 중국·일본 등 인접 시장부터 단계적 실행. 국제 네트워크 공동 프로젝트, 글로벌 ESG 평가 대응, 국제 무대 참여 확대.</p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>23</span></div>
+</div>
+
+<!-- ══════════════ 24 · Ch11 이해관계자 · 정보공시 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">11 · Stakeholders</div>
+  <h2 class="title" style="font-size:24pt;">이해관계자 참여 및 정보공시</h2>
+  <div class="grid grid-4" style="gap:4mm;">
+    <div class="card"><h4 class="sub">정부 기관</h4><p class="sm mut">해수부·환경부·지방청, 정화 주간·ICC Day 공식 파트너, 지자체 MOU·반려해변</p></div>
+    <div class="card"><h4 class="sub">국제 NGO</h4><p class="sm mut">PADI AWARE·Ocean Conservancy·WWF·UNEP, ICC 데이터 제공, Our/UN Ocean Conference</p></div>
+    <div class="card"><h4 class="sub">지역사회</h4><p class="sm mut">주민·어민·시민단체, 학교 환경교육, 대학 인턴, 예술가 협력</p></div>
+    <div class="card"><h4 class="sub">산업·전문기관</h4><p class="sm mut">산업 컨소시엄·그린얼라이언스, 해양환경공단(KOEM)·KIOST 자문</p></div>
+  </div>
+  <hr class="rule">
+  <h3 class="sub">ESG 보고서 발간 · 데이터 공개 · 검증</h3>
+  <div class="grid grid-2">
+    <ul class="clean sm">
+      <li><strong>보고서 발간</strong> — 연 1회, MOBA 하이라이트 상세, SDG 아이콘·GRI 지표 연결</li>
+      <li><strong>데이터 플랫폼 공개</strong> — 웹사이트 ESG 코너에 실시간 대시보드, AWARE Action Map·ICC DB 링크</li>
+    </ul>
+    <ul class="clean sm">
+      <li><strong>공시·IR</strong> — 사업보고서·주총 자료·CEO 연설, ESG 채권 발행 시 투자 프로젝트 포함</li>
+      <li><strong>제3자 검증</strong> — 독립 회계법인/검증기관이 보고서·증빙 확인 후 인증 마크 게재</li>
+    </ul>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>24</span></div>
+</div>
+
+<!-- ══════════════ 25 · Ch12 기대효과 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">12 · Impact</div>
+  <h2 class="title" style="font-size:24pt;">기대효과 및 ESG 보고서 반영</h2>
+  <div class="grid grid-2">
+    <div class="card card-mist">
+      <h4 class="sub">UN SDGs 기여</h4>
+      <ul class="clean sm">
+        <li>SDG 14 (해양생태계 보전) 직접 기여</li>
+        <li>SDG 14.1 — “2025년까지 해양오염 상당히 감소” 목표 부합</li>
+      </ul>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">GRI 지표 연계</h4>
+      <ul class="clean sm">
+        <li>GRI 306-3·306-4 — 폐기물 발생·처리(제거량)</li>
+        <li>GRI 304-3 — 복원된 서식지</li>
+        <li>GRI 413-1 — 지역사회 참여 활동</li>
+        <li>GRI 401-2 — 직원 복리후생</li>
+        <li>GRI 102-20 — 이사회 책임(ESG위원회)</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="rule">
+  <h3 class="sub">브랜드 · 임직원 · 투자자 효과</h3>
+  <div class="grid grid-3">
+    <div class="card"><div class="icon-badge">S</div><h4 class="sub">조직문화 강화</h4><p class="sm mut">환경 봉사를 통한 보람·자긍심, 직원 인터뷰를 ESG 보고서에 수록</p></div>
+    <div class="card"><div class="icon-badge">I</div><h4 class="sub">투자자 설득력</h4><p class="sm mut">구체적 행동으로 ESG 실천 증명, 애널리스트 설명회·IR 자료에 포함</p></div>
+    <div class="card"><div class="icon-badge">R</div><h4 class="sub">리스크 관리</h4><p class="sm mut">환경 규제 선제 대응, 지역사회 마찰 방지, ESG 마인드셋 강화</p></div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>25</span></div>
+</div>
+
+<!-- ══════════════ 26 · Ch13 시각화 프로젝트 ══════════════ -->
+<div class="page ink pad-0">
+  <div class="band" style="height:96mm; border-radius:0; align-items:flex-start;">
+    <img src="img/beach-team.jpg" alt="해변에서 정화 활동을 마친 팀">
+    <div class="ov" style="background:linear-gradient(180deg, rgba(7,23,38,.75), rgba(7,23,38,.35) 60%, rgba(7,23,38,.95));"></div>
+    <div class="cap" style="padding:20mm 18mm;">
+      <div class="eyebrow">13 · Visualization</div>
+      <h2 class="title" style="font-size:26pt; color:#fff; margin-top:4mm;">성과 커뮤니케이션<br>— 수거 후 시각화 프로젝트</h2>
+    </div>
+  </div>
+  <div style="padding:8mm 18mm 20mm;">
+    <p class="lead" style="max-width:168mm;">수거 항목 중 안전·위생상 문제가 없는 소재를 업사이클링 예술·전시로 재해석합니다. 환경(E) 성과를 사회(S) 가치와 지역 문화자산으로 확장하며, 기업의 브랜드 스토리텔링 자산으로 축적됩니다. 선택 운영 모듈이며 정화활동 후 참여를 원칙으로 합니다.</p>
+    <div class="flow"><span class="fq">수거</span><span class="ar">→</span><span class="fq">협력</span><span class="ar">→</span><span class="fq">시각화</span><span class="ar">→</span><span class="fq">공유</span></div>
+    <div class="grid grid-3" style="margin-top:5mm;">
+      <div class="card-glass"><h4 class="sub">예술 아카이빙</h4><p class="sm mut">전문 예술가·영상가·사진가 협업으로 활동 기록. 다큐멘터리/VR·AR·디지털 아카이브를 ESG 보고서·국제 데이터로 공유</p></div>
+      <div class="card-glass"><h4 class="sub">공공예술 창작</h4><p class="sm mut">수거 폐기물로 벽화·조형물·어선 페인팅·설치미술 제작. 임직원·예술가·시민·청소년이 공동 창작자로 참여</p></div>
+      <div class="card-glass"><h4 class="sub">기록 · 사회환원</h4><p class="sm mut">사옥·전시장·공공미술관 전시, ‘ESG Art Report’ 연간 발간, QR 데이터 공개. 수익 일부를 해양보전기금·해녀 복지·청소년 예술교육에 기부</p></div>
+    </div>
+    <p class="sm mut" style="margin-top:5mm;"><strong style="color:#fff;">규정 준수:</strong> 항만·어항·옥외광고·경관·문화재 조례 준수, 어선 도장은 내식성·저VOC·안전색 친환경 페인트 사용, 초상권·저작권·개인정보 동의는 표준 양식 수합·보관. <strong style="color:#fff;">GRI 매핑:</strong> 203-1·306-3/4·304-3·413-1·401-2·102-20.</p>
+  </div>
+</div>
+
+<!-- ══════════════ 27 · FAQ ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">FAQ</div>
+  <h2 class="title" style="font-size:26pt;">자주 묻는 질문</h2>
+  <hr class="rule">
+  <div class="grid grid-2" style="gap:6mm;">
+    <div>
+      <div class="faq-q"><span class="qmark">Q1.</span> 자격증이 없어도 시작할 수 있나요?</div>
+      <p class="sm mut">가능합니다. 교육 후 국제 자격증 취득을 지원합니다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q2.</span> 안전은 어떻게 보장하나요?</div>
+      <p class="sm mut">인솔자·페어 다이빙·체크리스트·전문 보험을 적용합니다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q3.</span> 어느 수심에서 활동하나요?</div>
+      <p class="sm mut">보통 2–10m 범위에서 진행합니다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q4.</span> 데이터는 어디에 기록되나요?</div>
+      <p class="sm mut">Dive Against Debris® 등 외부 DB에 업로드합니다.</p>
+    </div>
+    <div>
+      <div class="faq-q"><span class="qmark">Q5.</span> 복지와 연결되나요?</div>
+      <p class="sm mut">자격증 취득으로 레저·봉사를 함께 경험합니다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q6.</span> 수거물 처리는 어떻게 하나요?</div>
+      <p class="sm mut">지자체·전문기관과 협력해 합법 처리·재활용합니다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q7.</span> 시각화 프로젝트는 필수인가요?</div>
+      <p class="sm mut">선택 활동입니다. 환경 성과를 사회적 가치로 확장하는 효과적 방법입니다.</p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · Make Ocean Blue Again</span><span>27</span></div>
+</div>
+
+<!-- ══════════════ 28 · Ch14 결론 · 연락처 ══════════════ -->
+<div class="page ink cover">
+  <div class="cover-hero" style="position:absolute;inset:0;z-index:0;"><img src="img/lifestyle-sunrise.jpg" alt="해가 떠오르는 바다"></div>
+  <div class="cover-overlay" style="position:absolute;inset:0;z-index:1;"></div>
+  <div>
+    <div class="eyebrow">14 · Conclusion</div>
+    <h2 class="title" style="font-size:28pt; color:#fff; margin-top:6mm;">결론 및 제안</h2>
+    <p class="lead" style="max-width:160mm; color:rgba(207,227,240,.9);">MOBA는 기업이 ESG 경영을 실천하고 성과를 창출하는 데 필요한 모든 요소를 갖춘 플랫폼입니다.</p>
+  </div>
+  <div>
+    <div class="grid grid-3">
+      <div class="card-glass"><div class="lbl" style="color:var(--aqua-light);">환경</div><p class="sm mut" style="margin-top:2mm;">해양폐기물 감축과 생태계 회복</p></div>
+      <div class="card-glass"><div class="lbl" style="color:var(--aqua-light);">사회</div><p class="sm mut" style="margin-top:2mm;">참여와 협력을 통한 공동체 재생</p></div>
+      <div class="card-glass"><div class="lbl" style="color:var(--aqua-light);">거버넌스</div><p class="sm mut" style="margin-top:2mm;">투명한 보고와 국제 인증</p></div>
+    </div>
+    <p class="lead" style="max-width:165mm; margin-top:6mm; color:#fff; font-family:'Montserrat','Pretendard',sans-serif; font-weight:700; font-size:14pt;">“Make Ocean Blue Again” — 푸른 바다를 되찾고 지키는 노력에 기업이 앞장서기를 기대합니다. 함께 지속가능한 푸른 바다와 풍요로운 미래를 만들어 나갑시다.</p>
+    <hr class="rule">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:6mm;">
+      <div>
+        <div class="lbl" style="color:var(--aqua-light);">Contact · MOBA 운영팀</div>
+        <div class="stat-num" style="font-size:20pt; color:#fff; margin-top:2mm;">010-8947-1464</div>
+        <small style="color:rgba(207,227,240,.6);">본 사업계획서는 해양수산부·정부 브리핑, 국제기구 보고서, PADI AWARE Foundation 자료, 공개 외부 자료를 기반으로 작성되었습니다.</small>
+      </div>
+      <img src="img/padi-aware-rev.png" alt="PADI AWARE Foundation" style="height:13mm;">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

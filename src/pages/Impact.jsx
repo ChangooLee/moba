@@ -18,7 +18,7 @@ const Impact = () => {
 
     return (
         <div className="overflow-x-hidden">
-            <PageHero eyebrow="IMPACT" title={t('pages.impact.title')} subtitle={t('pages.impact.subtitle')} />
+            <PageHero eyebrow="IMPACT" title={t('pages.impact.title')} subtitle={t('pages.impact.subtitle')} image="/images/padi/featured/manta.jpg" />
 
             {/* 한눈에 보는 성과 */}
             <section className="section-padding bg-white">
@@ -130,6 +130,20 @@ const Impact = () => {
                                 </a>
                             </div>
                         )}
+                    </Reveal>
+                </div>
+            </section>
+
+            {/* 풀블리드 해양생물 밴드 — 우리가 지키는 것 */}
+            <section className="relative h-[52vh] min-h-[380px] flex items-end overflow-hidden">
+                <img src="/images/padi/featured/turtle.jpg" alt="산호초 위에서 쉬고 있는 바다거북" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" aria-hidden="true" />
+                <div className="container-custom relative z-10 pb-12 md:pb-16 text-white">
+                    <Reveal className="max-w-2xl">
+                        <Eyebrow light>WHAT WE PROTECT</Eyebrow>
+                        <p className="mt-4 font-heading font-extrabold text-2xl md:text-4xl leading-snug">
+                            우리가 지키는 것은 숫자가 아니라,<br />이 바다에 사는 생명입니다.
+                        </p>
                     </Reveal>
                 </div>
             </section>

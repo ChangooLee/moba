@@ -163,9 +163,16 @@ export const Icon = ({ name, className = 'w-6 h-6', strokeWidth = 1.75 }) => {
     );
 };
 
-/* ── 서브페이지 히어로 ────────────────────────────── */
-export const PageHero = ({ eyebrow, title, subtitle }) => (
-    <section className="ocean-hero relative text-white">
+/* ── 서브페이지 히어로 (실사진 배경 옵션) ──────────── */
+export const PageHero = ({ eyebrow, title, subtitle, image }) => (
+    <section className="ocean-hero relative text-white overflow-hidden">
+        {image && (
+            <>
+                <img src={image} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/45" aria-hidden="true" />
+                <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-transparent to-transparent" aria-hidden="true" />
+            </>
+        )}
         <OceanFX />
         <div className="container-custom relative z-10 pt-28 pb-20 md:pt-36 md:pb-28">
             <div className="max-w-3xl">

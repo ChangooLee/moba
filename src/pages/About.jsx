@@ -23,7 +23,7 @@ const About = () => {
 
     return (
         <div className="overflow-x-hidden">
-            <PageHero eyebrow="ABOUT MOBA" title={t('pages.about.title')} subtitle={t('pages.about.description')} />
+            <PageHero eyebrow="ABOUT MOBA" title={t('pages.about.title')} subtitle={t('pages.about.description')} image="/images/padi/featured/reef-diver.jpg" />
 
             {/* 미션 · 비전 */}
             <section className="section-padding bg-white">

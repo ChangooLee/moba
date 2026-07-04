@@ -21,7 +21,7 @@ const News = () => {
 
     return (
         <div className="overflow-x-hidden">
-            <PageHero eyebrow="NEWS & EVENTS" title={t('common.nav.news')} subtitle={t('pages.schedule.description')} />
+            <PageHero eyebrow="NEWS & EVENTS" title={t('common.nav.news')} subtitle={t('pages.schedule.description')} image="/images/padi/featured/beach-team.jpg" />
 
             {/* 다가오는 이벤트 */}
             <section className="section-padding bg-white">

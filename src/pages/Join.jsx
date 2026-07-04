@@ -20,7 +20,7 @@ const Join = () => {
 
     return (
         <div className="overflow-x-hidden">
-            <PageHero eyebrow="GET INVOLVED" title={t('pages.join.title')} subtitle={t('pages.join.subtitle')} />
+            <PageHero eyebrow="GET INVOLVED" title={t('pages.join.title')} subtitle={t('pages.join.subtitle')} image="/images/padi/featured/lifestyle-sunrise.jpg" />
 
             {/* 3 레인 라우터 */}
             <section className="section-padding bg-white">

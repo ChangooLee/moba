@@ -19,7 +19,7 @@ const HowItWorks = () => {
 
     return (
         <div className="overflow-x-hidden">
-            <PageHero eyebrow="HOW IT WORKS" title={t('pages.howItWorks.title')} subtitle={t('pages.howItWorks.subtitle')} />
+            <PageHero eyebrow="HOW IT WORKS" title={t('pages.howItWorks.title')} subtitle={t('pages.howItWorks.subtitle')} image="/images/padi/featured/data-reef.jpg" />
 
             {/* 4단계 사이클 */}
             <section className="section-padding bg-ocean-deep text-white">

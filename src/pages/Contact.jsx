@@ -42,6 +42,7 @@ const Contact = () => {
                 eyebrow="CONTACT"
                 title={t('pages.contact.title')}
                 subtitle={t('pages.contact.description')}
+                image="/images/padi/featured/team-surface.jpg"
             />
 
             {/* 연락처 + 폼 */}

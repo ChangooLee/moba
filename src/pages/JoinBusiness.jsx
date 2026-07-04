@@ -20,7 +20,7 @@ const JoinBusiness = () => {
 
     return (
         <div className="overflow-x-hidden">
-            <PageHero eyebrow="FOR BUSINESS" title={t('pages.business.title')} subtitle={t('pages.business.subtitle')} />
+            <PageHero eyebrow="FOR BUSINESS" title={t('pages.business.title')} subtitle={t('pages.business.subtitle')} image="/images/padi/featured/data-diver.jpg" />
 
             {/* 5가지 기업 가치 */}
             <section className="section-padding bg-white">

@@ -185,7 +185,7 @@ docker-compose up --build -d
 
 ### 📧 **연락처**
 - **이메일**: make.ocean.blue.again.project@gmail.com
-- **전화**: 010-7586-9029
+- **전화**: 010-8947-1464
 - **웹사이트**: www.moba-project.org (진행 중)
 
 ### 🤝 **참여 대상**

@@ -146,7 +146,7 @@ PADI AWARE Foundation의 공식 시스템에 업로드됩니다. UNEP가 활용�
 ### 문의하기
 
 📧 make.ocean.blue.again.project@gmail.com  
-📱 010-7586-9029  
+📱 010-8947-1464  
 🌐 www.moba-project.org (on progress)
 
 ---

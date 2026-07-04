@@ -253,7 +253,7 @@ A. 초기에는 각 기업의 ESG 성과 창출과 임직원 복지에 집중합
 **MOBA 운영팀**
 
 📧 **Email**: make.ocean.blue.again.project@gmail.com  
-📱 **Phone**: 010-7586-9029  
+📱 **Phone**: 010-8947-1464  
 🌐 **Website**: www.moba-project.org (on progress)
 
 **상담 내용**

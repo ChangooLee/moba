@@ -13,7 +13,7 @@ const News = () => {
     const obj = (k, fb) => { const v = t(k, { returnObjects: true }); return v && typeof v === 'object' ? v : fb; };
     const arr = (k) => { const v = t(k, { returnObjects: true }); return Array.isArray(v) ? v : []; };
 
-    const eventKeys = ['globalCampaign', 'workshop', 'conference', 'seminar'];
+    const eventKeys = ['workshop', 'globalCampaign', 'conference', 'seminar'];
     const milestoneKeys = ['launch', 'expansion', 'community', 'impact'];
     const past = obj('pages.schedule.pastEvents.pohang20250920', {});
     const images = Array.isArray(past.images) ? past.images : [];

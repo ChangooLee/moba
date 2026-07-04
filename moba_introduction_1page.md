@@ -67,7 +67,7 @@
 
 ------
 
-**문의**  [make.ocean.blue.again.project@gmail.com](mailto:make.ocean.blue.again.project@gmail.com) / 010-7586-9029
+**문의**  [make.ocean.blue.again.project@gmail.com](mailto:make.ocean.blue.again.project@gmail.com) / 010-8947-1464
  **슬로건**  *"푸른 바다는 기업의 책임이자 기회입니다."* 
 
 ------

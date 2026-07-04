@@ -57,7 +57,7 @@ const Footer = () => {
                         </h3>
                         <div className="space-y-3 text-sm text-sky-100/70">
                             <p><a href="mailto:make.ocean.blue.again.project@gmail.com" className="hover:text-aqua-light transition-colors break-all">make.ocean.blue.again.project@gmail.com</a></p>
-                            <p><a href="tel:01075869029" className="hover:text-aqua-light transition-colors">010-7586-9029</a></p>
+                            <p><a href="tel:01089471464" className="hover:text-aqua-light transition-colors">010-8947-1464</a></p>
                             <p>www.moba-project.org</p>
                         </div>
                     </div>

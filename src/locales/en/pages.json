@@ -838,28 +838,28 @@
         "events": {
             "globalCampaign": {
                 "title": "Global Ocean Cleanup Campaign",
-                "date": "March 15, 2024",
+                "date": "September 19, 2026",
                 "time": "10:00 AM - 6:00 PM",
                 "location": "Worldwide",
                 "description": "A global campaign to clean up marine debris and raise awareness about ocean pollution"
             },
             "workshop": {
                 "title": "Marine Conservation Workshop",
-                "date": "April 20, 2024",
+                "date": "August 22, 2026",
                 "time": "2:00 PM - 5:00 PM",
                 "location": "Seoul, South Korea",
                 "description": "Educational workshop on marine conservation techniques and best practices"
             },
             "conference": {
                 "title": "International Ocean Protection Conference",
-                "date": "May 10-12, 2024",
+                "date": "October 16-18, 2026",
                 "time": "9:00 AM - 6:00 PM",
                 "location": "Tokyo, Japan",
                 "description": "International conference bringing together experts and activists for ocean protection"
             },
             "seminar": {
                 "title": "Sustainable Ocean Management Seminar",
-                "date": "June 5, 2024",
+                "date": "November 14, 2026",
                 "time": "1:00 PM - 4:00 PM",
                 "location": "Online",
                 "description": "Online seminar on sustainable ocean management and policy development"
@@ -1036,7 +1036,7 @@
             },
             "phone": {
                 "title": "Phone",
-                "value": "010-7586-9029",
+                "value": "010-8947-1464",
                 "description": "Monday to Friday, 9 AM - 6 PM"
             },
             "website": {

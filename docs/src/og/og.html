@@ -1,0 +1,65 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; }
+  .og {
+    position:relative; width:1200px; height:630px; overflow:hidden;
+    font-family:'Pretendard',sans-serif;
+    background:linear-gradient(115deg,#071726 0%,#0C2A45 55%,#0F3355 100%);
+  }
+  .og__img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.42; }
+  .og__scrim { position:absolute; inset:0;
+    background:linear-gradient(90deg, rgba(7,23,38,.94) 0%, rgba(7,23,38,.72) 42%, rgba(7,23,38,.25) 100%); }
+  /* god rays */
+  .og__rays { position:absolute; inset:-10% -10% auto -10%; height:120%;
+    background:linear-gradient(96deg,transparent 44%,rgba(180,240,250,.10) 48%,transparent 52%),
+              linear-gradient(84deg,transparent 60%,rgba(180,240,250,.07) 64%,transparent 68%);
+    filter:blur(2px); }
+  .og__content { position:relative; height:100%; padding:64px 72px;
+    display:flex; flex-direction:column; justify-content:space-between; }
+  .og__top { display:flex; align-items:center; gap:16px; }
+  .og__logo { height:52px; width:auto; filter:brightness(0) invert(1); }
+  .og__eyebrow { font-family:'IBM Plex Mono',monospace; font-weight:600; text-transform:uppercase;
+    letter-spacing:.22em; font-size:16px; color:#5FE0EE; display:flex; align-items:center; gap:10px; }
+  .og__eyebrow::before { content:''; width:28px; height:2px; background:#5FE0EE; opacity:.8; }
+  .og__title { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800;
+    font-size:82px; line-height:1.04; letter-spacing:-.02em; color:#fff; margin-top:14px; }
+  .og__title .dot { color:#12C2D6; }
+  .og__sub { font-size:27px; color:rgba(207,227,240,.9); margin-top:20px; line-height:1.45; font-weight:500; }
+  .og__chips { display:flex; gap:12px; margin-top:26px; }
+  .og__chip { font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; color:#cfe3f0;
+    border:1px solid rgba(255,255,255,.22); border-radius:999px; padding:9px 18px; letter-spacing:.02em; }
+  .og__foot { display:flex; align-items:center; justify-content:space-between; }
+  .og__partner { display:flex; align-items:center; gap:14px; font-family:'IBM Plex Mono',monospace;
+    font-size:14px; color:rgba(207,227,240,.6); letter-spacing:.08em; text-transform:uppercase; }
+  .og__partner img { height:34px; width:auto; }
+  .og__url { font-family:'IBM Plex Mono',monospace; font-size:16px; color:#5FE0EE; letter-spacing:.06em; }
+</style></head>
+<body>
+<div class="og">
+  <img class="og__img" src="hero.jpg" alt="">
+  <div class="og__scrim"></div>
+  <div class="og__rays"></div>
+  <div class="og__content">
+    <div class="og__top">
+      <img class="og__logo" src="logo.png" alt="MOBA">
+      <span class="og__eyebrow">Corporate ESG · Ocean Impact</span>
+    </div>
+    <div>
+      <h1 class="og__title">바다를 다시 푸르게<span class="dot">.</span></h1>
+      <p class="og__sub">ESG 성과와 임직원 복지를 동시에 실현하는<br>기업 해양보전 멤버십</p>
+      <div class="og__chips">
+        <span class="og__chip">검증 가능한 정량 성과</span>
+        <span class="og__chip">PADI AWARE 국제 검증</span>
+        <span class="og__chip">연 4회 정례</span>
+      </div>
+    </div>
+    <div class="og__foot">
+      <span class="og__partner">In partnership with <img src="padi-aware-rev.png" alt="PADI AWARE Foundation"></span>
+      <span class="og__url">moba-project.org</span>
+    </div>
+  </div>
+</div>
+</body></html>

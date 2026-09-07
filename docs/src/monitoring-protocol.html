@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOBA 수중 모니터링 프로토콜 — 수거에서 데이터로</title>
+<link rel="stylesheet" href="doc.css">
+<style>
+  h3.sub { font-size: 15pt; color: var(--navy); margin: 6mm 0 3mm; }
+  .dark h3.sub, .ink h3.sub { color: #fff; }
+  h4.sub { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; font-size: 11pt; color: var(--navy); margin: 5mm 0 2.5mm; letter-spacing:-0.01em; }
+  .dark h4.sub, .ink h4.sub { color: var(--aqua-light); }
+  .card-mist h4.sub, .card h4.sub, .card-glass h4.sub { margin-top:0; }
+  .mut { color: var(--muted); font-size: 9.5pt; }
+  .dark .mut, .ink .mut { color: rgba(207,227,240,.72); }
+  .sm { font-size: 9.5pt; line-height:1.55; }
+  ul.clean.sm li { font-size: 9.5pt; }
+  .lbl { font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.15em; font-size:8pt; color:var(--aqua-dark); }
+  .dark .lbl,.ink .lbl{ color:var(--aqua-light);}
+  .mist .card.card-navy{ background:var(--navy); border:none; }
+  .mist .card.card-aqua{ background:var(--aqua); border:none; }
+  .src { font-size:8pt; color:var(--muted); font-family:'IBM Plex Mono',monospace; line-height:1.5; }
+  .dark .src,.ink .src{ color:rgba(207,227,240,.55);}
+  .step2 { display:flex; gap:5mm; align-items:flex-start; padding:2.8mm 0; border-bottom:1px dashed var(--mist-deep); }
+  .step2 .n { flex:0 0 8mm; font-family:'IBM Plex Mono',monospace; font-weight:700; color:var(--aqua-dark); font-size:12pt; }
+  .step2 .b b { font-family:'Montserrat','Pretendard',sans-serif; font-size:10.5pt; color:var(--navy); }
+  .before-after { display:grid; grid-template-columns:1fr 1fr; gap:0 6mm; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ 01 · 표지 · 재정의 ══════════════ -->
+<div class="page ink cover">
+  <div class="cover-hero" style="position:absolute;inset:0;z-index:0;"><img src="img/data-reef.jpg" alt="수중 조사 기록"></div>
+  <div class="cover-overlay" style="position:absolute;inset:0;z-index:1;"></div>
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <img src="img/logo.png" alt="MOBA" style="height:12mm;">
+    <span class="eyebrow">Underwater Monitoring Protocol</span>
+  </div>
+  <div>
+    <div class="eyebrow">From Cleanup to Data</div>
+    <h1 class="display" style="font-size:36pt; line-height:1.1; color:#fff; margin:6mm 0 4mm;">수중 모니터링<br>프로토콜</h1>
+    <p class="lead" style="font-size:12.5pt; color:rgba(207,227,240,.92); max-width:158mm;">
+      MOBA의 진짜 산출물은 수거한 무게가 아니라 <strong style="color:#fff;">추적 가능한 데이터</strong>입니다.
+      국가·국제 시스템이 잘 못 보는 <strong style="color:var(--aqua-light);">수중 해역을 표준 프로토콜로 정기 관측</strong>해, 없으면 존재하지 않을 데이터를 만듭니다.
+    </p>
+    <div style="margin-top:6mm;">
+      <span class="chip">고정 관측점 · 분기 반복</span>
+      <span class="chip">면적당 밀도(items/㎡)</span>
+      <span class="chip">Dive Against Debris® 정합</span>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.18); padding-top:5mm;">
+    <div class="lbl" style="color:rgba(207,227,240,.7);">v1.0 · 2026-09-07 · MOBA 운영팀 · 실행 SOP 초안</div>
+  </div>
+</div>
+
+<!-- ══════════════ 02 · 왜 모니터링인가 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">01 · Why Monitoring</div>
+  <h2 class="title" style="font-size:24pt;">왜 '수거'가 아니라 '모니터링'인가</h2>
+  <p class="lead" style="max-width:168mm;">
+    기여의 크기는 <strong>수거 톤수가 아니라 '메우는 데이터 공백의 희소성'</strong>으로 잽니다. 리서치가 이를 뒷받침합니다.
+  </p>
+  <div class="before-after" style="margin-top:5mm;">
+    <div class="card">
+      <h4 class="sub" style="color:var(--coral);">기존 프레임 (약함)</h4>
+      <p class="sm mut">"우리는 바다를 X kg 치웁니다." → 대기업 발자국 대비 상징적. 성과 미미, 차별화 없음.</p>
+    </div>
+    <div class="card card-navy">
+      <h4 class="sub">재정의 (강함)</h4>
+      <p class="sm mut" style="color:rgba(207,227,240,.9);">"우리는 수중 해역을 <strong style="color:#fff;">표준 프로토콜로 정기 관측</strong>해, 추적 가능한 데이터를 만듭니다." → 톤수와 무관하게 <strong style="color:var(--aqua-light);">데이터가 자산</strong>.</p>
+    </div>
+  </div>
+  <hr class="rule">
+  <div class="grid grid-3">
+    <div class="card card-mist">
+      <div class="lbl">데이터 공백</div>
+      <p class="sm mut" style="margin-top:2mm;">2019년 해양쓰레기 연구의 <strong>1/4 미만만 해저(seafloor)</strong> 대상. 대부분 해변·표층. 수중은 심각한 공백.</p>
+    </div>
+    <div class="card card-mist">
+      <div class="lbl">고비용·희소</div>
+      <p class="sm mut" style="margin-top:2mm;">해저 조사(ROV·트롤·UVC)는 전문기관 고비용 작업 — 넓게 반복 불가. <strong>다이버가 이 빈자리를 채운다.</strong></p>
+    </div>
+    <div class="card card-mist">
+      <div class="lbl">국내 빈자리</div>
+      <p class="sm mut" style="margin-top:2mm;">KOEM 국가 모니터링은 <strong>'해안'쓰레기</strong> 60개 고정점(2개월 주기) 중심 — <strong>수중/침적은 상대적 공백.</strong></p>
+    </div>
+  </div>
+  <div class="card card-aqua" style="margin-top:5mm;">
+    <p class="sm" style="color:var(--ink); margin:0;">
+      <strong style="color:var(--ink);">핵심:</strong> DAD는 실제 과학·정책에 쓰입니다(지중해 해저 쓰레기 연구 468회 조사, Ocean Conservancy·CSIRO 글로벌 분석).
+      같은 지점을 반복하면 우리가 재는 것은 총량이 아니라 <strong style="color:var(--ink);">재유입·침적 속도(flux)</strong> — "이 해역의 오염 압력이 얼마나 지속되는가"라는 정책 지표입니다.
+    </p>
+  </div>
+  <p class="src" style="margin-top:3mm;">출처: DAD 지중해 해저 쓰레기 시민과학 연구(Mar. Pollut. Bull.) · seafloor 연구 공백(Front. Mar. Sci. 2023) · 국가해안쓰레기 모니터링(해양환경정보포털·KOEM)</p>
+  <div class="foot"><span>MOBA · 수중 모니터링 프로토콜</span><span>02</span></div>
+</div>
+
+<!-- ══════════════ 03 · 단, 조건부 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">02 · The Condition</div>
+  <h2 class="title" style="font-size:24pt;">단, 아무 데이터나 과학이 되진 않는다</h2>
+  <p class="lead" style="max-width:168mm;">
+    시민과학의 효과는 <strong>"방법론 비일관성·데이터 품질·수집과 정책의 간극"</strong>에 자주 발목 잡힙니다.
+    이 문턱을 넘느냐가 <strong style="color:var(--aqua-dark);">'이야기 → 데이터'</strong>의 전부입니다. 아래 5원칙이 그 입장료입니다.
+  </p>
+  <div class="grid grid-2" style="margin-top:5mm;">
+    <div class="card card-mist">
+      <h4 class="sub">① 고정 관측점</h4>
+      <p class="sm mut">같은 GPS 지점(트랜섹트/방형구)을 분기마다 동일 방법으로 반복 → <strong>종단 시계열</strong>. 흩어진 정화가 아니라 정점 관측.</p>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">② 노력 정규화</h4>
+      <p class="sm mut">조사 면적(㎡)·시간·인원을 기록 → 총량이 아닌 <strong>밀도(items/㎡·kg/㎡)</strong>로 보고. 과학 비교 + SDG 14.1.1 정합.</p>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">③ 문서화된 SOP·QA</h4>
+      <p class="sm mut">DAD 프로토콜을 <strong>서면 SOP</strong>로 고정 — 교육 기록·이중계상 통제·데이터 검증. "비일관성" 비판 정면 대응.</p>
+    </div>
+    <div class="card card-mist">
+      <h4 class="sub">④ 병행 생태 관측</h4>
+      <p class="sm mut">쓰레기 외 <strong>얽힌 생물 개체수·서식지 상태·핵심종 유무</strong>를 함께 기록 → 자연자본(TNFD)·생물다양성 데이터.</p>
+    </div>
+  </div>
+  <div class="card card-navy" style="margin-top:4mm;">
+    <h4 class="sub">⑤ 학술·기관 연계 — 결정적 한 수</h4>
+    <p class="sm mut" style="color:rgba(207,227,240,.9);">KIOST(한국해양과학기술원)·KOEM·대학 해양연구실과 프로토콜을 <strong style="color:#fff;">공동 설계·공동 활용</strong>하면 시민 데이터가 <strong style="color:var(--aqua-light);">과학이 쓰는 데이터</strong>로 승격됩니다. 이 하나가 관문입니다.</p>
+  </div>
+  <div class="foot"><span>MOBA · 수중 모니터링 프로토콜</span><span>03</span></div>
+</div>
+
+<!-- ══════════════ 04 · 고정 관측 프로토콜 (SOP) ══════════════ -->
+<div class="page ink">
+  <div class="eyebrow">03 · Field Protocol (SOP)</div>
+  <h2 class="title" style="font-size:23pt;">고정 관측 프로토콜 — 실행 절차</h2>
+  <p class="lead" style="max-width:168mm;">한 번의 활동이 그대로 하나의 '조사(survey)'가 되도록, 모든 분기 동일하게 적용합니다.</p>
+  <div style="margin-top:3mm;">
+    <div class="step2"><div class="n">1</div><div class="b"><b>관측점 설정 (최초 1회)</b><p class="sm mut" style="margin:1mm 0 0;">해역별 <strong style="color:#fff;">고정 스테이션</strong> 지정 — 시작 GPS·수심대·조사 형태(선형 트랜섹트 길이×폭, 또는 방형구 개수)를 문서로 확정.</p></div></div>
+    <div class="step2"><div class="n">2</div><div class="b"><b>사전 브리핑 · 역할 분담</b><p class="sm mut" style="margin:1mm 0 0;">2–3인 1조. 수거조/기록조/사진조. 안전(페어·인솔)·데이터카드·측정도구(저울·줄자·슬레이트) 점검.</p></div></div>
+    <div class="step2"><div class="n">3</div><div class="b"><b>조사 다이빙 (remove &amp; record)</b><p class="sm mut" style="margin:1mm 0 0;">정해진 면적 내 폐기물을 <strong style="color:#fff;">품목·재질·개수</strong>로 기록하며 수거. 병행: 얽힌 생물·서식지 상태 메모. 시작/종료 시각·수심 기록.</p></div></div>
+    <div class="step2"><div class="n">4</div><div class="b"><b>수면 계측 · 정규화</b><p class="sm mut" style="margin:1mm 0 0;">품목별 분류·중량 측정. <strong style="color:var(--aqua-light);">밀도 = 개수(또는 kg) ÷ 조사면적(㎡)</strong> 산출. 조사노력(인·분) 함께 기록.</p></div></div>
+    <div class="step2"><div class="n">5</div><div class="b"><b>등재 · 검증</b><p class="sm mut" style="margin:1mm 0 0;">Dive Against Debris® 데이터카드로 <strong style="color:#fff;">글로벌 DB 등재</strong>. 사진·GPS·계측지를 사내 원장에 보관(감사 추적).</p></div></div>
+    <div class="step2" style="border-bottom:none;"><div class="n">6</div><div class="b"><b>리포트 · 추세</b><p class="sm mut" style="margin:1mm 0 0;">스테이션별 밀도·품목구성·핫스팟 지도. 1년차=베이스라인, 이후=<strong style="color:var(--aqua-light);">추세·재유입 속도</strong>. 목표 설정.</p></div></div>
+  </div>
+  <div class="card card-glass" style="margin-top:4mm;">
+    <p class="sm mut" style="margin:0;">기록 최소 필드: <strong style="color:#fff;">일시 · GPS · 수심 · 조사면적(㎡) · 조사노력(인·분) · 품목 · 재질 · 개수 · 중량 · 사진 · 얽힌생물/서식지 메모.</strong> 이 필드 집합이 밀도·추세·TNFD 편입을 모두 가능하게 합니다.</p>
+  </div>
+  <div class="foot"><span>MOBA · 수중 모니터링 프로토콜</span><span>04</span></div>
+</div>
+
+<!-- ══════════════ 05 · 데이터 흐름 · 연계 · 도입 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">04 · Data Flow &amp; Rollout</div>
+  <h2 class="title" style="font-size:23pt;">데이터 흐름 · 기관 연계 · 도입</h2>
+  <div class="flow" style="margin:4mm 0;">
+    <span class="fq">고정점 조사</span><span class="ar">→</span>
+    <span class="fq">밀도 정규화</span><span class="ar">→</span>
+    <span class="fq">DAD 글로벌 DB</span><span class="ar">→</span>
+    <span class="fq">학술·국가 데이터</span><span class="ar">→</span>
+    <span class="fq">기업 공시·TNFD</span>
+  </div>
+  <div class="grid grid-2" style="margin-top:4mm;">
+    <div class="card">
+      <h4 class="sub">기관·데이터 연계 목표</h4>
+      <ul class="clean sm">
+        <li><strong>PADI AWARE</strong> — DAD 글로벌 DB 등재·데이터 확인</li>
+        <li><strong>KIOST·대학</strong> — 프로토콜 공동설계·공동 활용/저술</li>
+        <li><strong>KOEM·해양환경정보포털</strong> — 수중/침적 데이터 기여 경로 타진</li>
+        <li><strong>Adopt the Blue</strong> — 사이트 등록으로 조사 사전 연계</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 class="sub">공시·프레임워크 연결</h4>
+      <ul class="clean sm">
+        <li><strong>SDG 14.1.1</strong> — 플라스틱 잔해 밀도(우리 밀도 데이터와 1:1)</li>
+        <li><strong>TNFD</strong> — 자연 '상태(state)·압력' 데이터(생태 병행관측)</li>
+        <li><strong>GRI 101(생물다양성)·306 준용</strong> — 자발 보고 편입</li>
+        <li>해양 노출 산업엔 <strong>중대 리스크/기회</strong> 근거</li>
+      </ul>
+    </div>
+  </div>
+  <hr class="rule">
+  <h3 class="sub">도입 단계</h3>
+  <div class="grid grid-3">
+    <div class="card card-mist"><div class="lbl">Step 1</div><p class="sm mut" style="margin-top:2mm;">해역별 <strong>고정 스테이션 1–2개</strong> 지정 + SOP 문서화 + DAD 데이터카드 표준화.</p></div>
+    <div class="card card-mist"><div class="lbl">Step 2</div><p class="sm mut" style="margin-top:2mm;">1년(4분기) <strong>베이스라인</strong> 축적 + 학술 파트너 1곳 연계.</p></div>
+    <div class="card card-navy"><div class="lbl" style="color:var(--aqua-light);">Step 3</div><p class="sm mut" style="margin-top:2mm; color:rgba(207,227,240,.9);"><strong style="color:#fff;">추세 리포트</strong> 발간 + 기업 ESG·TNFD 데이터시트로 정형화.</p></div>
+  </div>
+  <div class="card card-aqua" style="margin-top:4mm;">
+    <p class="sm" style="color:var(--ink); margin:0;">
+      <strong style="color:var(--ink);">한 줄:</strong> 이 프로토콜이 MOBA를 "쓰레기를 조금 치우는 팀"에서 <strong style="color:var(--ink);">"수중 해역을 정기 관측하는 검증된 데이터 생산자"</strong>로 바꿉니다 — 규모가 아니라 데이터로 승부하는 위치.
+    </p>
+  </div>
+  <div class="foot"><span>MOBA · 수중 모니터링 프로토콜</span><span>05</span></div>
+</div>
+
+</body>
+</html>

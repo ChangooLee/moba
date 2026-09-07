@@ -50,13 +50,13 @@
                     "value": "100",
                     "unit": "%",
                     "label": "제3자 검증 커버리지",
-                    "sub": "PADI AWARE Foundation 국제 인증"
+                    "sub": "PADI AWARE Foundation 국제 검증"
                 },
                 {
-                    "value": "0",
-                    "unit": "",
-                    "label": "그린워싱 리스크",
-                    "sub": "조작 불가능한 GPS·사진·국제 DB"
+                    "value": "100",
+                    "unit": "%",
+                    "label": "데이터 국제 DB 등재",
+                    "sub": "조작 불가 · GPS·사진·무게 기록"
                 }
             ],
             "members": "시범 기업 모집 중",
@@ -196,7 +196,7 @@
                 {
                     "label": "그린워싱 리스크",
                     "generic": "높음 (사진·계획만으로 부족)",
-                    "moba": "사실상 0 (조작 불가능한 GPS·사진·국제 DB)"
+                    "moba": "낮음 (물리 증거·GPS·사진·국제 DB)"
                 },
                 {
                     "label": "지속성",
@@ -218,8 +218,8 @@
                 },
                 {
                     "no": "02",
-                    "title": "그린워싱 리스크 원천 차단",
-                    "desc": "EU CSRD·ISSB의 검증 가능성 요건에 정합. 국제 NGO 공동 명의 인증서 + 감사 서한으로 \"우리는 해양보전에 기여합니다\"라는 주장에 공식 문서가 따라붙습니다."
+                    "title": "그린워싱 리스크 대폭 완화",
+                    "desc": "EU CSRD·ISSB의 검증 가능성 요건에 정합. 국제 NGO 참여 확인서 + 감사 서한으로 \"우리는 해양보전에 기여합니다\"라는 주장에 공식 문서가 따라붙습니다."
                 },
                 {
                     "no": "03",
@@ -267,11 +267,6 @@
                             "value": "65",
                             "unit": "%",
                             "label": "재활용 전환율"
-                        },
-                        {
-                            "value": "1,800",
-                            "unit": "kgCO₂e",
-                            "label": "순탄소 회피량"
                         }
                     ]
                 },
@@ -364,7 +359,7 @@
             "title": "MOBA의 국제 파트너십",
             "lead": "자체 검증이 아닌 — 글로벌 NGO의 공식 데이터 등재를 통해 신뢰도를 확보합니다.",
             "padiName": "PADI AWARE Foundation",
-            "padiDesc": "세계 최대 스쿠버 다이빙 교육기관 PADI가 후원하는 독립 비영리 재단. UNEP 등 국제기구와 협력하며 정책·시민과학·커뮤니티 행동 영역에서 글로벌 리더십을 발휘합니다.",
+            "padiDesc": "세계 최대 스쿠버 다이빙 교육기관 PADI가 후원하는 독립 비영리 재단. UN 플라스틱 조약 등 국제 정책 논의에 참여하며 정책·시민과학·커뮤니티 행동 영역에서 글로벌 리더십을 발휘합니다.",
             "padiStats": [
                 {
                     "value": "100+",
@@ -461,7 +456,7 @@
                         "1년차 운영 항목 모두 동일",
                         "미사용 활동 차년도 1회 이월 가능",
                         "분기 + 연말 통합 ESG 보고서",
-                        "PADI AWARE 공동 인증 갱신"
+                        "PADI AWARE 검증 등재 갱신"
                     ]
                 },
                 {
@@ -505,7 +500,7 @@
             "buttonPrimary": "시범기업 참여 문의",
             "buttonSecondary": "멤버십 자세히 보기",
             "contact": "MOBA · Make Ocean Blue Again — 시범 기업 2곳 선착순 모집 중",
-            "partner": "PADI AWARE Foundation · UNEP 등 국제기구 협력 · Dive Against Debris®"
+            "partner": "PADI AWARE Foundation · 국제 정책 논의 참여 · Dive Against Debris®"
         },
         "features": {
             "title": "MOBA의 핵심 가치",
@@ -680,7 +675,7 @@
                 "description": "국제 DB 업로드 및 적법 폐기물 처리",
                 "activities": [
                     "Dive Against Debris® 플랫폼 데이터 업로드",
-                    "UNEP 등 국제기구 정책 수립 활용",
+                    "국제 정책 논의 참고자료로 활용",
                     "지자체·해양환경공단 협력 적법 처리",
                     "재활용 가능 자원 최대한 재활용"
                 ]
@@ -1167,7 +1162,7 @@
         "verify": {
             "eyebrow": "VERIFICATION",
             "title": "PADI AWARE Foundation 국제 검증",
-            "desc": "모든 수거 데이터는 Dive Against Debris® 글로벌 DB에 등재되어 GRI 306 · ISO 14001 · SDG 14에 자동 매핑됩니다. 자체 보고가 아닌 국제 NGO의 공식 검증으로 그린워싱 리스크를 원천 차단합니다."
+            "desc": "모든 수거 데이터는 Dive Against Debris® 글로벌 DB에 등재되어 GRI 306 · ISO 14001 · SDG 14에 자동 매핑됩니다. 자체 보고가 아닌 국제 DB 등재·검증으로 그린워싱 리스크를 크게 낮춥니다."
         }
     },
     "impact": {

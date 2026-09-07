@@ -50,13 +50,13 @@
                     "value": "100",
                     "unit": "%",
                     "label": "第三方验证覆盖率",
-                    "sub": "PADI AWARE Foundation 国际认证"
+                    "sub": "PADI AWARE Foundation 国际验证"
                 },
                 {
-                    "value": "0",
-                    "unit": "",
-                    "label": "漂绿风险",
-                    "sub": "无法篡改的GPS·照片·国际数据库"
+                    "value": "100",
+                    "unit": "%",
+                    "label": "数据录入国际数据库",
+                    "sub": "无法篡改 · GPS·照片·重量记录"
                 }
             ],
             "members": "试点企业招募中",
@@ -196,7 +196,7 @@
                 {
                     "label": "漂绿风险",
                     "generic": "高（仅凭照片·计划不足）",
-                    "moba": "实质为0（无法篡改的GPS·照片·国际数据库）"
+                    "moba": "较低（物理证据·GPS·照片·国际数据库）"
                 },
                 {
                     "label": "持续性",
@@ -218,8 +218,8 @@
                 },
                 {
                     "no": "02",
-                    "title": "从源头杜绝漂绿风险",
-                    "desc": "符合EU CSRD·ISSB的可验证性要求。以国际NGO联合署名的证书 + 审计函，为“我们为海洋保护作出贡献”的主张附上正式文件。"
+                    "title": "大幅降低漂绿风险",
+                    "desc": "符合EU CSRD·ISSB的可验证性要求。以国际NGO的参与证明 + 审计函，为“我们为海洋保护作出贡献”的主张附上正式文件。"
                 },
                 {
                     "no": "03",
@@ -267,11 +267,6 @@
                             "value": "65",
                             "unit": "%",
                             "label": "回收转化率"
-                        },
-                        {
-                            "value": "1,800",
-                            "unit": "kgCO₂e",
-                            "label": "净碳规避量"
                         }
                     ]
                 },
@@ -364,7 +359,7 @@
             "title": "MOBA的国际合作伙伴关系",
             "lead": "并非自我验证 — 而是通过全球NGO的官方数据录入来确保可信度。",
             "padiName": "PADI AWARE Foundation",
-            "padiDesc": "由全球最大的水肺潜水培训机构PADI资助的独立非营利基金会。与UNEP等国际机构合作，在政策·公民科学·社区行动领域发挥全球领导力。",
+            "padiDesc": "由全球最大的水肺潜水培训机构PADI资助的独立非营利基金会。参与UN塑料公约等国际政策讨论，在政策·公民科学·社区行动领域发挥全球领导力。",
             "padiStats": [
                 {
                     "value": "100+",
@@ -461,7 +456,7 @@
                         "第1年运营项目全部相同",
                         "未使用的活动可结转至次年1次",
                         "季度 + 年末综合ESG报告",
-                        "PADI AWARE 联合认证续期"
+                        "PADI AWARE 验证录入续期"
                     ]
                 },
                 {
@@ -505,7 +500,7 @@
             "buttonPrimary": "试点企业参与咨询",
             "buttonSecondary": "了解会员计划详情",
             "contact": "MOBA · Make Ocean Blue Again — 试点企业2家先到先得招募中",
-            "partner": "PADI AWARE Foundation · UNEP等国际机构合作 · Dive Against Debris®"
+            "partner": "PADI AWARE Foundation · 参与国际政策讨论 · Dive Against Debris®"
         },
         "features": {
             "title": "MOBA的核心价值",
@@ -679,7 +674,7 @@
                 "description": "上传国际数据库并进行合法处理",
                 "activities": [
                     "上传至 Dive Against Debris® 平台",
-                    "用于UNEP等政策制定",
+                    "作为国际政策讨论的参考资料",
                     "与地方政府/海洋机构合作合法处理",
                     "最大化回收可回收资源"
                 ]
@@ -1107,7 +1102,7 @@
         "verify": {
             "eyebrow": "VERIFICATION",
             "title": "PADI AWARE Foundation 国际验证",
-            "desc": "所有收集数据均录入 Dive Against Debris® 全球数据库，并自动映射到 GRI 306 · ISO 14001 · SDG 14。以国际NGO的官方验证而非自我报告，从源头杜绝漂绿风险。"
+            "desc": "所有收集数据均录入 Dive Against Debris® 全球数据库，并自动映射到 GRI 306 · ISO 14001 · SDG 14。以国际数据库录入·验证而非自我报告，大幅降低漂绿风险。"
         }
     },
     "impact": {

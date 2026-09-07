@@ -50,13 +50,13 @@
                     "value": "100",
                     "unit": "%",
                     "label": "第三者検証カバレッジ",
-                    "sub": "PADI AWARE Foundation 国際認証"
+                    "sub": "PADI AWARE Foundation 国際検証"
                 },
                 {
-                    "value": "0",
-                    "unit": "",
-                    "label": "グリーンウォッシングリスク",
-                    "sub": "改ざん不可能なGPS・写真・国際DB"
+                    "value": "100",
+                    "unit": "%",
+                    "label": "データ国際DB登載",
+                    "sub": "改ざん困難 · GPS・写真・重量記録"
                 }
             ],
             "members": "パイロット企業募集中",
@@ -196,7 +196,7 @@
                 {
                     "label": "グリーンウォッシングリスク",
                     "generic": "高い（写真・計画だけでは不十分）",
-                    "moba": "実質ゼロ（改ざん不可能なGPS・写真・国際DB）"
+                    "moba": "低い（物理的証拠·GPS・写真・国際DB）"
                 },
                 {
                     "label": "持続性",
@@ -218,8 +218,8 @@
                 },
                 {
                     "no": "02",
-                    "title": "グリーンウォッシングリスクを根本から遮断",
-                    "desc": "EU CSRD・ISSBの検証可能性要件に整合。国際NGO共同名義の認証書 + 監査書簡により、「当社は海洋保全に貢献します」という主張に公式文書が伴います。"
+                    "title": "グリーンウォッシングリスクを大幅に低減",
+                    "desc": "EU CSRD・ISSBの検証可能性要件に整合。国際NGOの参加証明 + 監査書簡により、「当社は海洋保全に貢献します」という主張に公式文書が伴います。"
                 },
                 {
                     "no": "03",
@@ -267,11 +267,6 @@
                             "value": "65",
                             "unit": "%",
                             "label": "リサイクル転換率"
-                        },
-                        {
-                            "value": "1,800",
-                            "unit": "kgCO₂e",
-                            "label": "純炭素回避量"
                         }
                     ]
                 },
@@ -364,7 +359,7 @@
             "title": "MOBAの国際パートナーシップ",
             "lead": "自己検証ではなく — グローバルNGOの公式データ登載を通じて信頼性を確保します。",
             "padiName": "PADI AWARE Foundation",
-            "padiDesc": "世界最大のスキューバダイビング教育機関PADIが後援する独立非営利財団。UNEP等の国際機関と協力し、政策・市民科学・コミュニティ行動の領域でグローバルなリーダーシップを発揮しています。",
+            "padiDesc": "世界最大のスキューバダイビング教育機関PADIが後援する独立非営利財団。UN プラスチック条約等の国際政策協議に参加し、政策・市民科学・コミュニティ行動の領域でグローバルなリーダーシップを発揮しています。",
             "padiStats": [
                 {
                     "value": "100+",
@@ -461,7 +456,7 @@
                         "1年目の運営項目はすべて同一",
                         "未使用の活動は翌年1回まで繰越可能",
                         "四半期 + 年末統合ESG報告書",
-                        "PADI AWARE 共同認証の更新"
+                        "PADI AWARE 検証登載の更新"
                     ]
                 },
                 {
@@ -505,7 +500,7 @@
             "buttonPrimary": "パイロット企業のお問い合わせ",
             "buttonSecondary": "メンバーシップを見る",
             "contact": "MOBA · Make Ocean Blue Again — パイロット企業2社を先着順で募集中",
-            "partner": "PADI AWARE Foundation · UNEP等の国際機関と協力 · Dive Against Debris®"
+            "partner": "PADI AWARE Foundation · 国際政策協議に参加 · Dive Against Debris®"
         },
         "features": {
             "title": "MOBAの主要活動",
@@ -666,7 +661,7 @@
                 "description": "国際DBへのアップロードと適法処理",
                 "activities": [
                     "Dive Against Debris® へのデータアップロード",
-                    "UNEP等の政策立案に活用",
+                    "国際政策協議の参考資料として活用",
                     "自治体・海洋環境公団と連携した適法処理",
                     "リサイクル可能資源の最大限リサイクル"
                 ]
@@ -1046,7 +1041,7 @@
         "verify": {
             "eyebrow": "VERIFICATION",
             "title": "PADI AWARE Foundation 国際検証",
-            "desc": "すべての回収データはDive Against Debris® グローバルDBに登載され、GRI 306 · ISO 14001 · SDG 14へ自動マッピングされます。自己申告ではなく国際NGOの公式検証により、グリーンウォッシングリスクを根本から遮断します。"
+            "desc": "すべての回収データはDive Against Debris® グローバルDBに登載され、GRI 306 · ISO 14001 · SDG 14へ自動マッピングされます。自己申告ではなく国際DB登載・検証により、グリーンウォッシングリスクを大幅に低減します。"
         }
     },
     "impact": {

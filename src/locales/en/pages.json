@@ -50,13 +50,13 @@
                     "value": "100",
                     "unit": "%",
                     "label": "Third-party verification coverage",
-                    "sub": "PADI AWARE Foundation international certification"
+                    "sub": "PADI AWARE Foundation international verification"
                 },
                 {
-                    "value": "0",
-                    "unit": "",
-                    "label": "Greenwashing risk",
-                    "sub": "Tamper-proof GPS, photos, and international database"
+                    "value": "100",
+                    "unit": "%",
+                    "label": "Data in international DB",
+                    "sub": "Tamper-resistant · GPS, photos, weight logged"
                 }
             ],
             "members": "Recruiting pilot companies",
@@ -196,7 +196,7 @@
                 {
                     "label": "Greenwashing risk",
                     "generic": "High (photos and plans alone are not enough)",
-                    "moba": "Effectively zero (tamper-proof GPS, photos, and international database)"
+                    "moba": "Low (physical evidence: GPS, photos, international database)"
                 },
                 {
                     "label": "Continuity",
@@ -218,8 +218,8 @@
                 },
                 {
                     "no": "02",
-                    "title": "Eliminating greenwashing risk at the source",
-                    "desc": "Aligned with the verifiability requirements of the EU CSRD and ISSB. A certificate co-issued with an international NGO plus an audit letter back the claim \"We contribute to ocean conservation\" with official documentation."
+                    "title": "Substantially reducing greenwashing risk",
+                    "desc": "Aligned with the verifiability requirements of the EU CSRD and ISSB. A participation attestation from an international NGO plus an audit letter back the claim \"We contribute to ocean conservation\" with official documentation."
                 },
                 {
                     "no": "03",
@@ -267,11 +267,6 @@
                             "value": "65",
                             "unit": "%",
                             "label": "Recycling conversion rate"
-                        },
-                        {
-                            "value": "1,800",
-                            "unit": "kgCO₂e",
-                            "label": "Net carbon avoided"
                         }
                     ]
                 },
@@ -364,7 +359,7 @@
             "title": "MOBA's international partnerships",
             "lead": "Not self-verification — we establish credibility through official data registration with a global NGO.",
             "padiName": "PADI AWARE Foundation",
-            "padiDesc": "An independent nonprofit foundation backed by PADI, the world's largest scuba diving training organization. It works with international organizations such as UNEP and provides global leadership in policy, citizen science, and community action.",
+            "padiDesc": "An independent nonprofit foundation backed by PADI, the world's largest scuba diving training organization. It participates in international policy discussions such as the UN Plastics Treaty and provides global leadership in policy, citizen science, and community action.",
             "padiStats": [
                 {
                     "value": "100+",
@@ -461,7 +456,7 @@
                         "All Year 1 operational items included",
                         "Unused activities may be carried over once to the next year",
                         "Quarterly + year-end integrated ESG report",
-                        "PADI AWARE co-certification renewal"
+                        "PADI AWARE verification-registration renewal"
                     ]
                 },
                 {
@@ -505,7 +500,7 @@
             "buttonPrimary": "Inquire About Pilot Participation",
             "buttonSecondary": "Explore the Membership",
             "contact": "MOBA · Make Ocean Blue Again — recruiting 2 pilot companies on a first-come, first-served basis",
-            "partner": "PADI AWARE Foundation · in cooperation with international organizations such as UNEP · Dive Against Debris®"
+            "partner": "PADI AWARE Foundation · participating in international policy discussions · Dive Against Debris®"
         },
         "features": {
             "title": "MOBA's core values",
@@ -680,7 +675,7 @@
                 "description": "Upload to international DB and legal waste processing",
                 "activities": [
                     "Upload to Dive Against Debris® platform",
-                    "Use for UNEP and policy development",
+                    "Use as reference for international policy discussions",
                     "Legal processing with local authorities",
                     "Maximize recycling of recyclables"
                 ]
@@ -1123,7 +1118,7 @@
         "verify": {
             "eyebrow": "VERIFICATION",
             "title": "International verification by the PADI AWARE Foundation",
-            "desc": "All collection data is registered in the Dive Against Debris® global database and automatically mapped to GRI 306 · ISO 14001 · SDG 14. Official verification by an international NGO — not self-reporting — eliminates greenwashing risk at the source."
+            "desc": "All collection data is registered in the Dive Against Debris® global database and automatically mapped to GRI 306 · ISO 14001 · SDG 14. Registration and verification in an international database — not self-reporting — substantially reduces greenwashing risk."
         }
     },
     "impact": {

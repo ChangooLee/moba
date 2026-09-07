@@ -90,6 +90,10 @@ small { font-size: 8.5pt; color: var(--muted); }
 
 .card { border-radius: 5mm; padding: 7mm; background: #fff; border: 1px solid var(--mist-deep); }
 .mist .card { background: #fff; }
+/* mist 페이지에서 `.mist .card`(특정성 2)가 색상 카드 배경을 흰색으로 덮는 것 교정 */
+.mist .card.card-navy { background: var(--navy); border: none; }
+.mist .card.card-ink  { background: var(--ink);  border: none; }
+.mist .card.card-aqua { background: var(--aqua); border: none; }
 .card-mist { background: var(--mist); border: 1px solid var(--mist-deep); }
 .card-navy { background: var(--navy); color: #fff; border: none; }
 .card-ink { background: var(--ink); color: #fff; border: none; }

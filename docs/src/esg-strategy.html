@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOBA · 한국ESG위원회 협상 전략 & ESG 표준 백데이터</title>
+<link rel="stylesheet" href="doc.css">
+<style>
+  h3.sub { font-size: 15pt; color: var(--navy); margin: 7mm 0 3mm; }
+  .dark h3.sub, .ink h3.sub { color: #fff; }
+  h4.sub { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; font-size: 11pt; color: var(--navy); margin: 5mm 0 2.5mm; letter-spacing:-0.01em; }
+  .dark h4.sub, .ink h4.sub { color: var(--aqua-light); }
+  .card-mist h4.sub, .card h4.sub, .card-glass h4.sub { margin-top:0; }
+  .mut { color: var(--muted); font-size: 9.5pt; }
+  .dark .mut, .ink .mut { color: rgba(207,227,240,.72); }
+  .sm { font-size: 9.5pt; line-height:1.55; }
+  ul.clean.sm li { font-size: 9.5pt; }
+  .lbl { font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.15em; font-size:8pt; color:var(--aqua-dark); }
+  .dark .lbl,.ink .lbl{ color:var(--aqua-light);}
+  .toc-row { display:flex; align-items:baseline; gap:5mm; padding:2.7mm 0; border-bottom:1px solid var(--mist-deep); }
+  .toc-row .n { font-family:'IBM Plex Mono',monospace; font-weight:600; color:var(--aqua-dark); font-size:10.5pt; width:11mm; }
+  .toc-row .t { font-family:'Montserrat','Pretendard',sans-serif; font-weight:700; color:var(--navy); font-size:11pt; }
+  .toc-row .d { margin-left:auto; font-size:8pt; color:var(--muted); font-family:'IBM Plex Mono',monospace; }
+  .tier { display:flex; gap:5mm; align-items:stretch; margin-bottom:4mm; }
+  .tier .tn { flex:0 0 30mm; border-radius:4mm; padding:4mm; display:flex; flex-direction:column; justify-content:center; text-align:center; }
+  .tier .tn .k { font-family:'IBM Plex Mono',monospace; font-size:7.5pt; letter-spacing:.14em; }
+  .tier .tn .v { font-family:'Montserrat',sans-serif; font-weight:800; font-size:13pt; margin-top:1.5mm; line-height:1.1; }
+  .tier .tb { flex:1; }
+  .faq-q { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; color:var(--navy); font-size:10.5pt; margin-bottom:1.5mm; }
+  .dark .faq-q,.ink .faq-q{ color:#fff;}
+  .faq-q .qmark{ color:var(--aqua-dark); }
+  .dark .faq-q .qmark,.ink .faq-q .qmark{ color:var(--aqua-light);}
+  table.cmp td.label{ white-space:nowrap; }
+  .flag { border-left:3px solid var(--coral); padding-left:4mm; margin:3mm 0; }
+  .flag .ft { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; font-size:10pt; color:var(--coral); }
+  .chk { display:flex; gap:3mm; align-items:flex-start; padding:2.4mm 0; border-bottom:1px dashed var(--mist-deep); }
+  .chk .box { flex:0 0 5mm; height:5mm; border:1.5px solid var(--aqua-dark); border-radius:1.2mm; margin-top:.5mm; }
+  .dark .chk,.ink .chk{ border-color:rgba(255,255,255,.12);}
+  .dark .chk .box,.ink .chk .box{ border-color:var(--aqua-light);}
+  .conf { font-family:'IBM Plex Mono',monospace; font-size:7.5pt; letter-spacing:.16em; color:var(--coral); border:1px solid var(--coral); border-radius:999px; padding:1.5mm 4mm; text-transform:uppercase; }
+  .cmp .yes{ color:var(--aqua-dark); font-weight:700; }
+  .cmp .no{ color:var(--coral); font-weight:700; }
+  /* doc.css의 `.mist .card{background:#fff}`가 특정성으로 색 카드를 덮는 것 교정 (mist 페이지 한정) */
+  .mist .card.card-navy{ background:var(--navy); border:none; }
+  .mist .card.card-aqua{ background:var(--aqua); border:none; }
+  .mist .card.card-ink{ background:var(--ink); border:none; }
+  .src { font-size:8pt; color:var(--muted); font-family:'IBM Plex Mono',monospace; line-height:1.5; }
+  .dark .src,.ink .src{ color:rgba(207,227,240,.55);}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ 01 · 표지 ══════════════ -->
+<div class="page ink cover">
+  <div class="cover-hero" style="position:absolute;inset:0;z-index:0;"><img src="img/data-diver.jpg" alt="수중 정화 데이터를 기록하는 다이버"></div>
+  <div class="cover-overlay" style="position:absolute;inset:0;z-index:1;"></div>
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <img src="img/logo.png" alt="MOBA 로고" style="height:12mm;">
+    <span class="conf">내부 전략 문서 · Confidential</span>
+  </div>
+  <div>
+    <div class="eyebrow">ESG Certification · Negotiation Strategy</div>
+    <h1 class="display" style="font-size:38pt; line-height:1.08; color:#fff; margin:6mm 0 4mm;">한국ESG위원회<br>협상 전략 &amp;<br><span class="aqua">ESG 표준 백데이터</span></h1>
+    <p class="lead" style="font-size:12.5pt; color:rgba(207,227,240,.92); max-width:158mm;">
+      MOBA 해양보전 프로그램을 ESG 인증·엔도스먼트로 연결하기 위한 협상 준비 자료.
+      상대 분석 · 국제표준 매핑 · 백데이터 · 인증 스킴 초안 · 예상 반론 대응 · 주장 감사.
+    </p>
+    <div style="margin-top:6mm;">
+      <span class="chip">GRI 306 · 101 · 413</span>
+      <span class="chip">ISO 14001 · 26000 · 14064</span>
+      <span class="chip">K-ESG · KSSB · SDG 14.1</span>
+      <span class="chip">PADI AWARE · Dive Against Debris®</span>
+    </div>
+  </div>
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; border-top:1px solid rgba(255,255,255,.18); padding-top:5mm;">
+    <div class="lbl" style="color:rgba(207,227,240,.7);">v1.0 &nbsp;·&nbsp; 2026-09-07 &nbsp;·&nbsp; MOBA 운영팀 내부용</div>
+    <div style="display:flex; align-items:center; gap:5mm;">
+      <span class="lbl" style="color:rgba(207,227,240,.6);">Data anchor</span>
+      <img src="img/padi-aware-rev.png" alt="PADI AWARE Foundation" style="height:10mm;">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ 02 · 핵심 요약 ══════════════ -->
+<div class="page dark">
+  <div class="eyebrow">Executive Summary</div>
+  <h2 class="title" style="font-size:24pt;">한 장으로 보는 협상 전략</h2>
+  <p class="lead" style="max-width:165mm;">
+    목표는 <strong style="color:#fff;">"기업이 MOBA 참여만으로 실질 ESG 성과를 챙겨가게" 만드는 것</strong>입니다.
+    그 열쇠는 한국ESG위원회의 인증서 한 장이 아니라, <strong style="color:var(--aqua-light);">검증 가능한 정량 원천데이터</strong>입니다.
+    협상은 아래 3계층을 뭉뚱그리지 않고 정확히 구분하는 데서 이깁니다.
+  </p>
+  <hr class="rule">
+  <div class="tier">
+    <div class="tn" style="background:var(--aqua); color:var(--ink);"><div class="k">TIER 1 · 진짜 상품</div><div class="v">규제급<br>데이터</div></div>
+    <div class="tb card-glass">
+      <p class="sm mut" style="margin:0;"><strong style="color:#fff;">MOBA 정량 데이터(무게·품목·GPS)를 GRI 306 · K-ESG · KSSB 공시 지표로 매핑.</strong>
+      기업이 자사 지속가능경영보고서·공시에 그대로 반영하는, <strong style="color:var(--aqua-light);">위원회가 없어도 성립하는</strong> 실제 가치. 여기가 우리의 본질 상품이다.</p>
+    </div>
+  </div>
+  <div class="tier">
+    <div class="tn" style="background:rgba(255,255,255,.08); color:#fff; border:1px solid rgba(255,255,255,.2);"><div class="k">TIER 2 · 엔도스먼트</div><div class="v">위원회<br>인증</div></div>
+    <div class="tb card-glass">
+      <p class="sm mut" style="margin:0;"><strong style="color:#fff;">한국ESG위원회 공동 인증·수상 = PR·보고서 첨부·신뢰 레이어.</strong>
+      단, 투자자·자본시장·글로벌 공급망(KCGS·MSCI·EcoVadis)에서 <strong style="color:var(--coral);">공식 ESG 성과로 인정되지 않는다.</strong> 마케팅 가치로만 셈한다.</p>
+    </div>
+  </div>
+  <div class="tier">
+    <div class="tn" style="background:var(--navy); color:#fff;"><div class="k">TIER 3 · 국제 검증</div><div class="v">PADI AWARE<br>DB 등재</div></div>
+    <div class="tb card-glass">
+      <p class="sm mut" style="margin:0;"><strong style="color:#fff;">Dive Against Debris® 글로벌 시민과학 DB 등재 = 데이터 무결성 앵커.</strong>
+      Tier 1·2의 모든 주장이 여기에 기대어 "조작 불가"가 된다. 우리만의 방어선.</p>
+    </div>
+  </div>
+  <div class="card card-navy" style="margin-top:5mm;">
+    <div class="lbl" style="color:var(--aqua-light);">One-Line Position</div>
+    <p style="font-size:12pt; font-weight:700; color:#fff; margin:2.5mm 0 0; line-height:1.45;">
+      "MOBA는 인증을 여러 개 받은 회사가 아니라, <span class="aqua">곧 의무가 될 ESG 공시를 채울 검증 데이터를 생산하는 공급자</span>다."
+    </p>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>02</span></div>
+</div>
+
+<!-- ══════════════ 03 · 목차 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">Contents</div>
+  <h2 class="title" style="font-size:26pt;">목차</h2>
+  <p class="lead" style="margin-bottom:5mm;">상대 분석 → 냉정한 현실 → 표준 매핑 → 백데이터 → 인증 스킴 → 반론 대응 → 실행. 협상 테이블에 그대로 들고 갈 순서로 구성했습니다.</p>
+  <div>
+    <div class="toc-row"><span class="n">01</span><span class="t">상대 분석 — 한국ESG위원회는 누구인가</span><span class="d">Counterparty</span></div>
+    <div class="toc-row"><span class="n">02</span><span class="t">냉정한 현실 — 3계층 가치 구조</span><span class="d">Reality</span></div>
+    <div class="toc-row"><span class="n">03</span><span class="t">ESG 표준 지형 — 인증·공시·가이던스·원천데이터</span><span class="d">Landscape</span></div>
+    <div class="toc-row"><span class="n">04</span><span class="t">표준 매핑 ① GRI (306 · 101 · 413 · 2/3)</span><span class="d">GRI</span></div>
+    <div class="toc-row"><span class="n">05</span><span class="t">표준 매핑 ② ISO &amp; 한국 제도</span><span class="d">ISO · K</span></div>
+    <div class="toc-row"><span class="n">06</span><span class="t">표준 매핑 ③ 글로벌 프레임워크 &amp; 타이밍</span><span class="d">Global</span></div>
+    <div class="toc-row"><span class="n">07</span><span class="t">백데이터 — PADI AWARE &amp; Dive Against Debris®</span><span class="d">Backdata</span></div>
+    <div class="toc-row"><span class="n">08</span><span class="t">데이터 무결성 체인 — 왜 조작 불가인가</span><span class="d">Integrity</span></div>
+    <div class="toc-row"><span class="n">09</span><span class="t">제안 — 공동 인증 스킴 &amp; 심사기준 초안</span><span class="d">Scheme</span></div>
+    <div class="toc-row"><span class="n">10</span><span class="t">협상 논리 — 상대가 Yes 할 이유</span><span class="d">Logic</span></div>
+    <div class="toc-row"><span class="n">11</span><span class="t">예상 반론 &amp; 대응 (Q&amp;A)</span><span class="d">Rebuttals</span></div>
+    <div class="toc-row"><span class="n">12</span><span class="t">주장 감사 — 협상 전 반드시 고칠 것</span><span class="d">Audit</span></div>
+    <div class="toc-row"><span class="n">13</span><span class="t">Ask · 다음 단계 · 확인 체크리스트</span><span class="d">Action</span></div>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>03</span></div>
+</div>
+
+<!-- ══════════════ 04 · 상대 분석 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">01 · Counterparty</div>
+  <h2 class="title" style="font-size:24pt;">한국ESG위원회는 누구인가</h2>
+  <p class="lead" style="max-width:168mm;">
+    협상 전 반드시 정확히 알아야 할 사실: 이곳은 <strong>정부기관도, 자본시장 평가기관(KCGS)도 아닙니다.</strong>
+    2023년 설립된 <strong>민간 비영리 사단법인</strong>이며, 실질 사업은 시상·교육·컨설팅입니다.
+  </p>
+  <hr class="rule">
+  <div class="grid grid-2">
+    <div class="card">
+      <h4 class="sub">확인된 사실 (Fact)</h4>
+      <ul class="clean sm">
+        <li>정식: <strong>사단법인 한국이에스지위원회</strong> (Korea ESG Committee)</li>
+        <li>2023.2.18 창립총회 · 2023.7 산업부 비영리법인 <strong>설립허가</strong></li>
+        <li>이사장 윤재은(국민대 교수) · 사무총장 조승현</li>
+        <li>사업: The Best ESG Award / 한국ESG경영대상(시상), 최고위과정(교육), ESG 컨설팅</li>
+        <li>확인된 유일 연락처: <strong>koreaesgcommittee@naver.com</strong></li>
+      </ul>
+    </div>
+    <div class="card card-navy">
+      <h4 class="sub">오해 주의 (Caveat)</h4>
+      <ul class="clean sm">
+        <li style="color:rgba(207,227,240,.9);">"산업부 인가"는 <strong style="color:#fff;">법인 설립허가</strong>일 뿐 — 정부가 <strong style="color:var(--aqua-light);">인증기관으로 지정한 것이 아님</strong></li>
+        <li style="color:rgba(207,227,240,.9);">"위원회" 명칭이 공적 권위를 시사하나 <strong style="color:#fff;">법적 근거 없음</strong></li>
+        <li style="color:rgba(207,227,240,.9);"><strong style="color:#fff;">KCGS 한국ESG기준원과 완전히 별개</strong> (이름만 유사)</li>
+        <li style="color:rgba(207,227,240,.9);">정형화된 인증 스킴·심사기준·등급·비용 <strong style="color:var(--coral);">미공개</strong></li>
+      </ul>
+    </div>
+  </div>
+  <hr class="rule">
+  <div class="card card-aqua">
+    <h4 class="sub" style="color:var(--ink);">시사점 — 이것은 약점이 아니라 레버리지다</h4>
+    <p class="sm" style="color:var(--ink); margin:0;">
+      상대에게 <strong style="color:var(--ink);">완성된 인증 스킴이 없다</strong>는 사실은 우리에게 기회입니다.
+      우리가 <strong style="color:var(--ink);">데이터로 검증되는 '실천 인증' 스킴(09장)</strong>을 설계해 들고 가면, 위원회는 자신들의 대표 프로그램으로 삼을 유인이 있습니다.
+      위원회는 <strong style="color:var(--ink);">인증의 '이름'과 시상 채널</strong>을, 우리는 <strong style="color:var(--ink);">검증 데이터와 실행</strong>을 댑니다.
+    </p>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>04</span></div>
+</div>
+
+<!-- ══════════════ 05 · 냉정한 현실 3계층 ══════════════ -->
+<div class="page ink">
+  <div class="eyebrow">02 · Reality</div>
+  <h2 class="title" style="font-size:24pt;">냉정한 현실 — 무엇이 진짜 값을 하는가</h2>
+  <p class="lead" style="max-width:168mm;">
+    기업이 최종적으로 원하는 것은 "인증서"가 아니라 <strong style="color:#fff;">투자자·규제·고객이 인정하는 성과</strong>입니다.
+    아래 표는 각 계층이 실제로 어디까지 인정받는지를 있는 그대로 정리한 것입니다. 미팅에서 <strong style="color:var(--aqua-light);">Tier 2를 Tier 1처럼 말하는 순간 협상은 어긋납니다.</strong>
+  </p>
+  <table class="cmp" style="margin-top:5mm;">
+    <thead><tr><th style="width:22%;">계층</th><th>실제 인정 범위</th><th class="moba">협상에서 부를 이름</th></tr></thead>
+    <tbody>
+      <tr><td class="label">Tier 1<br>규제급 데이터</td><td>고객사 지속가능경영보고서·법정공시에 <strong>직접 반영</strong>. GRI/K-ESG/KSSB 지표를 실제로 충족</td><td class="moba">"검증 데이터 공급" — 본질 상품</td></tr>
+      <tr><td class="label">Tier 2<br>위원회 인증</td><td><span class="no">투자자·자본시장·글로벌 공급망 미인정.</span> 사내·대외 홍보, 보고서 첨부, 수상 이력 수준</td><td class="moba">"제3자 엔도스먼트 / PR"</td></tr>
+      <tr><td class="label">Tier 3<br>PADI AWARE DB</td><td>글로벌 시민과학 DB의 <strong>제3자 검증 등재</strong>. Tier 1·2 주장의 신뢰 앵커</td><td class="moba">"국제 데이터 무결성"</td></tr>
+    </tbody>
+  </table>
+  <div class="grid grid-2" style="margin-top:6mm;">
+    <div class="card-glass">
+      <h4 class="sub">그래서 기업에게 이렇게 말한다</h4>
+      <p class="sm mut">"MOBA에 참여하면 <strong style="color:#fff;">곧 의무가 될 공시(2028~)를 채울 검증 데이터</strong>를 확보하고, 그 위에 PADI AWARE 국제 검증과 한국ESG위원회 실천 인증이 <strong style="color:var(--aqua-light);">신뢰 레이어</strong>로 얹힙니다."</p>
+    </div>
+    <div class="card-glass">
+      <h4 class="sub">이렇게는 말하지 않는다</h4>
+      <p class="sm mut" style="color:rgba(255,106,77,.9);">✕ "한국ESG위원회 인증을 받으면 ESG 등급이 오릅니다"<br>✕ "국제 인증 획득"<br>✕ "탄소배출권을 발급합니다"<br><span class="mut">— 근거 없는 과장은 그린워싱 역풍을 부른다.</span></p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>05</span></div>
+</div>
+
+<!-- ══════════════ 06 · 표준 지형 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">03 · Landscape</div>
+  <h2 class="title" style="font-size:24pt;">ESG 표준 지형 — '인증'이라는 말을 아껴 써라</h2>
+  <p class="lead" style="max-width:168mm;">
+    표준마다 성격이 완전히 다릅니다. <strong>인증(certification)</strong>이 실제 가능한 것은 소수이고, 대부분은 <strong>공시·검증(assurance)</strong> 또는 <strong>가이던스</strong>입니다.
+    이 구분을 먼저 밝히는 절제가 오히려 협상 신뢰를 높입니다.
+  </p>
+  <table class="cmp" style="margin-top:5mm;">
+    <thead><tr><th style="width:26%;">성격</th><th style="width:34%;">표준 / 제도</th><th class="moba">MOBA가 부를 수 있는 최대치</th></tr></thead>
+    <tbody>
+      <tr><td class="label"><span class="yes">제3자 인증 가능</span></td><td>ISO 14001 (기업 EMS), ISO 14064-3 (GHG 검증)</td><td class="moba">"고객사 <strong>인증 시스템에 데이터·성과로 기여</strong>" (프로그램 자체가 인증받는 것 아님)</td></tr>
+      <tr><td class="label">공시 프레임워크<br>(검증은 별개)</td><td>GRI · ISSB(IFRS S1·S2)/KSSB · CSRD/ESRS · TNFD · CDP</td><td class="moba">"데이터가 <strong>특정 공시 지표를 직접 충족·입증</strong>" ('인증' 단어 부적절)</td></tr>
+      <tr><td class="label"><span class="no">인증 원천 불가</span><br>가이던스</td><td>ISO 26000 · UN SDG</td><td class="moba">"부합 / 기여(alignment)"까지만. ISO 26000 본문이 "인증용 아님" 명시</td></tr>
+      <tr><td class="label"><span class="yes">독립 검증 원천데이터</span></td><td>PADI AWARE <strong>Dive Against Debris®</strong> DB</td><td class="moba">표준 프로토콜 수집 → 글로벌 DB 검증 등재. <strong>위 모든 것의 신뢰 앵커</strong></td></tr>
+    </tbody>
+  </table>
+  <div class="card card-mist" style="margin-top:6mm;">
+    <p class="sm" style="margin:0;">
+      <strong style="color:var(--navy);">핵심 규칙:</strong> "인증"은 <strong>ISO 14001(고객사 EMS)</strong>과 <strong>ISO 14064-3(GHG 검증)</strong>에만 사용한다.
+      나머지는 전부 <strong>"정합 · 기여 · 공시 데이터 공급"</strong>으로 표현한다. 이 절제가 협상력이다.
+    </p>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>06</span></div>
+</div>
+
+<!-- ══════════════ 07 · GRI 매핑 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">04 · Standards Mapping — GRI</div>
+  <h2 class="title" style="font-size:23pt;">GRI 매핑 — 가장 직접적인 공시 연결</h2>
+  <p class="sm mut" style="max-width:170mm;">GRI는 인증이 아니라 <strong>공시 표준</strong>입니다. 개별 Disclosure 단위로 "우리 데이터가 이 항목을 채운다"를 논증하는 것이 정석입니다.</p>
+  <h4 class="sub">GRI 306: Waste 2020 <span class="mut">(2022.1.1 발효 · 최신판)</span></h4>
+  <table class="cmp">
+    <thead><tr><th style="width:26%;">공시</th><th>요구</th><th class="moba">MOBA 산출물</th></tr></thead>
+    <tbody>
+      <tr><td class="label">306-3 발생 폐기물</td><td>총 발생량(톤) + 품목별 구성</td><td class="moba">★ 수거 폐기물 <strong>무게·품목 데이터가 정확히 이 항목</strong></td></tr>
+      <tr><td class="label">306-4 처분 회피</td><td>재활용 등으로 매립·소각 회피량</td><td class="moba">재활용 경로로 보낸 폐어망·플라스틱 물량</td></tr>
+      <tr><td class="label">306-5 최종 처분</td><td>소각·매립 처분량</td><td class="moba">재활용 불가 처분 물량</td></tr>
+      <tr><td class="label">306-1 · 306-2</td><td>폐기물 영향·관리 서술</td><td class="moba">유령어업·해양플라스틱 영향과 분기 정화 관리체계</td></tr>
+    </tbody>
+  </table>
+  <div class="flag">
+    <div class="ft">정직 포인트 — 반드시 이렇게 서술</div>
+    <p class="sm mut" style="margin:1.5mm 0 0;">GRI 306은 원래 <strong>"조직이 배출한 폐기물"</strong>용으로 설계됨. MOBA는 "환경에서 회수한 폐기물"이라 개념상 100% 정합은 아니다.
+    → <strong style="color:var(--navy);">"환경 회수·저감(remediation) 성과"로 서술하되 306-3~5의 정량 포맷(톤·품목·처리경로)을 준용</strong>한다고 표현할 것.</p>
+  </div>
+  <div class="grid grid-2" style="margin-top:4mm;">
+    <div class="card">
+      <h4 class="sub">GRI 101: Biodiversity 2024 <span class="mut">(304 대체 · 2026.1.1 발효)</span></h4>
+      <p class="sm mut">구 GRI 304를 대체한 <strong>최신판</strong>. 101-2(완화위계·복원), 101-6(오염 등 직접동인 저감), 101-7(상태 변화)에 연결.
+      정직한 한계: 우리는 상태를 측정하는 주체가 아니라 <strong>위협 제거(pressure removal)</strong> 활동 → "직접동인 저감 기여"로 포지셔닝.</p>
+    </div>
+    <div class="card">
+      <h4 class="sub">GRI 413 · GRI 2 · GRI 3</h4>
+      <ul class="clean sm">
+        <li><strong>413-1</strong> 지역사회 참여 프로그램 — 연안·어촌 협업 실적</li>
+        <li><strong>GRI 3-3</strong> 중대주제 관리방식 — 고객사가 '폐기물·생물다양성'을 중대주제로 식별 시, MOBA가 그 실행수단</li>
+        <li><strong>GRI 2-6/2-29</strong> 활동·이해관계자 — 환경 파트너십 사례로 편입</li>
+      </ul>
+    </div>
+  </div>
+  <p class="src" style="margin-top:3mm;">출처: GRI 306 Waste 2020 · GRI 101 Biodiversity 2024 (globalreporting.org 원문 PDF, 발효일 명시)</p>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>07</span></div>
+</div>
+
+<!-- ══════════════ 08 · ISO & 한국제도 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">05 · Standards Mapping — ISO &amp; Korea</div>
+  <h2 class="title" style="font-size:23pt;">ISO 표준 &amp; 한국 제도</h2>
+  <table class="cmp">
+    <thead><tr><th style="width:26%;">표준</th><th style="width:22%;">인증 여부</th><th class="moba">MOBA 연결점</th></tr></thead>
+    <tbody>
+      <tr><td class="label">ISO 14001<br><span class="mut">환경경영시스템</span></td><td><span class="yes">✓ 인증 가능</span><br><span class="mut">(단, 고객사 시스템)</span></td><td class="moba">고객사 EMS의 <strong>환경목표(6.2)·운영(8.1)·성과평가(9.1)</strong>를 채우는 데이터. "MOBA가 인증받는다"는 <span class="no">틀린 표현</span></td></tr>
+      <tr><td class="label">ISO 26000<br><span class="mut">사회적책임</span></td><td><span class="no">✕ 인증 불가</span><br><span class="mut">가이던스</span></td><td class="moba">환경(6.5)·지역사회(6.8) <strong>원칙 부합</strong>까지만. 본문이 "인증 목적 아님" 명시 — 선제적으로 밝힐 것</td></tr>
+      <tr><td class="label">ISO 14064<br><span class="mut">온실가스</span></td><td><span class="yes">✓ 검증 가능</span></td><td class="moba">-2(프로젝트 감축)·-3(검증) 프레임. <strong>단 해양폐기물 제거의 탄소값은 표준계수 부재</strong>(12장)</td></tr>
+    </tbody>
+  </table>
+  <hr class="rule">
+  <h3 class="sub">한국 제도 — 타이밍이 곧 협상 논리</h3>
+  <div class="grid grid-3">
+    <div class="card card-mist">
+      <div class="lbl">K-ESG 가이드라인</div>
+      <p class="sm mut" style="margin-top:2mm;">산업부, 4영역(P·E·S·G)·27범주·61항목. 환경 영역에 <strong>폐기물 배출·재활용, 환경경영 목표</strong> 항목. <strong>자가진단 가이드</strong>지 인증 아님 → "진단항목 충족"까지.</p>
+    </div>
+    <div class="card card-mist">
+      <div class="lbl">KSSB 제1·2호</div>
+      <p class="sm mut" style="margin-top:2mm;"><strong>2026.2.26 최종 의결.</strong> IFRS S1·S2 정합, <strong>기후 중심</strong>(거버넌스·전략·위험·지표). 해양폐기물은 아직 직접지표 아님 — '위험·기회' 서술에 편입 여지. (제101호는 제정 안 함)</p>
+    </div>
+    <div class="card card-navy">
+      <div class="lbl" style="color:var(--aqua-light);">금융위 로드맵 ★</div>
+      <p class="sm mut" style="margin-top:2mm; color:rgba(207,227,240,.9);"><strong style="color:#fff;">2028 사업연도부터 30조원+ 코스피(약 58사) 의무공시</strong> → 2029 10조+ → 2033 전체. <strong style="color:var(--aqua-light);">"곧 의무가 될 공시를 채우는 검증 데이터 파트너"</strong> 수요.</p>
+    </div>
+  </div>
+  <div class="flag" style="border-color:var(--aqua-dark);">
+    <div class="ft" style="color:var(--aqua-dark);">한계 고지</div>
+    <p class="sm mut" style="margin:1.5mm 0 0;">금융위 로드맵은 <strong>2026.2 발표 '(안)'</strong> 단계로, 2026.4~5 최종 확정 전까지 대상 임계·시점이 변동 가능. <strong>최종본 확정 후 수치 재확인 필수.</strong></p>
+  </div>
+  <p class="src" style="margin-top:2mm;">출처: ISO 14001:2015 · 26000:2010 · 14064 (iso.org) · K-ESG 가이드라인(산업부) · KSSB 제1·2호 의결(한국회계기준원) · 금융위 지속가능성 공시 로드맵(2026.2)</p>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>08</span></div>
+</div>
+
+<!-- ══════════════ 09 · 글로벌 프레임워크 ══════════════ -->
+<div class="page dark">
+  <div class="eyebrow">06 · Standards Mapping — Global</div>
+  <h2 class="title" style="font-size:23pt;">글로벌 프레임워크 &amp; 가장 강한 카드</h2>
+  <div class="card card-glass" style="margin:4mm 0;">
+    <div class="lbl" style="color:var(--aqua-light);">The Strongest Story</div>
+    <p style="font-size:11.5pt; color:#fff; font-weight:700; margin:2.5mm 0 0; line-height:1.45;">
+      UN SDG <span class="aqua">14.1</span> — 지표 <span class="aqua">14.1.1(b) 플라스틱 잔해 밀도</span>가 우리 <strong>GPS·물량 원천데이터와 거의 1:1로 대응</strong>한다.
+    </p>
+    <p class="sm mut" style="margin:2.5mm 0 0;">전 세계가 추적하는 공식 해양오염 지표를, 우리 데이터카드가 그대로 산출한다. 협상·IR·공시 어디서든 가장 방어 가능한 한 문장.</p>
+  </div>
+  <table class="cmp">
+    <thead><tr><th style="width:22%;">프레임워크</th><th style="width:24%;">성격</th><th class="moba">MOBA 인정 방식</th></tr></thead>
+    <tbody>
+      <tr><td class="label">UN SDG 14</td><td>목표체계 (인증 아님)</td><td class="moba">14.1 해양오염 저감 <strong>직접 기여</strong> · 14.a 과학데이터 · 14.2/14.5 부차</td></tr>
+      <tr><td class="label">TNFD</td><td>자연자본 공시(검증 대상)</td><td class="moba">해양 생물다양성 <strong>압력 저감 데이터</strong>를 자연 관련 '영향' 지표에 공급</td></tr>
+      <tr><td class="label">CDP</td><td>질문서 공시·평가</td><td class="moba">Water/Biodiversity·Environmental impact 항목에 정화 실적 기재 → 점수 기여</td></tr>
+      <tr><td class="label">ISSB (S1·S2)</td><td>글로벌 공시기준</td><td class="moba">현재 <strong>기후 한정</strong> → 자연 확장 시 편입. KSSB가 국내 이식판</td></tr>
+      <tr><td class="label">EU CSRD / ESRS</td><td>공시 의무 (검증 의무)</td><td class="moba">ESRS <strong>E5(자원순환)·E4(생물다양성)·E2(오염)</strong>에 데이터 공급. 단 2026.2 Omnibus로 대상 축소</td></tr>
+    </tbody>
+  </table>
+  <p class="sm mut" style="margin-top:4mm;">정직한 방어선: 위 5개는 <strong style="color:#fff;">모두 인증이 아니다.</strong> "우리 데이터가 이 프레임워크의 특정 지표를 채운다"는 <strong style="color:var(--aqua-light);">데이터 정합·공급</strong>까지만 주장한다.</p>
+  <p class="src">출처: UNSTATS SDG Goal 14 지표 · sdgs.un.org · TNFD 권고(2023.9) · EU CSRD Omnibus(Council, 2026.2)</p>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>09</span></div>
+</div>
+
+<!-- ══════════════ 10 · 백데이터 ══════════════ -->
+<div class="page ink">
+  <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+    <div>
+      <div class="eyebrow">07 · Backdata</div>
+      <h2 class="title" style="font-size:23pt;">백데이터 — PADI AWARE &amp;<br>Dive Against Debris®</h2>
+    </div>
+    <img src="img/padi-aware-rev.png" alt="PADI AWARE Foundation" style="height:15mm; margin-top:6mm;">
+  </div>
+  <p class="lead" style="max-width:168mm;">
+    협상 테이블에서 인용할 <strong style="color:#fff;">검증된 규모</strong>입니다. 모두 PADI AWARE 공식 툴킷(사내 <span style="font-family:monospace;">docs/reference</span> 편입)에 근거합니다.
+  </p>
+  <div class="grid grid-4" style="margin:5mm 0;">
+    <div class="stat"><div class="v stat-num" style="font-size:23pt;">2011</div><div class="l">DAD 프로그램 시작</div><div class="s">13년+ 표준화 데이터</div></div>
+    <div class="stat"><div class="v stat-num" style="font-size:23pt;">240</div><span class="u">만+</span><div class="l">보고된 해양쓰레기 품목</div></div>
+    <div class="stat"><div class="v stat-num" style="font-size:23pt;">121</div><span class="u">개국+</span><div class="l">수거·보고 국가</div><div class="s">182개국 훈련 다이버</div></div>
+    <div class="stat"><div class="v stat-num" style="font-size:23pt;">10</div><span class="u">만+</span><div class="l">수중 시민과학자</div></div>
+  </div>
+  <div class="grid grid-3">
+    <div class="card-glass"><div class="stat"><div class="v stat-num" style="font-size:20pt;">35,000</div><span class="u">마리+</span><div class="l">구조된 얽힌 해양생물</div></div></div>
+    <div class="card-glass"><div class="stat"><div class="v stat-num" style="font-size:20pt;">70</div><span class="u">%</span><div class="l">보고 품목 중 플라스틱 비중</div></div></div>
+    <div class="card-glass"><div class="stat"><div class="v stat-num" style="font-size:20pt;">1,400</div><span class="u">만 톤/년</span><div class="l">해양 유입 플라스틱(추정)</div></div></div>
+  </div>
+  <hr class="rule">
+  <div class="grid grid-2">
+    <div>
+      <h4 class="sub">PADI AWARE Foundation</h4>
+      <p class="sm mut">전 세계 3곳 등록 자선단체를 보유한 공공기금 비영리 재단(미국 501(c)(3), 1992년~). PADI 브랜드와 전 세계 다이빙 센터·강사 네트워크의 지원.
+      <strong style="color:#fff;">글로벌 플라스틱 조약(INC) 협상에서 다이빙 커뮤니티를 대표하는 유일 조직.</strong></p>
+    </div>
+    <div>
+      <h4 class="sub">Blueprint for Ocean Action <span class="mut">(10년·SDG 14 정합)</span></h4>
+      <ul class="clean sm">
+        <li style="color:rgba(207,227,240,.9);">대상국 해양쓰레기 <strong style="color:#fff;">50% 감축</strong></li>
+        <li style="color:rgba(207,227,240,.9);">Adopt the Blue로 바다 <strong style="color:#fff;">30% 보호</strong></li>
+        <li style="color:rgba(207,227,240,.9);">멸종위기 상어·가오리 25% 감소 · 산호초 5% 복원</li>
+        <li style="color:rgba(207,227,240,.9);">다이빙 산업 탄소중립 + 블루카본 복원</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>10</span></div>
+</div>
+
+<!-- ══════════════ 11 · 데이터 무결성 체인 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">08 · Data Integrity</div>
+  <h2 class="title" style="font-size:23pt;">왜 조작 불가인가 — 무결성 체인</h2>
+  <p class="lead" style="max-width:168mm;">
+    ESG 심사자가 가장 먼저 찌르는 질문은 "그 숫자, 어떻게 믿나?"입니다. MOBA의 답은 <strong>물리 증거 → 표준 프로토콜 → 제3자 글로벌 DB</strong>로 이어지는 체인입니다.
+  </p>
+  <div class="flow" style="margin:6mm 0;">
+    <span class="fq">수중 수거</span><span class="ar">→</span>
+    <span class="fq">현장 계측<br>(무게·품목·개수)</span><span class="ar">→</span>
+    <span class="fq">사진 · GPS · 시각</span><span class="ar">→</span>
+    <span class="fq">DAD 데이터카드</span><span class="ar">→</span>
+    <span class="fq">글로벌 DB 등재</span><span class="ar">→</span>
+    <span class="fq">공시 지표</span>
+  </div>
+  <div class="grid grid-3" style="margin-top:5mm;">
+    <div class="card card-mist">
+      <div class="lbl">물리 증거</div>
+      <p class="sm mut" style="margin-top:2mm;">수거물 실측 무게·품목·개수, 수중 사진, GPS 좌표, 활동 시각 — <strong>사후 조작이 어려운 원본 증거.</strong></p>
+    </div>
+    <div class="card card-mist">
+      <div class="lbl">표준 프로토콜</div>
+      <p class="sm mut" style="margin-top:2mm;">Dive Against Debris® 데이터카드는 <strong>13년간 표준화된 시민과학 프로토콜.</strong> 임의 양식이 아니다.</p>
+    </div>
+    <div class="card card-navy">
+      <div class="lbl" style="color:var(--aqua-light);">제3자 등재</div>
+      <p class="sm mut" style="margin-top:2mm; color:rgba(207,227,240,.9);">글로벌 시민과학 DB에 등재 → <strong style="color:#fff;">외부 기관이 보유·검증.</strong> 우리가 지운다고 사라지지 않는다.</p>
+    </div>
+  </div>
+  <div class="card card-aqua" style="margin-top:6mm;">
+    <p class="sm" style="color:var(--ink); margin:0;">
+      <strong style="color:var(--ink);">협상 한 줄:</strong> "우리 성과는 사진과 계획서가 아니라 <strong style="color:var(--ink);">GPS·무게·국제 DB</strong>로 증명됩니다.
+      그린워싱 리스크가 <strong style="color:var(--ink);">낮은(low)</strong> 이유는 데이터가 물리적이고 외부 검증되기 때문입니다."
+    </p>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>11</span></div>
+</div>
+
+<!-- ══════════════ 12 · 제안 인증 스킴 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">09 · Proposed Scheme</div>
+  <h2 class="title" style="font-size:23pt;">제안 — "MOBA 해양보전 실천 인증" 초안</h2>
+  <p class="lead" style="max-width:168mm;">
+    위원회에 <strong>완성된 심사기준을 들고 갑니다.</strong> 위원회는 인증의 이름·권위·시상 채널을, MOBA는 검증 데이터와 실행을,
+    PADI AWARE는 국제 데이터 앵커를 댑니다. <strong>3자 공동 명의</strong>가 이상적 구조입니다.
+  </p>
+  <table class="cmp" style="margin-top:4mm;">
+    <thead><tr><th style="width:22%;">심사 축</th><th>기준(초안)</th><th class="moba">검증 방식</th></tr></thead>
+    <tbody>
+      <tr><td class="label">자격 · 인력</td><td>상시 국제자격 다이버 <strong>N명</strong> 유지 (예: 10명)</td><td class="moba">PADI 자격 카드</td></tr>
+      <tr><td class="label">활동 정례성</td><td>DAD 등재 정화 <strong>연 4회(분기)</strong></td><td class="moba">활동 로그·일자</td></tr>
+      <tr><td class="label">환경 성과</td><td>연 수거량 <strong>≥ X kg</strong>, 품목·GPS <strong>100% 기록</strong></td><td class="moba">현장 계측·사진</td></tr>
+      <tr><td class="label">데이터 무결성</td><td>수거 데이터 <strong>100% 글로벌 DB 등재</strong></td><td class="moba">DAD DB 조회</td></tr>
+      <tr><td class="label">거버넌스</td><td>분기 ESG 안건 상정 · 예산 정산 공개</td><td class="moba">회의록·정산</td></tr>
+    </tbody>
+  </table>
+  <div class="grid grid-2" style="margin-top:5mm;">
+    <div class="card">
+      <h4 class="sub">등급 체계(초안)</h4>
+      <ul class="clean sm">
+        <li><strong>기본</strong> — 기준 충족(연 4회·DB 100%)</li>
+        <li><strong>우수</strong> — 수거량·재참여율·데이터 완결성 상위</li>
+        <li><strong>최우수</strong> — 지역 협력·공공시각화·다년 지속</li>
+      </ul>
+      <p class="sm mut" style="margin-top:2mm;">매년 갱신 심사 → 위원회 The Best ESG Award 시상과 연계.</p>
+    </div>
+    <div class="card card-navy">
+      <h4 class="sub">발급물 정의 (혼동 방지)</h4>
+      <p class="sm mut" style="color:rgba(207,227,240,.9);">발급물은 <strong style="color:#fff;">"실천 인증(수여)"</strong>이며, KCGS·MSCI 등 <strong style="color:var(--aqua-light);">투자용 ESG 등급이 아님</strong>을 인증서 문구에 명시. 과대표현 리스크를 스킴 설계 단계에서 차단.</p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>12</span></div>
+</div>
+
+<!-- ══════════════ 13 · 협상 논리 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">10 · Negotiation Logic</div>
+  <h2 class="title" style="font-size:23pt;">상대가 Yes 할 이유 — 그들의 전략으로 말하라</h2>
+  <p class="lead" style="max-width:168mm;">
+    설득은 우리 자랑이 아니라 <strong>상대의 공표된 전략</strong>에서 출발합니다. 한국ESG위원회는 스스로 <strong style="color:var(--aqua-dark);">"선언이 아닌 실천을 통한 신뢰 구축"</strong>을 4대 전략으로 내걸었고, <strong>플라스틱 Zero 퍼포먼스(2025.6)</strong>를 열었습니다.
+  </p>
+  <div class="grid grid-2" style="margin-top:4mm;">
+    <div class="card card-mist">
+      <h4 class="sub">위원회가 얻는 것</h4>
+      <ul class="clean sm">
+        <li><strong>플래그십 '실천' 인증</strong> — 자신들의 전략 4를 실증하는 대표 사례</li>
+        <li><strong>조작 불가 데이터</strong>가 붙는 인증 — 다른 시상과 차별화</li>
+        <li>플라스틱 Zero 행사와 <strong>주제 완전 일치</strong> (해양플라스틱)</li>
+        <li>PADI·PADI AWARE라는 <strong>국제 브랜드 공동 명의</strong></li>
+      </ul>
+    </div>
+    <div class="card card-navy">
+      <h4 class="sub">우리가 얻는 것</h4>
+      <ul class="clean sm">
+        <li style="color:rgba(207,227,240,.9);">기업에 제시할 <strong style="color:#fff;">제3자 엔도스먼트 레이어</strong></li>
+        <li style="color:rgba(207,227,240,.9);">시상·포럼을 통한 <strong style="color:#fff;">노출·네트워킹</strong></li>
+        <li style="color:rgba(207,227,240,.9);">"인증 스킴 공동 설계자"라는 <strong style="color:var(--aqua-light);">포지션</strong></li>
+      </ul>
+      <p class="sm mut" style="margin-top:2mm; color:rgba(207,227,240,.75);">위원회 방문에는 가능하면 <strong style="color:#fff;">PADI AWARE와 동행</strong>하거나 공동 명의 의향서를 지참 — 국제 브랜드가 협상 무게를 바꾼다.</p>
+    </div>
+  </div>
+  <div class="card card-aqua" style="margin-top:5mm;">
+    <p class="sm" style="color:var(--ink); margin:0;">
+      <strong style="color:var(--ink);">제안 한 문장:</strong> "위원회는 <strong style="color:var(--ink);">데이터로 증명되는 실천 인증</strong>을 대표 프로그램으로 가져가시고,
+      우리는 그 인증을 기업에 전달합니다. 마침 <strong style="color:var(--ink);">2028년 대형 상장사 공시 의무화</strong>가 이 수요를 밀어줍니다."
+    </p>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>13</span></div>
+</div>
+
+<!-- ══════════════ 14 · Q&A ══════════════ -->
+<div class="page ink">
+  <div class="eyebrow">11 · Rebuttals</div>
+  <h2 class="title" style="font-size:23pt;">예상 반론 &amp; 대응</h2>
+  <div class="grid grid-2" style="gap:6mm; margin-top:3mm;">
+    <div>
+      <div class="faq-q"><span class="qmark">Q1.</span> 사단법인 인증이 실제 ESG 평가(KCGS·MSCI·EcoVadis)에 반영되나?</div>
+      <p class="sm mut">아니오. 위원회 인증은 <strong style="color:#fff;">PR·엔도스먼트 레이어</strong>다. 실제 반영은 Tier 1 정량데이터를 <strong style="color:var(--aqua-light);">기업이 자사 공시·평가대응에 직접 사용</strong>하는 것. 이 구분을 먼저 밝히는 것이 신뢰를 만든다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q2.</span> 해양정화의 탄소 성과는 얼마인가?</div>
+      <p class="sm mut"><strong style="color:#fff;">공신력 있는 표준 탄소계수는 없다.</strong> 1차 지표는 물리량(kg·품목·GPS). 탄소는 주장하지 않거나 "회피 처분 시나리오 참고치, 검증된 배출권 아님"으로만 표기한다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q3.</span> 데이터가 조작이 아님을 어떻게 검증하나?</div>
+      <p class="sm mut">DAD 표준 데이터카드 + 사진·GPS + <strong style="color:var(--aqua-light);">글로벌 시민과학 DB 제3자 등재</strong>. 무결성 체인(08장) 그대로 답한다.</p>
+    </div>
+    <div>
+      <div class="faq-q"><span class="qmark">Q4.</span> 4단계가 연 4회 모두 반복되나?</div>
+      <p class="sm mut">아니다. <strong style="color:#fff;">교육은 최초 1회 다이버 양성</strong>(갱신 시 신규 인원만). 이후 <strong style="color:var(--aqua-light);">정화 → 데이터 → 보고가 분기(연 4회) 반복</strong>된다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q5.</span> GRI 306은 회사 자체 폐기물용 아닌가?</div>
+      <p class="sm mut">맞다. 그래서 <strong style="color:#fff;">"환경 회수·저감 성과"로 서술</strong>하되 306-3~5의 정량 포맷을 준용한다고 정직하게 표현한다.</p>
+      <div class="faq-q" style="margin-top:5mm;"><span class="qmark">Q6.</span> 위원회가 왜 굳이 우리와 하나?</div>
+      <p class="sm mut">그들의 전략 4(실천 통한 신뢰)와 플라스틱 Zero 행사 이력에 정확히 부합. <strong style="color:var(--aqua-light);">검증 데이터를 갖춘 플래그십 실천 인증</strong>을 우리가 완성형으로 제공하기 때문.</p>
+    </div>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>14</span></div>
+</div>
+
+<!-- ══════════════ 15 · 주장 감사 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">12 · Claim Audit</div>
+  <h2 class="title" style="font-size:23pt;">주장 감사 — 협상 전 반드시 고칠 것</h2>
+  <p class="lead" style="max-width:168mm;">
+    ESG 기관 앞에 서기 전에, 현재 제안서·사업계획서의 아래 표현을 <strong>수정하거나 근거를 확보</strong>해야 합니다. 과장 하나가 전체 신뢰를 무너뜨립니다.
+  </p>
+  <table class="cmp" style="margin-top:4mm;">
+    <thead><tr><th style="width:34%;">현재 표현</th><th style="width:14%;">판정</th><th class="moba">고칠 방향</th></tr></thead>
+    <tbody>
+      <tr><td class="label">"순탄소 회피량 1,800 kgCO₂e"</td><td><span class="no">과장</span></td><td class="moba">삭제 또는 "참고치·방법론 미표준화·검증된 배출권 아님" 라벨</td></tr>
+      <tr><td class="label">"UNEP 연계 / 인용 가능"</td><td><span class="no">근거 약함</span></td><td class="moba">"UN 플라스틱 조약 INC 협상서 다이빙 커뮤니티 대표"로 표현(툴킷 근거). UNEP 직접 근거 확보 전엔 사용 자제</td></tr>
+      <tr><td class="label">"Marine Debris Program 공식 등록" · "공동 브랜드 인증서 발급" · "국제 인증"</td><td><span class="no">미확인</span></td><td class="moba">PADI AWARE와의 MOU·법적 실체 <strong>협상 전 확인</strong>. 확인된 메커니즘은 Adopt the Blue(사이트 등록→DAD 연계)</td></tr>
+      <tr><td class="label">"그린워싱 리스크 사실상 0"</td><td><span class="no">단정</span></td><td class="moba">"낮음(물리 증거+국제 DB)"로 완화</td></tr>
+      <tr><td class="label">GRI 304 · GRI 102-20</td><td>구 버전</td><td class="moba"><strong>GRI 101:Biodiversity 2024</strong> · <strong>GRI 2</strong>로 갱신</td></tr>
+    </tbody>
+  </table>
+  <div class="card card-navy" style="margin-top:5mm;">
+    <p class="sm mut" style="margin:0; color:rgba(207,227,240,.9);">
+      <strong style="color:#fff;">원칙:</strong> ESG 심사자는 <strong style="color:var(--aqua-light);">과소주장을 신뢰하고 과대주장을 처벌</strong>한다.
+      "인증"은 ISO 14001·14064-3에만, 나머지는 "정합·기여·데이터 공급"으로. 탄소는 물리량 뒤로 숨긴다.
+    </p>
+  </div>
+  <div class="foot"><span>MOBA · 협상 전략 · Confidential</span><span>15</span></div>
+</div>
+
+<!-- ══════════════ 16 · Ask · 다음 단계 ══════════════ -->
+<div class="page ink cover">
+  <div class="cover-hero" style="position:absolute;inset:0;z-index:0;"><img src="img/team-surface.jpg" alt="수면 위 정화팀"></div>
+  <div class="cover-overlay" style="position:absolute;inset:0;z-index:1;"></div>
+  <div>
+    <div class="eyebrow">13 · Action</div>
+    <h2 class="title" style="font-size:26pt; color:#fff; margin-top:5mm;">Ask · 다음 단계 ·<br>확인 체크리스트</h2>
+  </div>
+  <div>
+    <div class="grid grid-2" style="gap:6mm;">
+      <div class="card-glass">
+        <h4 class="sub">다음 단계 (순서)</h4>
+        <ul class="clean sm">
+          <li style="color:rgba(207,227,240,.9);"><strong style="color:#fff;">①</strong> koreaesgcommittee@naver.com로 제휴·인증 협의 요청(사무국)</li>
+          <li style="color:rgba(207,227,240,.9);"><strong style="color:#fff;">②</strong> 서면 확인 요청: 발급물이 인증서/수상 여부·근거표준·시장 인정·심사기준·비용·소요기간</li>
+          <li style="color:rgba(207,227,240,.9);"><strong style="color:#fff;">③</strong> PADI AWARE(information@padiaware.org)에 공동 방문·공동 명의·MOU 실체 확인</li>
+          <li style="color:rgba(207,227,240,.9);"><strong style="color:#fff;">④</strong> 제안서·사업계획서 <strong style="color:var(--aqua-light);">주장 감사(12장) 반영본</strong> 준비</li>
+          <li style="color:rgba(207,227,240,.9);"><strong style="color:#fff;">⑤</strong> 방문 미팅 — 실천 인증 스킴(09장) 초안 제시</li>
+        </ul>
+      </div>
+      <div class="card-glass">
+        <h4 class="sub">협상 전 확인 체크리스트</h4>
+        <div class="chk"><div class="box"></div><div class="sm mut" style="color:rgba(207,227,240,.85);">탄소 주장 처리(삭제/참고치화) 완료</div></div>
+        <div class="chk"><div class="box"></div><div class="sm mut" style="color:rgba(207,227,240,.85);">PADI AWARE 법적 관계·공동 명의 가능 여부 확인</div></div>
+        <div class="chk"><div class="box"></div><div class="sm mut" style="color:rgba(207,227,240,.85);">위원회 발급물 실효성 서면 확보</div></div>
+        <div class="chk"><div class="box"></div><div class="sm mut" style="color:rgba(207,227,240,.85);">금융위 로드맵 최종본(2026.4~5) 수치 재확인</div></div>
+        <div class="chk"><div class="box"></div><div class="sm mut" style="color:rgba(207,227,240,.85);">GRI 최신판(306:2020·101:2024) 반영 확인</div></div>
+      </div>
+    </div>
+    <hr class="rule">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:6mm;">
+      <div>
+        <div class="lbl" style="color:var(--aqua-light);">Contact · MOBA 운영팀</div>
+        <div class="stat-num" style="font-size:18pt; color:#fff; margin-top:2mm;">010-8947-1464</div>
+        <small style="color:rgba(207,227,240,.55);">본 문서는 내부 협상 준비용이며 상대·고객에게 그대로 배포하지 않습니다. 표준·제도 수치는 원문·최종본 재확인 후 인용하십시오.</small>
+      </div>
+      <img src="img/padi-aware-rev.png" alt="PADI AWARE Foundation" style="height:12mm;">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

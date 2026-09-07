@@ -87,3 +87,6 @@ temp/
 
 
 
+
+# 문서 렌더용 임시 이미지(featured 복제본, 재생성 가능)
+docs/src/img/

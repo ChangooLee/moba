@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOBA ESG 체계 — 활동을 검증된 공시 데이터로</title>
+<link rel="stylesheet" href="doc.css">
+<style>
+  h4.sub { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; font-size:11pt; color:var(--navy); margin:5mm 0 2.5mm; letter-spacing:-0.01em; }
+  .ink h4.sub, .card-navy h4.sub { color: var(--aqua-light); }
+  .card-mist h4.sub, .card h4.sub { margin-top:0; }
+  .mut { color: var(--muted); font-size:9.5pt; line-height:1.55; }
+  .ink .mut { color: rgba(207,227,240,.72); }
+  .sm { font-size:9.5pt; line-height:1.55; }
+  .lbl { font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:.15em; font-size:8pt; color:var(--aqua-dark); }
+  .ink .lbl { color:var(--aqua-light); }
+  .src { font-size:8pt; color:var(--muted); font-family:'IBM Plex Mono',monospace; line-height:1.55; }
+  .ink .src { color:rgba(207,227,240,.55); }
+  .pipe { display:flex; align-items:stretch; gap:0; margin:5mm 0; }
+  .pipe .st { flex:1; min-width:24mm; background:#fff; border:1px solid var(--mist-deep); border-radius:3mm; padding:3.5mm 2mm; text-align:center; font-family:'Montserrat','Pretendard',sans-serif; font-weight:700; font-size:9pt; color:var(--navy); display:flex; flex-direction:column; justify-content:center; }
+  .pipe .st.hl { background:var(--navy); color:#fff; border:none; }
+  .pipe .st small { font-weight:400; font-size:7.5pt; color:var(--muted); display:block; margin-top:1mm; }
+  .pipe .st.hl small { color:rgba(255,255,255,.7); }
+  .pipe .ar { display:flex; align-items:center; padding:0 1.5mm; color:var(--aqua-dark); font-weight:800; font-size:13pt; }
+  .qa { border-bottom:1px dashed rgba(255,255,255,.15); padding:3mm 0; }
+  .qa:last-child { border-bottom:none; }
+  .qa .q { font-family:'Montserrat','Pretendard',sans-serif; font-weight:800; font-size:10.5pt; color:var(--aqua-light); }
+  .qa .a { font-size:9.5pt; color:rgba(207,227,240,.9); margin-top:1mm; line-height:1.5; }
+  table.cmp td.label { width:34%; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ 01 · 표지 ══════════════ -->
+<div class="page ink cover">
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <img src="img/logo.png" alt="MOBA" style="height:12mm;">
+    <span class="eyebrow">MOBA ESG Framework</span>
+  </div>
+  <div>
+    <div class="eyebrow">Activity → Verified Disclosure Data</div>
+    <h1 class="display" style="font-size:40pt; line-height:1.08; color:#fff; margin:6mm 0 5mm;">MOBA<br>ESG 체계</h1>
+    <p class="lead" style="font-size:13pt; color:rgba(207,227,240,.92); max-width:152mm;">
+      우리는 기업의 해양정화 활동을 <strong style="color:#fff;">국제 표준으로 기록</strong>하고 <strong style="color:var(--aqua-light);">제3자 검증</strong>을 거쳐, 그대로 <strong style="color:#fff;">ESG 공시에 쓸 수 있는 데이터</strong>로 바꿉니다.
+    </p>
+    <div style="margin-top:6mm;">
+      <span class="chip">국제 표준 정합</span>
+      <span class="chip">제3자 검증 (DAD)</span>
+      <span class="chip">방어 가능한 경계</span>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.18); padding-top:5mm;">
+    <div class="lbl" style="color:rgba(207,227,240,.7);">v1.0 · 2026-09-19 · MOBA · 기관 협의용 핵심 요약</div>
+  </div>
+</div>
+
+<!-- ══════════════ 02 · 한눈에 ══════════════ -->
+<div class="page mist">
+  <div class="eyebrow">01 · At a Glance</div>
+  <h2 class="title" style="font-size:24pt;">한 장으로 보는 MOBA ESG 체계</h2>
+  <p class="lead" style="max-width:172mm;">활동을 표준으로 기록하고 검증해 공시로 잇는 <strong>하나의 파이프라인</strong>입니다.</p>
+
+  <div class="pipe">
+    <div class="st">해양정화 활동<small>연 4회 · 동호회</small></div>
+    <div class="ar">→</div>
+    <div class="st">표준 기록<small>DAD 프로토콜</small></div>
+    <div class="ar">→</div>
+    <div class="st hl">국제 검증<small>DAD 글로벌 DB</small></div>
+    <div class="ar">→</div>
+    <div class="st">표준 매핑<small>GRI · SDG · ISO</small></div>
+    <div class="ar">→</div>
+    <div class="st">기업 ESG 공시</div>
+  </div>
+
+  <div class="grid grid-3">
+    <div class="card card-mist"><div class="lbl">입력 1 · 정화 활동</div><p class="sm mut" style="margin-top:2mm;">기업별 <strong>연 4회</strong> 고정 관측점 정화·조사. 악기상 시 <strong>플로깅</strong>으로 참여·봉사시간을 유지하고 해안 데이터를 별도 기록. 고정관측 조사는 같은 분기 내 재실시해 시계열 결손을 막음.</p></div>
+    <div class="card card-mist"><div class="lbl">입력 2 · 동호회</div><p class="sm mut" style="margin-top:2mm;">다이버 동호회의 지속 참여가 <strong>조사량·재참여·역량</strong>을 키워 MOBA 데이터 자산을 두껍게 함. 기업 공시에는 자사 임직원 참여분만 반영.</p></div>
+    <div class="card card-mist"><div class="lbl">입력 3 · DAD 보고</div><p class="sm mut" style="margin-top:2mm;">모든 조사를 <strong>DAD 글로벌 DB에 등재</strong>하고 품질검토를 통과 — 활동이 <strong>검증된 데이터</strong>가 되는 지점.</p></div>
+  </div>
+
+  <hr class="rule">
+  <h4 class="sub">이 체계를 신뢰할 수 있는 3가지 이유</h4>
+  <div class="grid grid-3">
+    <div class="card"><h4 class="sub">① 국제 표준</h4><p class="sm mut">DAD 프로토콜로 수집하고 GRI · SDG · ISO · TNFD 공시 항목에 정합.</p></div>
+    <div class="card"><h4 class="sub">② 제3자 검증</h4><p class="sm mut">DAD 글로벌 DB 등재 + 품질검토 9대 게이트. 통과하지 못한 데이터는 등재가 거부됨.</p></div>
+    <div class="card"><h4 class="sub">③ 방어 가능한 경계</h4><p class="sm mut">할 수 있는 말만 함 — 탄소·인증·의무 충족은 주장하지 않음.</p></div>
+  </div>
+  <div class="foot"><span>MOBA · ESG 체계</span><span>02</span></div>
+</div>
+
+<!-- ══════════════ 03 · 표준 매핑 ══════════════ -->
+<div class="page">
+  <div class="eyebrow">02 · Standard Mapping</div>
+  <h2 class="title" style="font-size:24pt;">우리 데이터가 채우는 공시 항목</h2>
+  <p class="lead" style="max-width:172mm;">MOBA가 만드는 데이터와, 그것이 정합·기여하는 국제·국내 공시 표준입니다.</p>
+  <table class="cmp" style="margin-top:4mm;">
+    <thead><tr><th>우리가 만드는 데이터</th><th>기업 공시 항목</th><th>표준 (정확한 인용)</th></tr></thead>
+    <tbody>
+      <tr><td class="label">폐기물 회수량 · 재활용률 · 품목 구성</td><td>환경(E) — 폐기물 · 자원순환</td><td>GRI 306:2020 (환경 회수로 <strong>준용</strong>) · K-ESG 환경 · 고객사 ISO 14001:2015 EMS 환경목표(6.2) · 성과 모니터링/측정(9.1) 기여</td></tr>
+      <tr><td class="label">폐기물 밀도(items/㎡) · 해저 잔해</td><td>해양오염 · SDG 연계 보고</td><td>SDG 14.1.1(b) 해저 잔해 밀도와 <strong>동일 종류의 정량 데이터</strong> (플라스틱 품목 밀도 · 단위 환산 가능)</td></tr>
+      <tr><td class="label">폐어구 제거 · 얽힌 생물 · 서식지 관찰</td><td>환경(E) — 생물다양성</td><td>GRI 101:2024 (2026-01-01 시행, GRI 304 대체) · TNFD (자연 상태 · 압력)</td></tr>
+      <tr><td class="label">임직원 참여 · 봉사시간 · 지역 협력</td><td>사회(S) — 지역사회 · 참여</td><td>GRI 413-1</td></tr>
+      <tr><td class="label">국제 자격 취득 · 교육</td><td>사회(S) — 인적자원</td><td>GRI 401-2 · GRI 404</td></tr>
+      <tr><td class="label">데이터 품질 · 제3자 등재 · 정산 공개</td><td>지배구조(G) — 신뢰 · 투명</td><td>GRI 2 · ISO 26000 (사회적 책임 가이던스, 인증 대상 아님)</td></tr>
+    </tbody>
+  </table>
+  <div class="card card-navy" style="margin-top:4mm;">
+    <p class="sm mut" style="color:rgba(207,227,240,.9); margin:0;"><strong style="color:#fff;">경계:</strong> MOBA는 어느 표준의 <strong style="color:#fff;">인증 주체가 아닙니다.</strong> 고객사 공시 항목에 정합·기여하는 <strong style="color:var(--aqua-light);">검증 데이터를 공급</strong>합니다. 탄소(ISO 14064)는 공인 표준계수 부재로 <strong style="color:#fff;">산정하지 않습니다.</strong></p>
+  </div>
+  <div class="foot"><span>MOBA · ESG 체계</span><span>03</span></div>
+</div>
+
+<!-- ══════════════ 04 · 회의적 질문 ══════════════ -->
+<div class="page ink">
+  <div class="eyebrow">03 · Hard Questions</div>
+  <h2 class="title" style="font-size:24pt; color:#fff;">회의적인 질문에 먼저 답한다</h2>
+  <p class="lead" style="max-width:172mm; color:rgba(207,227,240,.9);">신뢰는 유리한 말이 아니라, 불리한 질문에 정직하게 답할 때 생깁니다.</p>
+  <div style="margin-top:3mm;">
+    <div class="qa"><div class="q">Q. 시민과학 데이터를 어떻게 믿나?</div><div class="a">고정 관측점 · 문서화된 SOP로 수집하고, DAD 품질검토 <strong style="color:#fff;">9대 게이트</strong>를 통과해야 등재된다. 미통과 데이터는 거부된다. 학술 기관과 프로토콜 공동설계를 추진해 과학 수준을 끌어올린다.</div></div>
+    <div class="qa"><div class="q">Q. 기후 의무공시를 충족하나?</div><div class="a">아니다. 기후 · 온실가스 <strong style="color:#fff;">의무공시의 핵심은 아니다.</strong> 자발적 환경(E) · 사회(S) 보고와 GRI 101(생물다양성) · SDG 14 · TNFD(자연) 영역을 채운다.</div></div>
+    <div class="qa"><div class="q">Q. 탄소 감축량은 얼마인가?</div><div class="a">산정하지 않는다. 해양폐기물 제거의 공인 표준계수(ISO 14064 방법론)가 없어, 억지 환산은 검증에서 탈락한다.</div></div>
+    <div class="qa"><div class="q">Q. 연 4회로 규모가 되나?</div><div class="a">규모(톤수)가 아니라 <strong style="color:#fff;">희소성</strong>으로 승부한다. 해저(수중) 데이터는 국가 모니터링(해안 중심)이 비워둔 공백이고, 같은 지점 반복이 만드는 <strong style="color:var(--aqua-light);">추세 · 재유입 데이터</strong>가 자산이다.</div></div>
+    <div class="qa"><div class="q">Q. 악기상이면 활동이 비나?</div><div class="a">플로깅으로 대체해 참여 · 봉사시간을 유지하고 해안 데이터를 별도 기록한다. 단, 고정관측 조사는 <strong style="color:#fff;">같은 분기 내 재실시</strong>해 시계열 결손을 막는다.</div></div>
+    <div class="qa"><div class="q">Q. 이 폐기물이 회사 배출 실적인가?</div><div class="a">아니다. 회사가 배출한 것이 아니라 환경에서 <strong style="color:#fff;">회수(remediation)</strong>한 것이다. 그래서 GRI 306 포맷을 준용하되 '환경 회수 · 지역사회 · 자연 기여'로 서술한다.</div></div>
+  </div>
+  <p class="src" style="margin-top:4mm;">근거: GRI 306:2020 · GRI 101:2024 · UN SDG Indicator 14.1.1(b) Metadata · TNFD · ISO 14001:2015 · ISO 26000 · ISO 14064-1:2018 · K-ESG 가이드라인 · PADI AWARE Dive Against Debris® 강사 가이드 v2.0. &nbsp;상세본: MOBA_ESG지원체계_v1.0(15p) · 현장 SOP: MOBA_수중모니터링프로토콜_v1.1.</p>
+  <div class="foot"><span>MOBA · ESG 체계</span><span>04</span></div>
+</div>
+
+</body>
+</html>

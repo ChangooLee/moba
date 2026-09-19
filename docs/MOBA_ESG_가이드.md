@@ -205,7 +205,7 @@ _연락 참고: PADI AWARE Foundation — information@padiaware.org / 국내 PAD
 ---
 
 ### 함께 보는 문서
-- `MOBA_수중모니터링프로토콜_v1.0` — 현장 조사 실행 절차(SOP) 상세
+- `MOBA_수중모니터링프로토콜_v1.1` — 현장 조사 실행 절차(SOP) 상세 · DAD 강사 가이드 v2.0 정합
 - `MOBA_ESG지원체계_v1.0` — 표준 매핑·백데이터·협상 전략 상세
 - `docs/reference/PADI_AWARE_..._Toolkit_KO.pdf` — PADI AWARE 공식 근거자료
 
